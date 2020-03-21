@@ -73,12 +73,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a370d24b1084701b09a52d45f8c5567f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a370d24b1084701b09a52d45f8c5567f4">LedController</a> ()</td></tr>
-<tr class="separator:a370d24b1084701b09a52d45f8c5567f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17bc8128404dcae70ac64a39c1dc9be4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a17bc8128404dcae70ac64a39c1dc9be4">LedController</a> (unsigned int dataPin, unsigned int clkPin, unsigned int csPin, unsigned int numDevices)</td></tr>
 <tr class="separator:a17bc8128404dcae70ac64a39c1dc9be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb99845bc4990cb614c95ae0d7631e19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#adb99845bc4990cb614c95ae0d7631e19">~LedController</a> ()</td></tr>
-<tr class="separator:adb99845bc4990cb614c95ae0d7631e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09961a235df34f0a27c06db1054d6b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a09961a235df34f0a27c06db1054d6b04">setIntensity</a> (unsigned int newIntesityLevel)</td></tr>
 <tr class="memdesc:a09961a235df34f0a27c06db1054d6b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Intensity of the whole matrix to the given value.  <a href="#a09961a235df34f0a27c06db1054d6b04">More...</a><br /></td></tr>
 <tr class="separator:a09961a235df34f0a27c06db1054d6b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,6 +109,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d252ed4ab2256c5bae862396cc196bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a6d252ed4ab2256c5bae862396cc196bd">setRow</a> (unsigned int segmentNumber, unsigned int row, byte value)</td></tr>
 <tr class="memdesc:a6d252ed4ab2256c5bae862396cc196bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one Row of one segment.  <a href="#a6d252ed4ab2256c5bae862396cc196bd">More...</a><br /></td></tr>
 <tr class="separator:a6d252ed4ab2256c5bae862396cc196bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dae60bee3c74ff9490309cdfed6df8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b">setLed</a> (unsigned int segmentNumber, unsigned int row, unsigned int column, boolean state)</td></tr>
+<tr class="memdesc:a4dae60bee3c74ff9490309cdfed6df8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single led to a given value.  <a href="#a4dae60bee3c74ff9490309cdfed6df8b">More...</a><br /></td></tr>
+<tr class="separator:a4dae60bee3c74ff9490309cdfed6df8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1eaf3d8a81b3f2c4121478a39c6b38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#aaf1eaf3d8a81b3f2c4121478a39c6b38">setColumn</a> (unsigned int segmentNumber, unsigned int col, byte value)</td></tr>
+<tr class="memdesc:aaf1eaf3d8a81b3f2c4121478a39c6b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one column of a given segment.  <a href="#aaf1eaf3d8a81b3f2c4121478a39c6b38">More...</a><br /></td></tr>
+<tr class="separator:aaf1eaf3d8a81b3f2c4121478a39c6b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5266004b7de087d35bbfdf2106cfdc56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a5266004b7de087d35bbfdf2106cfdc56">setDigit</a> (unsigned int segmentNumber, unsigned int digit, byte value, boolean dp)</td></tr>
+<tr class="memdesc:a5266004b7de087d35bbfdf2106cfdc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a hexadecimal digit on a 7-Segment Display.  <a href="#a5266004b7de087d35bbfdf2106cfdc56">More...</a><br /></td></tr>
+<tr class="separator:a5266004b7de087d35bbfdf2106cfdc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13dfb239f47a21bc92b7170769f7409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ad13dfb239f47a21bc92b7170769f7409">setChar</a> (unsigned int segmentNumber, unsigned int digit, char value, boolean dp)</td></tr>
+<tr class="separator:ad13dfb239f47a21bc92b7170769f7409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -125,8 +132,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a251a702a502f8535c2a52d782e59c5e9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a251a702a502f8535c2a52d782e59c5e9">status</a></td></tr>
-<tr class="separator:a251a702a502f8535c2a52d782e59c5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25140a1306dde497bc3ff1bea2f17164"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; byte, 8 &gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a25140a1306dde497bc3ff1bea2f17164">status</a></td></tr>
+<tr class="separator:a25140a1306dde497bc3ff1bea2f17164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18dde329cb52806eedb9b9991dfd7016"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a18dde329cb52806eedb9b9991dfd7016">SPI_DIN</a></td></tr>
 <tr class="memdesc:a18dde329cb52806eedb9b9991dfd7016"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pin for the data transfer (DIN)  <a href="#a18dde329cb52806eedb9b9991dfd7016">More...</a><br /></td></tr>
 <tr class="separator:a18dde329cb52806eedb9b9991dfd7016"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,41 +146,19 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae4e6f36bb9b0bfa980f7990e2efe15dc"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ae4e6f36bb9b0bfa980f7990e2efe15dc">SegmentCount</a></td></tr>
 <tr class="memdesc:ae4e6f36bb9b0bfa980f7990e2efe15dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of connected Segments.  <a href="#ae4e6f36bb9b0bfa980f7990e2efe15dc">More...</a><br /></td></tr>
 <tr class="separator:ae4e6f36bb9b0bfa980f7990e2efe15dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b281d691e8e16f2e2870699a89533b1"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a0b281d691e8e16f2e2870699a89533b1">mut_IntensityLevel</a></td></tr>
-<tr class="memdesc:a0b281d691e8e16f2e2870699a89533b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mutex for the intensity level, needed to make it threading safe.  <a href="#a0b281d691e8e16f2e2870699a89533b1">More...</a><br /></td></tr>
-<tr class="separator:a0b281d691e8e16f2e2870699a89533b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0b5fb154e1362356aa2fa7255199d7c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ad0b5fb154e1362356aa2fa7255199d7c">IntensityLevel</a> = 1</td></tr>
-<tr class="memdesc:ad0b5fb154e1362356aa2fa7255199d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current brightness level of the leds.  <a href="#ad0b5fb154e1362356aa2fa7255199d7c">More...</a><br /></td></tr>
+<tr class="memdesc:ad0b5fb154e1362356aa2fa7255199d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mutex for the intensity level, needed to make it threading safe.  <a href="#ad0b5fb154e1362356aa2fa7255199d7c">More...</a><br /></td></tr>
 <tr class="separator:ad0b5fb154e1362356aa2fa7255199d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eaf80cf2a8b0a8bc0d026ea52a6c0bd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a7eaf80cf2a8b0a8bc0d026ea52a6c0bd">spidata</a></td></tr>
-<tr class="memdesc:a7eaf80cf2a8b0a8bc0d026ea52a6c0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array for shifting the data to the devices.  <a href="#a7eaf80cf2a8b0a8bc0d026ea52a6c0bd">More...</a><br /></td></tr>
-<tr class="separator:a7eaf80cf2a8b0a8bc0d026ea52a6c0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afead4b92c66f515440575afd2d1c7b9d"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> *2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#afead4b92c66f515440575afd2d1c7b9d">spidata</a></td></tr>
+<tr class="memdesc:afead4b92c66f515440575afd2d1c7b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array for shifting the data to the devices.  <a href="#afead4b92c66f515440575afd2d1c7b9d">More...</a><br /></td></tr>
+<tr class="separator:afead4b92c66f515440575afd2d1c7b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00023">23</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00044">44</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a370d24b1084701b09a52d45f8c5567f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a370d24b1084701b09a52d45f8c5567f4">&#9670;&nbsp;</a></span>LedController() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">LedController::LedController </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00019">19</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a17bc8128404dcae70ac64a39c1dc9be4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17bc8128404dcae70ac64a39c1dc9be4">&#9670;&nbsp;</a></span>LedController() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a17bc8128404dcae70ac64a39c1dc9be4">&#9670;&nbsp;</a></span>LedController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,40 +195,19 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00021">21</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00019">19</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_led_controller_a17bc8128404dcae70ac64a39c1dc9be4_cgraph.png" border="0" usemap="#class_led_controller_a17bc8128404dcae70ac64a39c1dc9be4_cgraph" alt=""/></div>
 <map name="class_led_controller_a17bc8128404dcae70ac64a39c1dc9be4_cgraph" id="class_led_controller_a17bc8128404dcae70ac64a39c1dc9be4_cgraph">
-<area shape="rect" id="node2" href="class_led_controller.html#a4c0e20a70eac83e206013b17320f820c" title="LedController::resetMatrix" alt="" coords="237,71,409,98"/>
-<area shape="rect" id="node3" href="class_led_controller.html#a04ba2fc1fbf3432c608c097c392a5396" title="Get all segments out of power&#45;down mode for normal operation. " alt="" coords="459,5,627,47"/>
-<area shape="rect" id="node6" href="class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="691,71,866,98"/>
-<area shape="rect" id="node7" href="class_led_controller.html#af09ce879178e92073e0d2862d7b56907" title="clears all segments, turning all LEDs off. " alt="" coords="457,122,628,149"/>
-<area shape="rect" id="node4" href="class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="676,17,881,43"/>
-<area shape="rect" id="node5" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="929,71,1101,98"/>
-<area shape="rect" id="node8" href="class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="685,122,872,149"/>
+<area shape="rect" id="node2" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="491,85,663,112"/>
+<area shape="rect" id="node3" href="class_led_controller.html#a11bfabd448afbea6d5f54771a385cb03" title="Set the number of digits (or rows) to be displayed. " alt="" coords="249,35,431,61"/>
+<area shape="rect" id="node4" href="class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="247,85,433,112"/>
+<area shape="rect" id="node5" href="class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="237,136,443,163"/>
+<area shape="rect" id="node6" href="class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="253,187,427,213"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="adb99845bc4990cb614c95ae0d7631e19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb99845bc4990cb614c95ae0d7631e19">&#9670;&nbsp;</a></span>~LedController()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">LedController::~LedController </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00045">45</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
@@ -265,7 +229,7 @@ Here is the call graph for this function:</div>
 
 <p>Get all segments out of power-down mode for normal operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00119">119</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00133">133</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -302,7 +266,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00105">105</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00119">119</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -331,7 +295,7 @@ Here is the call graph for this function:</div>
 
 <p>clears all segments, turning all LEDs off. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00056">56</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00070">70</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -368,7 +332,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00159">159</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00173">173</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -406,7 +370,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00083">83</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00097">97</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -437,7 +401,7 @@ Here is the call graph for this function:</div>
 <p>Get the number of configured segments. </p>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int The number of configured segments </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00093">93</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00107">107</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
@@ -456,7 +420,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00049">49</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00063">63</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -468,6 +432,172 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node3" href="class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="444,17,649,43"/>
 <area shape="rect" id="node4" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="697,71,869,98"/>
 <area shape="rect" id="node7" href="class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="453,122,640,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad13dfb239f47a21bc92b7170769f7409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13dfb239f47a21bc92b7170769f7409">&#9670;&nbsp;</a></span>setChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::setChar </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segmentNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>digit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>dp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00230">230</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_led_controller_ad13dfb239f47a21bc92b7170769f7409_cgraph.png" border="0" usemap="#class_led_controller_ad13dfb239f47a21bc92b7170769f7409_cgraph" alt=""/></div>
+<map name="class_led_controller_ad13dfb239f47a21bc92b7170769f7409_cgraph" id="class_led_controller_ad13dfb239f47a21bc92b7170769f7409_cgraph">
+<area shape="rect" id="node2" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="207,5,379,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaf1eaf3d8a81b3f2c4121478a39c6b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1eaf3d8a81b3f2c4121478a39c6b38">&#9670;&nbsp;</a></span>setColumn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::setColumn </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segmentNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set one column of a given segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>The desired Segment number </td></tr>
+    <tr><td class="paramname">col</td><td>The desired column </td></tr>
+    <tr><td class="paramname">value</td><td>The value, this column should have </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00209">209</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_led_controller_aaf1eaf3d8a81b3f2c4121478a39c6b38_cgraph.png" border="0" usemap="#class_led_controller_aaf1eaf3d8a81b3f2c4121478a39c6b38_cgraph" alt=""/></div>
+<map name="class_led_controller_aaf1eaf3d8a81b3f2c4121478a39c6b38_cgraph" id="class_led_controller_aaf1eaf3d8a81b3f2c4121478a39c6b38_cgraph">
+<area shape="rect" id="node2" href="class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="224,5,371,32"/>
+<area shape="rect" id="node3" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="419,5,591,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5266004b7de087d35bbfdf2106cfdc56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5266004b7de087d35bbfdf2106cfdc56">&#9670;&nbsp;</a></span>setDigit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::setDigit </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segmentNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>digit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>dp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a hexadecimal digit on a 7-Segment Display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>The number of the desired Segment </td></tr>
+    <tr><td class="paramname">digit</td><td>the position of the digit on the display (0..7) </td></tr>
+    <tr><td class="paramname">value</td><td>the value to be displayed. (0x00..0x0F) </td></tr>
+    <tr><td class="paramname">dp</td><td>if true sets the decimal point </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00221">221</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_led_controller_a5266004b7de087d35bbfdf2106cfdc56_cgraph.png" border="0" usemap="#class_led_controller_a5266004b7de087d35bbfdf2106cfdc56_cgraph" alt=""/></div>
+<map name="class_led_controller_a5266004b7de087d35bbfdf2106cfdc56_cgraph" id="class_led_controller_a5266004b7de087d35bbfdf2106cfdc56_cgraph">
+<area shape="rect" id="node2" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="205,5,377,32"/>
 </map>
 </div>
 
@@ -516,7 +646,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00075">75</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00089">89</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -553,7 +683,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00062">62</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00076">76</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -561,6 +691,67 @@ Here is the call graph for this function:</div>
 <map name="class_led_controller_a09961a235df34f0a27c06db1054d6b04_cgraph" id="class_led_controller_a09961a235df34f0a27c06db1054d6b04_cgraph">
 <area shape="rect" id="node2" href="class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="228,5,403,32"/>
 <area shape="rect" id="node3" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="451,5,623,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4dae60bee3c74ff9490309cdfed6df8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dae60bee3c74ff9490309cdfed6df8b">&#9670;&nbsp;</a></span>setLed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::setLed </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segmentNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>column</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a single led to a given value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>the segment number of the desired led </td></tr>
+    <tr><td class="paramname">row</td><td>the row of the desired led (0..7) </td></tr>
+    <tr><td class="paramname">column</td><td>the column of the desired led (0..7) </td></tr>
+    <tr><td class="paramname">state</td><td>true if it should be on otherwise false </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00194">194</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_led_controller_a4dae60bee3c74ff9490309cdfed6df8b_cgraph.png" border="0" usemap="#class_led_controller_a4dae60bee3c74ff9490309cdfed6df8b_cgraph" alt=""/></div>
+<map name="class_led_controller_a4dae60bee3c74ff9490309cdfed6df8b_cgraph" id="class_led_controller_a4dae60bee3c74ff9490309cdfed6df8b_cgraph">
+<area shape="rect" id="node2" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="200,5,372,32"/>
 </map>
 </div>
 
@@ -608,7 +799,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00170">170</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00184">184</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -656,7 +847,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00154">154</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00168">168</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -685,7 +876,7 @@ Here is the call graph for this function:</div>
 
 <p>Set all segments into power-down mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00113">113</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00127">127</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -722,7 +913,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00097">97</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00111">111</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -784,7 +975,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00125">125</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00139">139</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
@@ -809,36 +1000,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>The current brightness level of the leds. </p>
-<dl class="section warning"><dt>Warning</dt><dd>The value needs to be between 0 and 15 (inclusive bounds). </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00047">47</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a0b281d691e8e16f2e2870699a89533b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b281d691e8e16f2e2870699a89533b1">&#9670;&nbsp;</a></span>mut_IntensityLevel</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::mutex LedController::mut_IntensityLevel</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 <p>The mutex for the intensity level, needed to make it threading safe. </p>
+<p>The current brightness level of the leds. </p><dl class="section warning"><dt>Warning</dt><dd>The value needs to be between 0 and 15 (inclusive bounds). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00041">41</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00068">68</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -864,7 +1029,7 @@ Here is the call graph for this function:</div>
 
 <p>The number of connected Segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00038">38</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00059">59</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -890,7 +1055,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the clock signal (CLK) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00035">35</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00056">56</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -916,7 +1081,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the chip select signal (CS) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00032">32</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00053">53</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -942,12 +1107,12 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the data transfer (DIN) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00029">29</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00050">50</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a7eaf80cf2a8b0a8bc0d026ea52a6c0bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eaf80cf2a8b0a8bc0d026ea52a6c0bd">&#9670;&nbsp;</a></span>spidata</h2>
+<a id="afead4b92c66f515440575afd2d1c7b9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afead4b92c66f515440575afd2d1c7b9d">&#9670;&nbsp;</a></span>spidata</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -956,7 +1121,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;byte&gt; LedController::spidata</td>
+          <td class="memname">std::array&lt;byte,<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>*2&gt; LedController::spidata</td>
         </tr>
       </table>
   </td>
@@ -968,12 +1133,12 @@ Here is the call graph for this function:</div>
 
 <p>The array for shifting the data to the devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00059">59</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00080">80</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a251a702a502f8535c2a52d782e59c5e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a251a702a502f8535c2a52d782e59c5e9">&#9670;&nbsp;</a></span>status</h2>
+<a id="a25140a1306dde497bc3ff1bea2f17164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25140a1306dde497bc3ff1bea2f17164">&#9670;&nbsp;</a></span>status</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -982,7 +1147,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt;byte&gt; &gt; LedController::status</td>
+          <td class="memname">std::array&lt; std::array&lt;byte,8&gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&gt; LedController::status</td>
         </tr>
       </table>
   </td>
@@ -992,7 +1157,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00026">26</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00047">47</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>

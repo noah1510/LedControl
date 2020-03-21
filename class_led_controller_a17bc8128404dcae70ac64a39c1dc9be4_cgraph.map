@@ -1,9 +1,7 @@
 <map id="LedController::LedController" name="LedController::LedController">
-<area shape="rect" id="node2" href="$class_led_controller.html#a4c0e20a70eac83e206013b17320f820c" title="LedController::resetMatrix" alt="" coords="237,71,409,98"/>
-<area shape="rect" id="node3" href="$class_led_controller.html#a04ba2fc1fbf3432c608c097c392a5396" title="Get all segments out of power&#45;down mode for normal operation. " alt="" coords="459,5,627,47"/>
-<area shape="rect" id="node6" href="$class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="691,71,866,98"/>
-<area shape="rect" id="node7" href="$class_led_controller.html#af09ce879178e92073e0d2862d7b56907" title="clears all segments, turning all LEDs off. " alt="" coords="457,122,628,149"/>
-<area shape="rect" id="node4" href="$class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="676,17,881,43"/>
-<area shape="rect" id="node5" href="$class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="929,71,1101,98"/>
-<area shape="rect" id="node8" href="$class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="685,122,872,149"/>
+<area shape="rect" id="node2" href="$class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="491,85,663,112"/>
+<area shape="rect" id="node3" href="$class_led_controller.html#a11bfabd448afbea6d5f54771a385cb03" title="Set the number of digits (or rows) to be displayed. " alt="" coords="249,35,431,61"/>
+<area shape="rect" id="node4" href="$class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="247,85,433,112"/>
+<area shape="rect" id="node5" href="$class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="237,136,443,163"/>
+<area shape="rect" id="node6" href="$class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="253,187,427,213"/>
 </map>

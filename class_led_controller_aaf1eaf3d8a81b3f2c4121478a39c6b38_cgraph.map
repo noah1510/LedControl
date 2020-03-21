@@ -1,0 +1,4 @@
+<map id="LedController::setColumn" name="LedController::setColumn">
+<area shape="rect" id="node2" href="$class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="224,5,371,32"/>
+<area shape="rect" id="node3" href="$class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="419,5,591,32"/>
+</map>
