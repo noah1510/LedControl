@@ -1,0 +1,4 @@
+<map id="LedController::shutdownAllSegments" name="LedController::shutdownAllSegments">
+<area shape="rect" id="node2" href="$class_led_controller.html#a6b2cc66a2e9f2ca4c88e0eafe7fc6d96" title="Set the segment in power&#45;down mode. " alt="" coords="232,13,447,39"/>
+<area shape="rect" id="node3" href="$class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="495,13,667,39"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="LedController::clearMatrix" name="LedController::clearMatrix">
+<area shape="rect" id="node2" href="$class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="224,5,411,32"/>
+<area shape="rect" id="node3" href="$class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="459,5,631,32"/>
+</map>

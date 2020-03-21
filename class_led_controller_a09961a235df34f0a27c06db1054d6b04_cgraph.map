@@ -1,0 +1,4 @@
+<map id="LedController::setIntensity" name="LedController::setIntensity">
+<area shape="rect" id="node2" href="$class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="228,5,403,32"/>
+<area shape="rect" id="node3" href="$class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="451,5,623,32"/>
+</map>
