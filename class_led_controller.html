@@ -69,18 +69,24 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class provied a control interface for MAX7219 and MAX7221 Led display drivers.  
+ <a href="class_led_controller.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a17bc8128404dcae70ac64a39c1dc9be4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a17bc8128404dcae70ac64a39c1dc9be4">LedController</a> (unsigned int dataPin, unsigned int clkPin, unsigned int csPin, unsigned int numDevices)</td></tr>
-<tr class="separator:a17bc8128404dcae70ac64a39c1dc9be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd8ed9aca96b79943241f7692a11682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a9fd8ed9aca96b79943241f7692a11682">LedController</a> (unsigned int dataPin, unsigned int clkPin, unsigned int csPin, unsigned int numSegments=4)</td></tr>
+<tr class="memdesc:a9fd8ed9aca96b79943241f7692a11682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> object.  <a href="#a9fd8ed9aca96b79943241f7692a11682">More...</a><br /></td></tr>
+<tr class="separator:a9fd8ed9aca96b79943241f7692a11682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09961a235df34f0a27c06db1054d6b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a09961a235df34f0a27c06db1054d6b04">setIntensity</a> (unsigned int newIntesityLevel)</td></tr>
 <tr class="memdesc:a09961a235df34f0a27c06db1054d6b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Intensity of the whole matrix to the given value.  <a href="#a09961a235df34f0a27c06db1054d6b04">More...</a><br /></td></tr>
 <tr class="separator:a09961a235df34f0a27c06db1054d6b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad231a64ff2c548b8863f096120b44860"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ad231a64ff2c548b8863f096120b44860">displayOnSegment</a> (unsigned int segmentindex, byte data[8])</td></tr>
+<tr class="memdesc:ad231a64ff2c548b8863f096120b44860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display 8 lines on the given segment.  <a href="#ad231a64ff2c548b8863f096120b44860">More...</a><br /></td></tr>
 <tr class="separator:ad231a64ff2c548b8863f096120b44860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c0e20a70eac83e206013b17320f820c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a4c0e20a70eac83e206013b17320f820c">resetMatrix</a> ()</td></tr>
+<tr class="memdesc:a4c0e20a70eac83e206013b17320f820c"><td class="mdescLeft">&#160;</td><td class="mdescRight">activates all segments, sets to same intensity and cleas them  <a href="#a4c0e20a70eac83e206013b17320f820c">More...</a><br /></td></tr>
 <tr class="separator:a4c0e20a70eac83e206013b17320f820c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af09ce879178e92073e0d2862d7b56907"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#af09ce879178e92073e0d2862d7b56907">clearMatrix</a> ()</td></tr>
 <tr class="memdesc:af09ce879178e92073e0d2862d7b56907"><td class="mdescLeft">&#160;</td><td class="mdescRight">clears all segments, turning all LEDs off.  <a href="#af09ce879178e92073e0d2862d7b56907">More...</a><br /></td></tr>
@@ -119,6 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5266004b7de087d35bbfdf2106cfdc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a hexadecimal digit on a 7-Segment Display.  <a href="#a5266004b7de087d35bbfdf2106cfdc56">More...</a><br /></td></tr>
 <tr class="separator:a5266004b7de087d35bbfdf2106cfdc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad13dfb239f47a21bc92b7170769f7409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ad13dfb239f47a21bc92b7170769f7409">setChar</a> (unsigned int segmentNumber, unsigned int digit, char value, boolean dp)</td></tr>
+<tr class="memdesc:ad13dfb239f47a21bc92b7170769f7409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Display a character on a 7-Segment display.  <a href="#ad13dfb239f47a21bc92b7170769f7409">More...</a><br /></td></tr>
 <tr class="separator:ad13dfb239f47a21bc92b7170769f7409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -154,11 +161,17 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afead4b92c66f515440575afd2d1c7b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00044">44</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<div class="textblock"><p>This class provied a control interface for MAX7219 and MAX7221 Led display drivers. </p>
+<p>This Controller Class is mainly target at led matracies consisting of more than 1 segment. While it can also handle 7-Segment Displays it is not tested that well. </p><dl class="section warning"><dt>Warning</dt><dd>This object is not thread safe yet.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd><p class="startdd">add functions to shift the pixes up, down, left and right </p>
+<p>rename status to ledstates or something like that </p>
+<p class="enddd">make it threading safe </p>
+</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00053">53</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a17bc8128404dcae70ac64a39c1dc9be4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17bc8128404dcae70ac64a39c1dc9be4">&#9670;&nbsp;</a></span>LedController()</h2>
+<a id="a9fd8ed9aca96b79943241f7692a11682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fd8ed9aca96b79943241f7692a11682">&#9670;&nbsp;</a></span>LedController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +198,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>numDevices</em>&#160;</td>
+          <td class="paramname"><em>numSegments</em> = <code>4</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -195,12 +208,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataPin</td><td>pin on the Arduino where data gets shifted out (DIN) </td></tr>
+    <tr><td class="paramname">clkPin</td><td>pin for the clock (CLK) </td></tr>
+    <tr><td class="paramname">csPin</td><td>pin for selecting the device (CS) </td></tr>
+    <tr><td class="paramname">numSegments</td><td>The number of segments that will be controlled by the controller (default 4) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00019">19</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_led_controller_a17bc8128404dcae70ac64a39c1dc9be4_cgraph.png" border="0" usemap="#class_led_controller_a17bc8128404dcae70ac64a39c1dc9be4_cgraph" alt=""/></div>
-<map name="class_led_controller_a17bc8128404dcae70ac64a39c1dc9be4_cgraph" id="class_led_controller_a17bc8128404dcae70ac64a39c1dc9be4_cgraph">
+<div class="center"><img src="class_led_controller_a9fd8ed9aca96b79943241f7692a11682_cgraph.png" border="0" usemap="#class_led_controller_a9fd8ed9aca96b79943241f7692a11682_cgraph" alt=""/></div>
+<map name="class_led_controller_a9fd8ed9aca96b79943241f7692a11682_cgraph" id="class_led_controller_a9fd8ed9aca96b79943241f7692a11682_cgraph">
 <area shape="rect" id="node2" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="491,85,663,112"/>
 <area shape="rect" id="node3" href="class_led_controller.html#a11bfabd448afbea6d5f54771a385cb03" title="Set the number of digits (or rows) to be displayed. " alt="" coords="249,35,431,61"/>
 <area shape="rect" id="node4" href="class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="247,85,433,112"/>
@@ -370,6 +394,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Display 8 lines on the given segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentindex</td><td>the Segment number of the desired segment </td></tr>
+    <tr><td class="paramname">data</td><td>an array containing the data for all the pixels that should be displayed on that segment </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00097">97</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -419,6 +452,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>activates all segments, sets to same intensity and cleas them </p>
 
 <p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00063">63</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
@@ -474,6 +509,18 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the Display a character on a 7-Segment display. </p>
+<dl class="section note"><dt>Note</dt><dd>There are only a few characters that make sense here : '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'A', 'b', 'c', 'd', 'E', 'F', 'H', 'L', 'P', '.', '-', '_', ' ' </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>The number of the desired segment </td></tr>
+    <tr><td class="paramname">digit</td><td>the position of the character on the segment (0..7) </td></tr>
+    <tr><td class="paramname">value</td><td>the character to be displayed. </td></tr>
+    <tr><td class="paramname">dp</td><td>dp if true sets the decimal point </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00230">230</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
@@ -584,7 +631,7 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">segmentNumber</td><td>The number of the desired Segment </td></tr>
-    <tr><td class="paramname">digit</td><td>the position of the digit on the display (0..7) </td></tr>
+    <tr><td class="paramname">digit</td><td>the position of the digit on the Segment (0..7) </td></tr>
     <tr><td class="paramname">value</td><td>the value to be displayed. (0x00..0x0F) </td></tr>
     <tr><td class="paramname">dp</td><td>if true sets the decimal point </td></tr>
   </table>
@@ -1003,7 +1050,7 @@ Here is the call graph for this function:</div>
 <p>The mutex for the intensity level, needed to make it threading safe. </p>
 <p>The current brightness level of the leds. </p><dl class="section warning"><dt>Warning</dt><dd>The value needs to be between 0 and 15 (inclusive bounds). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00068">68</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00076">76</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1076,7 @@ Here is the call graph for this function:</div>
 
 <p>The number of connected Segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00059">59</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00068">68</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1102,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the clock signal (CLK) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00056">56</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00065">65</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1081,7 +1128,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the chip select signal (CS) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00053">53</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00062">62</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1154,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the data transfer (DIN) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00050">50</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00059">59</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1180,7 @@ Here is the call graph for this function:</div>
 
 <p>The array for shifting the data to the devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00080">80</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00088">88</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1204,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00047">47</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00056">56</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
