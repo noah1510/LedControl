@@ -127,6 +127,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad13dfb239f47a21bc92b7170769f7409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ad13dfb239f47a21bc92b7170769f7409">setChar</a> (unsigned int segmentNumber, unsigned int digit, char value, boolean dp)</td></tr>
 <tr class="memdesc:ad13dfb239f47a21bc92b7170769f7409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Display a character on a 7-Segment display.  <a href="#ad13dfb239f47a21bc92b7170769f7409">More...</a><br /></td></tr>
 <tr class="separator:ad13dfb239f47a21bc92b7170769f7409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6d671d091db03eeadbeee6b14fc539"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#afc6d671d091db03eeadbeee6b14fc539">moveLeft</a> (byte shiftedInColumn=0x00)</td></tr>
+<tr class="memdesc:afc6d671d091db03eeadbeee6b14fc539"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data left by one  <a href="#afc6d671d091db03eeadbeee6b14fc539">More...</a><br /></td></tr>
+<tr class="separator:afc6d671d091db03eeadbeee6b14fc539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b">refreshSegments</a> ()</td></tr>
+<tr class="memdesc:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">refreshes all segments displaying the internally stored state of the segments.  <a href="#a29f33ebe6ae60dae3653d9e80822bc2b">More...</a><br /></td></tr>
+<tr class="separator:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cde37ad176801ceafa357e20711432d"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a6cde37ad176801ceafa357e20711432d">makeColumns</a> (std::array&lt; byte, 8 &gt; rowArray)</td></tr>
+<tr class="memdesc:a6cde37ad176801ceafa357e20711432d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns an array of rows into an array of columns.  <a href="#a6cde37ad176801ceafa357e20711432d">More...</a><br /></td></tr>
+<tr class="separator:a6cde37ad176801ceafa357e20711432d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -438,6 +447,104 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a6cde37ad176801ceafa357e20711432d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cde37ad176801ceafa357e20711432d">&#9670;&nbsp;</a></span>makeColumns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; byte, 8 &gt; LedController::makeColumns </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; byte, 8 &gt;&#160;</td>
+          <td class="paramname"><em>rowArray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turns an array of rows into an array of columns. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rowArray</td><td>the array of rows of which you want the columns </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,8&gt; the columns of the provided row array </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00279">279</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afc6d671d091db03eeadbeee6b14fc539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6d671d091db03eeadbeee6b14fc539">&#9670;&nbsp;</a></span>moveLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte LedController::moveLeft </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>shiftedInColumn</em> = <code>0x00</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>moves the data left by one </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiftedInColumn</td><td>The column that will be shifted in on the right (default 0x00) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>byte The column that gets shifted out on the right </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00247">247</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_led_controller_afc6d671d091db03eeadbeee6b14fc539_cgraph.png" border="0" usemap="#class_led_controller_afc6d671d091db03eeadbeee6b14fc539_cgraph" alt=""/></div>
+<map name="class_led_controller_afc6d671d091db03eeadbeee6b14fc539_cgraph" id="class_led_controller_afc6d671d091db03eeadbeee6b14fc539_cgraph">
+<area shape="rect" id="node2" href="class_led_controller.html#aaf1eaf3d8a81b3f2c4121478a39c6b38" title="Set one column of a given segment. " alt="" coords="215,5,385,32"/>
+<area shape="rect" id="node5" href="class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="433,56,640,83"/>
+<area shape="rect" id="node3" href="class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="463,5,610,32"/>
+<area shape="rect" id="node4" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="688,31,860,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29f33ebe6ae60dae3653d9e80822bc2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f33ebe6ae60dae3653d9e80822bc2b">&#9670;&nbsp;</a></span>refreshSegments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::refreshSegments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>refreshes all segments displaying the internally stored state of the segments. </p>
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00271">271</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_led_controller_a29f33ebe6ae60dae3653d9e80822bc2b_cgraph.png" border="0" usemap="#class_led_controller_a29f33ebe6ae60dae3653d9e80822bc2b_cgraph" alt=""/></div>
+<map name="class_led_controller_a29f33ebe6ae60dae3653d9e80822bc2b_cgraph" id="class_led_controller_a29f33ebe6ae60dae3653d9e80822bc2b_cgraph">
+<area shape="rect" id="node2" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="260,5,432,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a4c0e20a70eac83e206013b17320f820c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c0e20a70eac83e206013b17320f820c">&#9670;&nbsp;</a></span>resetMatrix()</h2>
 
@@ -522,7 +629,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00230">230</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00231">231</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -638,7 +745,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00221">221</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00222">222</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
