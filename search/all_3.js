@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getsegmentcount',['getSegmentCount',['../class_led_controller.html#a541961c0ca85cf4b132de50153a1df3a',1,'LedController']]]
+  ['emptyrow',['emptyRow',['../class_led_controller.html#a3697cb01eebbb7958b872146239a8f3b',1,'LedController']]]
 ];
