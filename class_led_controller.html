@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">1.2.1</span>
+   &#160;<span id="projectnumber">1.2.2</span>
    </div>
    <div id="projectbrief">AlibraryfortheMAX7219andtheMAX7221Leddisplaydrivers.</div>
   </td>
@@ -190,12 +190,11 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provied a control interface for MAX7219 and MAX7221 Led display drivers. </p>
 <p>This Controller Class is mainly target at led matracies consisting of more than 1 segment. While it can also handle 7-Segment Displays it is not tested that well. </p><dl class="section warning"><dt>Warning</dt><dd>This object is not thread safe yet.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd><p class="startdd">fix orientation </p>
-<p>rename status to ledstates or something like that </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd><p class="startdd">rename status to ledstates or something like that </p>
 <p class="enddd">make it threading safe </p>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00053">53</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00052">52</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9fd8ed9aca96b79943241f7692a11682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fd8ed9aca96b79943241f7692a11682">&#9670;&nbsp;</a></span>LedController()</h2>
@@ -519,7 +518,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,MAX_SEGMENTS&gt; The row the will be shifted out on the bottom </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00344">344</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00321">321</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -579,7 +578,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The column that gets shifted out on the left </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00272">272</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00297">297</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -619,7 +618,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The column that gets shifted out on the right </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00297">297</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00272">272</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -659,7 +658,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,MAX_SEGMENTS&gt; The row the will be shifted out on the top </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00321">321</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00344">344</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1332,7 +1331,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00098">98</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00097">97</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1359,7 +1358,7 @@ Here is the call graph for this function:</div>
 <p>The mutex for the intensity level, needed to make it threading safe. </p>
 <p>The current brightness level of the leds. </p><dl class="section warning"><dt>Warning</dt><dd>The value needs to be between 0 and 15 (inclusive bounds). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00076">76</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00075">75</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1384,7 @@ Here is the call graph for this function:</div>
 
 <p>The number of connected Segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00068">68</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00067">67</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1411,7 +1410,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the clock signal (CLK) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00065">65</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00064">64</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1437,7 +1436,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the chip select signal (CS) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00062">62</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00061">61</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1463,7 +1462,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the data transfer (DIN) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00059">59</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00058">58</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1489,7 +1488,7 @@ Here is the call graph for this function:</div>
 
 <p>The array for shifting the data to the devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00088">88</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00087">87</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1513,7 +1512,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00056">56</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00055">55</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
