@@ -164,8 +164,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a25140a1306dde497bc3ff1bea2f17164"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; byte, 8 &gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a25140a1306dde497bc3ff1bea2f17164">status</a></td></tr>
-<tr class="separator:a25140a1306dde497bc3ff1bea2f17164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4986f6aa304a55d379ecde686ec0454d"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; byte, 8 &gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a4986f6aa304a55d379ecde686ec0454d">LedStates</a></td></tr>
+<tr class="separator:a4986f6aa304a55d379ecde686ec0454d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18dde329cb52806eedb9b9991dfd7016"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a18dde329cb52806eedb9b9991dfd7016">SPI_DIN</a></td></tr>
 <tr class="memdesc:a18dde329cb52806eedb9b9991dfd7016"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pin for the data transfer (DIN)  <a href="#a18dde329cb52806eedb9b9991dfd7016">More...</a><br /></td></tr>
 <tr class="separator:a18dde329cb52806eedb9b9991dfd7016"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,11 +190,9 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provied a control interface for MAX7219 and MAX7221 Led display drivers. </p>
 <p>This Controller Class is mainly target at led matracies consisting of more than 1 segment. While it can also handle 7-Segment Displays it is not tested that well. </p><dl class="section warning"><dt>Warning</dt><dd>This object is not thread safe yet.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd><p class="startdd">rename status to ledstates or something like that </p>
-<p class="enddd">make it threading safe </p>
-</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>make it threading safe </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00052">52</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00051">51</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9fd8ed9aca96b79943241f7692a11682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fd8ed9aca96b79943241f7692a11682">&#9670;&nbsp;</a></span>LedController()</h2>
@@ -1331,7 +1329,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00097">97</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00096">96</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1356,31 @@ Here is the call graph for this function:</div>
 <p>The mutex for the intensity level, needed to make it threading safe. </p>
 <p>The current brightness level of the leds. </p><dl class="section warning"><dt>Warning</dt><dd>The value needs to be between 0 and 15 (inclusive bounds). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00075">75</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00074">74</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4986f6aa304a55d379ecde686ec0454d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4986f6aa304a55d379ecde686ec0454d">&#9670;&nbsp;</a></span>LedStates</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; std::array&lt;byte,8&gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&gt; LedController::LedStates</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00054">54</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1384,7 +1406,7 @@ Here is the call graph for this function:</div>
 
 <p>The number of connected Segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00067">67</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00066">66</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1410,7 +1432,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the clock signal (CLK) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00064">64</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00063">63</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1458,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the chip select signal (CS) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00061">61</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00060">60</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1462,7 +1484,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the data transfer (DIN) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00058">58</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00057">57</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1488,31 +1510,7 @@ Here is the call graph for this function:</div>
 
 <p>The array for shifting the data to the devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00087">87</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a25140a1306dde497bc3ff1bea2f17164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25140a1306dde497bc3ff1bea2f17164">&#9670;&nbsp;</a></span>status</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt; std::array&lt;byte,8&gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&gt; LedController::status</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00055">55</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00086">86</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>

@@ -14,6 +14,5 @@ var searchData=
   ['spi_5fcs',['SPI_CS',['../class_led_controller.html#a89847b94383acbb4f4041879ac11d414',1,'LedController']]],
   ['spi_5fdin',['SPI_DIN',['../class_led_controller.html#a18dde329cb52806eedb9b9991dfd7016',1,'LedController']]],
   ['spidata',['spidata',['../class_led_controller.html#afead4b92c66f515440575afd2d1c7b9d',1,'LedController']]],
-  ['spitransfer',['spiTransfer',['../class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe',1,'LedController']]],
-  ['status',['status',['../class_led_controller.html#a25140a1306dde497bc3ff1bea2f17164',1,'LedController']]]
+  ['spitransfer',['spiTransfer',['../class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe',1,'LedController']]]
 ];
