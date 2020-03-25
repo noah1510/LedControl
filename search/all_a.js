@@ -12,7 +12,7 @@ var searchData=
   ['shutdownsegment',['shutdownSegment',['../class_led_controller.html#a6b2cc66a2e9f2ca4c88e0eafe7fc6d96',1,'LedController']]],
   ['spi_5fclk',['SPI_CLK',['../class_led_controller.html#a512bca3710dc1969dc7e537f2a6d49df',1,'LedController']]],
   ['spi_5fcs',['SPI_CS',['../class_led_controller.html#a89847b94383acbb4f4041879ac11d414',1,'LedController']]],
-  ['spi_5fdin',['SPI_DIN',['../class_led_controller.html#a18dde329cb52806eedb9b9991dfd7016',1,'LedController']]],
+  ['spi_5fmosi',['SPI_MOSI',['../class_led_controller.html#aad1d8e73c152620cfee5b07f0401f7ad',1,'LedController']]],
   ['spidata',['spidata',['../class_led_controller.html#afead4b92c66f515440575afd2d1c7b9d',1,'LedController']]],
   ['spitransfer',['spiTransfer',['../class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe',1,'LedController']]]
 ];
