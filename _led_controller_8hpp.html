@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.4.1</span>
    </div>
    <div id="projectbrief">AlibraryfortheMAX7219andtheMAX7221Leddisplaydrivers.</div>
   </td>
@@ -66,15 +66,16 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">LedController.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;pgmspace.h&gt;</code><br />
-<code>#include &lt;WProgram.h&gt;</code><br />
-<code>#include &lt;SPI.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;WProgram.h&gt;</code><br />
+<code>#include &lt;pgmspace.h&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
+<code>#include &lt;SPI.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for LedController.hpp:</div>
 <div class="dyncontent">
@@ -103,8 +104,73 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a5155355bbabd39029d45b74529beba04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:a5155355bbabd39029d45b74529beba04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd184819b28396419b10a825e83f8ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_led_controller_8hpp.html#afcd184819b28396419b10a825e83f8ac">STD_CAPABLE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:afcd184819b28396419b10a825e83f8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc941a4001d231bcc79f3089e67eb05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a>&#160;&#160;&#160;std::array&lt;byte,8&gt;</td></tr>
+<tr class="separator:a4bc941a4001d231bcc79f3089e67eb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df714017bffa9985cca9a6ae1b4d7f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_led_controller_8hpp.html#a0df714017bffa9985cca9a6ae1b4d7f6">Matrix</a>&#160;&#160;&#160;std::array&lt; std::array&lt;byte,8&gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&gt;</td></tr>
+<tr class="separator:a0df714017bffa9985cca9a6ae1b4d7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce43ac49ae431dd7950ac9cb47a2f3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a>&#160;&#160;&#160;std::array&lt;byte,<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&gt;</td></tr>
+<tr class="separator:afce43ac49ae431dd7950ac9cb47a2f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aa094cb4b6f41365021986258a27cb9fb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> = byte[8]</td></tr>
+<tr class="separator:aa094cb4b6f41365021986258a27cb9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8b60a28a1792fa0c352c30c8fd76c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_led_controller_8hpp.html#aaa8b60a28a1792fa0c352c30c8fd76c7">C_Matrix</a> = byte[<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>][8]</td></tr>
+<tr class="separator:aaa8b60a28a1792fa0c352c30c8fd76c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f7459138963c75edc17198aa16e7eb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> = byte[<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>]</td></tr>
+<tr class="separator:ac9f7459138963c75edc17198aa16e7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a4bc941a4001d231bcc79f3089e67eb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc941a4001d231bcc79f3089e67eb05">&#9670;&nbsp;</a></span>ByteBlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ByteBlock&#160;&#160;&#160;std::array&lt;byte,8&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00034">34</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afce43ac49ae431dd7950ac9cb47a2f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce43ac49ae431dd7950ac9cb47a2f3e">&#9670;&nbsp;</a></span>ByteRow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ByteRow&#160;&#160;&#160;std::array&lt;byte,<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00036">36</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0df714017bffa9985cca9a6ae1b4d7f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df714017bffa9985cca9a6ae1b4d7f6">&#9670;&nbsp;</a></span>Matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Matrix&#160;&#160;&#160;std::array&lt; std::array&lt;byte,8&gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00035">35</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a5155355bbabd39029d45b74529beba04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5155355bbabd39029d45b74529beba04">&#9670;&nbsp;</a></span>MAX_SEGMENTS</h2>
 
@@ -117,7 +183,72 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00019">19</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00003">3</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afcd184819b28396419b10a825e83f8ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd184819b28396419b10a825e83f8ac">&#9670;&nbsp;</a></span>STD_CAPABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STD_CAPABLE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00023">23</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aa094cb4b6f41365021986258a27cb9fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa094cb4b6f41365021986258a27cb9fb">&#9670;&nbsp;</a></span>C_ByteBlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> =  byte[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00011">11</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac9f7459138963c75edc17198aa16e7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f7459138963c75edc17198aa16e7eb">&#9670;&nbsp;</a></span>C_ByteRow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> =  byte[<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00013">13</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa8b60a28a1792fa0c352c30c8fd76c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa8b60a28a1792fa0c352c30c8fd76c7">&#9670;&nbsp;</a></span>C_Matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_led_controller_8hpp.html#aaa8b60a28a1792fa0c352c30c8fd76c7">C_Matrix</a> =  byte[<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>][8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00012">12</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>

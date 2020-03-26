@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.4.1</span>
    </div>
    <div id="projectbrief">AlibraryfortheMAX7219andtheMAX7221Leddisplaydrivers.</div>
   </td>
@@ -86,9 +86,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09961a235df34f0a27c06db1054d6b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a09961a235df34f0a27c06db1054d6b04">setIntensity</a> (unsigned int newIntesityLevel)</td></tr>
 <tr class="memdesc:a09961a235df34f0a27c06db1054d6b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Intensity of the whole matrix to the given value.  <a href="#a09961a235df34f0a27c06db1054d6b04">More...</a><br /></td></tr>
 <tr class="separator:a09961a235df34f0a27c06db1054d6b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad231a64ff2c548b8863f096120b44860"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ad231a64ff2c548b8863f096120b44860">displayOnSegment</a> (unsigned int segmentindex, byte data[8])</td></tr>
-<tr class="memdesc:ad231a64ff2c548b8863f096120b44860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display 8 lines on the given segment.  <a href="#ad231a64ff2c548b8863f096120b44860">More...</a><br /></td></tr>
-<tr class="separator:ad231a64ff2c548b8863f096120b44860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b860b76cd579b2b83875e35d6b00ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a60b860b76cd579b2b83875e35d6b00ac">displayOnSegment</a> (unsigned int segmentindex, <a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a> data)</td></tr>
+<tr class="memdesc:a60b860b76cd579b2b83875e35d6b00ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display 8 lines on the given segment.  <a href="#a60b860b76cd579b2b83875e35d6b00ac">More...</a><br /></td></tr>
+<tr class="separator:a60b860b76cd579b2b83875e35d6b00ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c0e20a70eac83e206013b17320f820c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a4c0e20a70eac83e206013b17320f820c">resetMatrix</a> ()</td></tr>
 <tr class="memdesc:a4c0e20a70eac83e206013b17320f820c"><td class="mdescLeft">&#160;</td><td class="mdescRight">activates all segments, sets to same intensity and cleas them  <a href="#a4c0e20a70eac83e206013b17320f820c">More...</a><br /></td></tr>
 <tr class="separator:a4c0e20a70eac83e206013b17320f820c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,36 +134,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b">refreshSegments</a> ()</td></tr>
 <tr class="memdesc:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">refreshes all segments displaying the internally stored state of the segments.  <a href="#a29f33ebe6ae60dae3653d9e80822bc2b">More...</a><br /></td></tr>
 <tr class="separator:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cde37ad176801ceafa357e20711432d"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a6cde37ad176801ceafa357e20711432d">makeColumns</a> (std::array&lt; byte, 8 &gt; rowArray)</td></tr>
-<tr class="memdesc:a6cde37ad176801ceafa357e20711432d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns an array of rows into an array of columns.  <a href="#a6cde37ad176801ceafa357e20711432d">More...</a><br /></td></tr>
-<tr class="separator:a6cde37ad176801ceafa357e20711432d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc6d671d091db03eeadbeee6b14fc539"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#afc6d671d091db03eeadbeee6b14fc539">moveLeft</a> (byte shiftedInColumn=0x00)</td></tr>
 <tr class="memdesc:afc6d671d091db03eeadbeee6b14fc539"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data left by one  <a href="#afc6d671d091db03eeadbeee6b14fc539">More...</a><br /></td></tr>
 <tr class="separator:afc6d671d091db03eeadbeee6b14fc539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca0255f07b0349aed07f770dc3d18be9"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#aca0255f07b0349aed07f770dc3d18be9">moveRight</a> (byte shiftedInColumn=0x00)</td></tr>
 <tr class="memdesc:aca0255f07b0349aed07f770dc3d18be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data left by one  <a href="#aca0255f07b0349aed07f770dc3d18be9">More...</a><br /></td></tr>
 <tr class="separator:aca0255f07b0349aed07f770dc3d18be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e0ffd0f92feafc408fe356ab4ddd0c9"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a6e0ffd0f92feafc408fe356ab4ddd0c9">moveUp</a> (std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt; shiftedInRow)</td></tr>
-<tr class="memdesc:a6e0ffd0f92feafc408fe356ab4ddd0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by one  <a href="#a6e0ffd0f92feafc408fe356ab4ddd0c9">More...</a><br /></td></tr>
-<tr class="separator:a6e0ffd0f92feafc408fe356ab4ddd0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59af4a2021a2227162e2a2b73698f412"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a59af4a2021a2227162e2a2b73698f412">moveDown</a> (std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt; shiftedInRow)</td></tr>
-<tr class="memdesc:a59af4a2021a2227162e2a2b73698f412"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data down by one  <a href="#a59af4a2021a2227162e2a2b73698f412">More...</a><br /></td></tr>
-<tr class="separator:a59af4a2021a2227162e2a2b73698f412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fbc8dbaca19407f61b30a625148a1e7"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a8fbc8dbaca19407f61b30a625148a1e7">moveUp</a> ()</td></tr>
-<tr class="memdesc:a8fbc8dbaca19407f61b30a625148a1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by oneand 0x00 will be shifted in  <a href="#a8fbc8dbaca19407f61b30a625148a1e7">More...</a><br /></td></tr>
-<tr class="separator:a8fbc8dbaca19407f61b30a625148a1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2998a7f9b1bea9773a3679c8d7bf5f5c"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a2998a7f9b1bea9773a3679c8d7bf5f5c">moveDown</a> ()</td></tr>
-<tr class="memdesc:a2998a7f9b1bea9773a3679c8d7bf5f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data down by one and 0x00 will be shifted in  <a href="#a2998a7f9b1bea9773a3679c8d7bf5f5c">More...</a><br /></td></tr>
-<tr class="separator:a2998a7f9b1bea9773a3679c8d7bf5f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45cf5b65f42829bb750f5bb22766c989"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989">reverse</a> (byte input)</td></tr>
 <tr class="memdesc:a45cf5b65f42829bb750f5bb22766c989"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function changes to bitorder of a byte (useful to mirror "images" you want to display)  <a href="#a45cf5b65f42829bb750f5bb22766c989">More...</a><br /></td></tr>
 <tr class="separator:a45cf5b65f42829bb750f5bb22766c989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e46cf45f6ad57e62cf2e11a4157754b"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a7e46cf45f6ad57e62cf2e11a4157754b">reverse</a> (std::array&lt; byte, 8 &gt; input)</td></tr>
-<tr class="memdesc:a7e46cf45f6ad57e62cf2e11a4157754b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse an array of 8 bytes (mirror it)  <a href="#a7e46cf45f6ad57e62cf2e11a4157754b">More...</a><br /></td></tr>
-<tr class="separator:a7e46cf45f6ad57e62cf2e11a4157754b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf4f66b74e84156989209e448705d19"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#aadf4f66b74e84156989209e448705d19">rotate180</a> (std::array&lt; byte, 8 &gt; input)</td></tr>
-<tr class="memdesc:aadf4f66b74e84156989209e448705d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotate an byte[8] array by 180 degrees  <a href="#aadf4f66b74e84156989209e448705d19">More...</a><br /></td></tr>
-<tr class="separator:aadf4f66b74e84156989209e448705d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2c4966cabda43a5201bc50bb713612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a3f2c4966cabda43a5201bc50bb713612">moveUp</a> (<a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a> shiftedInRow)</td></tr>
+<tr class="memdesc:a3f2c4966cabda43a5201bc50bb713612"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by one  <a href="#a3f2c4966cabda43a5201bc50bb713612">More...</a><br /></td></tr>
+<tr class="separator:a3f2c4966cabda43a5201bc50bb713612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbc87761ae2f5a9a40c837a87a27a75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a0fbc87761ae2f5a9a40c837a87a27a75">moveDown</a> (<a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a> shiftedInRow)</td></tr>
+<tr class="memdesc:a0fbc87761ae2f5a9a40c837a87a27a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data down by one  <a href="#a0fbc87761ae2f5a9a40c837a87a27a75">More...</a><br /></td></tr>
+<tr class="separator:a0fbc87761ae2f5a9a40c837a87a27a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74b19116e7887611a83b40db1e5456f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#aa74b19116e7887611a83b40db1e5456f">moveUp</a> ()</td></tr>
+<tr class="memdesc:aa74b19116e7887611a83b40db1e5456f"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by oneand 0x00 will be shifted in  <a href="#aa74b19116e7887611a83b40db1e5456f">More...</a><br /></td></tr>
+<tr class="separator:aa74b19116e7887611a83b40db1e5456f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849b58004db1e6e8e93e5c7e4c19afe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a849b58004db1e6e8e93e5c7e4c19afe2">moveDown</a> ()</td></tr>
+<tr class="memdesc:a849b58004db1e6e8e93e5c7e4c19afe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data down by one and 0x00 will be shifted in  <a href="#a849b58004db1e6e8e93e5c7e4c19afe2">More...</a><br /></td></tr>
+<tr class="separator:a849b58004db1e6e8e93e5c7e4c19afe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6bdc4e24c883b8b4490c5b9b14d3bb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ad6bdc4e24c883b8b4490c5b9b14d3bb6">makeColumns</a> (<a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a> rowArray)</td></tr>
+<tr class="memdesc:ad6bdc4e24c883b8b4490c5b9b14d3bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns an array of rows into an array of columns.  <a href="#ad6bdc4e24c883b8b4490c5b9b14d3bb6">More...</a><br /></td></tr>
+<tr class="separator:ad6bdc4e24c883b8b4490c5b9b14d3bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70ed25a518da7720207d9ef3a8c6d1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#aa70ed25a518da7720207d9ef3a8c6d1b">reverse</a> (<a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a> input)</td></tr>
+<tr class="memdesc:aa70ed25a518da7720207d9ef3a8c6d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse an array of 8 bytes (mirror it)  <a href="#aa70ed25a518da7720207d9ef3a8c6d1b">More...</a><br /></td></tr>
+<tr class="separator:aa70ed25a518da7720207d9ef3a8c6d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948a8e28afdec547598af1452ac7c9b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a948a8e28afdec547598af1452ac7c9b7">rotate180</a> (<a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a> input)</td></tr>
+<tr class="memdesc:a948a8e28afdec547598af1452ac7c9b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotate an byte[8] array by 180 degrees  <a href="#a948a8e28afdec547598af1452ac7c9b7">More...</a><br /></td></tr>
+<tr class="separator:a948a8e28afdec547598af1452ac7c9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -173,11 +173,13 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac0c399362612dce7164edeb4ae420ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4">setIntensity</a> (unsigned int segmentNumber, unsigned int newIntesityLevel)</td></tr>
 <tr class="memdesc:ac0c399362612dce7164edeb4ae420ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the brightness of the segment.  <a href="#ac0c399362612dce7164edeb4ae420ac4">More...</a><br /></td></tr>
 <tr class="separator:ac0c399362612dce7164edeb4ae420ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de106f8592ef6d271881fcee818ea81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a6de106f8592ef6d271881fcee818ea81">createEmptyRow</a> (<a class="el" href="_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *row)</td></tr>
+<tr class="separator:a6de106f8592ef6d271881fcee818ea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4986f6aa304a55d379ecde686ec0454d"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::array&lt; byte, 8 &gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a4986f6aa304a55d379ecde686ec0454d">LedStates</a></td></tr>
-<tr class="separator:a4986f6aa304a55d379ecde686ec0454d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec0835a1fe9fb51eaec73f5cef713ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_led_controller_8hpp.html#a0df714017bffa9985cca9a6ae1b4d7f6">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#aaec0835a1fe9fb51eaec73f5cef713ae">LedStates</a></td></tr>
+<tr class="separator:aaec0835a1fe9fb51eaec73f5cef713ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad1d8e73c152620cfee5b07f0401f7ad"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#aad1d8e73c152620cfee5b07f0401f7ad">SPI_MOSI</a></td></tr>
 <tr class="memdesc:aad1d8e73c152620cfee5b07f0401f7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pin for the data transfer (DIN)  <a href="#aad1d8e73c152620cfee5b07f0401f7ad">More...</a><br /></td></tr>
 <tr class="separator:aad1d8e73c152620cfee5b07f0401f7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,18 +198,18 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ad0b5fb154e1362356aa2fa7255199d7c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#ad0b5fb154e1362356aa2fa7255199d7c">IntensityLevel</a> = 1</td></tr>
 <tr class="memdesc:ad0b5fb154e1362356aa2fa7255199d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mutex for the intensity level, needed to make it threading safe.  <a href="#ad0b5fb154e1362356aa2fa7255199d7c">More...</a><br /></td></tr>
 <tr class="separator:ad0b5fb154e1362356aa2fa7255199d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afead4b92c66f515440575afd2d1c7b9d"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> *2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#afead4b92c66f515440575afd2d1c7b9d">spidata</a></td></tr>
-<tr class="memdesc:afead4b92c66f515440575afd2d1c7b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array for shifting the data to the devices.  <a href="#afead4b92c66f515440575afd2d1c7b9d">More...</a><br /></td></tr>
-<tr class="separator:afead4b92c66f515440575afd2d1c7b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3697cb01eebbb7958b872146239a8f3b"><td class="memItemLeft" align="right" valign="top">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a3697cb01eebbb7958b872146239a8f3b">emptyRow</a></td></tr>
-<tr class="separator:a3697cb01eebbb7958b872146239a8f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643c61bbbe11e7f5c27084f68e696ca4"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#a643c61bbbe11e7f5c27084f68e696ca4">spidata</a> [<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> *2]</td></tr>
+<tr class="memdesc:a643c61bbbe11e7f5c27084f68e696ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array for shifting the data to the devices.  <a href="#a643c61bbbe11e7f5c27084f68e696ca4">More...</a><br /></td></tr>
+<tr class="separator:a643c61bbbe11e7f5c27084f68e696ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af74cb9076752bbc49fbb5ef8c3b48c0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_led_controller.html#af74cb9076752bbc49fbb5ef8c3b48c0d">emptyRow</a></td></tr>
+<tr class="separator:af74cb9076752bbc49fbb5ef8c3b48c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provied a control interface for MAX7219 and MAX7221 Led display drivers. </p>
 <p>This Controller Class is mainly target at led matracies consisting of more than 1 segment. While it can also handle 7-Segment Displays it is not tested that well. </p><dl class="section warning"><dt>Warning</dt><dd>This object is not thread safe yet.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>make it threading safe </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00048">48</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00075">75</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a48414cff463afcec44e3056f9a84fac4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48414cff463afcec44e3056f9a84fac4">&#9670;&nbsp;</a></span>LedController() <span class="overload">[1/2]</span></h2>
@@ -453,8 +455,34 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ad231a64ff2c548b8863f096120b44860"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad231a64ff2c548b8863f096120b44860">&#9670;&nbsp;</a></span>displayOnSegment()</h2>
+<a id="a6de106f8592ef6d271881fcee818ea81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de106f8592ef6d271881fcee818ea81">&#9670;&nbsp;</a></span>createEmptyRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LedController::createEmptyRow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60b860b76cd579b2b83875e35d6b00ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b860b76cd579b2b83875e35d6b00ac">&#9670;&nbsp;</a></span>displayOnSegment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,8 +496,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">byte&#160;</td>
-          <td class="paramname"><em>data</em>[8]&#160;</td>
+          <td class="paramtype"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -492,8 +520,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_led_controller_ad231a64ff2c548b8863f096120b44860_cgraph.png" border="0" usemap="#class_led_controller_ad231a64ff2c548b8863f096120b44860_cgraph" alt=""/></div>
-<map name="class_led_controller_ad231a64ff2c548b8863f096120b44860_cgraph" id="class_led_controller_ad231a64ff2c548b8863f096120b44860_cgraph">
+<div class="center"><img src="class_led_controller_a60b860b76cd579b2b83875e35d6b00ac_cgraph.png" border="0" usemap="#class_led_controller_a60b860b76cd579b2b83875e35d6b00ac_cgraph" alt=""/></div>
+<map name="class_led_controller_a60b860b76cd579b2b83875e35d6b00ac_cgraph" id="class_led_controller_a60b860b76cd579b2b83875e35d6b00ac_cgraph">
 <area shape="rect" id="node2" href="class_led_controller.html#a6d252ed4ab2256c5bae862396cc196bd" title="Set one Row of one segment. " alt="" coords="219,13,371,39"/>
 <area shape="rect" id="node3" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="419,13,591,39"/>
 </map>
@@ -523,16 +551,16 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a6cde37ad176801ceafa357e20711432d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cde37ad176801ceafa357e20711432d">&#9670;&nbsp;</a></span>makeColumns()</h2>
+<a id="ad6bdc4e24c883b8b4490c5b9b14d3bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bdc4e24c883b8b4490c5b9b14d3bb6">&#9670;&nbsp;</a></span>makeColumns()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; byte, 8 &gt; LedController::makeColumns </td>
+          <td class="memname"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a> LedController::makeColumns </td>
           <td>(</td>
-          <td class="paramtype">std::array&lt; byte, 8 &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a>&#160;</td>
           <td class="paramname"><em>rowArray</em></td><td>)</td>
           <td></td>
         </tr>
@@ -546,22 +574,22 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,8&gt; the columns of the provided row array </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteBlock the columns of the provided row array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00284">284</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00345">345</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a59af4a2021a2227162e2a2b73698f412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59af4a2021a2227162e2a2b73698f412">&#9670;&nbsp;</a></span>moveDown() <span class="overload">[1/2]</span></h2>
+<a id="a0fbc87761ae2f5a9a40c837a87a27a75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fbc87761ae2f5a9a40c837a87a27a75">&#9670;&nbsp;</a></span>moveDown() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt; LedController::moveDown </td>
+          <td class="memname"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a> LedController::moveDown </td>
           <td>(</td>
-          <td class="paramtype">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a>&#160;</td>
           <td class="paramname"><em>shiftedInRow</em></td><td>)</td>
           <td></td>
         </tr>
@@ -575,14 +603,14 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,MAX_SEGMENTS&gt; The row the will be shifted out on the bottom </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteRow The row the will be shifted out on the bottom </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00346">346</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00358">358</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_led_controller_a59af4a2021a2227162e2a2b73698f412_cgraph.png" border="0" usemap="#class_led_controller_a59af4a2021a2227162e2a2b73698f412_cgraph" alt=""/></div>
-<map name="class_led_controller_a59af4a2021a2227162e2a2b73698f412_cgraph" id="class_led_controller_a59af4a2021a2227162e2a2b73698f412_cgraph">
+<div class="center"><img src="class_led_controller_a0fbc87761ae2f5a9a40c837a87a27a75_cgraph.png" border="0" usemap="#class_led_controller_a0fbc87761ae2f5a9a40c837a87a27a75_cgraph" alt=""/></div>
+<map name="class_led_controller_a0fbc87761ae2f5a9a40c837a87a27a75_cgraph" id="class_led_controller_a0fbc87761ae2f5a9a40c837a87a27a75_cgraph">
 <area shape="rect" id="node2" href="class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="227,5,433,32"/>
 <area shape="rect" id="node3" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="481,5,653,32"/>
 </map>
@@ -590,14 +618,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a2998a7f9b1bea9773a3679c8d7bf5f5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2998a7f9b1bea9773a3679c8d7bf5f5c">&#9670;&nbsp;</a></span>moveDown() <span class="overload">[2/2]</span></h2>
+<a id="a849b58004db1e6e8e93e5c7e4c19afe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a849b58004db1e6e8e93e5c7e4c19afe2">&#9670;&nbsp;</a></span>moveDown() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt; LedController::moveDown </td>
+          <td class="memname"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a> LedController::moveDown </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -606,9 +634,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>moves the data down by one and 0x00 will be shifted in </p>
-<dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,MAX_SEGMENTS&gt; The row the will be shifted out on the bottom </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteRow The row the will be shifted out on the bottom </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00397">397</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00409">409</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
@@ -637,7 +665,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The column that gets shifted out on the left </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00322">322</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00319">319</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -677,7 +705,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The column that gets shifted out on the right </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00297">297</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00284">284</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -692,16 +720,16 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a6e0ffd0f92feafc408fe356ab4ddd0c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e0ffd0f92feafc408fe356ab4ddd0c9">&#9670;&nbsp;</a></span>moveUp() <span class="overload">[1/2]</span></h2>
+<a id="a3f2c4966cabda43a5201bc50bb713612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2c4966cabda43a5201bc50bb713612">&#9670;&nbsp;</a></span>moveUp() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt; LedController::moveUp </td>
+          <td class="memname"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a> LedController::moveUp </td>
           <td>(</td>
-          <td class="paramtype">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a>&#160;</td>
           <td class="paramname"><em>shiftedInRow</em></td><td>)</td>
           <td></td>
         </tr>
@@ -715,14 +743,14 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,MAX_SEGMENTS&gt; The row the will be shifted out on the top </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteRow The row the will be shifted out on the top </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00369">369</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00381">381</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_led_controller_a6e0ffd0f92feafc408fe356ab4ddd0c9_cgraph.png" border="0" usemap="#class_led_controller_a6e0ffd0f92feafc408fe356ab4ddd0c9_cgraph" alt=""/></div>
-<map name="class_led_controller_a6e0ffd0f92feafc408fe356ab4ddd0c9_cgraph" id="class_led_controller_a6e0ffd0f92feafc408fe356ab4ddd0c9_cgraph">
+<div class="center"><img src="class_led_controller_a3f2c4966cabda43a5201bc50bb713612_cgraph.png" border="0" usemap="#class_led_controller_a3f2c4966cabda43a5201bc50bb713612_cgraph" alt=""/></div>
+<map name="class_led_controller_a3f2c4966cabda43a5201bc50bb713612_cgraph" id="class_led_controller_a3f2c4966cabda43a5201bc50bb713612_cgraph">
 <area shape="rect" id="node2" href="class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="209,5,416,32"/>
 <area shape="rect" id="node3" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="464,5,636,32"/>
 </map>
@@ -730,14 +758,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a8fbc8dbaca19407f61b30a625148a1e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fbc8dbaca19407f61b30a625148a1e7">&#9670;&nbsp;</a></span>moveUp() <span class="overload">[2/2]</span></h2>
+<a id="aa74b19116e7887611a83b40db1e5456f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74b19116e7887611a83b40db1e5456f">&#9670;&nbsp;</a></span>moveUp() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; byte, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> &gt; LedController::moveUp </td>
+          <td class="memname"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a> LedController::moveUp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -746,9 +774,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>moves the data up by oneand 0x00 will be shifted in </p>
-<dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,MAX_SEGMENTS&gt; The row the will be shifted out on the top </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteRow The row the will be shifted out on the top </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00392">392</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00404">404</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
@@ -840,20 +868,20 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The reversed byte </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00402">402</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00308">308</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7e46cf45f6ad57e62cf2e11a4157754b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e46cf45f6ad57e62cf2e11a4157754b">&#9670;&nbsp;</a></span>reverse() <span class="overload">[2/2]</span></h2>
+<a id="aa70ed25a518da7720207d9ef3a8c6d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa70ed25a518da7720207d9ef3a8c6d1b">&#9670;&nbsp;</a></span>reverse() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; byte, 8 &gt; LedController::reverse </td>
+          <td class="memname"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a> LedController::reverse </td>
           <td>(</td>
-          <td class="paramtype">std::array&lt; byte, 8 &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a>&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
@@ -867,30 +895,30 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,8&gt; The mirrored array </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteBlock The mirrored array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00413">413</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00415">415</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_led_controller_a7e46cf45f6ad57e62cf2e11a4157754b_cgraph.png" border="0" usemap="#class_led_controller_a7e46cf45f6ad57e62cf2e11a4157754b_cgraph" alt=""/></div>
-<map name="class_led_controller_a7e46cf45f6ad57e62cf2e11a4157754b_cgraph" id="class_led_controller_a7e46cf45f6ad57e62cf2e11a4157754b_cgraph">
+<div class="center"><img src="class_led_controller_aa70ed25a518da7720207d9ef3a8c6d1b_cgraph.png" border="0" usemap="#class_led_controller_aa70ed25a518da7720207d9ef3a8c6d1b_cgraph" alt=""/></div>
+<map name="class_led_controller_aa70ed25a518da7720207d9ef3a8c6d1b_cgraph" id="class_led_controller_aa70ed25a518da7720207d9ef3a8c6d1b_cgraph">
 <area shape="rect" id="node2" href="class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="204,5,355,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aadf4f66b74e84156989209e448705d19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadf4f66b74e84156989209e448705d19">&#9670;&nbsp;</a></span>rotate180()</h2>
+<a id="a948a8e28afdec547598af1452ac7c9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a948a8e28afdec547598af1452ac7c9b7">&#9670;&nbsp;</a></span>rotate180()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; byte, 8 &gt; LedController::rotate180 </td>
+          <td class="memname"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a> LedController::rotate180 </td>
           <td>(</td>
-          <td class="paramtype">std::array&lt; byte, 8 &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05">ByteBlock</a>&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
@@ -904,15 +932,21 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::array&lt;byte,8&gt; The rotated array </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteBlock The rotated array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00423">423</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8cpp_source.html#l00425">425</a> of file <a class="el" href="_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_led_controller_aadf4f66b74e84156989209e448705d19_cgraph.png" border="0" usemap="#class_led_controller_aadf4f66b74e84156989209e448705d19_cgraph" alt=""/></div>
-<map name="class_led_controller_aadf4f66b74e84156989209e448705d19_cgraph" id="class_led_controller_aadf4f66b74e84156989209e448705d19_cgraph">
-<area shape="rect" id="node2" href="class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="215,5,365,32"/>
+<div class="center"><img src="class_led_controller_a948a8e28afdec547598af1452ac7c9b7_cgraph.png" border="0" usemap="#class_led_controller_a948a8e28afdec547598af1452ac7c9b7_cgraph" alt=""/></div>
+<map name="class_led_controller_a948a8e28afdec547598af1452ac7c9b7_cgraph" id="class_led_controller_a948a8e28afdec547598af1452ac7c9b7_cgraph">
+<area shape="rect" id="node2" href="class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="243,5,394,32"/>
+<area shape="rect" id="node3" href="class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="215,56,423,83"/>
+<area shape="rect" id="node4" href="class_led_controller.html#ad6bdc4e24c883b8b4490c5b9b14d3bb6" title="Turns an array of rows into an array of columns. " alt="" coords="223,107,414,133"/>
+<area shape="rect" id="node5" href="class_led_controller.html#a849b58004db1e6e8e93e5c7e4c19afe2" title="moves the data down by one and 0x00 will be shifted in " alt="" coords="232,157,405,184"/>
+<area shape="rect" id="node6" href="class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="215,208,422,235"/>
+<area shape="rect" id="node8" href="class_led_controller.html#aa74b19116e7887611a83b40db1e5456f" title="moves the data up by oneand 0x00 will be shifted in " alt="" coords="241,259,397,285"/>
+<area shape="rect" id="node7" href="class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="471,208,643,235"/>
 </map>
 </div>
 
@@ -1473,8 +1507,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3697cb01eebbb7958b872146239a8f3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3697cb01eebbb7958b872146239a8f3b">&#9670;&nbsp;</a></span>emptyRow</h2>
+<a id="af74cb9076752bbc49fbb5ef8c3b48c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af74cb9076752bbc49fbb5ef8c3b48c0d">&#9670;&nbsp;</a></span>emptyRow</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1483,7 +1517,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;byte,<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&gt; LedController::emptyRow</td>
+          <td class="memname"><a class="el" href="_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e">ByteRow</a> LedController::emptyRow</td>
         </tr>
       </table>
   </td>
@@ -1493,7 +1527,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00096">96</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00123">123</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1520,12 +1554,12 @@ Here is the call graph for this function:</div>
 <p>The mutex for the intensity level, needed to make it threading safe. </p>
 <p>The current brightness level of the leds. </p><dl class="section warning"><dt>Warning</dt><dd>The value needs to be between 0 and 15 (inclusive bounds). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00074">74</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00101">101</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a4986f6aa304a55d379ecde686ec0454d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4986f6aa304a55d379ecde686ec0454d">&#9670;&nbsp;</a></span>LedStates</h2>
+<a id="aaec0835a1fe9fb51eaec73f5cef713ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec0835a1fe9fb51eaec73f5cef713ae">&#9670;&nbsp;</a></span>LedStates</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1534,7 +1568,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; std::array&lt;byte,8&gt;, <a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>&gt; LedController::LedStates</td>
+          <td class="memname"><a class="el" href="_led_controller_8hpp.html#a0df714017bffa9985cca9a6ae1b4d7f6">Matrix</a> LedController::LedStates</td>
         </tr>
       </table>
   </td>
@@ -1544,7 +1578,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00051">51</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00078">78</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1570,7 +1604,7 @@ Here is the call graph for this function:</div>
 
 <p>The number of connected Segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00063">63</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00090">90</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1596,7 +1630,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the clock signal (CLK) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00060">60</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00087">87</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1622,7 +1656,7 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the chip select signal (CS) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00057">57</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00084">84</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1648,12 +1682,12 @@ Here is the call graph for this function:</div>
 
 <p>The pin for the data transfer (DIN) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00054">54</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00081">81</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
-<a id="afead4b92c66f515440575afd2d1c7b9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afead4b92c66f515440575afd2d1c7b9d">&#9670;&nbsp;</a></span>spidata</h2>
+<a id="a643c61bbbe11e7f5c27084f68e696ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a643c61bbbe11e7f5c27084f68e696ca4">&#9670;&nbsp;</a></span>spidata</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1662,7 +1696,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;byte,<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a>*2&gt; LedController::spidata</td>
+          <td class="memname">byte LedController::spidata[<a class="el" href="_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> *2]</td>
         </tr>
       </table>
   </td>
@@ -1674,7 +1708,7 @@ Here is the call graph for this function:</div>
 
 <p>The array for shifting the data to the devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00086">86</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00113">113</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1700,7 +1734,7 @@ Here is the call graph for this function:</div>
 
 <p>True if hardware spi should be use (a lot faster but you cannot use any pin you want) </p>
 
-<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00066">66</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_led_controller_8hpp_source.html#l00093">93</a> of file <a class="el" href="_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
