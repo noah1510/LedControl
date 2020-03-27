@@ -1,6 +1,0 @@
-<map id="LedController::moveLeft" name="LedController::moveLeft">
-<area shape="rect" id="node2" href="$class_led_controller.html#aaf1eaf3d8a81b3f2c4121478a39c6b38" title="Set one column of a given segment. " alt="" coords="215,5,385,32"/>
-<area shape="rect" id="node5" href="$class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="433,56,640,83"/>
-<area shape="rect" id="node3" href="$class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="463,5,610,32"/>
-<area shape="rect" id="node4" href="$class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="688,31,860,57"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="LedController::rotate180" name="LedController::rotate180">
-<area shape="rect" id="node2" href="$class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="243,5,394,32"/>
-<area shape="rect" id="node3" href="$class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="215,56,423,83"/>
-<area shape="rect" id="node4" href="$class_led_controller.html#ad6bdc4e24c883b8b4490c5b9b14d3bb6" title="Turns an array of rows into an array of columns. " alt="" coords="223,107,414,133"/>
-<area shape="rect" id="node5" href="$class_led_controller.html#a849b58004db1e6e8e93e5c7e4c19afe2" title="moves the data down by one and 0x00 will be shifted in " alt="" coords="232,157,405,184"/>
-<area shape="rect" id="node6" href="$class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="215,208,422,235"/>
-<area shape="rect" id="node8" href="$class_led_controller.html#aa74b19116e7887611a83b40db1e5456f" title="moves the data up by oneand 0x00 will be shifted in " alt="" coords="241,259,397,285"/>
-<area shape="rect" id="node7" href="$class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="471,208,643,235"/>
-</map>

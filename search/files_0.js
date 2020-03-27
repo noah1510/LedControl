@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ledcontroller_2ecpp',['LedController.cpp',['../_led_controller_8cpp.html',1,'']]],
-  ['ledcontroller_2ehpp',['LedController.hpp',['../_led_controller_8hpp.html',1,'']]]
+  ['install_2emd',['install.md',['../de/da9/install_8md.html',1,'']]]
 ];

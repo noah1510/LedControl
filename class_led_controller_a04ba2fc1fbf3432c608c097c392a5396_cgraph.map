@@ -1,4 +1,0 @@
-<map id="LedController::activateAllSegments" name="LedController::activateAllSegments">
-<area shape="rect" id="node2" href="$class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="221,13,427,39"/>
-<area shape="rect" id="node3" href="$class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="475,13,647,39"/>
-</map>

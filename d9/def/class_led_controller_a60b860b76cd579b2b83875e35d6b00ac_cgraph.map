@@ -1,0 +1,4 @@
+<map id="LedController::displayOnSegment" name="LedController::displayOnSegment">
+<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#a6d252ed4ab2256c5bae862396cc196bd" title="Set one Row of one segment. " alt="" coords="219,13,371,39"/>
+<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="419,13,591,39"/>
+</map>
