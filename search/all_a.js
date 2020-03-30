@@ -1,7 +1,17 @@
 var searchData=
 [
-  ['refreshsegments',['refreshSegments',['../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b',1,'LedController']]],
-  ['resetmatrix',['resetMatrix',['../d9/def/class_led_controller.html#a4c0e20a70eac83e206013b17320f820c',1,'LedController']]],
-  ['reverse',['reverse',['../d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989',1,'LedController::reverse(byte input)'],['../d9/def/class_led_controller.html#a80cd38a2ff78cfe17f8789b062b523ee',1,'LedController::reverse(C_ByteBlock input, C_ByteBlock *reversedInput)'],['../d9/def/class_led_controller.html#aa70ed25a518da7720207d9ef3a8c6d1b',1,'LedController::reverse(ByteBlock input)']]],
-  ['rotate180',['rotate180',['../d9/def/class_led_controller.html#af59cedcd8b67aa68a0b5ec2efbad2c6f',1,'LedController::rotate180(C_ByteBlock input, C_ByteBlock *rotatedInput)'],['../d9/def/class_led_controller.html#a948a8e28afdec547598af1452ac7c9b7',1,'LedController::rotate180(ByteBlock input)']]]
+  ['op_5fdecodemode',['OP_DECODEMODE',['../db/da5/_led_controller_8cpp.html#a318b32d905ce8e57d7caec133ec7d712',1,'LedController.cpp']]],
+  ['op_5fdigit0',['OP_DIGIT0',['../db/da5/_led_controller_8cpp.html#ac2dcbbd3fef01a1defd3aa5f8a8c612a',1,'LedController.cpp']]],
+  ['op_5fdigit1',['OP_DIGIT1',['../db/da5/_led_controller_8cpp.html#a6c8209744590cd0cc8495cc6de58ab02',1,'LedController.cpp']]],
+  ['op_5fdigit2',['OP_DIGIT2',['../db/da5/_led_controller_8cpp.html#a430d77ba70abea8e61820aaa3f27c28b',1,'LedController.cpp']]],
+  ['op_5fdigit3',['OP_DIGIT3',['../db/da5/_led_controller_8cpp.html#a03d3bd8cd1b468b4a9cb473036f65747',1,'LedController.cpp']]],
+  ['op_5fdigit4',['OP_DIGIT4',['../db/da5/_led_controller_8cpp.html#ac3d2e72ba1cca69133e4dcbc478f616b',1,'LedController.cpp']]],
+  ['op_5fdigit5',['OP_DIGIT5',['../db/da5/_led_controller_8cpp.html#a021f910b62cdaa529fcea36791df7028',1,'LedController.cpp']]],
+  ['op_5fdigit6',['OP_DIGIT6',['../db/da5/_led_controller_8cpp.html#a5a12c4b35c924fec89c3b71246b7b7e2',1,'LedController.cpp']]],
+  ['op_5fdigit7',['OP_DIGIT7',['../db/da5/_led_controller_8cpp.html#a3a1210173fb70a66f649b93eb62e0884',1,'LedController.cpp']]],
+  ['op_5fdisplaytest',['OP_DISPLAYTEST',['../db/da5/_led_controller_8cpp.html#a7ef59a31858360d26d5dade28441598c',1,'LedController.cpp']]],
+  ['op_5fintensity',['OP_INTENSITY',['../db/da5/_led_controller_8cpp.html#a4f47ca7a01008a4d918302ece5314ed4',1,'LedController.cpp']]],
+  ['op_5fnoop',['OP_NOOP',['../db/da5/_led_controller_8cpp.html#a6c542d212fef9a9b5ba82222089a306b',1,'LedController.cpp']]],
+  ['op_5fscanlimit',['OP_SCANLIMIT',['../db/da5/_led_controller_8cpp.html#a13d91ddca53029535b6cf314b28ed15e',1,'LedController.cpp']]],
+  ['op_5fshutdown',['OP_SHUTDOWN',['../db/da5/_led_controller_8cpp.html#ac4772c1c1c24a4b5837a2000c62aa0a3',1,'LedController.cpp']]]
 ];
