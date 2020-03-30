@@ -1,3 +1,4 @@
 <map id="LedController::reverse" name="LedController::reverse">
-<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="204,5,355,32"/>
+<area shape="rect" id="node2" href="$db/da5/_led_controller_8cpp.html#a30d18d79968d4a499ad5917056771812" title="makeCppByteBlock" alt="" coords="210,5,349,32"/>
+<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="204,56,355,83"/>
 </map>
