@@ -1,5 +1,0 @@
-<map id="LedController::rotate180" name="LedController::rotate180">
-<area shape="rect" id="node2" href="$db/da5/_led_controller_8cpp.html#a30d18d79968d4a499ad5917056771812" title="makeCppByteBlock" alt="" coords="226,5,365,32"/>
-<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#af59cedcd8b67aa68a0b5ec2efbad2c6f" title="rotate an byte[8] array by 180 degrees " alt="" coords="215,56,376,83"/>
-<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="424,56,575,83"/>
-</map>

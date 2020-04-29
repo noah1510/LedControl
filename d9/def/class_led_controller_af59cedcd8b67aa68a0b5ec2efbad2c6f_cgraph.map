@@ -1,3 +1,7 @@
 <map id="LedController::rotate180" name="LedController::rotate180">
-<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="215,5,365,32"/>
+<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#a31f631689c75f40294a6e75d216c8040" title="Turns an array of rows into an array of columns. " alt="" coords="215,5,405,32"/>
+<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#adff6bf9fa136156f441134d6598857b3" title="moves the data down by one and 0x00 will be shifted in " alt="" coords="223,56,397,83"/>
+<area shape="rect" id="node5" href="$d9/def/class_led_controller.html#a28b0245cd2729d89642ac5ae5e17275b" title="moves the data up by one and 0x00 will be shifted in " alt="" coords="232,107,388,133"/>
+<area shape="rect" id="node6" href="$d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="235,157,385,184"/>
+<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="453,81,661,108"/>
 </map>

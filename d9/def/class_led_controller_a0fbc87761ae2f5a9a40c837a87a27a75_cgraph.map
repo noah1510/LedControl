@@ -1,5 +1,0 @@
-<map id="LedController::moveDown" name="LedController::moveDown">
-<area shape="rect" id="node2" href="$db/da5/_led_controller_8cpp.html#a30d18d79968d4a499ad5917056771812" title="makeCppByteBlock" alt="" coords="244,5,383,32"/>
-<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#adff6bf9fa136156f441134d6598857b3" title="moves the data down by one and 0x00 will be shifted in " alt="" coords="227,56,400,83"/>
-<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="448,56,656,83"/>
-</map>

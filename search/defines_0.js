@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['byteblock',['ByteBlock',['../d9/d4a/_led_controller_8hpp.html#a4bc941a4001d231bcc79f3089e67eb05',1,'LedController.hpp']]],
-  ['byterow',['ByteRow',['../d9/d4a/_led_controller_8hpp.html#afce43ac49ae431dd7950ac9cb47a2f3e',1,'LedController.hpp']]]
+  ['included_5fpgmspace',['INCLUDED_PGMSPACE',['../d9/d4a/_led_controller_8hpp.html#a4e6b9fdd99c117e27f480835f1ad3774',1,'LedController.hpp']]]
 ];
