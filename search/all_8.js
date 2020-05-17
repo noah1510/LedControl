@@ -1,8 +1,8 @@
 var searchData=
 [
   ['ledcontroller',['LedController',['../index.html',1,'']]],
-  ['ledcontroller',['LedController',['../d9/def/class_led_controller.html',1,'LedController'],['../d9/def/class_led_controller.html#a48414cff463afcec44e3056f9a84fac4',1,'LedController::LedController(unsigned int csPin, unsigned int numSegments=4)'],['../d9/def/class_led_controller.html#aaf70bc009abce437e5d07e23ba23535f',1,'LedController::LedController(unsigned int dataPin, unsigned int clkPin, unsigned int csPin, unsigned int numSegments=4, bool useHardwareSpi=false)']]],
+  ['ledcontroller',['LedController',['../d9/def/class_led_controller.html',1,'LedController'],['../d9/def/class_led_controller.html#a370d24b1084701b09a52d45f8c5567f4',1,'LedController::LedController()'],['../d9/def/class_led_controller.html#a48414cff463afcec44e3056f9a84fac4',1,'LedController::LedController(unsigned int csPin, unsigned int numSegments=4)'],['../d9/def/class_led_controller.html#aaf70bc009abce437e5d07e23ba23535f',1,'LedController::LedController(unsigned int dataPin, unsigned int clkPin, unsigned int csPin, unsigned int numSegments=4, bool useHardwareSpi=false)'],['../d9/def/class_led_controller.html#aae4a63aad06b311b4863dbed29e36cef',1,'LedController::LedController(const LedController &amp;other)']]],
   ['ledcontroller_2ecpp',['LedController.cpp',['../db/da5/_led_controller_8cpp.html',1,'']]],
   ['ledcontroller_2ehpp',['LedController.hpp',['../d9/d4a/_led_controller_8hpp.html',1,'']]],
-  ['ledstates',['LedStates',['../d9/def/class_led_controller.html#aaec0835a1fe9fb51eaec73f5cef713ae',1,'LedController']]]
+  ['ledstates',['LedStates',['../d9/def/class_led_controller.html#ae05fd647ab9bb783ffa739a65c170a99',1,'LedController']]]
 ];

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -62,8 +62,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../da/daf/class_led_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">LedController Class Reference</div>  </div>
@@ -89,7 +89,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa09c579124ba479df53e78bc5f3f8387"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387">clearSegment</a> (unsigned int segmentNumber)</td></tr>
 <tr class="memdesc:aa09c579124ba479df53e78bc5f3f8387"><td class="mdescLeft">&#160;</td><td class="mdescRight">clears a given segment, turning all its LEDs off.  <a href="#aa09c579124ba479df53e78bc5f3f8387">More...</a><br /></td></tr>
 <tr class="separator:aa09c579124ba479df53e78bc5f3f8387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b860b76cd579b2b83875e35d6b00ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a60b860b76cd579b2b83875e35d6b00ac">displayOnSegment</a> (unsigned int segmentindex, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a08a53f3cc82ecc9346478c280e69c2e5">ByteBlock</a> data)</td></tr>
+<tr class="memitem:a60b860b76cd579b2b83875e35d6b00ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a60b860b76cd579b2b83875e35d6b00ac">displayOnSegment</a> (unsigned int segmentindex, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> data)</td></tr>
 <tr class="memdesc:a60b860b76cd579b2b83875e35d6b00ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display 8 lines on the given segment.  <a href="#a60b860b76cd579b2b83875e35d6b00ac">More...</a><br /></td></tr>
 <tr class="separator:a60b860b76cd579b2b83875e35d6b00ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ecd47a8ae3ea19e61b6d9599a977065"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a3ecd47a8ae3ea19e61b6d9599a977065">getRow</a> (unsigned int segmentNumber, unsigned int row)</td></tr>
@@ -98,21 +98,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a541961c0ca85cf4b132de50153a1df3a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a541961c0ca85cf4b132de50153a1df3a">getSegmentCount</a> ()</td></tr>
 <tr class="memdesc:a541961c0ca85cf4b132de50153a1df3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of configured segments.  <a href="#a541961c0ca85cf4b132de50153a1df3a">More...</a><br /></td></tr>
 <tr class="separator:a541961c0ca85cf4b132de50153a1df3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb39ef0ef51b43d49b997e8ed790d773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#afb39ef0ef51b43d49b997e8ed790d773">getSegmentData</a> (unsigned int segmentindex, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> *resultLocation)</td></tr>
+<tr class="memdesc:afb39ef0ef51b43d49b997e8ed790d773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Segment Data of a specific Segment.  <a href="#afb39ef0ef51b43d49b997e8ed790d773">More...</a><br /></td></tr>
+<tr class="separator:afb39ef0ef51b43d49b997e8ed790d773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658f644ba8db85ed21cfbc802781d2e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a658f644ba8db85ed21cfbc802781d2e8">init</a> (unsigned int csPin, unsigned int numSegments=4)</td></tr>
+<tr class="memdesc:a658f644ba8db85ed21cfbc802781d2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> for use with hardware SPI  <a href="#a658f644ba8db85ed21cfbc802781d2e8">More...</a><br /></td></tr>
+<tr class="separator:a658f644ba8db85ed21cfbc802781d2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1462662dcd4ba6bef52d350fed767526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a1462662dcd4ba6bef52d350fed767526">init</a> (unsigned int dataPin, unsigned int clkPin, unsigned int csPin, unsigned int numSegments=4, bool <a class="el" href="../../d9/def/class_led_controller.html#ae9c986ee4ebea5a15d04e8e9bbd3fa2d">useHardwareSpi</a>=false)</td></tr>
+<tr class="memdesc:a1462662dcd4ba6bef52d350fed767526"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a>  <a href="#a1462662dcd4ba6bef52d350fed767526">More...</a><br /></td></tr>
+<tr class="separator:a1462662dcd4ba6bef52d350fed767526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa081a78648a67eb24070ed0641f2caa3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aa081a78648a67eb24070ed0641f2caa3">isInitilized</a> ()</td></tr>
+<tr class="memdesc:aa081a78648a67eb24070ed0641f2caa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the status of the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a>  <a href="#aa081a78648a67eb24070ed0641f2caa3">More...</a><br /></td></tr>
+<tr class="separator:aa081a78648a67eb24070ed0641f2caa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370d24b1084701b09a52d45f8c5567f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a370d24b1084701b09a52d45f8c5567f4">LedController</a> ()</td></tr>
+<tr class="memdesc:a370d24b1084701b09a52d45f8c5567f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> without initilizing anything.  <a href="#a370d24b1084701b09a52d45f8c5567f4">More...</a><br /></td></tr>
+<tr class="separator:a370d24b1084701b09a52d45f8c5567f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48414cff463afcec44e3056f9a84fac4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a48414cff463afcec44e3056f9a84fac4">LedController</a> (unsigned int csPin, unsigned int numSegments=4)</td></tr>
 <tr class="memdesc:a48414cff463afcec44e3056f9a84fac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> for use with hardware SPI.  <a href="#a48414cff463afcec44e3056f9a84fac4">More...</a><br /></td></tr>
 <tr class="separator:a48414cff463afcec44e3056f9a84fac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf70bc009abce437e5d07e23ba23535f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aaf70bc009abce437e5d07e23ba23535f">LedController</a> (unsigned int dataPin, unsigned int clkPin, unsigned int csPin, unsigned int numSegments=4, bool <a class="el" href="../../d9/def/class_led_controller.html#ae9c986ee4ebea5a15d04e8e9bbd3fa2d">useHardwareSpi</a>=false)</td></tr>
 <tr class="memdesc:aaf70bc009abce437e5d07e23ba23535f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> object.  <a href="#aaf70bc009abce437e5d07e23ba23535f">More...</a><br /></td></tr>
 <tr class="separator:aaf70bc009abce437e5d07e23ba23535f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f631689c75f40294a6e75d216c8040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a31f631689c75f40294a6e75d216c8040">makeColumns</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> rowArray, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> *columnArray)</td></tr>
-<tr class="memdesc:a31f631689c75f40294a6e75d216c8040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns an array of rows into an array of columns.  <a href="#a31f631689c75f40294a6e75d216c8040">More...</a><br /></td></tr>
-<tr class="separator:a31f631689c75f40294a6e75d216c8040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ef12709a766bbd6b5fa40cb14674d13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a8ef12709a766bbd6b5fa40cb14674d13">moveDown</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> shiftedInRow, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *shiftedOutRow)</td></tr>
-<tr class="memdesc:a8ef12709a766bbd6b5fa40cb14674d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data down by one  <a href="#a8ef12709a766bbd6b5fa40cb14674d13">More...</a><br /></td></tr>
-<tr class="separator:a8ef12709a766bbd6b5fa40cb14674d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3103d3d199821c9a40ea2a28ec1eb6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aa3103d3d199821c9a40ea2a28ec1eb6b">moveDown</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *shiftedOutRow)</td></tr>
-<tr class="memdesc:aa3103d3d199821c9a40ea2a28ec1eb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data down by one and 0x00 will be shifted in  <a href="#aa3103d3d199821c9a40ea2a28ec1eb6b">More...</a><br /></td></tr>
-<tr class="separator:aa3103d3d199821c9a40ea2a28ec1eb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4a63aad06b311b4863dbed29e36cef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aae4a63aad06b311b4863dbed29e36cef">LedController</a> (const <a class="el" href="../../d9/def/class_led_controller.html">LedController</a> &amp;other)</td></tr>
+<tr class="memdesc:aae4a63aad06b311b4863dbed29e36cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The copy constructor for the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a>.  <a href="#aae4a63aad06b311b4863dbed29e36cef">More...</a><br /></td></tr>
+<tr class="separator:aae4a63aad06b311b4863dbed29e36cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a91aae6cae20299930df790c90c978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#af0a91aae6cae20299930df790c90c978">makeColumns</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> rowArray, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> *columnArray)</td></tr>
+<tr class="memdesc:af0a91aae6cae20299930df790c90c978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns an array of rows into an array of columns.  <a href="#af0a91aae6cae20299930df790c90c978">More...</a><br /></td></tr>
+<tr class="separator:af0a91aae6cae20299930df790c90c978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b060bba3327f0301bbd38771effe55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a60b060bba3327f0301bbd38771effe55">moveDown</a> (byte *shiftedInRow, byte **shiftedOutRow)</td></tr>
+<tr class="memdesc:a60b060bba3327f0301bbd38771effe55"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data down by one  <a href="#a60b060bba3327f0301bbd38771effe55">More...</a><br /></td></tr>
+<tr class="separator:a60b060bba3327f0301bbd38771effe55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092a3f89fb9cde16e9e3676c592ded28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a092a3f89fb9cde16e9e3676c592ded28">moveDown</a> (byte **shiftedOutRow)</td></tr>
+<tr class="memdesc:a092a3f89fb9cde16e9e3676c592ded28"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data down by one and 0x00 will be shifted in  <a href="#a092a3f89fb9cde16e9e3676c592ded28">More...</a><br /></td></tr>
+<tr class="separator:a092a3f89fb9cde16e9e3676c592ded28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adff6bf9fa136156f441134d6598857b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#adff6bf9fa136156f441134d6598857b3">moveDown</a> ()</td></tr>
 <tr class="memdesc:adff6bf9fa136156f441134d6598857b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data down by one and 0x00 will be shifted in  <a href="#adff6bf9fa136156f441134d6598857b3">More...</a><br /></td></tr>
 <tr class="separator:adff6bf9fa136156f441134d6598857b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,12 +140,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca0255f07b0349aed07f770dc3d18be9"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aca0255f07b0349aed07f770dc3d18be9">moveRight</a> (byte shiftedInColumn=0x00)</td></tr>
 <tr class="memdesc:aca0255f07b0349aed07f770dc3d18be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data left by one  <a href="#aca0255f07b0349aed07f770dc3d18be9">More...</a><br /></td></tr>
 <tr class="separator:aca0255f07b0349aed07f770dc3d18be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85accd787b4b4966693b49f43f1d60a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a85accd787b4b4966693b49f43f1d60a0">moveUp</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> shiftedInRow, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *shiftedOutRow)</td></tr>
-<tr class="memdesc:a85accd787b4b4966693b49f43f1d60a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by one  <a href="#a85accd787b4b4966693b49f43f1d60a0">More...</a><br /></td></tr>
-<tr class="separator:a85accd787b4b4966693b49f43f1d60a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e0e046ee55cb1261720d3b7285f2b80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a4e0e046ee55cb1261720d3b7285f2b80">moveUp</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *shiftedOutRow)</td></tr>
-<tr class="memdesc:a4e0e046ee55cb1261720d3b7285f2b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by oneand 0x00 will be shifted in  <a href="#a4e0e046ee55cb1261720d3b7285f2b80">More...</a><br /></td></tr>
-<tr class="separator:a4e0e046ee55cb1261720d3b7285f2b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d9013b42b5bd301302743d159754e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a59d9013b42b5bd301302743d159754e6">moveUp</a> (byte *shiftedInRow, byte **shiftedOutRow)</td></tr>
+<tr class="memdesc:a59d9013b42b5bd301302743d159754e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by one  <a href="#a59d9013b42b5bd301302743d159754e6">More...</a><br /></td></tr>
+<tr class="separator:a59d9013b42b5bd301302743d159754e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4fe6c4b65441803c3955a607af6005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a6e4fe6c4b65441803c3955a607af6005">moveUp</a> (byte **shiftedOutRow)</td></tr>
+<tr class="memdesc:a6e4fe6c4b65441803c3955a607af6005"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by oneand 0x00 will be shifted in  <a href="#a6e4fe6c4b65441803c3955a607af6005">More...</a><br /></td></tr>
+<tr class="separator:a6e4fe6c4b65441803c3955a607af6005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28b0245cd2729d89642ac5ae5e17275b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a28b0245cd2729d89642ac5ae5e17275b">moveUp</a> ()</td></tr>
 <tr class="memdesc:a28b0245cd2729d89642ac5ae5e17275b"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by one and 0x00 will be shifted in  <a href="#a28b0245cd2729d89642ac5ae5e17275b">More...</a><br /></td></tr>
 <tr class="separator:a28b0245cd2729d89642ac5ae5e17275b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,12 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a45cf5b65f42829bb750f5bb22766c989"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989">reverse</a> (byte input)</td></tr>
 <tr class="memdesc:a45cf5b65f42829bb750f5bb22766c989"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function changes to bitorder of a byte (useful to mirror "images" you want to display)  <a href="#a45cf5b65f42829bb750f5bb22766c989">More...</a><br /></td></tr>
 <tr class="separator:a45cf5b65f42829bb750f5bb22766c989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80cd38a2ff78cfe17f8789b062b523ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a80cd38a2ff78cfe17f8789b062b523ee">reverse</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> input, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> *reversedInput)</td></tr>
-<tr class="memdesc:a80cd38a2ff78cfe17f8789b062b523ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse an array of 8 bytes (mirror it)  <a href="#a80cd38a2ff78cfe17f8789b062b523ee">More...</a><br /></td></tr>
-<tr class="separator:a80cd38a2ff78cfe17f8789b062b523ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af59cedcd8b67aa68a0b5ec2efbad2c6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#af59cedcd8b67aa68a0b5ec2efbad2c6f">rotate180</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> input, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> *rotatedInput)</td></tr>
-<tr class="memdesc:af59cedcd8b67aa68a0b5ec2efbad2c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotate an byte[8] array by 180 degrees  <a href="#af59cedcd8b67aa68a0b5ec2efbad2c6f">More...</a><br /></td></tr>
-<tr class="separator:af59cedcd8b67aa68a0b5ec2efbad2c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ac9c4764e3f21c26c03af647476231"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a57ac9c4764e3f21c26c03af647476231">reverse</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> input, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> *reversedInput)</td></tr>
+<tr class="memdesc:a57ac9c4764e3f21c26c03af647476231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse an array of 8 bytes (mirror it)  <a href="#a57ac9c4764e3f21c26c03af647476231">More...</a><br /></td></tr>
+<tr class="separator:a57ac9c4764e3f21c26c03af647476231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a71282e5f1559e477edb75c2404d319"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a8a71282e5f1559e477edb75c2404d319">rotate180</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> input, <a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> *rotatedInput)</td></tr>
+<tr class="memdesc:a8a71282e5f1559e477edb75c2404d319"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotate an byte[8] array by 180 degrees  <a href="#a8a71282e5f1559e477edb75c2404d319">More...</a><br /></td></tr>
+<tr class="separator:a8a71282e5f1559e477edb75c2404d319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad13dfb239f47a21bc92b7170769f7409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ad13dfb239f47a21bc92b7170769f7409">setChar</a> (unsigned int segmentNumber, unsigned int digit, char value, boolean dp)</td></tr>
 <tr class="memdesc:ad13dfb239f47a21bc92b7170769f7409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Display a character on a 7-Segment display.  <a href="#ad13dfb239f47a21bc92b7170769f7409">More...</a><br /></td></tr>
 <tr class="separator:ad13dfb239f47a21bc92b7170769f7409"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,11 +191,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b2cc66a2e9f2ca4c88e0eafe7fc6d96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a6b2cc66a2e9f2ca4c88e0eafe7fc6d96">shutdownSegment</a> (unsigned int segmentNumber)</td></tr>
 <tr class="memdesc:a6b2cc66a2e9f2ca4c88e0eafe7fc6d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the segment in power-down mode.  <a href="#a6b2cc66a2e9f2ca4c88e0eafe7fc6d96">More...</a><br /></td></tr>
 <tr class="separator:a6b2cc66a2e9f2ca4c88e0eafe7fc6d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb99845bc4990cb614c95ae0d7631e19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#adb99845bc4990cb614c95ae0d7631e19">~LedController</a> ()</td></tr>
+<tr class="memdesc:adb99845bc4990cb614c95ae0d7631e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Led Controller object and free the memory.  <a href="#adb99845bc4990cb614c95ae0d7631e19">More...</a><br /></td></tr>
+<tr class="separator:adb99845bc4990cb614c95ae0d7631e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a6de106f8592ef6d271881fcee818ea81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81">createEmptyRow</a> (<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *row)</td></tr>
-<tr class="separator:a6de106f8592ef6d271881fcee818ea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab4041e691f00fc4d6cbdd7d03f0246a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6">createEmptyRow</a> (byte **row)</td></tr>
+<tr class="memdesc:ab4041e691f00fc4d6cbdd7d03f0246a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">this copies an empty row into row  <a href="#ab4041e691f00fc4d6cbdd7d03f0246a6">More...</a><br /></td></tr>
+<tr class="separator:ab4041e691f00fc4d6cbdd7d03f0246a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c399362612dce7164edeb4ae420ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4">setIntensity</a> (unsigned int segmentNumber, unsigned int newIntesityLevel)</td></tr>
 <tr class="memdesc:ac0c399362612dce7164edeb4ae420ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the brightness of the segment.  <a href="#ac0c399362612dce7164edeb4ae420ac4">More...</a><br /></td></tr>
 <tr class="separator:ac0c399362612dce7164edeb4ae420ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,30 +207,35 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a481bc5fb3c5a0eefc8204d7a48c94ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function transfers one command to the attached module.  <a href="#a481bc5fb3c5a0eefc8204d7a48c94ebe">More...</a><br /></td></tr>
 <tr class="separator:a481bc5fb3c5a0eefc8204d7a48c94ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:af74cb9076752bbc49fbb5ef8c3b48c0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#afec7670ed75492cefaec522fb9a1b4f1">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#af74cb9076752bbc49fbb5ef8c3b48c0d">emptyRow</a></td></tr>
-<tr class="separator:af74cb9076752bbc49fbb5ef8c3b48c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa9f55d6f6d3f264be3c58a8f3a1e9d90"><td class="memItemLeft" align="right" valign="top">byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aa9f55d6f6d3f264be3c58a8f3a1e9d90">emptyRow</a> = nullptr</td></tr>
+<tr class="memdesc:aa9f55d6f6d3f264be3c58a8f3a1e9d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a row full of 0x00  <a href="#aa9f55d6f6d3f264be3c58a8f3a1e9d90">More...</a><br /></td></tr>
+<tr class="separator:aa9f55d6f6d3f264be3c58a8f3a1e9d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21941623ae149c44212d2719f08267d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a21941623ae149c44212d2719f08267d5">initilized</a> = false</td></tr>
+<tr class="memdesc:a21941623ae149c44212d2719f08267d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> is fully initilized.  <a href="#a21941623ae149c44212d2719f08267d5">More...</a><br /></td></tr>
+<tr class="separator:a21941623ae149c44212d2719f08267d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0b5fb154e1362356aa2fa7255199d7c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ad0b5fb154e1362356aa2fa7255199d7c">IntensityLevel</a> = 1</td></tr>
-<tr class="memdesc:ad0b5fb154e1362356aa2fa7255199d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mutex for the intensity level, needed to make it threading safe.  <a href="#ad0b5fb154e1362356aa2fa7255199d7c">More...</a><br /></td></tr>
+<tr class="memdesc:ad0b5fb154e1362356aa2fa7255199d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current brightness level of the leds.  <a href="#ad0b5fb154e1362356aa2fa7255199d7c">More...</a><br /></td></tr>
 <tr class="separator:ad0b5fb154e1362356aa2fa7255199d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaec0835a1fe9fb51eaec73f5cef713ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a29d74672924b8308c5fe5b804d296f7c">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aaec0835a1fe9fb51eaec73f5cef713ae">LedStates</a></td></tr>
-<tr class="separator:aaec0835a1fe9fb51eaec73f5cef713ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4e6f36bb9b0bfa980f7990e2efe15dc"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ae4e6f36bb9b0bfa980f7990e2efe15dc">SegmentCount</a></td></tr>
+<tr class="memitem:ae05fd647ab9bb783ffa739a65c170a99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ae05fd647ab9bb783ffa739a65c170a99">LedStates</a> = nullptr</td></tr>
+<tr class="memdesc:ae05fd647ab9bb783ffa739a65c170a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state of all the Leds.  <a href="#ae05fd647ab9bb783ffa739a65c170a99">More...</a><br /></td></tr>
+<tr class="separator:ae05fd647ab9bb783ffa739a65c170a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e6f36bb9b0bfa980f7990e2efe15dc"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ae4e6f36bb9b0bfa980f7990e2efe15dc">SegmentCount</a> = 0</td></tr>
 <tr class="memdesc:ae4e6f36bb9b0bfa980f7990e2efe15dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of connected Segments.  <a href="#ae4e6f36bb9b0bfa980f7990e2efe15dc">More...</a><br /></td></tr>
 <tr class="separator:ae4e6f36bb9b0bfa980f7990e2efe15dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a512bca3710dc1969dc7e537f2a6d49df"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a512bca3710dc1969dc7e537f2a6d49df">SPI_CLK</a></td></tr>
+<tr class="memitem:a512bca3710dc1969dc7e537f2a6d49df"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a512bca3710dc1969dc7e537f2a6d49df">SPI_CLK</a> = 0</td></tr>
 <tr class="memdesc:a512bca3710dc1969dc7e537f2a6d49df"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pin for the clock signal (CLK)  <a href="#a512bca3710dc1969dc7e537f2a6d49df">More...</a><br /></td></tr>
 <tr class="separator:a512bca3710dc1969dc7e537f2a6d49df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89847b94383acbb4f4041879ac11d414"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a89847b94383acbb4f4041879ac11d414">SPI_CS</a></td></tr>
+<tr class="memitem:a89847b94383acbb4f4041879ac11d414"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a89847b94383acbb4f4041879ac11d414">SPI_CS</a> = 0</td></tr>
 <tr class="memdesc:a89847b94383acbb4f4041879ac11d414"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pin for the chip select signal (CS)  <a href="#a89847b94383acbb4f4041879ac11d414">More...</a><br /></td></tr>
 <tr class="separator:a89847b94383acbb4f4041879ac11d414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad1d8e73c152620cfee5b07f0401f7ad"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aad1d8e73c152620cfee5b07f0401f7ad">SPI_MOSI</a></td></tr>
+<tr class="memitem:aad1d8e73c152620cfee5b07f0401f7ad"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aad1d8e73c152620cfee5b07f0401f7ad">SPI_MOSI</a> = 0</td></tr>
 <tr class="memdesc:aad1d8e73c152620cfee5b07f0401f7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pin for the data transfer (DIN)  <a href="#aad1d8e73c152620cfee5b07f0401f7ad">More...</a><br /></td></tr>
 <tr class="separator:aad1d8e73c152620cfee5b07f0401f7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a643c61bbbe11e7f5c27084f68e696ca4"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a643c61bbbe11e7f5c27084f68e696ca4">spidata</a> [<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> *2]</td></tr>
-<tr class="memdesc:a643c61bbbe11e7f5c27084f68e696ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array for shifting the data to the devices.  <a href="#a643c61bbbe11e7f5c27084f68e696ca4">More...</a><br /></td></tr>
-<tr class="separator:a643c61bbbe11e7f5c27084f68e696ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacae68b95d9ab84e86769ee4b61289d4"><td class="memItemLeft" align="right" valign="top">byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aacae68b95d9ab84e86769ee4b61289d4">spidata</a> = nullptr</td></tr>
+<tr class="memdesc:aacae68b95d9ab84e86769ee4b61289d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array for shifting the data to the devices.  <a href="#aacae68b95d9ab84e86769ee4b61289d4">More...</a><br /></td></tr>
+<tr class="separator:aacae68b95d9ab84e86769ee4b61289d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c986ee4ebea5a15d04e8e9bbd3fa2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ae9c986ee4ebea5a15d04e8e9bbd3fa2d">useHardwareSpi</a> = false</td></tr>
 <tr class="memdesc:ae9c986ee4ebea5a15d04e8e9bbd3fa2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if hardware spi should be use (a lot faster but you cannot use any pin you want)  <a href="#ae9c986ee4ebea5a15d04e8e9bbd3fa2d">More...</a><br /></td></tr>
 <tr class="separator:ae9c986ee4ebea5a15d04e8e9bbd3fa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,15 +243,36 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provied a control interface for MAX7219 and MAX7221 Led display drivers. </p>
 <p>This Controller Class is mainly target at led matracies consisting of more than 1 segment. While it can also handle 7-Segment Displays it is not tested that well. </p><dl class="section warning"><dt>Warning</dt><dd>This object is not thread safe yet. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If your compiler is STD_CAPABLE the ByteBlock is of the type std::array&lt;byte,8&gt; instead of C_ByteBlock. </dd>
+<dl class="section note"><dt>Note</dt><dd>If your compiler is STD_CAPABLE the ByteBlock is of the type std::array&lt;byte,8&gt; instead of ByteBlock. </dd>
 <dd>
 Check if your code has support for the std by calling: static_assert(STD_CAPABLE &gt; 0, "STD not supported")</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000001">Todo:</a></b></dt><dd>make it threading safe </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00091">91</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a370d24b1084701b09a52d45f8c5567f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370d24b1084701b09a52d45f8c5567f4">&#9670;&nbsp;</a></span>LedController() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LedController::LedController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> without initilizing anything. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a48414cff463afcec44e3056f9a84fac4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48414cff463afcec44e3056f9a84fac4">&#9670;&nbsp;</a></span>LedController() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a48414cff463afcec44e3056f9a84fac4">&#9670;&nbsp;</a></span>LedController() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,12 +306,12 @@ Check if your code has support for the std by calling: static_assert(STD_CAPABLE
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
 <a id="aaf70bc009abce437e5d07e23ba23535f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf70bc009abce437e5d07e23ba23535f">&#9670;&nbsp;</a></span>LedController() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf70bc009abce437e5d07e23ba23535f">&#9670;&nbsp;</a></span>LedController() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,19 +366,78 @@ Check if your code has support for the std by calling: static_assert(STD_CAPABLE
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00135">activateSegment()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00202">clearSegment()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00139">emptyRow</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00004">MAX_SEGMENTS</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00013">OP_DECODEMODE</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00017">OP_DISPLAYTEST</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00105">setIntensity()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00197">setScanLimit()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00103">SPI_CLK</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00100">SPI_CS</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00097">SPI_MOSI</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00129">spidata</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">useHardwareSpi</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00063">init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_aaf70bc009abce437e5d07e23ba23535f_cgraph.png" border="0" usemap="#d9/def/class_led_controller_aaf70bc009abce437e5d07e23ba23535f_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_aaf70bc009abce437e5d07e23ba23535f_cgraph" id="d9/def/class_led_controller_aaf70bc009abce437e5d07e23ba23535f_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="237,5,443,32"/>
-<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="491,107,663,133"/>
-<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="247,107,433,133"/>
-<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="253,157,427,184"/>
-<area shape="rect" id="node6" href="../../d9/def/class_led_controller.html#a11bfabd448afbea6d5f54771a385cb03" title="Set the number of digits (or rows) to be displayed. " alt="" coords="249,208,431,235"/>
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a658f644ba8db85ed21cfbc802781d2e8" title="initilizes the LedController for use with hardware SPI " alt="" coords="237,5,361,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adb99845bc4990cb614c95ae0d7631e19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb99845bc4990cb614c95ae0d7631e19">&#9670;&nbsp;</a></span>~LedController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LedController::~LedController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the Led Controller object and free the memory. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00115">emptyRow</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00095">spidata</a>.</p>
+
+</div>
+</div>
+<a id="aae4a63aad06b311b4863dbed29e36cef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4a63aad06b311b4863dbed29e36cef">&#9670;&nbsp;</a></span>LedController() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LedController::LedController </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/def/class_led_controller.html">LedController</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The copy constructor for the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> which should have its state copied </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00063">init()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">refreshSegments()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00071">SPI_CLK</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00068">SPI_CS</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00065">SPI_MOSI</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00095">spidata</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00077">useHardwareSpi</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/def/class_led_controller_aae4a63aad06b311b4863dbed29e36cef_cgraph.png" border="0" usemap="#d9/def/class_led_controller_aae4a63aad06b311b4863dbed29e36cef_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_aae4a63aad06b311b4863dbed29e36cef_cgraph" id="d9/def/class_led_controller_aae4a63aad06b311b4863dbed29e36cef_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a658f644ba8db85ed21cfbc802781d2e8" title="initilizes the LedController for use with hardware SPI " alt="" coords="279,5,403,32"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="237,56,444,83"/>
+<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="492,56,664,83"/>
 </map>
 </div>
 
@@ -354,9 +461,9 @@ Here is the call graph for this function:</div>
 
 <p>Get all segments out of power-down mode for normal operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00235">235</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00135">activateSegment()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00217">activateSegment()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -393,9 +500,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00217">217</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00016">OP_SHUTDOWN</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00016">OP_SHUTDOWN</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -424,9 +531,9 @@ Here is the call graph for this function:</div>
 
 <p>clears all segments, turning all LEDs off. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00150">150</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00202">clearSegment()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00292">clearSegment()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -463,9 +570,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00202">202</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -477,8 +584,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a6de106f8592ef6d271881fcee818ea81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6de106f8592ef6d271881fcee818ea81">&#9670;&nbsp;</a></span>createEmptyRow()</h2>
+<a id="ab4041e691f00fc4d6cbdd7d03f0246a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4041e691f00fc4d6cbdd7d03f0246a6">&#9670;&nbsp;</a></span>createEmptyRow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -487,23 +594,31 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int LedController::createEmptyRow </td>
+          <td class="memname">void LedController::createEmptyRow </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *&#160;</td>
+          <td class="paramtype">byte **&#160;</td>
           <td class="paramname"><em>row</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00357">357</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p>this copies an empty row into row </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td>the pointer to the byte array that should be used </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00004">MAX_SEGMENTS</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">455</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 
 </div>
 </div>
@@ -522,7 +637,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a08a53f3cc82ecc9346478c280e69c2e5">ByteBlock</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a>&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -542,9 +657,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00181">181</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00213">setRow()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00303">setRow()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -593,9 +708,9 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value each bit set to 1 will light up the corresponding Led. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00226">226</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00312">312</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 
 </div>
 </div>
@@ -617,14 +732,194 @@ Here is the call graph for this function:</div>
 <p>Get the number of configured segments. </p>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int The number of configured segments </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00201">201</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 
 </div>
 </div>
-<a id="a31f631689c75f40294a6e75d216c8040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31f631689c75f40294a6e75d216c8040">&#9670;&nbsp;</a></span>makeColumns()</h2>
+<a id="afb39ef0ef51b43d49b997e8ed790d773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb39ef0ef51b43d49b997e8ed790d773">&#9670;&nbsp;</a></span>getSegmentData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::getSegmentData </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segmentindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> *&#160;</td>
+          <td class="paramname"><em>resultLocation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Segment Data of a specific Segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentindex</td><td>the index of whose data you want to have </td></tr>
+    <tr><td class="paramname">resultLocation</td><td>the location where the data should be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
+
+</div>
+</div>
+<a id="a658f644ba8db85ed21cfbc802781d2e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a658f644ba8db85ed21cfbc802781d2e8">&#9670;&nbsp;</a></span>init() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::init </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>csPin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numSegments</em> = <code>4</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> for use with hardware SPI </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csPin</td><td>The pin to select the led matrix </td></tr>
+    <tr><td class="paramname">numSegments</td><td>the number of connected segments (defualt 4) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1462662dcd4ba6bef52d350fed767526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1462662dcd4ba6bef52d350fed767526">&#9670;&nbsp;</a></span>init() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::init </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>dataPin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>clkPin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>csPin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numSegments</em> = <code>4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useHardwareSpi</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataPin</td><td>pin on the Arduino where data gets shifted out (DIN) </td></tr>
+    <tr><td class="paramname">clkPin</td><td>pin for the clock (CLK) </td></tr>
+    <tr><td class="paramname">csPin</td><td>pin for selecting the device (CS) </td></tr>
+    <tr><td class="paramname">numSegments</td><td>The number of segments that will be controlled by the controller (default 4) </td></tr>
+    <tr><td class="paramname">useHardwareSpi</td><td>true if you want to use hardware SPI (view <a href="https://www.arduino.cc/en/Reference/SPI">https://www.arduino.cc/en/Reference/SPI</a> for pin config) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00217">activateSegment()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00292">clearSegment()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00115">emptyRow</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00013">OP_DECODEMODE</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00017">OP_DISPLAYTEST</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00173">setIntensity()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00287">setScanLimit()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00071">SPI_CLK</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00068">SPI_CS</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00065">SPI_MOSI</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00095">spidata</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00077">useHardwareSpi</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/def/class_led_controller_a1462662dcd4ba6bef52d350fed767526_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a1462662dcd4ba6bef52d350fed767526_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a1462662dcd4ba6bef52d350fed767526_cgraph" id="d9/def/class_led_controller_a1462662dcd4ba6bef52d350fed767526_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="177,5,383,32"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="431,107,603,133"/>
+<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="187,107,373,133"/>
+<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="193,157,367,184"/>
+<area shape="rect" id="node6" href="../../d9/def/class_led_controller.html#a11bfabd448afbea6d5f54771a385cb03" title="Set the number of digits (or rows) to be displayed. " alt="" coords="189,208,371,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa081a78648a67eb24070ed0641f2caa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa081a78648a67eb24070ed0641f2caa3">&#9670;&nbsp;</a></span>isInitilized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LedController::isInitilized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the status of the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>true the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> is initilized </dd>
+<dd>
+false the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> is not initilized </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00136">136</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>.</p>
+
+</div>
+</div>
+<a id="af0a91aae6cae20299930df790c90c978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a91aae6cae20299930df790c90c978">&#9670;&nbsp;</a></span>makeColumns()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -632,13 +927,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void LedController::makeColumns </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a>&#160;</td>
           <td class="paramname"><em>rowArray</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> *&#160;</td>
           <td class="paramname"><em>columnArray</em>&#160;</td>
         </tr>
         <tr>
@@ -658,12 +953,14 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00367">367</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00463">463</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>.</p>
 
 </div>
 </div>
-<a id="a8ef12709a766bbd6b5fa40cb14674d13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ef12709a766bbd6b5fa40cb14674d13">&#9670;&nbsp;</a></span>moveDown() <span class="overload">[1/3]</span></h2>
+<a id="a60b060bba3327f0301bbd38771effe55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b060bba3327f0301bbd38771effe55">&#9670;&nbsp;</a></span>moveDown() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -671,13 +968,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void LedController::moveDown </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a>&#160;</td>
+          <td class="paramtype">byte *&#160;</td>
           <td class="paramname"><em>shiftedInRow</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *&#160;</td>
+          <td class="paramtype">byte **&#160;</td>
           <td class="paramname"><em>shiftedOutRow</em>&#160;</td>
         </tr>
         <tr>
@@ -697,15 +994,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00379">379</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00475">475</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00357">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00288">refreshSegments()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">refreshSegments()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/def/class_led_controller_a8ef12709a766bbd6b5fa40cb14674d13_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a8ef12709a766bbd6b5fa40cb14674d13_cgraph" alt=""/></div>
-<map name="d9/def/class_led_controller_a8ef12709a766bbd6b5fa40cb14674d13_cgraph" id="d9/def/class_led_controller_a8ef12709a766bbd6b5fa40cb14674d13_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="227,5,435,32"/>
+<div class="center"><img src="../../d9/def/class_led_controller_a60b060bba3327f0301bbd38771effe55_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a60b060bba3327f0301bbd38771effe55_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a60b060bba3327f0301bbd38771effe55_cgraph" id="d9/def/class_led_controller_a60b060bba3327f0301bbd38771effe55_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="227,5,435,32"/>
 <area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="227,56,434,83"/>
 <area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="483,56,655,83"/>
 </map>
@@ -713,8 +1010,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="aa3103d3d199821c9a40ea2a28ec1eb6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3103d3d199821c9a40ea2a28ec1eb6b">&#9670;&nbsp;</a></span>moveDown() <span class="overload">[2/3]</span></h2>
+<a id="a092a3f89fb9cde16e9e3676c592ded28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092a3f89fb9cde16e9e3676c592ded28">&#9670;&nbsp;</a></span>moveDown() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -722,7 +1019,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void LedController::moveDown </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *&#160;</td>
+          <td class="paramtype">byte **&#160;</td>
           <td class="paramname"><em>shiftedOutRow</em></td><td>)</td>
           <td></td>
         </tr>
@@ -737,15 +1034,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00429">429</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00540">540</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00357">createEmptyRow()</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00435">moveDown()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00551">moveDown()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/def/class_led_controller_aa3103d3d199821c9a40ea2a28ec1eb6b_cgraph.png" border="0" usemap="#d9/def/class_led_controller_aa3103d3d199821c9a40ea2a28ec1eb6b_cgraph" alt=""/></div>
-<map name="d9/def/class_led_controller_aa3103d3d199821c9a40ea2a28ec1eb6b_cgraph" id="d9/def/class_led_controller_aa3103d3d199821c9a40ea2a28ec1eb6b_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="448,5,656,32"/>
+<div class="center"><img src="../../d9/def/class_led_controller_a092a3f89fb9cde16e9e3676c592ded28_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a092a3f89fb9cde16e9e3676c592ded28_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a092a3f89fb9cde16e9e3676c592ded28_cgraph" id="d9/def/class_led_controller_a092a3f89fb9cde16e9e3676c592ded28_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="448,5,656,32"/>
 <area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#adff6bf9fa136156f441134d6598857b3" title="moves the data down by one and 0x00 will be shifted in " alt="" coords="227,31,400,57"/>
 </map>
 </div>
@@ -770,15 +1067,15 @@ Here is the call graph for this function:</div>
 <p>moves the data down by one and 0x00 will be shifted in </p>
 <dl class="section return"><dt>Returns</dt><dd>ByteRow The row the will be shifted out on the bottom </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00435">435</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00551">551</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00357">createEmptyRow()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_adff6bf9fa136156f441134d6598857b3_cgraph.png" border="0" usemap="#d9/def/class_led_controller_adff6bf9fa136156f441134d6598857b3_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_adff6bf9fa136156f441134d6598857b3_cgraph" id="d9/def/class_led_controller_adff6bf9fa136156f441134d6598857b3_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="227,5,435,32"/>
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="227,5,435,32"/>
 </map>
 </div>
 
@@ -809,9 +1106,9 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The column that gets shifted out on the left </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00331">331</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00425">425</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00288">refreshSegments()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00250">setColumn()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">refreshSegments()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00336">setColumn()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -851,9 +1148,9 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The column that gets shifted out on the right </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00296">296</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00288">refreshSegments()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00250">setColumn()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">refreshSegments()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00336">setColumn()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -868,8 +1165,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a85accd787b4b4966693b49f43f1d60a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85accd787b4b4966693b49f43f1d60a0">&#9670;&nbsp;</a></span>moveUp() <span class="overload">[1/3]</span></h2>
+<a id="a59d9013b42b5bd301302743d159754e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d9013b42b5bd301302743d159754e6">&#9670;&nbsp;</a></span>moveUp() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -877,13 +1174,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void LedController::moveUp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a>&#160;</td>
+          <td class="paramtype">byte *&#160;</td>
           <td class="paramname"><em>shiftedInRow</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *&#160;</td>
+          <td class="paramtype">byte **&#160;</td>
           <td class="paramname"><em>shiftedOutRow</em>&#160;</td>
         </tr>
         <tr>
@@ -903,15 +1200,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00401">401</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00502">502</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00357">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00288">refreshSegments()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">refreshSegments()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/def/class_led_controller_a85accd787b4b4966693b49f43f1d60a0_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a85accd787b4b4966693b49f43f1d60a0_cgraph" alt=""/></div>
-<map name="d9/def/class_led_controller_a85accd787b4b4966693b49f43f1d60a0_cgraph" id="d9/def/class_led_controller_a85accd787b4b4966693b49f43f1d60a0_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="209,5,417,32"/>
+<div class="center"><img src="../../d9/def/class_led_controller_a59d9013b42b5bd301302743d159754e6_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a59d9013b42b5bd301302743d159754e6_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a59d9013b42b5bd301302743d159754e6_cgraph" id="d9/def/class_led_controller_a59d9013b42b5bd301302743d159754e6_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="209,5,417,32"/>
 <area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="210,56,417,83"/>
 <area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="465,56,637,83"/>
 </map>
@@ -919,8 +1216,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a4e0e046ee55cb1261720d3b7285f2b80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e0e046ee55cb1261720d3b7285f2b80">&#9670;&nbsp;</a></span>moveUp() <span class="overload">[2/3]</span></h2>
+<a id="a6e4fe6c4b65441803c3955a607af6005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4fe6c4b65441803c3955a607af6005">&#9670;&nbsp;</a></span>moveUp() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -928,7 +1225,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void LedController::moveUp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#ac9f7459138963c75edc17198aa16e7eb">C_ByteRow</a> *&#160;</td>
+          <td class="paramtype">byte **&#160;</td>
           <td class="paramname"><em>shiftedOutRow</em></td><td>)</td>
           <td></td>
         </tr>
@@ -943,15 +1240,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00423">423</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00529">529</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00357">createEmptyRow()</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00441">moveUp()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00562">moveUp()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/def/class_led_controller_a4e0e046ee55cb1261720d3b7285f2b80_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a4e0e046ee55cb1261720d3b7285f2b80_cgraph" alt=""/></div>
-<map name="d9/def/class_led_controller_a4e0e046ee55cb1261720d3b7285f2b80_cgraph" id="d9/def/class_led_controller_a4e0e046ee55cb1261720d3b7285f2b80_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="413,5,621,32"/>
+<div class="center"><img src="../../d9/def/class_led_controller_a6e4fe6c4b65441803c3955a607af6005_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a6e4fe6c4b65441803c3955a607af6005_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a6e4fe6c4b65441803c3955a607af6005_cgraph" id="d9/def/class_led_controller_a6e4fe6c4b65441803c3955a607af6005_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="413,5,621,32"/>
 <area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a28b0245cd2729d89642ac5ae5e17275b" title="moves the data up by one and 0x00 will be shifted in " alt="" coords="209,31,365,57"/>
 </map>
 </div>
@@ -975,15 +1272,15 @@ Here is the call graph for this function:</div>
 
 <p>moves the data up by one and 0x00 will be shifted in </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00441">441</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00562">562</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00357">createEmptyRow()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_a28b0245cd2729d89642ac5ae5e17275b_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a28b0245cd2729d89642ac5ae5e17275b_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_a28b0245cd2729d89642ac5ae5e17275b_cgraph" id="d9/def/class_led_controller_a28b0245cd2729d89642ac5ae5e17275b_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="209,5,417,32"/>
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="209,5,417,32"/>
 </map>
 </div>
 
@@ -1006,9 +1303,9 @@ Here is the call graph for this function:</div>
 
 <p>refreshes all segments displaying the internally stored state of the segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00288">288</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">374</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1037,9 +1334,9 @@ Here is the call graph for this function:</div>
 
 <p>activates all segments, sets to same intensity and cleas them </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00140">140</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00149">activateAllSegments()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00086">clearMatrix()</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00105">setIntensity()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00235">activateAllSegments()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00150">clearMatrix()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00173">setIntensity()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1081,12 +1378,12 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The reversed byte </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00320">320</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00414">414</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a80cd38a2ff78cfe17f8789b062b523ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80cd38a2ff78cfe17f8789b062b523ee">&#9670;&nbsp;</a></span>reverse() <span class="overload">[2/2]</span></h2>
+<a id="a57ac9c4764e3f21c26c03af647476231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ac9c4764e3f21c26c03af647476231">&#9670;&nbsp;</a></span>reverse() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1094,13 +1391,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void LedController::reverse </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a>&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> *&#160;</td>
           <td class="paramname"><em>reversedInput</em>&#160;</td>
         </tr>
         <tr>
@@ -1120,22 +1417,22 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00448">448</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00575">575</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00320">reverse()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00414">reverse()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/def/class_led_controller_a80cd38a2ff78cfe17f8789b062b523ee_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a80cd38a2ff78cfe17f8789b062b523ee_cgraph" alt=""/></div>
-<map name="d9/def/class_led_controller_a80cd38a2ff78cfe17f8789b062b523ee_cgraph" id="d9/def/class_led_controller_a80cd38a2ff78cfe17f8789b062b523ee_cgraph">
+<div class="center"><img src="../../d9/def/class_led_controller_a57ac9c4764e3f21c26c03af647476231_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a57ac9c4764e3f21c26c03af647476231_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a57ac9c4764e3f21c26c03af647476231_cgraph" id="d9/def/class_led_controller_a57ac9c4764e3f21c26c03af647476231_cgraph">
 <area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="204,5,355,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af59cedcd8b67aa68a0b5ec2efbad2c6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af59cedcd8b67aa68a0b5ec2efbad2c6f">&#9670;&nbsp;</a></span>rotate180()</h2>
+<a id="a8a71282e5f1559e477edb75c2404d319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a71282e5f1559e477edb75c2404d319">&#9670;&nbsp;</a></span>rotate180()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1143,13 +1440,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void LedController::rotate180 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a>&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#aa094cb4b6f41365021986258a27cb9fb">C_ByteBlock</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a> *&#160;</td>
           <td class="paramname"><em>rotatedInput</em>&#160;</td>
         </tr>
         <tr>
@@ -1169,19 +1466,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00458">458</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00585">585</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00367">makeColumns()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00004">MAX_SEGMENTS</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00435">moveDown()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00441">moveUp()</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00320">reverse()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00414">reverse()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/def/class_led_controller_af59cedcd8b67aa68a0b5ec2efbad2c6f_cgraph.png" border="0" usemap="#d9/def/class_led_controller_af59cedcd8b67aa68a0b5ec2efbad2c6f_cgraph" alt=""/></div>
-<map name="d9/def/class_led_controller_af59cedcd8b67aa68a0b5ec2efbad2c6f_cgraph" id="d9/def/class_led_controller_af59cedcd8b67aa68a0b5ec2efbad2c6f_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a31f631689c75f40294a6e75d216c8040" title="Turns an array of rows into an array of columns. " alt="" coords="215,5,405,32"/>
-<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#adff6bf9fa136156f441134d6598857b3" title="moves the data down by one and 0x00 will be shifted in " alt="" coords="223,56,397,83"/>
-<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#a28b0245cd2729d89642ac5ae5e17275b" title="moves the data up by one and 0x00 will be shifted in " alt="" coords="232,107,388,133"/>
-<area shape="rect" id="node6" href="../../d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="235,157,385,184"/>
-<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a6de106f8592ef6d271881fcee818ea81" title="LedController::createEmptyRow" alt="" coords="453,81,661,108"/>
+<div class="center"><img src="../../d9/def/class_led_controller_a8a71282e5f1559e477edb75c2404d319_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a8a71282e5f1559e477edb75c2404d319_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a8a71282e5f1559e477edb75c2404d319_cgraph" id="d9/def/class_led_controller_a8a71282e5f1559e477edb75c2404d319_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display) ..." alt="" coords="215,5,365,32"/>
 </map>
 </div>
 
@@ -1237,9 +1530,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00272">272</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00358">358</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1293,9 +1586,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00250">250</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00336">336</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00235">setLed()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00321">setLed()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1357,9 +1650,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00263">263</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1400,7 +1693,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1414,9 +1707,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00173">173</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00014">OP_INTENSITY</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00014">OP_INTENSITY</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1453,9 +1746,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00117">IntensityLevel</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00105">setIntensity()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00083">IntensityLevel</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00173">setIntensity()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1517,9 +1810,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00235">235</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00321">321</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1573,9 +1866,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00303">303</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1623,9 +1916,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00287">287</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00015">OP_SCANLIMIT</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00015">OP_SCANLIMIT</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1654,9 +1947,9 @@ Here is the call graph for this function:</div>
 
 <p>Set all segments into power-down mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00143">143</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00225">225</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00127">shutdownSegment()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00209">shutdownSegment()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1693,9 +1986,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00127">127</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00209">209</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00016">OP_SHUTDOWN</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00016">OP_SHUTDOWN</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1742,7 +2035,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1757,15 +2050,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00155">155</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">245</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">SegmentCount</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00103">SPI_CLK</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00100">SPI_CS</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00097">SPI_MOSI</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00129">spidata</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">useHardwareSpi</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00071">SPI_CLK</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00068">SPI_CS</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00065">SPI_MOSI</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00095">spidata</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00077">useHardwareSpi</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af74cb9076752bbc49fbb5ef8c3b48c0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af74cb9076752bbc49fbb5ef8c3b48c0d">&#9670;&nbsp;</a></span>emptyRow</h2>
+<a id="aa9f55d6f6d3f264be3c58a8f3a1e9d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f55d6f6d3f264be3c58a8f3a1e9d90">&#9670;&nbsp;</a></span>emptyRow</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1774,17 +2067,45 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#afec7670ed75492cefaec522fb9a1b4f1">ByteRow</a> LedController::emptyRow</td>
+          <td class="memname">byte* LedController::emptyRow = nullptr</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00139">139</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p>contains a row full of 0x00 </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a21941623ae149c44212d2719f08267d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21941623ae149c44212d2719f08267d5">&#9670;&nbsp;</a></span>initilized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LedController::initilized = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True if the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers. ">LedController</a> is fully initilized. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1803,20 +2124,20 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The mutex for the intensity level, needed to make it threading safe. </p>
-<p>The current brightness level of the leds. </p><dl class="section warning"><dt>Warning</dt><dd>The value needs to be between 0 and 15 (inclusive bounds). </dd></dl>
+<p>The current brightness level of the leds. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The value needs to be between 0 and 15 (inclusive bounds). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
-<a id="aaec0835a1fe9fb51eaec73f5cef713ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaec0835a1fe9fb51eaec73f5cef713ae">&#9670;&nbsp;</a></span>LedStates</h2>
+<a id="ae05fd647ab9bb783ffa739a65c170a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05fd647ab9bb783ffa739a65c170a99">&#9670;&nbsp;</a></span>LedStates</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1825,17 +2146,19 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a29d74672924b8308c5fe5b804d296f7c">Matrix</a> LedController::LedStates</td>
+          <td class="memname"><a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a619dc69f64b3c6c5773da7254fca5095">ByteBlock</a>* LedController::LedStates = nullptr</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00094">94</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p>The state of all the Leds. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1849,19 +2172,19 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int LedController::SegmentCount</td>
+          <td class="memname">unsigned int LedController::SegmentCount = 0</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>The number of connected Segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00106">106</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1875,19 +2198,19 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int LedController::SPI_CLK</td>
+          <td class="memname">unsigned int LedController::SPI_CLK = 0</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>The pin for the clock signal (CLK) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00103">103</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1901,19 +2224,19 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int LedController::SPI_CS</td>
+          <td class="memname">unsigned int LedController::SPI_CS = 0</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>The pin for the chip select signal (CS) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00100">100</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1927,24 +2250,24 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int LedController::SPI_MOSI</td>
+          <td class="memname">unsigned int LedController::SPI_MOSI = 0</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>The pin for the data transfer (DIN) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00097">97</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a643c61bbbe11e7f5c27084f68e696ca4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a643c61bbbe11e7f5c27084f68e696ca4">&#9670;&nbsp;</a></span>spidata</h2>
+<a id="aacae68b95d9ab84e86769ee4b61289d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacae68b95d9ab84e86769ee4b61289d4">&#9670;&nbsp;</a></span>spidata</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1953,19 +2276,19 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">byte LedController::spidata[<a class="el" href="../../d9/d4a/_led_controller_8hpp.html#a5155355bbabd39029d45b74529beba04">MAX_SEGMENTS</a> *2]</td>
+          <td class="memname">byte* LedController::spidata = nullptr</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>The array for shifting the data to the devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00129">129</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00095">95</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1984,14 +2307,14 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>True if hardware spi should be use (a lot faster but you cannot use any pin you want) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>

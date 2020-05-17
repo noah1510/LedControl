@@ -1,0 +1,5 @@
+<map id="LedController::LedController" name="LedController::LedController">
+<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#a658f644ba8db85ed21cfbc802781d2e8" title="initilizes the LedController for use with hardware SPI " alt="" coords="279,5,403,32"/>
+<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="237,56,444,83"/>
+<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="492,56,664,83"/>
+</map>
