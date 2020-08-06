@@ -1,6 +1,7 @@
 <map id="LedController::moveLeft" name="LedController::moveLeft">
-<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="433,5,640,32"/>
-<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#aaf1eaf3d8a81b3f2c4121478a39c6b38" title="Set one column of a given segment. " alt="" coords="215,56,385,83"/>
-<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="688,31,860,57"/>
-<area shape="rect" id="node5" href="$d9/def/class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="463,56,610,83"/>
+<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#aaf1eaf3d8a81b3f2c4121478a39c6b38" title="Set one column of a given segment. " alt="" coords="232,5,403,32"/>
+<area shape="rect" id="node5" href="$d9/def/class_led_controller.html#a765b162dbd7bd07168e17ad18cf0209a" title="update all segments by displaying the internally stored state of the segments. " alt="" coords="215,56,420,83"/>
+<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="494,5,641,32"/>
+<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="715,31,887,57"/>
+<area shape="rect" id="node6" href="$d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="468,56,667,83"/>
 </map>

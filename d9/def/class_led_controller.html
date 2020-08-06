@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">1.7.0</span>
+   &#160;<span id="projectnumber">1.7.1</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -149,8 +149,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a28b0245cd2729d89642ac5ae5e17275b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a28b0245cd2729d89642ac5ae5e17275b">moveUp</a> ()</td></tr>
 <tr class="memdesc:a28b0245cd2729d89642ac5ae5e17275b"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data up by one and 0x00 will be shifted in  <a href="#a28b0245cd2729d89642ac5ae5e17275b">More...</a><br /></td></tr>
 <tr class="separator:a28b0245cd2729d89642ac5ae5e17275b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6886e4dc811a113c657cdb0d9249ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a1c6886e4dc811a113c657cdb0d9249ec">refreshSegment</a> (unsigned int segmentNumber)</td></tr>
+<tr class="memdesc:a1c6886e4dc811a113c657cdb0d9249ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">refreshes a given segment by first resetting it and then updating it.  <a href="#a1c6886e4dc811a113c657cdb0d9249ec">More...</a><br /></td></tr>
+<tr class="separator:a1c6886e4dc811a113c657cdb0d9249ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b">refreshSegments</a> ()</td></tr>
-<tr class="memdesc:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">refreshes all segments displaying the internally stored state of the segments.  <a href="#a29f33ebe6ae60dae3653d9e80822bc2b">More...</a><br /></td></tr>
+<tr class="memdesc:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">refreshes all segments by first resetting them and then updating them.  <a href="#a29f33ebe6ae60dae3653d9e80822bc2b">More...</a><br /></td></tr>
 <tr class="separator:a29f33ebe6ae60dae3653d9e80822bc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c0e20a70eac83e206013b17320f820c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a4c0e20a70eac83e206013b17320f820c">resetMatrix</a> ()</td></tr>
 <tr class="memdesc:a4c0e20a70eac83e206013b17320f820c"><td class="mdescLeft">&#160;</td><td class="mdescRight">activates all segments, sets to same intensity and cleas them  <a href="#a4c0e20a70eac83e206013b17320f820c">More...</a><br /></td></tr>
@@ -191,6 +194,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b2cc66a2e9f2ca4c88e0eafe7fc6d96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a6b2cc66a2e9f2ca4c88e0eafe7fc6d96">shutdownSegment</a> (unsigned int segmentNumber)</td></tr>
 <tr class="memdesc:a6b2cc66a2e9f2ca4c88e0eafe7fc6d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the segment in power-down mode.  <a href="#a6b2cc66a2e9f2ca4c88e0eafe7fc6d96">More...</a><br /></td></tr>
 <tr class="separator:a6b2cc66a2e9f2ca4c88e0eafe7fc6d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071e34e8cdb9c55b2fe4822c9a8ec4b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4">updateSegment</a> (unsigned int segmentNumber)</td></tr>
+<tr class="memdesc:a071e34e8cdb9c55b2fe4822c9a8ec4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">update a given segment by displaying the internally stored state of the segment.  <a href="#a071e34e8cdb9c55b2fe4822c9a8ec4b4">More...</a><br /></td></tr>
+<tr class="separator:a071e34e8cdb9c55b2fe4822c9a8ec4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765b162dbd7bd07168e17ad18cf0209a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a765b162dbd7bd07168e17ad18cf0209a">updateSegments</a> ()</td></tr>
+<tr class="memdesc:a765b162dbd7bd07168e17ad18cf0209a"><td class="mdescLeft">&#160;</td><td class="mdescRight">update all segments by displaying the internally stored state of the segments.  <a href="#a765b162dbd7bd07168e17ad18cf0209a">More...</a><br /></td></tr>
+<tr class="separator:a765b162dbd7bd07168e17ad18cf0209a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb99845bc4990cb614c95ae0d7631e19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#adb99845bc4990cb614c95ae0d7631e19">~LedController</a> ()</td></tr>
 <tr class="memdesc:adb99845bc4990cb614c95ae0d7631e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Led Controller object and free the memory.  <a href="#adb99845bc4990cb614c95ae0d7631e19">More...</a><br /></td></tr>
 <tr class="separator:adb99845bc4990cb614c95ae0d7631e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -435,9 +444,15 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_aae4a63aad06b311b4863dbed29e36cef_cgraph.png" border="0" usemap="#d9/def/class_led_controller_aae4a63aad06b311b4863dbed29e36cef_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_aae4a63aad06b311b4863dbed29e36cef_cgraph" id="d9/def/class_led_controller_aae4a63aad06b311b4863dbed29e36cef_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a658f644ba8db85ed21cfbc802781d2e8" title="initilizes the LedController for use with hardware SPI " alt="" coords="279,5,403,32"/>
-<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="237,56,444,83"/>
-<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="492,56,664,83"/>
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a658f644ba8db85ed21cfbc802781d2e8" title="initilizes the LedController for use with hardware SPI " alt="" coords="279,64,403,90"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments by first resetting them and then updating them. " alt="" coords="237,114,444,141"/>
+<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a1c6886e4dc811a113c657cdb0d9249ec" title="refreshes a given segment by first resetting it and then updating it. " alt="" coords="492,114,691,141"/>
+<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="992,114,1164,141"/>
+<area shape="rect" id="node6" href="../../d9/def/class_led_controller.html#a11bfabd448afbea6d5f54771a385cb03" title="Set the number of digits (or rows) to be displayed. " alt="" coords="750,38,933,65"/>
+<area shape="rect" id="node7" href="../../d9/def/class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="748,89,935,116"/>
+<area shape="rect" id="node8" href="../../d9/def/class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="739,140,944,166"/>
+<area shape="rect" id="node9" href="../../d9/def/class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="754,190,929,217"/>
+<area shape="rect" id="node10" href="../../d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="742,241,941,268"/>
 </map>
 </div>
 
@@ -616,7 +631,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">455</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00494">494</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 
@@ -876,7 +891,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00217">activateSegment()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00292">clearSegment()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00115">emptyRow</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00013">OP_DECODEMODE</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00017">OP_DISPLAYTEST</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00173">setIntensity()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00287">setScanLimit()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00071">SPI_CLK</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00068">SPI_CS</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00065">SPI_MOSI</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00095">spidata</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00077">useHardwareSpi</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00217">activateSegment()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00292">clearSegment()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00115">emptyRow</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00083">IntensityLevel</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00013">OP_DECODEMODE</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00017">OP_DISPLAYTEST</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00173">setIntensity()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00287">setScanLimit()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00071">SPI_CLK</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00068">SPI_CS</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00065">SPI_MOSI</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00095">spidata</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00077">useHardwareSpi</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -953,7 +968,7 @@ false the <a class="el" href="../../d9/def/class_led_controller.html" title="Thi
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00463">463</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00502">502</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>.</p>
 
@@ -994,17 +1009,18 @@ false the <a class="el" href="../../d9/def/class_led_controller.html" title="Thi
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00475">475</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00514">514</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">refreshSegments()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00494">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00405">updateSegments()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_a60b060bba3327f0301bbd38771effe55_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a60b060bba3327f0301bbd38771effe55_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_a60b060bba3327f0301bbd38771effe55_cgraph" id="d9/def/class_led_controller_a60b060bba3327f0301bbd38771effe55_cgraph">
 <area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="227,5,435,32"/>
-<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="227,56,434,83"/>
-<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="483,56,655,83"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a765b162dbd7bd07168e17ad18cf0209a" title="update all segments by displaying the internally stored state of the segments. " alt="" coords="228,56,433,83"/>
+<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="483,56,681,83"/>
+<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="729,56,901,83"/>
 </map>
 </div>
 
@@ -1034,9 +1050,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00540">540</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00579">579</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00551">moveDown()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00494">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00590">moveDown()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1067,9 +1083,9 @@ Here is the call graph for this function:</div>
 <p>moves the data down by one and 0x00 will be shifted in </p>
 <dl class="section return"><dt>Returns</dt><dd>ByteRow The row the will be shifted out on the bottom </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00551">551</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00590">590</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00494">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1106,18 +1122,19 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The column that gets shifted out on the left </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00425">425</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00464">464</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">refreshSegments()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00336">setColumn()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00336">setColumn()</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00405">updateSegments()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_afc6d671d091db03eeadbeee6b14fc539_cgraph.png" border="0" usemap="#d9/def/class_led_controller_afc6d671d091db03eeadbeee6b14fc539_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_afc6d671d091db03eeadbeee6b14fc539_cgraph" id="d9/def/class_led_controller_afc6d671d091db03eeadbeee6b14fc539_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="433,5,640,32"/>
-<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#aaf1eaf3d8a81b3f2c4121478a39c6b38" title="Set one column of a given segment. " alt="" coords="215,56,385,83"/>
-<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="688,31,860,57"/>
-<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="463,56,610,83"/>
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#aaf1eaf3d8a81b3f2c4121478a39c6b38" title="Set one column of a given segment. " alt="" coords="232,5,403,32"/>
+<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#a765b162dbd7bd07168e17ad18cf0209a" title="update all segments by displaying the internally stored state of the segments. " alt="" coords="215,56,420,83"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="494,5,641,32"/>
+<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="715,31,887,57"/>
+<area shape="rect" id="node6" href="../../d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="468,56,667,83"/>
 </map>
 </div>
 
@@ -1148,18 +1165,19 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The column that gets shifted out on the right </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00425">425</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">refreshSegments()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00336">setColumn()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00336">setColumn()</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00405">updateSegments()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_aca0255f07b0349aed07f770dc3d18be9_cgraph.png" border="0" usemap="#d9/def/class_led_controller_aca0255f07b0349aed07f770dc3d18be9_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_aca0255f07b0349aed07f770dc3d18be9_cgraph" id="d9/def/class_led_controller_aca0255f07b0349aed07f770dc3d18be9_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="443,5,649,32"/>
-<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#aaf1eaf3d8a81b3f2c4121478a39c6b38" title="Set one column of a given segment. " alt="" coords="224,56,395,83"/>
-<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="697,31,869,57"/>
-<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="473,56,619,83"/>
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#aaf1eaf3d8a81b3f2c4121478a39c6b38" title="Set one column of a given segment. " alt="" coords="241,5,412,32"/>
+<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#a765b162dbd7bd07168e17ad18cf0209a" title="update all segments by displaying the internally stored state of the segments. " alt="" coords="224,56,429,83"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a4dae60bee3c74ff9490309cdfed6df8b" title="Set a single led to a given value. " alt="" coords="503,5,650,32"/>
+<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="724,31,896,57"/>
+<area shape="rect" id="node6" href="../../d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="477,56,676,83"/>
 </map>
 </div>
 
@@ -1200,17 +1218,18 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00502">502</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00541">541</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">refreshSegments()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00494">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00405">updateSegments()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_a59d9013b42b5bd301302743d159754e6_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a59d9013b42b5bd301302743d159754e6_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_a59d9013b42b5bd301302743d159754e6_cgraph" id="d9/def/class_led_controller_a59d9013b42b5bd301302743d159754e6_cgraph">
 <area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="209,5,417,32"/>
-<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="210,56,417,83"/>
-<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="465,56,637,83"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a765b162dbd7bd07168e17ad18cf0209a" title="update all segments by displaying the internally stored state of the segments. " alt="" coords="211,56,416,83"/>
+<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="465,56,664,83"/>
+<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="712,56,884,83"/>
 </map>
 </div>
 
@@ -1240,9 +1259,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00529">529</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00568">568</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00562">moveUp()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00494">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00601">moveUp()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1272,15 +1291,58 @@ Here is the call graph for this function:</div>
 
 <p>moves the data up by one and 0x00 will be shifted in </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00562">562</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00601">601</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00455">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00494">createEmptyRow()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_a28b0245cd2729d89642ac5ae5e17275b_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a28b0245cd2729d89642ac5ae5e17275b_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_a28b0245cd2729d89642ac5ae5e17275b_cgraph" id="d9/def/class_led_controller_a28b0245cd2729d89642ac5ae5e17275b_cgraph">
 <area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="209,5,417,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c6886e4dc811a113c657cdb0d9249ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c6886e4dc811a113c657cdb0d9249ec">&#9670;&nbsp;</a></span>refreshSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::refreshSegment </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segmentNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>refreshes a given segment by first resetting it and then updating it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>the segment that will be resetted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00385">385</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00217">activateSegment()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00292">clearSegment()</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00083">IntensityLevel</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00013">OP_DECODEMODE</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00017">OP_DISPLAYTEST</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00173">setIntensity()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00287">setScanLimit()</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00415">updateSegment()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/def/class_led_controller_a1c6886e4dc811a113c657cdb0d9249ec_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a1c6886e4dc811a113c657cdb0d9249ec_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a1c6886e4dc811a113c657cdb0d9249ec_cgraph" id="d9/def/class_led_controller_a1c6886e4dc811a113c657cdb0d9249ec_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="252,5,457,32"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="505,132,677,159"/>
+<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="261,107,448,133"/>
+<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="267,157,442,184"/>
+<area shape="rect" id="node6" href="../../d9/def/class_led_controller.html#a11bfabd448afbea6d5f54771a385cb03" title="Set the number of digits (or rows) to be displayed. " alt="" coords="263,208,446,235"/>
+<area shape="rect" id="node7" href="../../d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="255,259,454,285"/>
 </map>
 </div>
 
@@ -1301,17 +1363,23 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>refreshes all segments displaying the internally stored state of the segments. </p>
+<p>refreshes all segments by first resetting them and then updating them. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00374">374</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00385">refreshSegment()</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_a29f33ebe6ae60dae3653d9e80822bc2b_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a29f33ebe6ae60dae3653d9e80822bc2b_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_a29f33ebe6ae60dae3653d9e80822bc2b_cgraph" id="d9/def/class_led_controller_a29f33ebe6ae60dae3653d9e80822bc2b_cgraph">
-<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="260,5,432,32"/>
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a1c6886e4dc811a113c657cdb0d9249ec" title="refreshes a given segment by first resetting it and then updating it. " alt="" coords="260,132,459,159"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="507,5,712,32"/>
+<area shape="rect" id="node4" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="760,132,932,159"/>
+<area shape="rect" id="node5" href="../../d9/def/class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="516,107,703,133"/>
+<area shape="rect" id="node6" href="../../d9/def/class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="522,157,697,184"/>
+<area shape="rect" id="node7" href="../../d9/def/class_led_controller.html#a11bfabd448afbea6d5f54771a385cb03" title="Set the number of digits (or rows) to be displayed. " alt="" coords="518,208,701,235"/>
+<area shape="rect" id="node8" href="../../d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="510,259,709,285"/>
 </map>
 </div>
 
@@ -1378,7 +1446,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The reversed byte </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00414">414</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00453">453</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 </div>
 </div>
@@ -1417,9 +1485,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00575">575</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00614">614</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00414">reverse()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00453">reverse()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1466,9 +1534,9 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00585">585</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00624">624</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00414">reverse()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00453">reverse()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2053,6 +2121,76 @@ Here is the call graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">245</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00071">SPI_CLK</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00068">SPI_CS</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00065">SPI_MOSI</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00095">spidata</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00077">useHardwareSpi</a>.</p>
+
+</div>
+</div>
+<a id="a071e34e8cdb9c55b2fe4822c9a8ec4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071e34e8cdb9c55b2fe4822c9a8ec4b4">&#9670;&nbsp;</a></span>updateSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::updateSegment </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>segmentNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update a given segment by displaying the internally stored state of the segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>the segment that will be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00415">415</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00062">LedStates</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00245">spiTransfer()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/def/class_led_controller_a071e34e8cdb9c55b2fe4822c9a8ec4b4_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a071e34e8cdb9c55b2fe4822c9a8ec4b4_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a071e34e8cdb9c55b2fe4822c9a8ec4b4_cgraph" id="d9/def/class_led_controller_a071e34e8cdb9c55b2fe4822c9a8ec4b4_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="252,5,424,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a765b162dbd7bd07168e17ad18cf0209a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765b162dbd7bd07168e17ad18cf0209a">&#9670;&nbsp;</a></span>updateSegments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LedController::updateSegments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update all segments by displaying the internally stored state of the segments. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00405">405</a> of file <a class="el" href="../../db/da5/_led_controller_8cpp_source.html">LedController.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00109">initilized</a>, <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00074">SegmentCount</a>, and <a class="el" href="../../db/da5/_led_controller_8cpp_source.html#l00415">updateSegment()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/def/class_led_controller_a765b162dbd7bd07168e17ad18cf0209a_cgraph.png" border="0" usemap="#d9/def/class_led_controller_a765b162dbd7bd07168e17ad18cf0209a_cgraph" alt=""/></div>
+<map name="d9/def/class_led_controller_a765b162dbd7bd07168e17ad18cf0209a_cgraph" id="d9/def/class_led_controller_a765b162dbd7bd07168e17ad18cf0209a_cgraph">
+<area shape="rect" id="node2" href="../../d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="259,5,457,32"/>
+<area shape="rect" id="node3" href="../../d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="505,5,677,32"/>
+</map>
+</div>
 
 </div>
 </div>

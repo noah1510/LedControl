@@ -1,5 +1,6 @@
 <map id="LedController::moveUp" name="LedController::moveUp">
 <area shape="rect" id="node2" href="$d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="209,5,417,32"/>
-<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="210,56,417,83"/>
-<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="465,56,637,83"/>
+<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a765b162dbd7bd07168e17ad18cf0209a" title="update all segments by displaying the internally stored state of the segments. " alt="" coords="211,56,416,83"/>
+<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="465,56,664,83"/>
+<area shape="rect" id="node5" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="712,56,884,83"/>
 </map>

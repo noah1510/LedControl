@@ -1,5 +1,11 @@
 <map id="LedController::LedController" name="LedController::LedController">
-<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#a658f644ba8db85ed21cfbc802781d2e8" title="initilizes the LedController for use with hardware SPI " alt="" coords="279,5,403,32"/>
-<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments displaying the internally stored state of the segments. " alt="" coords="237,56,444,83"/>
-<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="492,56,664,83"/>
+<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#a658f644ba8db85ed21cfbc802781d2e8" title="initilizes the LedController for use with hardware SPI " alt="" coords="279,64,403,90"/>
+<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b" title="refreshes all segments by first resetting them and then updating them. " alt="" coords="237,114,444,141"/>
+<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a1c6886e4dc811a113c657cdb0d9249ec" title="refreshes a given segment by first resetting it and then updating it. " alt="" coords="492,114,691,141"/>
+<area shape="rect" id="node5" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="992,114,1164,141"/>
+<area shape="rect" id="node6" href="$d9/def/class_led_controller.html#a11bfabd448afbea6d5f54771a385cb03" title="Set the number of digits (or rows) to be displayed. " alt="" coords="750,38,933,65"/>
+<area shape="rect" id="node7" href="$d9/def/class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387" title="clears a given segment, turning all its LEDs off. " alt="" coords="748,89,935,116"/>
+<area shape="rect" id="node8" href="$d9/def/class_led_controller.html#a11cfcad4edd096018beca829b3bf473f" title="Get the segment out of power&#45;down mode for normal operation. " alt="" coords="739,140,944,166"/>
+<area shape="rect" id="node9" href="$d9/def/class_led_controller.html#ac0c399362612dce7164edeb4ae420ac4" title="Set the brightness of the segment. " alt="" coords="754,190,929,217"/>
+<area shape="rect" id="node10" href="$d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="742,241,941,268"/>
 </map>

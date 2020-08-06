@@ -1,0 +1,4 @@
+<map id="LedController::updateSegments" name="LedController::updateSegments">
+<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="259,5,457,32"/>
+<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="505,5,677,32"/>
+</map>

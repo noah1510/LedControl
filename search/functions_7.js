@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['refreshsegment',['refreshSegment',['../d9/def/class_led_controller.html#a1c6886e4dc811a113c657cdb0d9249ec',1,'LedController']]],
   ['refreshsegments',['refreshSegments',['../d9/def/class_led_controller.html#a29f33ebe6ae60dae3653d9e80822bc2b',1,'LedController']]],
   ['resetmatrix',['resetMatrix',['../d9/def/class_led_controller.html#a4c0e20a70eac83e206013b17320f820c',1,'LedController']]],
   ['reverse',['reverse',['../d9/def/class_led_controller.html#a45cf5b65f42829bb750f5bb22766c989',1,'LedController::reverse(byte input)'],['../d9/def/class_led_controller.html#a57ac9c4764e3f21c26c03af647476231',1,'LedController::reverse(ByteBlock input, ByteBlock *reversedInput)']]],
