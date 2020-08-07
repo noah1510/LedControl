@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['emptyrow',['emptyRow',['../d9/def/class_led_controller.html#aa9f55d6f6d3f264be3c58a8f3a1e9d90',1,'LedController']]]
+  ['conf',['conf',['../d9/def/class_led_controller.html#ab9324e9392349d09b814079a39ff9c88',1,'LedController']]]
 ];
