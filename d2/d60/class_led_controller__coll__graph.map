@@ -1,3 +1,5 @@
-<map id="LedController" name="LedController">
-<area shape="rect" id="node2" href="$db/df4/classcontroller__configuration.html" title="This class is ued to handle the configuration of the LedController. " alt="" coords="5,5,161,32"/>
+<map id="LedController&lt; columns, rows &gt;" name="LedController&lt; columns, rows &gt;">
+<area shape="rect" id="node1" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers." alt="" coords="5,171,188,212"/>
+<area shape="rect" id="node2" href="$dd/d65/class_byte_block.html" title=" " alt="" coords="53,81,141,108"/>
+<area shape="rect" id="node3" href="$df/d74/class_byte_row.html" title=" " alt="" coords="37,5,156,32"/>
 </map>

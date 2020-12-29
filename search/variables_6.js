@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usehardwarespi',['useHardwareSpi',['../db/df4/classcontroller__configuration.html#a28653795567b6e5ebb01af68d525643a',1,'controller_configuration']]]
+  ['row_5fspi_5fcs_246',['row_SPI_CS',['../db/df4/classcontroller__configuration.html#ae729b80e149455a0302aec8b27353615',1,'controller_configuration']]]
 ];

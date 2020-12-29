@@ -1,4 +1,0 @@
-<map id="LedController::moveDown" name="LedController::moveDown">
-<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="448,5,656,32"/>
-<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#adff6bf9fa136156f441134d6598857b3" title="moves the data down by one and 0x00 will be shifted in " alt="" coords="227,31,400,57"/>
-</map>

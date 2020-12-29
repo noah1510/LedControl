@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['row_5fspi_5fcs',['row_SPI_CS',['../db/df4/classcontroller__configuration.html#ad12fdcf1d0af3b7eb4026ad9e8486a46',1,'controller_configuration']]],
-  ['rows',['rows',['../db/df4/classcontroller__configuration.html#a14ce3437b78c251a4d33b159a74ea267',1,'controller_configuration']]]
+  ['ledstates_244',['LedStates',['../d9/def/class_led_controller.html#a46879e5eff8a9fc7f8a96555d21b3329',1,'LedController']]]
 ];

@@ -1,6 +1,0 @@
-<map id="LedController::moveDown" name="LedController::moveDown">
-<area shape="rect" id="node2" href="$d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6" title="this copies an empty row into row " alt="" coords="227,5,435,32"/>
-<area shape="rect" id="node3" href="$d9/def/class_led_controller.html#a765b162dbd7bd07168e17ad18cf0209a" title="update all segments by displaying the internally stored state of the segments. " alt="" coords="228,56,433,83"/>
-<area shape="rect" id="node4" href="$d9/def/class_led_controller.html#a071e34e8cdb9c55b2fe4822c9a8ec4b4" title="update a given segment by displaying the internally stored state of the segment. " alt="" coords="483,56,681,83"/>
-<area shape="rect" id="node5" href="$d9/def/class_led_controller.html#a481bc5fb3c5a0eefc8204d7a48c94ebe" title="This function transfers one command to the attached module. " alt="" coords="729,56,901,83"/>
-</map>

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['displayonsegment',['displayOnSegment',['../d9/def/class_led_controller.html#a60b860b76cd579b2b83875e35d6b00ac',1,'LedController']]]
+  ['clearmatrix_174',['clearMatrix',['../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1',1,'LedController']]],
+  ['clearsegment_175',['clearSegment',['../d9/def/class_led_controller.html#a55ba71f1142c76d39b39be8df9e11a32',1,'LedController']]],
+  ['copy_176',['copy',['../db/df4/classcontroller__configuration.html#a620be40a71cdf2366ecf885edb265e73',1,'controller_configuration']]]
 ];

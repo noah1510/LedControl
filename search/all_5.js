@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['getconfig',['getConfig',['../d9/def/class_led_controller.html#af92c98b03109b9c2a8ae86c318b530aa',1,'LedController']]],
-  ['getrow',['getRow',['../d9/def/class_led_controller.html#a3ecd47a8ae3ea19e61b6d9599a977065',1,'LedController']]],
-  ['getsegmentcount',['getSegmentCount',['../d9/def/class_led_controller.html#a541961c0ca85cf4b132de50153a1df3a',1,'LedController']]],
-  ['getsegmentdata',['getSegmentData',['../d9/def/class_led_controller.html#afb39ef0ef51b43d49b997e8ed790d773',1,'LedController']]]
+  ['debug_5foutput_18',['debug_output',['../db/df4/classcontroller__configuration.html#a3b00b58f4b1a68d93bea65c53091173f',1,'controller_configuration']]],
+  ['deprecated_20list_19',['Deprecated List',['../da/d58/deprecated.html',1,'']]],
+  ['displayonsegment_20',['displayOnSegment',['../d9/def/class_led_controller.html#a058d42aeb995a85675c86662fe29a0dd',1,'LedController::displayOnSegment(unsigned int segmentindex, ByteBlock data)'],['../d9/def/class_led_controller.html#a327c7a91c8bf8a3696965ffc47edeff7',1,'LedController::displayOnSegment(unsigned int column, unsigned int row_num, ByteBlock data)']]]
 ];

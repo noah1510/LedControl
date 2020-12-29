@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['installation_20instructions',['Installation instructions',['../d6/da3/md_doc_install.html',1,'']]]
+  ['deprecated_20list_276',['Deprecated List',['../da/d58/deprecated.html',1,'']]]
 ];

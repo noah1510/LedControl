@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['ledcontroller',['LedController',['../d9/def/class_led_controller.html#a370d24b1084701b09a52d45f8c5567f4',1,'LedController::LedController()'],['../d9/def/class_led_controller.html#a48414cff463afcec44e3056f9a84fac4',1,'LedController::LedController(unsigned int csPin, unsigned int numSegments=4)'],['../d9/def/class_led_controller.html#aaf70bc009abce437e5d07e23ba23535f',1,'LedController::LedController(unsigned int dataPin, unsigned int clkPin, unsigned int csPin, unsigned int numSegments=4, bool useHardwareSpi=false)'],['../d9/def/class_led_controller.html#a1a06df4def583aaab4971de5497b5311',1,'LedController::LedController(const controller_configuration &amp;configuration)'],['../d9/def/class_led_controller.html#aae4a63aad06b311b4863dbed29e36cef',1,'LedController::LedController(const LedController &amp;other)']]]
+  ['in_5farray_189',['in_array',['../dd/d3a/common_8hpp.html#af67adce177a8c74a0cb5db483a50ea3c',1,'common.hpp']]],
+  ['init_190',['init',['../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9',1,'LedController::init(unsigned int csPin)'],['../d9/def/class_led_controller.html#a02ddc9a8b5e8cbfbabe2303a3accf03a',1,'LedController::init(unsigned int dataPin, unsigned int clkPin, unsigned int csPin, bool useHardwareSpi=false)'],['../d9/def/class_led_controller.html#aaa67b66769e03f92b2ec575eb2f83097',1,'LedController::init(const controller_configuration&lt; columns, rows &gt; &amp;configuration)']]],
+  ['initconf_191',['initConf',['../d9/def/class_led_controller.html#a2c1e2674c7ab83b09efc27f907dde570',1,'LedController']]],
+  ['initspi_192',['initSPI',['../d9/def/class_led_controller.html#ae24a5279fe69824527adf446e9a3b897',1,'LedController']]],
+  ['isinitilized_193',['isInitilized',['../d9/def/class_led_controller.html#acfd674c9302e0391ec3fb55247400d5d',1,'LedController']]],
+  ['isvalid_194',['isValid',['../db/df4/classcontroller__configuration.html#a0f0fd75e4c76c23ff7c0f9b70905d0cf',1,'controller_configuration']]],
+  ['isvalidconfig_195',['isValidConfig',['../db/df4/classcontroller__configuration.html#ad237ddfbc408f4c6e42a4ea180dad5bc',1,'controller_configuration']]]
 ];

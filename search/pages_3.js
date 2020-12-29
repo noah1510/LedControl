@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['security_20policy',['Security Policy',['../d7/d88/md__s_e_c_u_r_i_t_y.html',1,'']]]
+  ['how_20to_20use_20this_20library_278',['How to use this library',['../dc/dc4/md_doc_usage.html',1,'']]]
 ];

@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['mainpage_2emd',['mainpage.md',['../dc/dc6/mainpage_8md.html',1,'']]],
-  ['makecolumns',['makeColumns',['../d9/def/class_led_controller.html#af0a91aae6cae20299930df790c90c978',1,'LedController']]],
-  ['movedown',['moveDown',['../d9/def/class_led_controller.html#a60b060bba3327f0301bbd38771effe55',1,'LedController::moveDown(byte *shiftedInRow, byte **shiftedOutRow)'],['../d9/def/class_led_controller.html#a092a3f89fb9cde16e9e3676c592ded28',1,'LedController::moveDown(byte **shiftedOutRow)'],['../d9/def/class_led_controller.html#adff6bf9fa136156f441134d6598857b3',1,'LedController::moveDown()']]],
-  ['moveleft',['moveLeft',['../d9/def/class_led_controller.html#afc6d671d091db03eeadbeee6b14fc539',1,'LedController']]],
-  ['moveright',['moveRight',['../d9/def/class_led_controller.html#aca0255f07b0349aed07f770dc3d18be9',1,'LedController']]],
-  ['moveup',['moveUp',['../d9/def/class_led_controller.html#a59d9013b42b5bd301302743d159754e6',1,'LedController::moveUp(byte *shiftedInRow, byte **shiftedOutRow)'],['../d9/def/class_led_controller.html#a6e4fe6c4b65441803c3955a607af6005',1,'LedController::moveUp(byte **shiftedOutRow)'],['../d9/def/class_led_controller.html#a28b0245cd2729d89642ac5ae5e17275b',1,'LedController::moveUp()']]]
+  ['ledcontroller_46',['LedController',['../index.html',1,'']]],
+  ['ledcontroller_47',['LedController',['../d9/def/class_led_controller.html',1,'LedController&lt; columns, rows &gt;'],['../d9/def/class_led_controller.html#a37350dd2df7022a39b92fa0d270a6791',1,'LedController::LedController()'],['../d9/def/class_led_controller.html#a9f0008a301e1156428145b9d736b03c2',1,'LedController::LedController(unsigned int csPin)'],['../d9/def/class_led_controller.html#ad7f5d582384750d4fa319846febdec85',1,'LedController::LedController(unsigned int dataPin, unsigned int clkPin, unsigned int csPin, bool useHardwareSpi=false)'],['../d9/def/class_led_controller.html#aacc944557afe0c72d2c226a670ecd02f',1,'LedController::LedController(const controller_configuration&lt; columns, rows &gt; &amp;configuration)'],['../d9/def/class_led_controller.html#a3998248e0d595842bbfc9156427e7a96',1,'LedController::LedController(const LedController &amp;other)']]],
+  ['ledcontroller_2ehpp_48',['LedController.hpp',['../d9/d4a/_led_controller_8hpp.html',1,'']]],
+  ['ledcontroller_5fbyteblock_2ehpp_49',['LedController_byteblock.hpp',['../d6/d9c/_led_controller__byteblock_8hpp.html',1,'']]],
+  ['ledcontroller_5fbyterow_2ehpp_50',['LedController_byterow.hpp',['../d8/d37/_led_controller__byterow_8hpp.html',1,'']]],
+  ['ledcontroller_5fconfig_2ehpp_51',['LedController_config.hpp',['../df/d2a/_led_controller__config_8hpp.html',1,'']]],
+  ['ledcontroller_5fmovement_2ehpp_52',['LedController_movement.hpp',['../d4/d0e/_led_controller__movement_8hpp.html',1,'']]],
+  ['ledcontroller_5ftemplate_2ehpp_53',['LedController_template.hpp',['../db/dcc/_led_controller__template_8hpp.html',1,'']]],
+  ['ledstates_54',['LedStates',['../d9/def/class_led_controller.html#a46879e5eff8a9fc7f8a96555d21b3329',1,'LedController']]]
 ];

@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['clearmatrix',['clearMatrix',['../d9/def/class_led_controller.html#af09ce879178e92073e0d2862d7b56907',1,'LedController']]],
-  ['clearsegment',['clearSegment',['../d9/def/class_led_controller.html#aa09c579124ba479df53e78bc5f3f8387',1,'LedController']]],
-  ['conf',['conf',['../d9/def/class_led_controller.html#ab9324e9392349d09b814079a39ff9c88',1,'LedController']]],
-  ['controller_5fconfiguration',['controller_configuration',['../db/df4/classcontroller__configuration.html',1,'']]],
-  ['createemptyrow',['createEmptyRow',['../d9/def/class_led_controller.html#ab4041e691f00fc4d6cbdd7d03f0246a6',1,'LedController']]]
+  ['activateallsegments_2',['activateAllSegments',['../d9/def/class_led_controller.html#a5059529d3bd82e8fbbb1362a1830aa76',1,'LedController']]],
+  ['activatesegment_3',['activateSegment',['../d9/def/class_led_controller.html#ac3b854accf03fd483aefa987defff57a',1,'LedController']]],
+  ['at_4',['at',['../df/d74/class_byte_row.html#a18182806495de3ace2e5ad163adce500',1,'ByteRow']]]
 ];
