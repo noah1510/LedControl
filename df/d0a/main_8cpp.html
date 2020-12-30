@@ -9,6 +9,10 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
@@ -47,6 +51,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('df/d0a/main_8cpp.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,11 +82,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="../../dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a class="el" href="../../dir_3d33df030c77a31fa8b3e9742340505e.html">common</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -75,27 +91,28 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d1/dc9/_move_8hpp_source.html">Move.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/d8a/_reverse_8hpp_source.html">Reverse.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d0b/_move__multi_8hpp_source.html">Move_multi.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../da/dce/main_8cpp__incl.png" border="0" usemap="#test_2common_2main_8cpp" alt=""/></div>
 <map name="test_2common_2main_8cpp" id="test_2common_2main_8cpp">
-<area shape="rect" title=" " alt="" coords="256,5,428,32"/>
-<area shape="rect" href="../../d1/dc9/_move_8hpp.html" title=" " alt="" coords="331,155,418,181"/>
-<area shape="rect" href="../../d9/d8a/_reverse_8hpp.html" title=" " alt="" coords="204,155,307,181"/>
-<area shape="rect" href="../../de/d0b/_move__multi_8hpp.html" title=" " alt="" coords="380,80,507,107"/>
-<area shape="rect" href="../../dd/d3a/common_8hpp.html" title=" " alt="" coords="321,229,428,256"/>
-<area shape="rect" href="../../d9/d4a/_led_controller_8hpp.html" title=" " alt="" coords="244,304,380,331"/>
-<area shape="rect" title=" " alt="" coords="404,304,470,331"/>
-<area shape="rect" href="../../db/dcc/_led_controller__template_8hpp.html" title=" " alt="" coords="210,453,413,480"/>
-<area shape="rect" href="../../d4/d0e/_led_controller__movement_8hpp.html" title="This file contains the functions to move data on the LedController." alt="" coords="278,379,492,405"/>
-<area shape="rect" title=" " alt="" coords="103,677,206,704"/>
-<area shape="rect" href="../../d6/d9c/_led_controller__byteblock_8hpp.html" title=" " alt="" coords="29,528,237,555"/>
-<area shape="rect" title=" " alt="" coords="261,528,362,555"/>
-<area shape="rect" title=" " alt="" coords="387,528,442,555"/>
-<area shape="rect" href="../../df/d2a/_led_controller__config_8hpp.html" title=" " alt="" coords="366,603,548,629"/>
-<area shape="rect" href="../../d8/d37/_led_controller__byterow_8hpp.html" title=" " alt="" coords="124,603,320,629"/>
+<area shape="rect" title=" " alt="" coords="372,5,544,32"/>
+<area shape="rect" href="../../d1/dc9/_move_8hpp.html" title=" " alt="" coords="356,80,443,107"/>
+<area shape="rect" href="../../d9/d8a/_reverse_8hpp.html" title=" " alt="" coords="467,80,569,107"/>
+<area shape="rect" href="../../dd/d3a/common_8hpp.html" title=" " alt="" coords="405,155,511,181"/>
+<area shape="rect" href="../../d9/d4a/_led_controller_8hpp.html" title=" " alt="" coords="327,229,463,256"/>
+<area shape="rect" title=" " alt="" coords="488,229,553,256"/>
+<area shape="rect" href="../../dc/d38/_led_controller__low__level_8hpp.html" title="This file contains the low level functions of the LedController which are needed to implement most ex..." alt="" coords="5,304,212,331"/>
+<area shape="rect" href="../../db/dcc/_led_controller__template_8hpp.html" title=" " alt="" coords="294,379,497,405"/>
+<area shape="rect" href="../../d4/d0e/_led_controller__movement_8hpp.html" title="This file contains the functions to move data on the LedController." alt="" coords="288,304,503,331"/>
+<area shape="rect" href="../../d6/d76/_led_controller__display_8hpp.html" title="This file contains the functions to display data on an LedController." alt="" coords="527,304,717,331"/>
+<area shape="rect" href="../../dd/d4b/_led_controller__transformation_8hpp.html" title="This file contains the functions that transform given data (eg. rotation,reverse,...." alt="" coords="741,304,983,331"/>
+<area shape="rect" title=" " alt="" coords="187,603,289,629"/>
+<area shape="rect" href="../../d6/d9c/_led_controller__byteblock_8hpp.html" title=" " alt="" coords="113,453,321,480"/>
+<area shape="rect" title=" " alt="" coords="345,453,446,480"/>
+<area shape="rect" title=" " alt="" coords="471,453,525,480"/>
+<area shape="rect" href="../../df/d2a/_led_controller__config_8hpp.html" title=" " alt="" coords="449,528,632,555"/>
+<area shape="rect" href="../../d8/d37/_led_controller__byterow_8hpp.html" title=" " alt="" coords="208,528,404,555"/>
 </map>
 </div>
 </div>
@@ -135,9 +152,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/d0a/main_8cpp_source.html#l00005">process()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d0a/main_8cpp_source.html#l00004">process()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -146,7 +163,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,81,60,108"/>
 <area shape="rect" href="../../df/d0a/main_8cpp.html#a2e9c5136d19b1a95fc427e0852deab5c" title=" " alt="" coords="108,81,180,108"/>
 <area shape="rect" href="../../dd/d0b/_reverse_8cpp.html#a383709be381ac67710172ccd41d01619" title=" " alt="" coords="254,5,369,32"/>
-<area shape="rect" href="../../db/de5/_move__multi_8cpp.html#a47e4ed8acea268a037d5da0b39c7d99f" title=" " alt="" coords="228,56,395,83"/>
+<area shape="rect" href="../../dc/dd6/_move_8cpp.html#a47e4ed8acea268a037d5da0b39c7d99f" title=" " alt="" coords="228,56,395,83"/>
 <area shape="rect" href="../../dc/dd6/_move_8cpp.html#a71ffb758e53cff525ca573c5025bad3f" title=" " alt="" coords="248,107,375,133"/>
 <area shape="rect" href="../../dd/d0b/_reverse_8cpp.html#a1933eae5d6df7260de40e65a58507139" title=" " alt="" coords="234,157,389,184"/>
 <area shape="rect" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display)" alt="" coords="443,81,609,108"/>
@@ -170,9 +187,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00005">5</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00004">4</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dd/d0b/_reverse_8cpp_source.html#l00008">reverse_Block()</a>, <a class="el" href="../../db/de5/_move__multi_8cpp_source.html#l00030">run_move_multi_tests()</a>, <a class="el" href="../../dc/dd6/_move_8cpp_source.html#l00031">run_move_tests()</a>, and <a class="el" href="../../dd/d0b/_reverse_8cpp_source.html#l00003">test_reverse_simple()</a>.</p>
+<p class="reference">References <a class="el" href="../../dd/d0b/_reverse_8cpp_source.html#l00008">reverse_Block()</a>, <a class="el" href="../../dc/dd6/_move_8cpp_source.html#l00069">run_move_multi_tests()</a>, <a class="el" href="../../dc/dd6/_move_8cpp_source.html#l00031">run_move_tests()</a>, and <a class="el" href="../../dd/d0b/_reverse_8cpp_source.html#l00003">test_reverse_simple()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -180,7 +197,7 @@ Here is the call graph for this function:</div>
 <map name="df/d0a/main_8cpp_a2e9c5136d19b1a95fc427e0852deab5c_cgraph" id="df/d0a/main_8cpp_a2e9c5136d19b1a95fc427e0852deab5c_cgraph">
 <area shape="rect" title=" " alt="" coords="5,81,77,108"/>
 <area shape="rect" href="../../dd/d0b/_reverse_8cpp.html#a383709be381ac67710172ccd41d01619" title=" " alt="" coords="151,5,266,32"/>
-<area shape="rect" href="../../db/de5/_move__multi_8cpp.html#a47e4ed8acea268a037d5da0b39c7d99f" title=" " alt="" coords="125,56,292,83"/>
+<area shape="rect" href="../../dc/dd6/_move_8cpp.html#a47e4ed8acea268a037d5da0b39c7d99f" title=" " alt="" coords="125,56,292,83"/>
 <area shape="rect" href="../../dc/dd6/_move_8cpp.html#a71ffb758e53cff525ca573c5025bad3f" title=" " alt="" coords="145,107,272,133"/>
 <area shape="rect" href="../../dd/d0b/_reverse_8cpp.html#a1933eae5d6df7260de40e65a58507139" title=" " alt="" coords="131,157,286,184"/>
 <area shape="rect" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79" title="This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display)" alt="" coords="340,81,507,108"/>
@@ -190,11 +207,15 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="../../doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a class="el" href="../../dir_3d33df030c77a31fa8b3e9742340505e.html">common</a></li><li class="navelem"><a class="el" href="../../df/d0a/main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

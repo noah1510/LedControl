@@ -9,6 +9,10 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
@@ -47,6 +51,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d9/def/class_led_controller.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,7 +82,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -86,7 +106,7 @@ Collaboration diagram for LedController&lt; columns, rows &gt;:</div>
 <area shape="rect" href="../../dd/d65/class_byte_block.html" title=" " alt="" coords="53,81,141,108"/>
 <area shape="rect" href="../../df/d74/class_byte_row.html" title=" " alt="" coords="37,5,156,32"/>
 </map>
-<center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -323,6 +343,8 @@ class LedController&lt; columns, rows &gt;</h3>
 <p>This class provied a control interface for MAX7219 and MAX7221 Led display drivers. </p>
 <p>This Controller Class is mainly target at led matracies consisting of more than 1 segment. While it can also handle 7-Segment Displays it is not tested that well. </p><dl class="section warning"><dt>Warning</dt><dd>This object is not thread safe yet.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000001">Todo:</a></b></dt><dd>make it threading safe </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d3/d42/_l_c_demo7_segment_8ino-example.html#_a0">LCDemo7Segment.ino</a>, <a class="el" href="../../dc/d76/_led_controller_demo_counting_8ino-example.html#_a0">LedControllerDemoCounting.ino</a>, <a class="el" href="../../da/d9d/_led_controller_demo_hw_s_p_i_8ino-example.html#_a0">LedControllerDemoHwSPI.ino</a>, <a class="el" href="../../db/d6d/_led_controller_demo_rocket_8ino-example.html#_a0">LedControllerDemoRocket.ino</a>, and <a class="el" href="../../de/dd8/_led_controller_demo_rocket_multi_8ino-example.html#_a0">LedControllerDemoRocketMulti.ino</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -342,7 +364,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>Construct a new <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> without initilizing anything. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -372,7 +394,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -427,7 +449,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +479,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00041">41</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00029">29</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -477,7 +499,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>Destroy the Led Controller object and free the memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00022">22</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00010">10</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -507,7 +529,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00046">46</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00066">LedController&lt; columns, rows &gt;::conf</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00092">LedController&lt; columns, rows &gt;::initilized</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00060">LedController&lt; columns, rows &gt;::LedStates</a>, and <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00078">LedController&lt; columns, rows &gt;::spidata</a>.</p>
 
@@ -530,7 +552,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>Get all segments out of power-down mode for normal operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00304">304</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -560,9 +582,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00284">284</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00018">OP_SHUTDOWN</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00028">OP_SHUTDOWN</a>.</p>
 
 </div>
 </div>
@@ -582,7 +604,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>clears all segments, turning all LEDs off. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00183">183</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -612,7 +634,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00377">377</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -660,7 +682,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00231">231</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00066">66</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -701,7 +723,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00219">219</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -722,7 +744,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 <p>Get the Config of the Led Controller. </p>
 <dl class="section return"><dt>Returns</dt><dd>controlller_configuration the configuration </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00586">586</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -764,7 +786,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value each bit set to 1 will light up the corresponding Led. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00401">401</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00136">136</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -785,7 +807,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 <p>Get the number of configured segments. </p>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int The number of configured segments </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00266">266</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00176">176</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -827,7 +849,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> the requested segment </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00261">261</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00171">171</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -877,7 +899,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00237">237</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00146">146</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -908,7 +930,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> the requested segment </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00255">255</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00165">165</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -950,7 +972,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00242">242</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -980,7 +1002,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00096">96</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00110">controller_configuration&lt; columns, rows &gt;::isValid()</a>.</p>
 <div class="dynheader">
@@ -1022,7 +1044,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00069">69</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00038">controller_configuration&lt; columns, rows &gt;::SPI_CS</a>, and <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00053">controller_configuration&lt; columns, rows &gt;::useHardwareSpi</a>.</p>
 
@@ -1079,7 +1101,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00045">controller_configuration&lt; columns, rows &gt;::SPI_CLK</a>, <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00038">controller_configuration&lt; columns, rows &gt;::SPI_CS</a>, <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00032">controller_configuration&lt; columns, rows &gt;::SPI_MOSI</a>, and <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00053">controller_configuration&lt; columns, rows &gt;::useHardwareSpi</a>.</p>
 
@@ -1109,7 +1131,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>initilize the configuration </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00114">114</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1159,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>initilize the spi outputs </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00124">124</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1160,7 +1182,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 <dd>
 false the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> is not initilized </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00169">169</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00142">142</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1213,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> The Columns of the given <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00550">550</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00028">28</a> of file <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1255,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00590">590</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
 </div>
 </div>
@@ -1936,9 +1958,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00497">497</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00119">119</a> of file <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00015">OP_DECODEMODE</a>, and <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00019">OP_DISPLAYTEST</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00025">OP_DECODEMODE</a>, and <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00029">OP_DISPLAYTEST</a>.</p>
 
 </div>
 </div>
@@ -1958,7 +1980,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>refreshes all segments by first resetting them and then updating them. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00486">486</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00221">221</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -1986,7 +2008,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>initilize the internal buffers of the Controller. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00154">154</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2006,7 +2028,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>activates all segments, sets to same intensity and cleas them </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00172">172</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2037,7 +2059,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte The reversed byte </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00539">539</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
 </div>
 </div>
@@ -2068,7 +2090,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> The reversed <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00564">564</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
 </div>
 </div>
@@ -2110,7 +2132,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00605">605</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
 </div>
 </div>
@@ -2141,7 +2163,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> The rotated <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00575">575</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
 </div>
 </div>
@@ -2183,7 +2205,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00617">617</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00092">92</a> of file <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
 </div>
 </div>
@@ -2239,7 +2261,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00464">464</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00199">199</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2287,7 +2309,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00429">429</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00165">165</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2342,7 +2364,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00448">448</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00183">183</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2373,7 +2395,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00194">194</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00094">94</a> of file <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
 </div>
 </div>
@@ -2422,9 +2444,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00208">208</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00016">OP_INTENSITY</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00026">OP_INTENSITY</a>.</p>
 
 </div>
 </div>
@@ -2479,7 +2501,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00410">410</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00145">145</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2527,7 +2549,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00389">389</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00124">124</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2569,9 +2591,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00366">366</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00017">OP_SCANLIMIT</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00027">OP_SCANLIMIT</a>.</p>
 
 </div>
 </div>
@@ -2591,7 +2613,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>Set all segments into power-down mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00293">293</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00090">90</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2621,9 +2643,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00275">275</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00072">72</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00018">OP_SHUTDOWN</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00028">OP_SHUTDOWN</a>.</p>
 
 </div>
 </div>
@@ -2679,7 +2701,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00315">315</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
 </div>
 </div>
@@ -2709,7 +2731,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00528">528</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00243">243</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2729,7 +2751,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>update all segments by displaying the internally stored state of the segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00517">517</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00232">232</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
 </div>
@@ -2849,14 +2871,21 @@ template&lt;size_t columns, size_t rows&gt; </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a></li>
 <li>src/<a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a></li>
+<li>src/<a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a></li>
+<li>src/<a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a></li>
 <li>src/<a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a></li>
+<li>src/<a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="../../doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d9/def/class_led_controller.html">LedController</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

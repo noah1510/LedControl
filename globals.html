@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -48,6 +52,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -114,46 +134,46 @@ $(function() {
 
 <h3><a id="index_o"></a>- o -</h3><ul>
 <li>OP_DECODEMODE
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a318b32d905ce8e57d7caec133ec7d712">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a318b32d905ce8e57d7caec133ec7d712">LedController_low_level.hpp</a>
 </li>
 <li>OP_DIGIT0
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#ac2dcbbd3fef01a1defd3aa5f8a8c612a">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#ac2dcbbd3fef01a1defd3aa5f8a8c612a">LedController_low_level.hpp</a>
 </li>
 <li>OP_DIGIT1
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a6c8209744590cd0cc8495cc6de58ab02">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a6c8209744590cd0cc8495cc6de58ab02">LedController_low_level.hpp</a>
 </li>
 <li>OP_DIGIT2
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a430d77ba70abea8e61820aaa3f27c28b">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a430d77ba70abea8e61820aaa3f27c28b">LedController_low_level.hpp</a>
 </li>
 <li>OP_DIGIT3
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a03d3bd8cd1b468b4a9cb473036f65747">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a03d3bd8cd1b468b4a9cb473036f65747">LedController_low_level.hpp</a>
 </li>
 <li>OP_DIGIT4
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#ac3d2e72ba1cca69133e4dcbc478f616b">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#ac3d2e72ba1cca69133e4dcbc478f616b">LedController_low_level.hpp</a>
 </li>
 <li>OP_DIGIT5
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a021f910b62cdaa529fcea36791df7028">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a021f910b62cdaa529fcea36791df7028">LedController_low_level.hpp</a>
 </li>
 <li>OP_DIGIT6
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a5a12c4b35c924fec89c3b71246b7b7e2">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a5a12c4b35c924fec89c3b71246b7b7e2">LedController_low_level.hpp</a>
 </li>
 <li>OP_DIGIT7
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a3a1210173fb70a66f649b93eb62e0884">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a3a1210173fb70a66f649b93eb62e0884">LedController_low_level.hpp</a>
 </li>
 <li>OP_DISPLAYTEST
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a7ef59a31858360d26d5dade28441598c">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a7ef59a31858360d26d5dade28441598c">LedController_low_level.hpp</a>
 </li>
 <li>OP_INTENSITY
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a4f47ca7a01008a4d918302ece5314ed4">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a4f47ca7a01008a4d918302ece5314ed4">LedController_low_level.hpp</a>
 </li>
 <li>OP_NOOP
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a6c542d212fef9a9b5ba82222089a306b">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a6c542d212fef9a9b5ba82222089a306b">LedController_low_level.hpp</a>
 </li>
 <li>OP_SCANLIMIT
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#a13d91ddca53029535b6cf314b28ed15e">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#a13d91ddca53029535b6cf314b28ed15e">LedController_low_level.hpp</a>
 </li>
 <li>OP_SHUTDOWN
-: <a class="el" href="d9/d4a/_led_controller_8hpp.html#ac4772c1c1c24a4b5837a2000c62aa0a3">LedController.hpp</a>
+: <a class="el" href="dc/d38/_led_controller__low__level_8hpp.html#ac4772c1c1c24a4b5837a2000c62aa0a3">LedController_low_level.hpp</a>
 </li>
 </ul>
 
@@ -177,8 +197,8 @@ $(function() {
 , <a class="el" href="d9/d8a/_reverse_8hpp.html#a383709be381ac67710172ccd41d01619">Reverse.hpp</a>
 </li>
 <li>run_move_multi_tests()
-: <a class="el" href="de/d0b/_move__multi_8hpp.html#a47e4ed8acea268a037d5da0b39c7d99f">Move_multi.hpp</a>
-, <a class="el" href="db/de5/_move__multi_8cpp.html#a47e4ed8acea268a037d5da0b39c7d99f">Move_multi.cpp</a>
+: <a class="el" href="d1/dc9/_move_8hpp.html#a47e4ed8acea268a037d5da0b39c7d99f">Move.hpp</a>
+, <a class="el" href="dc/dd6/_move_8cpp.html#a47e4ed8acea268a037d5da0b39c7d99f">Move.cpp</a>
 </li>
 <li>run_move_tests()
 : <a class="el" href="d1/dc9/_move_8hpp.html#a71ffb758e53cff525ca573c5025bad3f">Move.hpp</a>
@@ -216,11 +236,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

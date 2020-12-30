@@ -73,4 +73,5 @@ var menudata={children:[
 {text:"s",url:"globals.html#index_s"},
 {text:"t",url:"globals.html#index_t"}]},
 {text:"Functions",url:"globals_func.html"},
-{text:"Macros",url:"globals_defs.html"}]}]}]}
+{text:"Macros",url:"globals_defs.html"}]}]},
+{text:"Examples",url:"examples.html"}]}
