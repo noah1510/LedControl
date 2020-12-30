@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="title"><a class="el" href="d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="el" href="d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> is an <a href="http://arduino.cc">Arduino</a> library for MAX7219 and MAX7221 Led display drivers. The code should work with most boards and architectures but I only test it for the ESP32 Dev Module. Feel free to create an issue if something is missing or not working correctly.</p>
+<div class="textblock"><p><a class="el" href="d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> is an <a href="http://arduino.cc">Arduino</a> library for MAX7219 and MAX7221 Led display drivers. The code should work with most boards and architectures but I only test it for the ESP32 Dev Module. Feel free to create an issue if something is missing or not working correctly. Version 2.0.0 should have increased compatibility since the library is now header only. The only reason why some boards are not compatible is because they do now provide the necessary dependencies or are not compatible with the Arduino framework.</p>
 <p>The CI automatically tests the following boards(PlatformIO boards names):</p>
 <ul>
 <li>esp32dev</li>
@@ -95,10 +95,14 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li>uno</li>
 <li>ATmega1280</li>
 <li>leonardo</li>
+<li>due (since 2.0.0)</li>
+<li>teensy41 (since 2.0.0)</li>
+<li>bluefruitmicro (since 2.0.0)</li>
 </ul>
-<p>The following boards do <b>not</b> work at the moment:</p>
+<p>The fast mode of the script tests the following boards:</p>
 <ul>
-<li>due</li>
+<li>esp32dev</li>
+<li>ATmega1280</li>
 </ul>
 <p>All help regarding compatibility with more boards is welcome.</p>
 <h1>Documentation</h1>
@@ -107,6 +111,8 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li><a href="d9/def/class_led_controller.html">LedController class</a></li>
 <li><a href="d6/da3/md_doc_install.html">Installation</a></li>
 <li><a href="dc/dc4/md_doc_usage.html">Usage introduction</a></li>
+<li><a href="da/dc8/md_doc_migration_notes.html">Migration information</a></li>
+<li><a href="examples.html">Example code</a></li>
 </ul>
 <h1>Hardware SPI Pin Assignments</h1>
 <p>If you want to use hardware SPI you have to use the following port. Please keep in mind that the MOSI(Master out Slave in) and the SCK(Serial Clock) signal can be shared by multiple SPI devices, while the SS(Slave Select) signal must be unique to every device(You can use every free pin for this).</p>

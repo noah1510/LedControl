@@ -4,7 +4,7 @@ var classcontroller__configuration =
     [ "getColumn", "db/df4/classcontroller__configuration.html#a93b261673dd62f0013c76082b2d6b244", null ],
     [ "getRow", "db/df4/classcontroller__configuration.html#af8bb2e6569f559c68281c8371be9d413", null ],
     [ "getRowLen", "db/df4/classcontroller__configuration.html#ac88b40f967a3e0de146e2c7f2128d09d", null ],
-    [ "getSegmentNumber", "db/df4/classcontroller__configuration.html#a253ce70d8bd46262c9b420169bb2225f", null ],
+    [ "getSegmentNumber", "db/df4/classcontroller__configuration.html#a09312fd37df515c28dd64caad0426919", null ],
     [ "isValid", "db/df4/classcontroller__configuration.html#a0f0fd75e4c76c23ff7c0f9b70905d0cf", null ],
     [ "SegmentCount", "db/df4/classcontroller__configuration.html#a8d67d2adf612b64d9945e689a666730f", null ],
     [ "debug_output", "db/df4/classcontroller__configuration.html#a3b00b58f4b1a68d93bea65c53091173f", null ],

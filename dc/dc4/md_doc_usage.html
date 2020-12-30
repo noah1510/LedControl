@@ -99,12 +99,34 @@ $(document).ready(function(){initNavTree('dc/dc4/md_doc_usage.html','../../'); i
 <p>The Serial Peripheral Interface (SPI) is a synchronous serial communication interface specification used for short-distance communication, primarily in embedded systems. In this case your microcontroller is the master which controls the slave (at least one 7-Segment display or led matrix).</p>
 <p>The master has three significant pins: SCLK(Serial Clock), MOSI(Master Out Slave In), SS(Slave Select). The slave also has tree needed pins (and two for power(GND and VCC)): CLK(Clock), DIN(Data In), CS(Ship Select). SCLK has to be connected to CLK and MOSI to DIN. These signals can be shared by multiple SPI slaves even if they have nothing to do with each other. SS hat to be connected to CS and each Slave has its own SS pin(which can be any free pin).</p>
 <h1>Getting started</h1>
-<p>To get started you need to first create a new <a class="el" href="../../db/df4/classcontroller__configuration.html" title="This class is ued to handle the configuration of the LedController.">controller_configuration</a> object. This is used to configure the setup of the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> which can get complex. <a class="el" href="../../db/df4/classcontroller__configuration.html" title="This class is ued to handle the configuration of the LedController.">controller_configuration</a> has no constructor and is more like an struct with methods than it is a 'real' class.</p>
-<p>First things first, if you want to use Hardware Spi set useHardwareSpi to true, otherwise set it to false. If you use hardware SPI you only need to specify the CS pin, if not you also need to CLK and MOSI pins. Just assign the wanted values to SPI_CS, SPI_CLK and SPI_MOSI.</p>
-<p>Next you need to specify the total number of segments you have. Just assign the total number of segments to SegmentCount. To keep it simple all segments are connected in series, so there is only one row. To see how you can use more than one row with the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> go <a href="../../dc/dc4/md_doc_multi_row.html">here</a>.</p>
-<p>Now you can check if the configuration is Valid by calling the isValid() method. If it returns true, you can continue wit hthe next step, if not try setting debug_output and figure out what went wrong.</p>
-<p>Now that you have a valid configuration, you can pass it to the constructor of a new <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> object. You can use the setRow and setSegment to send data to the LedMatrix. </p>
-</div></div><!-- contents -->
+<p>To get started you need to first create a new <a class="el" href="../../db/df4/classcontroller__configuration.html" title="This class is ued to handle the configuration of the LedController.">controller_configuration</a> object. This is used to configure the setup of the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> which can get complex. <a class="el" href="../../db/df4/classcontroller__configuration.html" title="This class is ued to handle the configuration of the LedController.">controller_configuration</a> has no constructor and is more like an struct with methods than it is a 'real' class. Because it is a template you need to know the dimension of your Matrix which causes the type to be <code><a class="el" href="../../db/df4/classcontroller__configuration.html" title="This class is ued to handle the configuration of the LedController.">controller_configuration</a>&lt;sements_x,segments_y&gt;</code>. To see how you can use more than one row with the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> go <a href="../../dc/dc4/md_doc_multi_row.html">here</a>. The rest of the example will use <code><a class="el" href="../../db/df4/classcontroller__configuration.html" title="This class is ued to handle the configuration of the LedController.">controller_configuration</a>&lt;4,1&gt;</code> like in the <a href="../../db/d6d/_led_controller_demo_rocket_8ino-example.html">rocket example</a>.</p>
+<p>If you want to use Hardware Spi set useHardwareSpi to true, otherwise set it to false. If you use hardware SPI you only need to specify the CS pin, if not you also need to CLK and MOSI pins. Just assign the wanted values to SPI_CS, SPI_CLK and SPI_MOSI.</p>
+<p>Now you can check if the configuration is Valid by calling the isValid() method. If it returns true, you can continue with the next step, if not try setting debug_output and figure out what went wrong.</p>
+<p>Now that you have a valid configuration, you can pass it to the init function of a <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> object. You can use the setRow and setSegment to send data to the LedMatrix.</p>
+<p>setRow sets a specific Row of a given segment to a given byte. It needs the segment index which can be calculated from the segment coordinates by calling <code>lc.getConfig().getSegmentNumber(x,y)</code>.</p>
+<p>setSegment sets a whole segment but the segment can be specified through coordinates or the index.</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line"> </div>
+<div class="line">#include &quot;LedController.hpp&quot;</div>
+<div class="line">auto lc = LedController&lt;4,1&gt;();</div>
+<div class="line"> </div>
+<div class="line">void setup(){</div>
+<div class="line">    auto conf = controller_configuration&lt;4,1&gt;();</div>
+<div class="line">    conf.useHardwareSpi = true;</div>
+<div class="line">    conf.SPI_CS = 25;</div>
+<div class="line"> </div>
+<div class="line">    lc.init(conf);</div>
+<div class="line"> </div>
+<div class="line">    lc.setRow(lc.getConfig().getSegmentNumber(0,1),2,0xAA);</div>
+<div class="line">    lc.setSegment(lc.getConfig().getSegmentNumber(1,1),{0x00,0x01,0x03,0x07,0x0F,0x1F,0x3F,0x7F});</div>
+<div class="line">    lc.setSegment(2,1,{0x7F,0x3F,0x1F,0x0F,0x07,0x03,0x01,0x00});</div>
+<div class="line"> </div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">void loop(){</div>
+<div class="line">    </div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
