@@ -10,5 +10,5 @@ var searchData=
   ['controller_5fconfiguration_15',['controller_configuration',['../db/df4/classcontroller__configuration.html',1,'']]],
   ['controller_5fconfiguration_2emd_16',['controller_configuration.md',['../dd/da2/controller__configuration_8md.html',1,'']]],
   ['copy_17',['copy',['../db/df4/classcontroller__configuration.html#a620be40a71cdf2366ecf885edb265e73',1,'controller_configuration']]],
-  ['controlling_20multiple_20rows_18',['Controlling multiple rows',['../db/d84/md_doc_pages_en_multi_row.html',1,'']]]
+  ['controlling_20multiple_20rows_18',['Controlling multiple rows',['../d3/df7/md_doc_pages_multi_row.html',1,'']]]
 ];

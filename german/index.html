@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LedController: LedController Library</title>
+<title>LedController: Hauptseite</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,11 +84,11 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> Library </div>  </div>
+<div class="title">LedController Dokumentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="el" href="d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> is an <a href="http://arduino.cc">Arduino</a> library for MAX7219 and MAX7221 Led display drivers. The code should work with most boards and architectures but I only test it for the ESP32 Dev Module. Feel free to create an issue if something is missing or not working correctly. Version 2.0.0 should have increased compatibility since the library is now header only and uses templates. The only reason why some boards are not compatible is because they do now provide the necessary dependencies or are not compatible with the Arduino framework.</p>
-<p>The CI automatically tests the following boards(PlatformIO boards names):</p>
+<div class="textblock"><p><a class="el" href="d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> ist eine <a href="http://arduino.cc">Arduino</a> Biliothek für MAX7219 und MAX7221 Led Displaytreiber. Der Code sollte mit den meisten boards und Architekturen funktionieren, aber ich teste es allerdings nur mit ESP32 Dev Module. Fall etwas nicht richtig funktioniert öffne bitte ein Issue (nur englisch). Seid Version 2.0.0 sollte die Kompatibilität sehr viel größer sein, da <a class="el" href="d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> nun ein template ist und nur in headern geschrieben ist. Wenn ein Board nicht Kompatibiliel ist, unterstützt es nicht das Arduino Framework oder stellt keine SPI.h bereit.</p>
+<p>In der CI werden wie folgenden Boards automatisch getestet (PlatformIO boards Namen):</p>
 <ul>
 <li>esp32dev</li>
 <li>d1_mini</li>
@@ -99,25 +99,27 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li>teensy41 (since 2.0.0)</li>
 <li>bluefruitmicro (since 2.0.0)</li>
 </ul>
-<p>The fast mode of the script tests the following boards:</p>
+<p>Der fast mode aus dem script testet die folgenden boards:</p>
 <ul>
 <li>esp32dev</li>
 <li>ATmega1280</li>
 </ul>
-<p>All help regarding compatibility with more boards is welcome.</p>
-<h1>Documentation</h1>
-<p>The following links lead to their respective documentation:</p>
+<p>Alles an Hilfe mit der Kompatibilität ist willkommen.</p>
+<h1><a class="anchor" id="Dokumentation"></a>
+Dokumentation</h1>
+<p>Die folgenden Liks führen zur entsprechenden Dokumentation:</p>
 <ul>
-<li><a class="el" href="d9/def/class_led_controller.html">LedController class</a></li>
-<li><a class="el" href="db/df4/classcontroller__configuration.html">LedController configuration class</a></li>
-<li><a class="el" href="de/da9/install_8md.html">Installation</a></li>
-<li><a class="el" href="de/db9/usage_8md.html">Usage introduction</a></li>
-<li><a class="el" href="d4/d46/migration__notes_8md.html">Migration information</a></li>
-<li><a href="examples.html">Example code</a></li>
+<li><a class="el" href="d9/def/class_led_controller.html">LedController Klasse</a></li>
+<li><a class="el" href="db/df4/classcontroller__configuration.html">LedController configuration Klasse</a></li>
+<li><a class="el" href="d9/d87/install.html">Installation</a></li>
+<li><a class="el" href="de/db9/usage_8md.html">Nutzungseinführung</a></li>
+<li><a class="el" href="d9/dbb/migration_notes.html">Migrationsinformationen</a></li>
+<li><a href="examples.html">Beispielcode</a></li>
 </ul>
-<p>If you have questions check the <a href="https://github.com/noah1510/LedController/discussions">dicussions</a> or open a new one.</p>
-<h1>Hardware SPI Pin Assignments</h1>
-<p>If you want to use hardware SPI you have to use the following port. Please keep in mind that the MOSI(Master out Slave in) and the SCK(Serial Clock) signal can be shared by multiple SPI devices, while the SS(Slave Select) signal must be unique to every device(You can use every free pin for this).</p>
+<p>Bei Fragen schaut in die <a href="https://github.com/noah1510/LedController/discussions">dicussions</a> oder öffnet eine neue (ausschließlisch auf englisch).</p>
+<h1><a class="anchor" id="Hardware"></a>
+SPI Pin Zuweisung</h1>
+<p>Falls du hardware SPI nutzten möchtest müssen die folgenden Ports verwendet werden. Bitte beachte, dass das MOSI(Master out Slave in) und das SCK(Serial Clock) Signal von mehreren SPI Geräten gnutzt werden kann, während SS(Slave Select) einzigartig für jedes Gerät sein muss(ein bliebiger Pin kann verwendet werden).</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Arduino Board </th><th class="markdownTableHeadNone">MOSI </th><th class="markdownTableHeadNone">MISO </th><th class="markdownTableHeadNone">SCK </th><th class="markdownTableHeadNone">SS (Slave) </th><th class="markdownTableHeadNone">SS (Master)  </th></tr>

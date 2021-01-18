@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['main_59',['main',['../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
-  ['main_2ecpp_60',['main.cpp',['../df/d0a/main_8cpp.html',1,'']]],
-  ['mainpage_2emd_61',['mainpage.md',['../dc/dc6/mainpage_8md.html',1,'']]],
+  ['migration_20from_201_2ex_2ey_20to_202_2e0_2ez_59',['Migration from 1.x.y to 2.0.z',['../d8/dfe/1_8x_8y_to_2_80_8z.html',1,'']]],
+  ['main_60',['main',['../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
+  ['main_2ecpp_61',['main.cpp',['../df/d0a/main_8cpp.html',1,'']]],
   ['makecolumns_62',['makeColumns',['../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363',1,'LedController::makeColumns(ByteBlock rowArray)'],['../d9/def/class_led_controller.html#aecb756922984f96aed2414f3b83c87d2',1,'LedController::makeColumns(ByteBlock rowArray, ByteBlock *columnArray)']]],
-  ['migration_20from_201_2ex_2ey_20to_202_2e0_2ez_63',['Migration from 1.x.y to 2.0.z',['../d9/dbd/md_doc_pages_en_1_8x_8y_to_2_80_8z.html',1,'']]],
-  ['moving_20the_20displayed_20data_64',['Moving the displayed data',['../de/dd8/md_doc_pages_en_movement.html',1,'']]],
-  ['migration_5fnotes_2emd_65',['migration_notes.md',['../d4/d46/migration__notes_8md.html',1,'']]],
+  ['moving_20the_20displayed_20data_63',['Moving the displayed data',['../d3/ddb/md_doc_pages_movement.html',1,'']]],
+  ['migration_20notes_64',['Migration Notes',['../d9/dbb/migration_notes.html',1,'']]],
+  ['migration_5fnotes_2edoc_65',['migration_notes.doc',['../d0/d29/migration__notes_8doc.html',1,'']]],
   ['move_2ecpp_66',['Move.cpp',['../dc/dd6/_move_8cpp.html',1,'']]],
   ['move_2ehpp_67',['Move.hpp',['../d1/dc9/_move_8hpp.html',1,'']]],
   ['movecolumndown_68',['moveColumnDown',['../d9/def/class_led_controller.html#a3c8540d3aba9632455fc18173566dd67',1,'LedController']]],

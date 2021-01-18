@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LedController: Installationsanweisungen</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LedController
+   &#160;<span id="projectnumber">2.0.0-rc1</span>
+   </div>
+   <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Suchen');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d9/d87/install.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Installationsanweisungen </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Falls du wissen möchstest, wie man die Bibliothek verwendet klicke <a class="el" href="../../de/db9/usage_8md.html">hier</a>.</p>
+<h1><a class="anchor" id="arduino_install"></a>
+Arduino Ide</h1>
+<p>Diese Bibliothek ist im Arduino library manager.</p>
+<ol type="1">
+<li>Öffne deine <a href="http://arduino.cc">Arduino</a> IDE.</li>
+<li>Klicke auf Werkzeuge, Bibliotheken verwalten..</li>
+<li>Tippe <code><a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a></code> in die Suchleiste.</li>
+<li>Wähle die gewünschte Version und klicke auf installieren.</li>
+<li>Das war alles, du kannst die Bibliothek jetzt nutzen.</li>
+</ol>
+<h1><a class="anchor" id="PlatformIO"></a>
+PlatformIO</h1>
+<p>Die <a href="https://platformio.org/lib/show/7144/LedController">Bibliothek</a> ist auch für den <a href="https://platformio.org/platformio">platform.io</a> library manager verfügbar. <b>Da diese ihre Informationen von Arduino bekommen, sind sie nicht immer auf dem neusten Stand.</b> <b>Scheinbar sind hier auch keine Realease Candidate versionen verfügbar.</b></p>
+<h2><a class="anchor" id="CLI"></a>
+CLI</h2>
+<p>Einfach <code>pio lib install "LedController"</code> oder <code>python -m platformio lib install "LedController"</code> eingeben um die Bibliothek zu installieren. Dies funktioniert, wenn platformio bereits über python installiert ist.</p>
+<h2><a class="anchor" id="vsx_install"></a>
+Visual Studio Code Erweiterung</h2>
+<p>Either open a command line and use the CLI instructions or do the following steps:</p>
+<ol type="1">
+<li>Öffne <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+<li>Installiere die <a href="https://platformio.org/platformio-ide">platform.io extention</a> und warte bis sie installiert und konfiguriert ist.</li>
+<li>Öffne das PlatformIO home (auf das kleine Haus Symbol klicken)</li>
+<li>Klicke auf den libraries Tab.</li>
+<li>Gebe <code><a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a></code> in die Suchleiste ein und klick auf das Ergebnis <code><a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a></code></li>
+<li>Wähle die gewünschte Version and klick auf install. </li>
+</ol>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

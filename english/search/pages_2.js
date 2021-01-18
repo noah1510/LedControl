@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['general_20migration_20notes_282',['General Migration Notes',['../d2/d2f/md_doc_pages_en_migration_notes.html',1,'']]]
+  ['how_20to_20use_20this_20library_284',['How to use this library',['../d2/d1c/md_doc_pages_usage.html',1,'']]]
 ];

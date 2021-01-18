@@ -23,14 +23,22 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "LedController", "index.html", [
-    [ "LedController Library", "index.html", null ],
-    [ "Migration from 1.x.y to 2.0.z", "d9/dbd/md_doc_pages_en_1_8x_8y_to_2_80_8z.html", null ],
-    [ "The controller_configuration", "d0/db5/md_doc_pages_en_controller_configuration.html", null ],
-    [ "Installation instructions", "d6/d41/md_doc_pages_en_install.html", null ],
-    [ "General Migration Notes", "d2/d2f/md_doc_pages_en_migration_notes.html", null ],
-    [ "Moving the displayed data", "de/dd8/md_doc_pages_en_movement.html", null ],
-    [ "Controlling multiple rows", "db/d84/md_doc_pages_en_multi_row.html", null ],
-    [ "How to use this library", "d2/d05/md_doc_pages_en_usage.html", null ],
+    [ "Dokumentation", "index.html#Dokumentation", null ],
+    [ "SPI Pin Zuweisung", "index.html#Hardware", null ],
+    [ "Migration von 1.x.y zu 2.0.z", "d8/dfe/1_8x_8y_to_2_80_8z.html", null ],
+    [ "The controller_configuration", "df/d21/md_doc_pages_controller_configuration.html", null ],
+    [ "Installationsanweisungen", "d9/d87/install.html", [
+      [ "Arduino Ide", "d9/d87/install.html#arduino_install", null ],
+      [ "PlatformIO", "d9/d87/install.html#PlatformIO", [
+        [ "CLI", "d9/d87/install.html#CLI", null ],
+        [ "Visual Studio Code Erweiterung", "d9/d87/install.html#vsx_install", null ]
+      ] ]
+    ] ],
+    [ "Wähle eine Sprache", "d4/d12/lang_selection.html", null ],
+    [ "Migrationsinformationen", "d9/dbb/migration_notes.html", null ],
+    [ "Moving the displayed data", "d3/ddb/md_doc_pages_movement.html", null ],
+    [ "Controlling multiple rows", "d3/df7/md_doc_pages_multi_row.html", null ],
+    [ "How to use this library", "d2/d1c/md_doc_pages_usage.html", null ],
     [ "Security Policy", "d7/d88/md__s_e_c_u_r_i_t_y.html", null ],
     [ "Ausstehende Aufgaben", "dd/da0/todo.html", null ],
     [ "Klassen", "annotated.html", [

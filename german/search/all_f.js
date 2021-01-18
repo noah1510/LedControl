@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['the_20controller_5fconfiguration_129',['The controller_configuration',['../d0/db5/md_doc_pages_en_controller_configuration.html',1,'']]],
+  ['the_20controller_5fconfiguration_129',['The controller_configuration',['../df/d21/md_doc_pages_controller_configuration.html',1,'']]],
   ['test_5fassert_5feqaul_5fbyte_5fblocks_130',['TEST_ASSERT_EQAUL_BYTE_BLOCKS',['../dd/d3a/common_8hpp.html#a354baa7bcf2c59ac0295a0d78ee0925d',1,'common.hpp']]],
   ['test_5fdown_5fup_131',['test_down_up',['../d1/dc9/_move_8hpp.html#a14e6d780053b0cb04693f0de640c48bd',1,'Move.hpp']]],
   ['test_5fleft_5fright_132',['test_left_right',['../d1/dc9/_move_8hpp.html#ab93644480cabce79943a65c3418c4204',1,'Move.hpp']]],

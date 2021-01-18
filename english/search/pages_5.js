@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ledcontroller_20library_285',['LedController Library',['../index.html',1,'']]]
+  ['select_20a_20language_289',['Select a Language',['../d4/d12/lang_selection.html',1,'']]],
+  ['security_20policy_290',['Security Policy',['../d7/d88/md__s_e_c_u_r_i_t_y.html',1,'']]]
 ];
