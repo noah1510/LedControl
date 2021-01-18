@@ -1,0 +1,5 @@
+<map id="LedController&lt; columns, rows &gt;" name="LedController&lt; columns, rows &gt;">
+<area shape="rect" id="node1" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern." alt="" coords="5,171,188,212"/>
+<area shape="rect" id="node2" href="$dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt." alt="" coords="53,81,141,108"/>
+<area shape="rect" id="node3" href="$df/d74/class_byte_row.html" title=" " alt="" coords="37,5,156,32"/>
+</map>

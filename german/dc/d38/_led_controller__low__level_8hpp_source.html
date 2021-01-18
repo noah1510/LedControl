@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LedController: src/LedController_low_level.hpp Quellcode</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LedController
+   &#160;<span id="projectnumber">2.0.0-rc1</span>
+   </div>
+   <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Suchen');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dc/d38/_led_controller__low__level_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">LedController_low_level.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dc/d38/_led_controller__low__level_8hpp.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/dcc/_led_controller__template_8hpp.html">LedController_template.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// the opcodes for the MAX7221 and MAX7219</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a6c542d212fef9a9b5ba82222089a306b">   16</a></span>&#160;<span class="preprocessor">#define OP_NOOP 0</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#ac2dcbbd3fef01a1defd3aa5f8a8c612a">   17</a></span>&#160;<span class="preprocessor">#define OP_DIGIT0 1</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a6c8209744590cd0cc8495cc6de58ab02">   18</a></span>&#160;<span class="preprocessor">#define OP_DIGIT1 2</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a430d77ba70abea8e61820aaa3f27c28b">   19</a></span>&#160;<span class="preprocessor">#define OP_DIGIT2 3</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a03d3bd8cd1b468b4a9cb473036f65747">   20</a></span>&#160;<span class="preprocessor">#define OP_DIGIT3 4</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#ac3d2e72ba1cca69133e4dcbc478f616b">   21</a></span>&#160;<span class="preprocessor">#define OP_DIGIT4 5</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a021f910b62cdaa529fcea36791df7028">   22</a></span>&#160;<span class="preprocessor">#define OP_DIGIT5 6</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a5a12c4b35c924fec89c3b71246b7b7e2">   23</a></span>&#160;<span class="preprocessor">#define OP_DIGIT6 7</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a3a1210173fb70a66f649b93eb62e0884">   24</a></span>&#160;<span class="preprocessor">#define OP_DIGIT7 8</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a318b32d905ce8e57d7caec133ec7d712">   25</a></span>&#160;<span class="preprocessor">#define OP_DECODEMODE 9</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a4f47ca7a01008a4d918302ece5314ed4">   26</a></span>&#160;<span class="preprocessor">#define OP_INTENSITY 10</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a13d91ddca53029535b6cf314b28ed15e">   27</a></span>&#160;<span class="preprocessor">#define OP_SCANLIMIT 11</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#ac4772c1c1c24a4b5837a2000c62aa0a3">   28</a></span>&#160;<span class="preprocessor">#define OP_SHUTDOWN 12</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../dc/d38/_led_controller__low__level_8hpp.html#a7ef59a31858360d26d5dade28441598c">   29</a></span>&#160;<span class="preprocessor">#define OP_DISPLAYTEST 15</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#a5d7a6a6555068829f4d54cc9b3a77c61">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/def/class_led_controller.html#a5d7a6a6555068829f4d54cc9b3a77c61">LedController&lt;columns,rows&gt;::spiTransfer</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> segment, <span class="keywordtype">byte</span> opcode, <span class="keywordtype">byte</span> data) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordflow">if</span> (!initilized || segment &gt;= conf.SegmentCount()) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// Create an array with the data to shift out</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> offset = conf.getColumn(segment) * 2;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> row = conf.getRow(segment);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> maxbytes = conf.SegmentCount() * 2;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; rows;j++){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; columns*2; i++) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      spidata[j][i] = 0x00;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">// put our device data into the array</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  spidata[row][offset + 1] = opcode;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  spidata[row][offset] = data;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> r = 0; r &lt; rows ;r++){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//enable the line</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">auto</span> cs = (conf.virtual_multi_row &amp;&amp; conf.SPI_CS != 0) ? conf.SPI_CS : conf.row_SPI_CS[r];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    digitalWrite(cs, LOW);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//init the spi transfer if hardware should be used</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (conf.useHardwareSpi) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      SPI.beginTransaction(SPISettings(conf.spiTransferSpeed, MSBFIRST, SPI_MODE0));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Now shift out the data</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = maxbytes; i &gt; 0; i--) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">if</span> (conf.useHardwareSpi) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        SPI.transfer(spidata[r][i - 1]);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        shiftOut(conf.SPI_MOSI, conf.SPI_CLK, MSBFIRST, spidata[r][i - 1]);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//end the spi transfer if hardware should be used</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> (conf.useHardwareSpi) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      SPI.endTransaction();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// latch the data onto the display</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    digitalWrite(cs, HIGH);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#aab0a3f793543847c937eda59e75023fa">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/def/class_led_controller.html#aab0a3f793543847c937eda59e75023fa">LedController&lt;columns,rows&gt;::setScanLimit</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> segmentNumber,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                 <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> limit) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> (!initilized || segmentNumber &gt;= conf.SegmentCount()) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">if</span> (limit &lt; 8) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    spiTransfer(segmentNumber, <a class="code" href="../../dc/d38/_led_controller__low__level_8hpp.html#a13d91ddca53029535b6cf314b28ed15e">OP_SCANLIMIT</a>, limit);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  };</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#a205bc47c86d9957bdbff842a4ec334d9">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">LedController&lt;columns,rows&gt;::setIntensity</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> newIntesityLevel) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">if</span> (newIntesityLevel &gt; 15 || !initilized) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// std::lock_guard&lt;std::mutex&gt; lock(mut_IntensityLevel);</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  conf.IntensityLevel = newIntesityLevel;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; conf.SegmentCount(); i++) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    setIntensity(i, conf.IntensityLevel);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">  108</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">LedController&lt;columns,rows&gt;::setIntensity</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> segmentNumber,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                 <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> newIntesityLevel) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">if</span> (newIntesityLevel &gt; 15 || !initilized ||</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      segmentNumber &gt;= conf.SegmentCount()) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  spiTransfer(segmentNumber, <a class="code" href="../../dc/d38/_led_controller__low__level_8hpp.html#a4f47ca7a01008a4d918302ece5314ed4">OP_INTENSITY</a>, newIntesityLevel);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#ae27f774032468a0f017f295a5c55db3c">  119</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/def/class_led_controller.html#ae27f774032468a0f017f295a5c55db3c">LedController&lt;columns,rows&gt;::refreshSegment</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> segmentNumber) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">if</span> (!initilized) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  spiTransfer(segmentNumber, <a class="code" href="../../dc/d38/_led_controller__low__level_8hpp.html#a7ef59a31858360d26d5dade28441598c">OP_DISPLAYTEST</a>, 0);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// scanlimit is set to max on startup</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  setScanLimit(segmentNumber, 7);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="comment">// decode is done in source</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  spiTransfer(segmentNumber, <a class="code" href="../../dc/d38/_led_controller__low__level_8hpp.html#a318b32d905ce8e57d7caec133ec7d712">OP_DECODEMODE</a>, 0);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  clearSegment(segmentNumber);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="comment">// we go into shutdown-mode on startup</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  activateSegment(segmentNumber);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  setIntensity(segmentNumber, this-&gt;conf.IntensityLevel);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  updateSegment(segmentNumber);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_led_controller_html_aab0a3f793543847c937eda59e75023fa"><div class="ttname"><a href="../../d9/def/class_led_controller.html#aab0a3f793543847c937eda59e75023fa">LedController::setScanLimit</a></div><div class="ttdeci">void setScanLimit(unsigned int segmentNumber, unsigned int limit)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00083">LedController_low_level.hpp:83</a></div></div>
+<div class="ttc" id="a_led_controller__low__level_8hpp_html_a318b32d905ce8e57d7caec133ec7d712"><div class="ttname"><a href="../../dc/d38/_led_controller__low__level_8hpp.html#a318b32d905ce8e57d7caec133ec7d712">OP_DECODEMODE</a></div><div class="ttdeci">#define OP_DECODEMODE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00025">LedController_low_level.hpp:25</a></div></div>
+<div class="ttc" id="a_led_controller__low__level_8hpp_html_a13d91ddca53029535b6cf314b28ed15e"><div class="ttname"><a href="../../dc/d38/_led_controller__low__level_8hpp.html#a13d91ddca53029535b6cf314b28ed15e">OP_SCANLIMIT</a></div><div class="ttdeci">#define OP_SCANLIMIT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00027">LedController_low_level.hpp:27</a></div></div>
+<div class="ttc" id="a_led_controller__template_8hpp_html"><div class="ttname"><a href="../../db/dcc/_led_controller__template_8hpp.html">LedController_template.hpp</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_ae27f774032468a0f017f295a5c55db3c"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ae27f774032468a0f017f295a5c55db3c">LedController::refreshSegment</a></div><div class="ttdeci">void refreshSegment(unsigned int segmentNumber)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00119">LedController_low_level.hpp:119</a></div></div>
+<div class="ttc" id="a_led_controller__low__level_8hpp_html_a4f47ca7a01008a4d918302ece5314ed4"><div class="ttname"><a href="../../dc/d38/_led_controller__low__level_8hpp.html#a4f47ca7a01008a4d918302ece5314ed4">OP_INTENSITY</a></div><div class="ttdeci">#define OP_INTENSITY</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00026">LedController_low_level.hpp:26</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_a5d7a6a6555068829f4d54cc9b3a77c61"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a5d7a6a6555068829f4d54cc9b3a77c61">LedController::spiTransfer</a></div><div class="ttdeci">void spiTransfer(unsigned int segment, byte opcode, byte data)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00032">LedController_low_level.hpp:32</a></div></div>
+<div class="ttc" id="a_led_controller__low__level_8hpp_html_a7ef59a31858360d26d5dade28441598c"><div class="ttname"><a href="../../dc/d38/_led_controller__low__level_8hpp.html#a7ef59a31858360d26d5dade28441598c">OP_DISPLAYTEST</a></div><div class="ttdeci">#define OP_DISPLAYTEST</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00029">LedController_low_level.hpp:29</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_a5d17bae56676db2dbb09f0f077ffd03b"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">LedController::setIntensity</a></div><div class="ttdeci">void setIntensity(unsigned int segmentNumber, unsigned int newIntesityLevel)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00108">LedController_low_level.hpp:108</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dc/d38/_led_controller__low__level_8hpp.html">LedController_low_level.hpp</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>
