@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc1</span>
+   &#160;<span id="projectnumber">2.0.0-rc2</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -87,17 +87,23 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="title">LCDemo7Segment.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>An example on how to use the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> with 7-Segment displays.</p>
+<p>An example on how to use the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> with 7-Segment displays.Ein Beispiel wie man den <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> nutzen kann um 7-Segment Anzeigen zu steuern.</p>
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="comment">//We always have to include the library</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> You might need to change the following 3 Variables depending on your board.</span></div>
+<div class="line"><span class="comment"> pin 15 is connected to the DataIn </span></div>
+<div class="line"><span class="comment"> pin 14 is connected to the CLK</span></div>
+<div class="line"><span class="comment"> pin 13 is connected to LOAD/ChipSelect</span></div>
+<div class="line"><span class="comment">*/</span></div>
+<div class="line"><span class="preprocessor">#define DIN 15</span></div>
+<div class="line"><span class="preprocessor">#define CS 13</span></div>
+<div class="line"><span class="preprocessor">#define CLK 14</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment"> Now we need a LedControl to work with.</span></div>
-<div class="line"><span class="comment"> ***** These pin numbers will probably not work with your hardware *****</span></div>
-<div class="line"><span class="comment"> pin 12 is connected to the DataIn </span></div>
-<div class="line"><span class="comment"> pin 11 is connected to the CLK </span></div>
-<div class="line"><span class="comment"> pin 10 is connected to LOAD </span></div>
 <div class="line"><span class="comment"> We have only a single MAX72XX.</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"><a name="_a0"></a><a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;1,1&gt;</a> lc;</div>
@@ -107,7 +113,7 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line"> </div>
-<div class="line">  lc=<a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;1,1&gt;</a>(12,11,10);</div>
+<div class="line">  lc=<a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;1,1&gt;</a>(CS,CLK,DIN);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/*</span></div>
 <div class="line"><span class="comment">   The MAX72XX is in power-saving mode on startup,</span></div>

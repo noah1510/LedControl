@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['refreshsegment_217',['refreshSegment',['../d9/def/class_led_controller.html#ae27f774032468a0f017f295a5c55db3c',1,'LedController']]],
-  ['refreshsegments_218',['refreshSegments',['../d9/def/class_led_controller.html#a3d60a4af86e457e4e1022bd674285d24',1,'LedController']]],
-  ['resetbuffers_219',['resetBuffers',['../d9/def/class_led_controller.html#a7d9d2f1a084ec28247459985429cf1ec',1,'LedController']]],
-  ['resetmatrix_220',['resetMatrix',['../d9/def/class_led_controller.html#af3b62a70ce6c1e2e303a2b3f8d667776',1,'LedController']]],
-  ['reverse_221',['reverse',['../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79',1,'LedController::reverse(byte input)'],['../d9/def/class_led_controller.html#a9d8b960beccc10682e610d9952e35af2',1,'LedController::reverse(ByteBlock input)'],['../d9/def/class_led_controller.html#ae6aad659a9654c8f0e37573a1afcdc0d',1,'LedController::reverse(ByteBlock input, ByteBlock *reversedInput)']]],
-  ['reverse_5fblock_222',['reverse_Block',['../dd/d0b/_reverse_8cpp.html#a383709be381ac67710172ccd41d01619',1,'reverse_Block():&#160;Reverse.cpp'],['../d9/d8a/_reverse_8hpp.html#a383709be381ac67710172ccd41d01619',1,'reverse_Block():&#160;Reverse.cpp']]],
-  ['rotate180_223',['rotate180',['../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22',1,'LedController::rotate180(ByteBlock input)'],['../d9/def/class_led_controller.html#aa0332a7eaf650e1d043ef71da906e47f',1,'LedController::rotate180(ByteBlock input, ByteBlock *rotatedInput)']]],
-  ['run_5fmove_5fmulti_5ftests_224',['run_move_multi_tests',['../dc/dd6/_move_8cpp.html#a47e4ed8acea268a037d5da0b39c7d99f',1,'run_move_multi_tests():&#160;Move.cpp'],['../d1/dc9/_move_8hpp.html#a47e4ed8acea268a037d5da0b39c7d99f',1,'run_move_multi_tests():&#160;Move.cpp']]],
-  ['run_5fmove_5ftests_225',['run_move_tests',['../dc/dd6/_move_8cpp.html#a71ffb758e53cff525ca573c5025bad3f',1,'run_move_tests():&#160;Move.cpp'],['../d1/dc9/_move_8hpp.html#a71ffb758e53cff525ca573c5025bad3f',1,'run_move_tests():&#160;Move.cpp']]]
+  ['segmentcount_183',['SegmentCount',['../db/df4/classcontroller__configuration.html#a8d67d2adf612b64d9945e689a666730f',1,'controller_configuration']]],
+  ['setchar_184',['setChar',['../d9/def/class_led_controller.html#a6f14f9d73d1e8bace569965108ac5595',1,'LedController']]],
+  ['setcolumn_185',['setColumn',['../d9/def/class_led_controller.html#a6dd25dfd3a6f1a37f021f3887466710e',1,'LedController']]],
+  ['setdigit_186',['setDigit',['../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a',1,'LedController']]],
+  ['setintensity_187',['setIntensity',['../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b',1,'LedController::setIntensity(unsigned int segmentNumber, unsigned int newIntesityLevel)'],['../d9/def/class_led_controller.html#a205bc47c86d9957bdbff842a4ec334d9',1,'LedController::setIntensity(unsigned int newIntesityLevel)']]],
+  ['setled_188',['setLed',['../d9/def/class_led_controller.html#af1dc34f422c6a6755b4ef78f1e2a0ef1',1,'LedController']]],
+  ['setrow_189',['setRow',['../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54',1,'LedController']]],
+  ['setscanlimit_190',['setScanLimit',['../d9/def/class_led_controller.html#aab0a3f793543847c937eda59e75023fa',1,'LedController']]],
+  ['shutdownallsegments_191',['shutdownAllSegments',['../d9/def/class_led_controller.html#a1adfb3528b2d7a18832b979de2428e92',1,'LedController']]],
+  ['shutdownsegment_192',['shutdownSegment',['../d9/def/class_led_controller.html#ab8f3417813892706dc51644336b85efc',1,'LedController']]],
+  ['spitransfer_193',['spiTransfer',['../d9/def/class_led_controller.html#a5d7a6a6555068829f4d54cc9b3a77c61',1,'LedController']]]
 ];

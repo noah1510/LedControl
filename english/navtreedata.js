@@ -36,8 +36,8 @@ var NAVTREE =
     ] ],
     [ "Select a Language", "d4/d12/lang_selection.html", null ],
     [ "Migration Notes", "d9/dbb/migration_notes.html", null ],
-    [ "Moving the displayed data", "d3/ddb/md_doc_pages_movement.html", null ],
-    [ "Controlling multiple rows", "d3/df7/md_doc_pages_multi_row.html", null ],
+    [ "Moving the displayed data", "df/d3a/movement.html", null ],
+    [ "Controlling multiple rows", "dd/d36/multi_row.html", null ],
     [ "How to use this library", "d2/d1c/md_doc_pages_usage.html", null ],
     [ "Security Policy", "d7/d88/md__s_e_c_u_r_i_t_y.html", null ],
     [ "Todo List", "dd/da0/todo.html", null ],
@@ -56,7 +56,6 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ],

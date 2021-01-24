@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc1</span>
+   &#160;<span id="projectnumber">2.0.0-rc2</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -87,17 +87,22 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="title">LCDemo7Segment.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>An example on how to use the <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> with 7-Segment displays.</p>
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="comment">//We always have to include the library</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> You might need to change the following 3 Variables depending on your board.</span></div>
+<div class="line"><span class="comment"> pin 15 is connected to the DataIn </span></div>
+<div class="line"><span class="comment"> pin 14 is connected to the CLK</span></div>
+<div class="line"><span class="comment"> pin 13 is connected to LOAD/ChipSelect</span></div>
+<div class="line"><span class="comment">*/</span></div>
+<div class="line"><span class="preprocessor">#define DIN 15</span></div>
+<div class="line"><span class="preprocessor">#define CS 13</span></div>
+<div class="line"><span class="preprocessor">#define CLK 14</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment"> Now we need a LedControl to work with.</span></div>
-<div class="line"><span class="comment"> ***** These pin numbers will probably not work with your hardware *****</span></div>
-<div class="line"><span class="comment"> pin 12 is connected to the DataIn </span></div>
-<div class="line"><span class="comment"> pin 11 is connected to the CLK </span></div>
-<div class="line"><span class="comment"> pin 10 is connected to LOAD </span></div>
 <div class="line"><span class="comment"> We have only a single MAX72XX.</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"><a name="_a0"></a><a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;1,1&gt;</a> lc;</div>
@@ -107,7 +112,7 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line"> </div>
-<div class="line">  lc=<a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;1,1&gt;</a>(12,11,10);</div>
+<div class="line">  lc=<a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;1,1&gt;</a>(CS,CLK,DIN);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/*</span></div>
 <div class="line"><span class="comment">   The MAX72XX is in power-saving mode on startup,</span></div>
@@ -167,14 +172,14 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_led_controller_html_a698d996b774311e675b282a2f77c4e0a"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">LedController::setDigit</a></div><div class="ttdeci">void setDigit(unsigned int segmentNumber, unsigned int digit, byte value, boolean dp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00183">LedController_display.hpp:183</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a5059529d3bd82e8fbbb1362a1830aa76"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a5059529d3bd82e8fbbb1362a1830aa76">LedController::activateAllSegments</a></div><div class="ttdeci">void activateAllSegments()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00101">LedController_display.hpp:101</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_ae706d5741aa89433a3607e2ce07482a1"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">LedController::clearMatrix</a></div><div class="ttdeci">void clearMatrix()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00043">LedController_display.hpp:43</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_a698d996b774311e675b282a2f77c4e0a"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">LedController::setDigit</a></div><div class="ttdeci">void setDigit(unsigned int segmentNumber, unsigned int digit, byte value, boolean dp)</div><div class="ttdoc">Setzte eine Hexadecimalziffer auf einem 7-Segment Display.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00183">LedController_display.hpp:183</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_a5059529d3bd82e8fbbb1362a1830aa76"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a5059529d3bd82e8fbbb1362a1830aa76">LedController::activateAllSegments</a></div><div class="ttdeci">void activateAllSegments()</div><div class="ttdoc">Aktiviere alle Segmente.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00101">LedController_display.hpp:101</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_ae706d5741aa89433a3607e2ce07482a1"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">LedController::clearMatrix</a></div><div class="ttdeci">void clearMatrix()</div><div class="ttdoc">leere alle Segmente (alle LEDs aus).</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00043">LedController_display.hpp:43</a></div></div>
 <div class="ttc" id="a_led_controller_8hpp_html"><div class="ttname"><a href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_afdc1c6c5936a6c114ac29eaba6ddfc54"><div class="ttname"><a href="../../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54">LedController::setRow</a></div><div class="ttdeci">void setRow(unsigned int segmentNumber, unsigned int row, byte value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00124">LedController_display.hpp:124</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a6f14f9d73d1e8bace569965108ac5595"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a6f14f9d73d1e8bace569965108ac5595">LedController::setChar</a></div><div class="ttdeci">void setChar(unsigned int segmentNumber, unsigned int digit, char value, boolean dp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00199">LedController_display.hpp:199</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_afdc1c6c5936a6c114ac29eaba6ddfc54"><div class="ttname"><a href="../../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54">LedController::setRow</a></div><div class="ttdeci">void setRow(unsigned int segmentNumber, unsigned int row, byte value)</div><div class="ttdoc">Setze eine Reihe eines Segments.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00124">LedController_display.hpp:124</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_a6f14f9d73d1e8bace569965108ac5595"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a6f14f9d73d1e8bace569965108ac5595">LedController::setChar</a></div><div class="ttdeci">void setChar(unsigned int segmentNumber, unsigned int digit, char value, boolean dp)</div><div class="ttdoc">Setzte ein Zeichen auf einem 7-Segment display.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00199">LedController_display.hpp:199</a></div></div>
 <div class="ttc" id="aclass_led_controller_html"><div class="ttname"><a href="../../d9/def/class_led_controller.html">LedController</a></div><div class="ttdoc">Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/_led_controller__template_8hpp_source.html#l00067">LedController_template.hpp:67</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a5d17bae56676db2dbb09f0f077ffd03b"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">LedController::setIntensity</a></div><div class="ttdeci">void setIntensity(unsigned int segmentNumber, unsigned int newIntesityLevel)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00108">LedController_low_level.hpp:108</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_a5d17bae56676db2dbb09f0f077ffd03b"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">LedController::setIntensity</a></div><div class="ttdeci">void setIntensity(unsigned int segmentNumber, unsigned int newIntesityLevel)</div><div class="ttdoc">Setzte die Helligkeit eines Segments.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00108">LedController_low_level.hpp:108</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

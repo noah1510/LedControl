@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc1</span>
+   &#160;<span id="projectnumber">2.0.0-rc2</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -150,7 +150,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a87a6f0fd7bf34f422564d34fbd721c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Segment Data of a specific Segment.  <a href="../../d9/def/class_led_controller.html#a87a6f0fd7bf34f422564d34fbd721c1b">More...</a><br /></td></tr>
 <tr class="separator:a87a6f0fd7bf34f422564d34fbd721c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa67b66769e03f92b2ec575eb2f83097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aaa67b66769e03f92b2ec575eb2f83097">init</a> (const <a class="el" href="../../db/df4/classcontroller__configuration.html">controller_configuration</a>&lt; columns, rows &gt; &amp;configuration)</td></tr>
-<tr class="memdesc:aaa67b66769e03f92b2ec575eb2f83097"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> wit ha given configuration  <a href="../../d9/def/class_led_controller.html#aaa67b66769e03f92b2ec575eb2f83097">More...</a><br /></td></tr>
+<tr class="memdesc:aaa67b66769e03f92b2ec575eb2f83097"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> with a given configuration  <a href="../../d9/def/class_led_controller.html#aaa67b66769e03f92b2ec575eb2f83097">More...</a><br /></td></tr>
 <tr class="separator:aaa67b66769e03f92b2ec575eb2f83097"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58369399b111c355e21bd3ebacd92db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">init</a> (unsigned int csPin)</td></tr>
 <tr class="memdesc:a58369399b111c355e21bd3ebacd92db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> for use with hardware SPI  <a href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">More...</a><br /></td></tr>
@@ -210,7 +210,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9b6eb3b72eb0cc1500be6a57ff74c421"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves all rows to the left.  <a href="../../d9/def/class_led_controller.html#a9b6eb3b72eb0cc1500be6a57ff74c421">More...</a><br /></td></tr>
 <tr class="separator:a9b6eb3b72eb0cc1500be6a57ff74c421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac677c3727951ef0e917131aee6195461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ac677c3727951ef0e917131aee6195461">moveLeft</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; &amp;shiftedInColumn, <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; *shiftedOutColumn)</td></tr>
-<tr class="memdesc:ac677c3727951ef0e917131aee6195461"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves all rows to the left.  <a href="../../d9/def/class_led_controller.html#ac677c3727951ef0e917131aee6195461">More...</a><br /></td></tr>
+<tr class="memdesc:ac677c3727951ef0e917131aee6195461"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves all rows to the left. The passed Arrays need to have the same length as the number of rows, or be a nullptr. If shiftedInColumn is a nullptr, 0x00 will be used for all rows.  <a href="../../d9/def/class_led_controller.html#ac677c3727951ef0e917131aee6195461">More...</a><br /></td></tr>
 <tr class="separator:ac677c3727951ef0e917131aee6195461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eedcc41a35ee2357e1c2027d40387ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a7eedcc41a35ee2357e1c2027d40387ee">moveRight</a> ()</td></tr>
 <tr class="memdesc:a7eedcc41a35ee2357e1c2027d40387ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data right by one and 0x00 will be shifted in  <a href="../../d9/def/class_led_controller.html#a7eedcc41a35ee2357e1c2027d40387ee">More...</a><br /></td></tr>
@@ -222,7 +222,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ace818ec79d2bdd0914ffe88afa438a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves all rows to the right.  <a href="../../d9/def/class_led_controller.html#ace818ec79d2bdd0914ffe88afa438a97">More...</a><br /></td></tr>
 <tr class="separator:ace818ec79d2bdd0914ffe88afa438a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7740c23d93167d6cf97239ac351e160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ab7740c23d93167d6cf97239ac351e160">moveRight</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; &amp;shiftedInColumn, <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; *shiftedOutColumn)</td></tr>
-<tr class="memdesc:ab7740c23d93167d6cf97239ac351e160"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves all rows to the right.  <a href="../../d9/def/class_led_controller.html#ab7740c23d93167d6cf97239ac351e160">More...</a><br /></td></tr>
+<tr class="memdesc:ab7740c23d93167d6cf97239ac351e160"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves all rows to the right. The passed Arrays need to have the same length as the number of rows, or be a nullptr. If shiftedInColumn is a nullptr, 0x00 will be used for all rows.  <a href="../../d9/def/class_led_controller.html#ab7740c23d93167d6cf97239ac351e160">More...</a><br /></td></tr>
 <tr class="separator:ab7740c23d93167d6cf97239ac351e160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141eb3a646c42f3d7fad03f706e86cf9"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a141eb3a646c42f3d7fad03f706e86cf9">moveRowLeft</a> (byte shiftedInColumn=0x00, unsigned int row_num=0)</td></tr>
 <tr class="memdesc:a141eb3a646c42f3d7fad03f706e86cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">moves the data left by one  <a href="../../d9/def/class_led_controller.html#a141eb3a646c42f3d7fad03f706e86cf9">More...</a><br /></td></tr>
@@ -249,7 +249,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3d60a4af86e457e4e1022bd674285d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">refreshes all segments by first resetting them and then updating them.  <a href="../../d9/def/class_led_controller.html#a3d60a4af86e457e4e1022bd674285d24">More...</a><br /></td></tr>
 <tr class="separator:a3d60a4af86e457e4e1022bd674285d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3b62a70ce6c1e2e303a2b3f8d667776"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#af3b62a70ce6c1e2e303a2b3f8d667776">resetMatrix</a> ()</td></tr>
-<tr class="memdesc:af3b62a70ce6c1e2e303a2b3f8d667776"><td class="mdescLeft">&#160;</td><td class="mdescRight">activates all segments, sets to same intensity and cleas them  <a href="../../d9/def/class_led_controller.html#af3b62a70ce6c1e2e303a2b3f8d667776">More...</a><br /></td></tr>
+<tr class="memdesc:af3b62a70ce6c1e2e303a2b3f8d667776"><td class="mdescLeft">&#160;</td><td class="mdescRight">activates all segments, sets to same intensity and clears them  <a href="../../d9/def/class_led_controller.html#af3b62a70ce6c1e2e303a2b3f8d667776">More...</a><br /></td></tr>
 <tr class="separator:af3b62a70ce6c1e2e303a2b3f8d667776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99cdec576fed2956be33279f7c662f79"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">reverse</a> (byte input)</td></tr>
 <tr class="memdesc:a99cdec576fed2956be33279f7c662f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function changes to bitorder of a byte (useful to mirror "images" you want to display)  <a href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">More...</a><br /></td></tr>
@@ -285,7 +285,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afdc1c6c5936a6c114ac29eaba6ddfc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one Row of one segment.  <a href="../../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54">More...</a><br /></td></tr>
 <tr class="separator:afdc1c6c5936a6c114ac29eaba6ddfc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab0a3f793543847c937eda59e75023fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aab0a3f793543847c937eda59e75023fa">setScanLimit</a> (unsigned int segmentNumber, unsigned int limit)</td></tr>
-<tr class="memdesc:aab0a3f793543847c937eda59e75023fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of digits (or rows) to be displayed.  <a href="../../d9/def/class_led_controller.html#aab0a3f793543847c937eda59e75023fa">More...</a><br /></td></tr>
+<tr class="memdesc:aab0a3f793543847c937eda59e75023fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of digits (or rows) to be displayed (default: 7).  <a href="../../d9/def/class_led_controller.html#aab0a3f793543847c937eda59e75023fa">More...</a><br /></td></tr>
 <tr class="separator:aab0a3f793543847c937eda59e75023fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1adfb3528b2d7a18832b979de2428e92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a1adfb3528b2d7a18832b979de2428e92">shutdownAllSegments</a> ()</td></tr>
 <tr class="memdesc:a1adfb3528b2d7a18832b979de2428e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all segments into power-down mode.  <a href="../../d9/def/class_led_controller.html#a1adfb3528b2d7a18832b979de2428e92">More...</a><br /></td></tr>
@@ -312,7 +312,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:ae24a5279fe69824527adf446e9a3b897"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilize the spi outputs  <a href="../../d9/def/class_led_controller.html#ae24a5279fe69824527adf446e9a3b897">More...</a><br /></td></tr>
 <tr class="separator:ae24a5279fe69824527adf446e9a3b897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d9d2f1a084ec28247459985429cf1ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a7d9d2f1a084ec28247459985429cf1ec">resetBuffers</a> ()</td></tr>
-<tr class="memdesc:a7d9d2f1a084ec28247459985429cf1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilize the internal buffers of the Controller.  <a href="../../d9/def/class_led_controller.html#a7d9d2f1a084ec28247459985429cf1ec">More...</a><br /></td></tr>
+<tr class="memdesc:a7d9d2f1a084ec28247459985429cf1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilize the internal buffers of the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a>.  <a href="../../d9/def/class_led_controller.html#a7d9d2f1a084ec28247459985429cf1ec">More...</a><br /></td></tr>
 <tr class="separator:a7d9d2f1a084ec28247459985429cf1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d17bae56676db2dbb09f0f077ffd03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">setIntensity</a> (unsigned int segmentNumber, unsigned int newIntesityLevel)</td></tr>
 <tr class="memdesc:a5d17bae56676db2dbb09f0f077ffd03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the brightness of the segment.  <a href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">More...</a><br /></td></tr>
@@ -330,7 +330,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a42b8870eb7bb2c0de2850c348086b298"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> is fully initilized.  <a href="../../d9/def/class_led_controller.html#a42b8870eb7bb2c0de2850c348086b298">More...</a><br /></td></tr>
 <tr class="separator:a42b8870eb7bb2c0de2850c348086b298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46879e5eff8a9fc7f8a96555d21b3329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a46879e5eff8a9fc7f8a96555d21b3329">LedStates</a> [columns *rows]</td></tr>
-<tr class="memdesc:a46879e5eff8a9fc7f8a96555d21b3329"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state of all the Leds.  <a href="../../d9/def/class_led_controller.html#a46879e5eff8a9fc7f8a96555d21b3329">More...</a><br /></td></tr>
+<tr class="memdesc:a46879e5eff8a9fc7f8a96555d21b3329"><td class="mdescLeft">&#160;</td><td class="mdescRight">This array contains the state of all of the LEDs.  <a href="../../d9/def/class_led_controller.html#a46879e5eff8a9fc7f8a96555d21b3329">More...</a><br /></td></tr>
 <tr class="separator:a46879e5eff8a9fc7f8a96555d21b3329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da1eb2ad6f85d3dd6344a685f6d81a0"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a7da1eb2ad6f85d3dd6344a685f6d81a0">spidata</a> [rows][columns *2]</td></tr>
 <tr class="memdesc:a7da1eb2ad6f85d3dd6344a685f6d81a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array for shifting the data to the devices.  <a href="../../d9/def/class_led_controller.html#a7da1eb2ad6f85d3dd6344a685f6d81a0">More...</a><br /></td></tr>
@@ -387,6 +387,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> for use with hardware SPI. </p>
+<dl class="section note"><dt>Note</dt><dd>Only virtualMultiRow is possible with this Constructor. A custom configuration is needed to have different CS Pins for each row.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">csPin</td><td>The pin to select the led matrix </td></tr>
@@ -439,6 +440,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> object. </p>
+<dl class="section note"><dt>Note</dt><dd>Only virtualMultiRow is possible with this Constructor. A custom configuration is needed to have different CS Pins for each row.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataPin</td><td>pin on the Arduino where data gets shifted out (DIN) </td></tr>
@@ -531,7 +533,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00078">LedController&lt; columns, rows &gt;::conf</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00111">LedController&lt; columns, rows &gt;::initilized</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00070">LedController&lt; columns, rows &gt;::LedStates</a>, and <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00095">LedController&lt; columns, rows &gt;::spidata</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00088">LedController&lt; columns, rows &gt;::conf</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00140">LedController&lt; columns, rows &gt;::initilized</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00078">LedController&lt; columns, rows &gt;::LedStates</a>, and <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00115">LedController&lt; columns, rows &gt;::spidata</a>.</p>
 
 </div>
 </div>
@@ -888,9 +890,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>Get the Segment Data of a specific Segment. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000003">Todo:</a></b></dt><dd>remove following functions in version 2.2.0 </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used.</dd></dl>
-<p>Will be removed in version 2.2.0 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000004">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">column</td><td>the column where the wanted segment is </td></tr>
     <tr><td class="paramname">row_num</td><td>the row where the wanted segment is </td></tr>
@@ -964,7 +966,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>Get the Segment Data of a specific Segment. </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used.</dd></dl>
-<p>Will be removed in version 2.2.0 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000005">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">segmentindex</td><td>the index of whose data you want to have </td></tr>
     <tr><td class="paramname">resultLocation</td><td>the location where the data should be stored </td></tr>
@@ -994,10 +997,10 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> wit ha given configuration </p>
+<p>initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> with a given configuration </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">configuration</td><td></td></tr>
+    <tr><td class="paramname">configuration</td><td>The configuration that should be used </td></tr>
   </table>
   </dd>
 </dl>
@@ -1010,7 +1013,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_aaa67b66769e03f92b2ec575eb2f83097_cgraph.png" border="0" usemap="#d9/def/class_led_controller_aaa67b66769e03f92b2ec575eb2f83097_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_aaa67b66769e03f92b2ec575eb2f83097_cgraph" id="d9/def/class_led_controller_aaa67b66769e03f92b2ec575eb2f83097_cgraph">
-<area shape="rect" title="initilizes the LedController wit ha given configuration" alt="" coords="5,13,144,39"/>
+<area shape="rect" title="initilizes the LedController with a given configuration" alt="" coords="5,13,144,39"/>
 <area shape="rect" href="../../db/df4/classcontroller__configuration.html#a0f0fd75e4c76c23ff7c0f9b70905d0cf" title="check of this configuration is valid" alt="" coords="192,5,368,47"/>
 <area shape="rect" href="../../db/df4/classcontroller__configuration.html#ad237ddfbc408f4c6e42a4ea180dad5bc" title="check if a given configuragtion is valid" alt="" coords="416,5,592,47"/>
 </map>
@@ -1037,6 +1040,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> for use with hardware SPI </p>
+<dl class="section note"><dt>Note</dt><dd>Only virtualMultiRow is possible with this initilization. A custom configuration is needed to have different CS Pins for each row.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">csPin</td><td>The pin to select the led matrix </td></tr>
@@ -1091,6 +1095,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>initilizes the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Only virtualMultiRow is possible with this initilization. A custom configuration is needed to have different CS Pins for each row.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataPin</td><td>pin on the Arduino where data gets shifted out (DIN) </td></tr>
@@ -1247,7 +1252,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>Turns an array of rows into an array of columns. </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used.</dd></dl>
-<p>Will be removed in version 2.2.0 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000006">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rowArray</td><td>the array of rows of which you want the columns </td></tr>
     <tr><td class="paramname">columnArray</td><td>The address where the result will be stored </td></tr>
@@ -1382,8 +1388,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>moves the data down by one and 0x00 will be shifted in </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used.</dd></dl>
-<p>Will be removed in version 2.2.0 </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="This class is used to handle a row of bytes with a given length.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000012">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">shiftedOutRow</td><td>The address of the row that will be shifted out on the bottom </td></tr>
   </table>
@@ -1415,11 +1422,11 @@ template&lt;size_t columns, size_t rows&gt; </div>
 <p>moves all columns down. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row and needs to be the same size as number of rows or nullptr. </td></tr>
+    <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>ByteRow&lt;columns&gt; This pointer to an Array will contain the bytes that will be shifted out on each Row, it should be the same size as the number of rows or nullptr. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteRow&lt;columns&gt; This Array contains the bytes that will be shifted out on each Row. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00190">190</a> of file <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1454,8 +1461,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>moves the data down by one </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used.</dd></dl>
-<p>Will be removed in version 2.2.0 </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="This class is used to handle a row of bytes with a given length.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000010">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">shiftedInRow</td><td>The row that will be shifted in on the top (default 0x00) </td></tr>
     <tr><td class="paramname">shiftedOutRow</td><td>The address of the row that will be shifted out on the bottom </td></tr>
@@ -1506,8 +1514,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>moves the data left by one </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000002">Todo:</a></b></dt><dd>remove following functions in version 2.1.0 </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>to be reomoved in version 2.1.0, moveRowLeft should be used </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000002">Todo:</a></b></dt><dd>remove function in version 2.1.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">shiftedInColumn</td><td>The column that will be shifted to the right (default 0x00) </td></tr>
@@ -1540,14 +1548,13 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>moves all rows to the left. </p>
-<p>The passed Arrays need to have the same length as the number of rows, or be a nullptr. If shiftedInColumn is a nullptr, 0x00 will be used for all rows.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row and needs to be the same size as number of rows or nullptr. </td></tr>
+    <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>ByteRow&lt;rows&gt; This pointer to an Array will contain the bytes that will be shifted out on each Row, it should be the same size as the number of rows or nullptr. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteRow&lt;rows&gt; This Array contains the bytes that will be shifted out on each Row. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00163">163</a> of file <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1581,8 +1588,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>moves all rows to the left. </p>
-<p>The passed Arrays need to have the same length as the number of rows, or be a nullptr. If shiftedInColumn is a nullptr, 0x00 will be used for all rows. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used. Will be removed in version 2.2.0 </dd></dl>
+<p>moves all rows to the left. The passed Arrays need to have the same length as the number of rows, or be a nullptr. If shiftedInColumn is a nullptr, 0x00 will be used for all rows. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="This class is used to handle a row of bytes with a given length.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000013">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row and needs to be the same size as number of rows or nullptr. </td></tr>
@@ -1634,7 +1642,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>moves the data left by one </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>to be reomoved in version 2.1.0, moveRowRight should be used </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>to be reomoved in version 2.1.0, moveRowLeft should be used </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000003">Todo:</a></b></dt><dd>remove function in version 2.1.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">shiftedInColumn</td><td>The column that will be shifted to the left (default 0x00) </td></tr>
@@ -1667,14 +1676,13 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>moves all rows to the right. </p>
-<p>The passed Arrays need to have the same length as the number of rows, or be a nullptr. If shiftedInColumn is a nullptr, 0x00 will be used for all rows.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row and needs to be the same size as number of rows or nullptr. </td></tr>
+    <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>ByteRow&lt;rows&gt; This pointer to an Array will contain the bytes that will be shifted out on each Row, it should be the same size as the number of rows or nullptr. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteRow&lt;rows&gt; This Array contains the bytes that will be shifted out on each Row. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00172">172</a> of file <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1708,8 +1716,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>moves all rows to the right. </p>
-<p>The passed Arrays need to have the same length as the number of rows, or be a nullptr. If shiftedInColumn is a nullptr, 0x00 will be used for all rows. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used. Will be removed in version 2.2.0 </dd></dl>
+<p>moves all rows to the right. The passed Arrays need to have the same length as the number of rows, or be a nullptr. If shiftedInColumn is a nullptr, 0x00 will be used for all rows. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="This class is used to handle a row of bytes with a given length.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000014">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row and needs to be the same size as number of rows or nullptr. </td></tr>
@@ -1847,8 +1856,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>moves the data up by oneand 0x00 will be shifted in </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used.</dd></dl>
-<p>Will be removed in version 2.2.0 </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="This class is used to handle a row of bytes with a given length.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000011">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">shiftedOutRow</td><td>The address of the row that will be shifted out on the bottom </td></tr>
   </table>
@@ -1880,11 +1890,11 @@ template&lt;size_t columns, size_t rows&gt; </div>
 <p>moves all columns up. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row and needs to be the same size as number of rows or nullptr. </td></tr>
+    <tr><td class="paramname">shiftedInColumn</td><td>This Array contains what will be shifted in on each Row </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>ByteRow&lt;columns&gt; This pointer to an Array will contain the bytes that will be shifted out on each Row, it should be the same size as the number of rows or nullptr. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ByteRow&lt;columns&gt; This Array contains the bytes that will be shifted out on each Row. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1919,8 +1929,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </div><div class="memdoc">
 
 <p>moves the data up by one </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used.</dd></dl>
-<p>Will be removed in version 2.2.0 </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="This class is used to handle a row of bytes with a given length.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000009">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">shiftedInRow</td><td>The row that will be shifted in on the bottom (default 0x00) </td></tr>
     <tr><td class="paramname">shiftedOutRow</td><td>The address of the row that will be shifted out on the bottom </td></tr>
@@ -2006,7 +2017,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>initilize the internal buffers of the Controller. </p>
+<p>initilize the internal buffers of the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -2026,7 +2037,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>activates all segments, sets to same intensity and cleas them </p>
+<p>activates all segments, sets to same intensity and clears them </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -2124,7 +2135,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>Reverse an array of 8 bytes (mirror it) </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used.</dd></dl>
-<p>Will be removed in version 2.2.0 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000007">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>The array that should be mirrored </td></tr>
     <tr><td class="paramname">reversedInput</td><td>The address where the result will be stored </td></tr>
@@ -2197,7 +2209,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>rotate an byte[8] array by 180 degrees </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="A block of bytes used to represent all of the data in a Segment.">ByteBlock</a> as return type should be used.</dd></dl>
-<p>Will be removed in version 2.2.0 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000008">Todo:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the array that will be rotated </td></tr>
     <tr><td class="paramname">rotatedInput</td><td>The address where the result will be stored </td></tr>
@@ -2581,8 +2594,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Set the number of digits (or rows) to be displayed. </p>
-<dl class="section note"><dt>Note</dt><dd>See datasheet for sideeffects of the scanlimit on the brightness of the display. </dd></dl>
+<p>Set the number of digits (or rows) to be displayed (default: 7). </p>
+<dl class="section warning"><dt>Warning</dt><dd>See datasheet for sideeffects of the scanlimit on the brightness of the display. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">segmentNumber</td><td>The segment which should be addressed </td></tr>
@@ -2695,7 +2708,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">segment</td><td>The segment that should execute this command </td></tr>
-    <tr><td class="paramname">opcode</td><td>The command thCLKat should be executed </td></tr>
+    <tr><td class="paramname">opcode</td><td>The command that should be executed </td></tr>
     <tr><td class="paramname">data</td><td>The data needed for that command </td></tr>
   </table>
   </dd>
@@ -2780,7 +2793,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>The configuration of the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00088">88</a> of file <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
 
 </div>
 </div>
@@ -2808,7 +2821,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>True if the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> is fully initilized. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00140">140</a> of file <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
 
 </div>
 </div>
@@ -2834,9 +2847,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The state of all the Leds. </p>
+<p>This array contains the state of all of the LEDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
 
 </div>
 </div>
@@ -2864,7 +2877,7 @@ template&lt;size_t columns, size_t rows&gt; </div>
 
 <p>The array for shifting the data to the devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00095">95</a> of file <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
 
 </div>
 </div>

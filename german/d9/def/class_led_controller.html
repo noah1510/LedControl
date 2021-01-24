@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc1</span>
+   &#160;<span id="projectnumber">2.0.0-rc2</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -111,157 +111,216 @@ Zusammengehörigkeiten von LedController&lt; columns, rows &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
 <tr class="memitem:a5059529d3bd82e8fbbb1362a1830aa76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a5059529d3bd82e8fbbb1362a1830aa76">activateAllSegments</a> ()</td></tr>
+<tr class="memdesc:a5059529d3bd82e8fbbb1362a1830aa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktiviere alle Segmente.  <a href="../../d9/def/class_led_controller.html#a5059529d3bd82e8fbbb1362a1830aa76">Mehr ...</a><br /></td></tr>
 <tr class="separator:a5059529d3bd82e8fbbb1362a1830aa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3b854accf03fd483aefa987defff57a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ac3b854accf03fd483aefa987defff57a">activateSegment</a> (unsigned int segmentNumber)</td></tr>
+<tr class="memdesc:ac3b854accf03fd483aefa987defff57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktiviere ein Segment.  <a href="../../d9/def/class_led_controller.html#ac3b854accf03fd483aefa987defff57a">Mehr ...</a><br /></td></tr>
 <tr class="separator:ac3b854accf03fd483aefa987defff57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae706d5741aa89433a3607e2ce07482a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">clearMatrix</a> ()</td></tr>
+<tr class="memdesc:ae706d5741aa89433a3607e2ce07482a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">leere alle Segmente (alle LEDs aus).  <a href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">Mehr ...</a><br /></td></tr>
 <tr class="separator:ae706d5741aa89433a3607e2ce07482a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55ba71f1142c76d39b39be8df9e11a32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a55ba71f1142c76d39b39be8df9e11a32">clearSegment</a> (unsigned int segmentNumber)</td></tr>
+<tr class="memdesc:a55ba71f1142c76d39b39be8df9e11a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">leere ein Segment (alle LEDs aus).  <a href="../../d9/def/class_led_controller.html#a55ba71f1142c76d39b39be8df9e11a32">Mehr ...</a><br /></td></tr>
 <tr class="separator:a55ba71f1142c76d39b39be8df9e11a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a327c7a91c8bf8a3696965ffc47edeff7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a327c7a91c8bf8a3696965ffc47edeff7">displayOnSegment</a> (unsigned int column, unsigned int row_num, <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> data)</td></tr>
+<tr class="memdesc:a327c7a91c8bf8a3696965ffc47edeff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeige einen gegebenen <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> auf einem Segemnt an (setzte alle 8 Zeilen).  <a href="../../d9/def/class_led_controller.html#a327c7a91c8bf8a3696965ffc47edeff7">Mehr ...</a><br /></td></tr>
 <tr class="separator:a327c7a91c8bf8a3696965ffc47edeff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a058d42aeb995a85675c86662fe29a0dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a058d42aeb995a85675c86662fe29a0dd">displayOnSegment</a> (unsigned int segmentindex, <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> data)</td></tr>
+<tr class="memdesc:a058d42aeb995a85675c86662fe29a0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeige einen gegebenen <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> auf einem Segemnt an (setzte alle 8 Zeilen).  <a href="../../d9/def/class_led_controller.html#a058d42aeb995a85675c86662fe29a0dd">Mehr ...</a><br /></td></tr>
 <tr class="separator:a058d42aeb995a85675c86662fe29a0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58583bdc5843b39d3f200a68381cd612"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../db/df4/classcontroller__configuration.html">controller_configuration</a>&lt; columns, rows &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a58583bdc5843b39d3f200a68381cd612">getConfig</a> ()</td></tr>
+<tr class="memdesc:a58583bdc5843b39d3f200a68381cd612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hole die Konfiguration des <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>.  <a href="../../d9/def/class_led_controller.html#a58583bdc5843b39d3f200a68381cd612">Mehr ...</a><br /></td></tr>
 <tr class="separator:a58583bdc5843b39d3f200a68381cd612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a466183d2d8c1abbe1c29440b4d1e05a1"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a466183d2d8c1abbe1c29440b4d1e05a1">getRow</a> (unsigned int segmentNumber, unsigned int row)</td></tr>
+<tr class="memdesc:a466183d2d8c1abbe1c29440b4d1e05a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hole den Zustand einer Reihe eines Segments.  <a href="../../d9/def/class_led_controller.html#a466183d2d8c1abbe1c29440b4d1e05a1">Mehr ...</a><br /></td></tr>
 <tr class="separator:a466183d2d8c1abbe1c29440b4d1e05a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb8378e29a71b1d77e0a103e9c41ea7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a1bb8378e29a71b1d77e0a103e9c41ea7">getSegmentCount</a> ()</td></tr>
+<tr class="memdesc:a1bb8378e29a71b1d77e0a103e9c41ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hole die geasmate Anzahl der konfigurierten Segmenten.  <a href="../../d9/def/class_led_controller.html#a1bb8378e29a71b1d77e0a103e9c41ea7">Mehr ...</a><br /></td></tr>
 <tr class="separator:a1bb8378e29a71b1d77e0a103e9c41ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fa352fafce0113ad89483066c773a41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a4fa352fafce0113ad89483066c773a41">getSegmentData</a> (unsigned int column, unsigned int row_num)</td></tr>
+<tr class="memdesc:a4fa352fafce0113ad89483066c773a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hole den Zustand eines Segments.  <a href="../../d9/def/class_led_controller.html#a4fa352fafce0113ad89483066c773a41">Mehr ...</a><br /></td></tr>
 <tr class="separator:a4fa352fafce0113ad89483066c773a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cf1bad438d7bc7179342fc1ae302edf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a6cf1bad438d7bc7179342fc1ae302edf">getSegmentData</a> (unsigned int column, unsigned int row_num, <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> *resultLocation)</td></tr>
 <tr class="separator:a6cf1bad438d7bc7179342fc1ae302edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa95ea3a75ba530cc21a9aa0f1a4728bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aa95ea3a75ba530cc21a9aa0f1a4728bf">getSegmentData</a> (unsigned int segmentindex)</td></tr>
+<tr class="memdesc:aa95ea3a75ba530cc21a9aa0f1a4728bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hole den Zustand eines Segments.  <a href="../../d9/def/class_led_controller.html#aa95ea3a75ba530cc21a9aa0f1a4728bf">Mehr ...</a><br /></td></tr>
 <tr class="separator:aa95ea3a75ba530cc21a9aa0f1a4728bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87a6f0fd7bf34f422564d34fbd721c1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a87a6f0fd7bf34f422564d34fbd721c1b">getSegmentData</a> (unsigned int segmentindex, <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> *resultLocation)</td></tr>
 <tr class="separator:a87a6f0fd7bf34f422564d34fbd721c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa67b66769e03f92b2ec575eb2f83097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aaa67b66769e03f92b2ec575eb2f83097">init</a> (const <a class="el" href="../../db/df4/classcontroller__configuration.html">controller_configuration</a>&lt; columns, rows &gt; &amp;configuration)</td></tr>
+<tr class="memdesc:aaa67b66769e03f92b2ec575eb2f83097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisiere einen <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> mit einer gegebenen Konfiguration.  <a href="../../d9/def/class_led_controller.html#aaa67b66769e03f92b2ec575eb2f83097">Mehr ...</a><br /></td></tr>
 <tr class="separator:aaa67b66769e03f92b2ec575eb2f83097"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58369399b111c355e21bd3ebacd92db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">init</a> (unsigned int csPin)</td></tr>
+<tr class="memdesc:a58369399b111c355e21bd3ebacd92db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisiere den <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> für Nutzung mit hardware SPI.  <a href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">Mehr ...</a><br /></td></tr>
 <tr class="separator:a58369399b111c355e21bd3ebacd92db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ddc9a8b5e8cbfbabe2303a3accf03a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a02ddc9a8b5e8cbfbabe2303a3accf03a">init</a> (unsigned int dataPin, unsigned int clkPin, unsigned int csPin, bool useHardwareSpi=false)</td></tr>
+<tr class="memdesc:a02ddc9a8b5e8cbfbabe2303a3accf03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisiere einen <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> Objekt mit gegeben Pins.  <a href="../../d9/def/class_led_controller.html#a02ddc9a8b5e8cbfbabe2303a3accf03a">Mehr ...</a><br /></td></tr>
 <tr class="separator:a02ddc9a8b5e8cbfbabe2303a3accf03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd674c9302e0391ec3fb55247400d5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#acfd674c9302e0391ec3fb55247400d5d">isInitilized</a> ()</td></tr>
+<tr class="memdesc:acfd674c9302e0391ec3fb55247400d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">gibt den Status des <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> zurück.  <a href="../../d9/def/class_led_controller.html#acfd674c9302e0391ec3fb55247400d5d">Mehr ...</a><br /></td></tr>
 <tr class="separator:acfd674c9302e0391ec3fb55247400d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37350dd2df7022a39b92fa0d270a6791"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a37350dd2df7022a39b92fa0d270a6791">LedController</a> ()</td></tr>
+<tr class="memdesc:a37350dd2df7022a39b92fa0d270a6791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erstelle einen neuen <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> ohne etwas zu initialisieren.  <a href="../../d9/def/class_led_controller.html#a37350dd2df7022a39b92fa0d270a6791">Mehr ...</a><br /></td></tr>
 <tr class="separator:a37350dd2df7022a39b92fa0d270a6791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc944557afe0c72d2c226a670ecd02f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aacc944557afe0c72d2c226a670ecd02f">LedController</a> (const <a class="el" href="../../db/df4/classcontroller__configuration.html">controller_configuration</a>&lt; columns, rows &gt; &amp;configuration)</td></tr>
+<tr class="memdesc:aacc944557afe0c72d2c226a670ecd02f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erstelle ein neues <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> Objekt aus einer Konfiguration.  <a href="../../d9/def/class_led_controller.html#aacc944557afe0c72d2c226a670ecd02f">Mehr ...</a><br /></td></tr>
 <tr class="separator:aacc944557afe0c72d2c226a670ecd02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3998248e0d595842bbfc9156427e7a96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a3998248e0d595842bbfc9156427e7a96">LedController</a> (const <a class="el" href="../../d9/def/class_led_controller.html">LedController</a> &amp;other)</td></tr>
+<tr class="memdesc:a3998248e0d595842bbfc9156427e7a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Kopierkonstruktor für den <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>.  <a href="../../d9/def/class_led_controller.html#a3998248e0d595842bbfc9156427e7a96">Mehr ...</a><br /></td></tr>
 <tr class="separator:a3998248e0d595842bbfc9156427e7a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f0008a301e1156428145b9d736b03c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a9f0008a301e1156428145b9d736b03c2">LedController</a> (unsigned int csPin)</td></tr>
+<tr class="memdesc:a9f0008a301e1156428145b9d736b03c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erstelle einen neuen <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> für die Nutzung mit hardwareSPI.  <a href="../../d9/def/class_led_controller.html#a9f0008a301e1156428145b9d736b03c2">Mehr ...</a><br /></td></tr>
 <tr class="separator:a9f0008a301e1156428145b9d736b03c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f5d582384750d4fa319846febdec85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ad7f5d582384750d4fa319846febdec85">LedController</a> (unsigned int dataPin, unsigned int clkPin, unsigned int csPin, bool useHardwareSpi=false)</td></tr>
+<tr class="memdesc:ad7f5d582384750d4fa319846febdec85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruiere ein neues <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> Objekt mit gegeben Pins.  <a href="../../d9/def/class_led_controller.html#ad7f5d582384750d4fa319846febdec85">Mehr ...</a><br /></td></tr>
 <tr class="separator:ad7f5d582384750d4fa319846febdec85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff61bb1f8f61a8c4658d9a447c192363"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">makeColumns</a> (<a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> rowArray)</td></tr>
+<tr class="memdesc:aff61bb1f8f61a8c4658d9a447c192363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wandelt einen Block aus Zeilen in einen Block aus Spalten.  <a href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">Mehr ...</a><br /></td></tr>
 <tr class="separator:aff61bb1f8f61a8c4658d9a447c192363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecb756922984f96aed2414f3b83c87d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aecb756922984f96aed2414f3b83c87d2">makeColumns</a> (<a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> rowArray, <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> *columnArray)</td></tr>
 <tr class="separator:aecb756922984f96aed2414f3b83c87d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c8540d3aba9632455fc18173566dd67"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a3c8540d3aba9632455fc18173566dd67">moveColumnDown</a> (byte shiftedInRow=0x00, unsigned int col_num=0)</td></tr>
+<tr class="memdesc:a3c8540d3aba9632455fc18173566dd67"><td class="mdescLeft">&#160;</td><td class="mdescRight">schiebt die Daten einer Spalte eins nach unten.  <a href="../../d9/def/class_led_controller.html#a3c8540d3aba9632455fc18173566dd67">Mehr ...</a><br /></td></tr>
 <tr class="separator:a3c8540d3aba9632455fc18173566dd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283e040a0c4f235b6bbff4c9b7482e9b"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a283e040a0c4f235b6bbff4c9b7482e9b">moveColumnUp</a> (byte shiftedInRow=0x00, unsigned int col_num=0)</td></tr>
+<tr class="memdesc:a283e040a0c4f235b6bbff4c9b7482e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">schiebt die Daten einer Spalte eins nach oben.  <a href="../../d9/def/class_led_controller.html#a283e040a0c4f235b6bbff4c9b7482e9b">Mehr ...</a><br /></td></tr>
 <tr class="separator:a283e040a0c4f235b6bbff4c9b7482e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab45d3ac600f1ae2ccf57164f78697b26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ab45d3ac600f1ae2ccf57164f78697b26">moveDown</a> ()</td></tr>
+<tr class="memdesc:ab45d3ac600f1ae2ccf57164f78697b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schibet die Daten eins nach unten und 0x00 wird oben reingeschoben.  <a href="../../d9/def/class_led_controller.html#ab45d3ac600f1ae2ccf57164f78697b26">Mehr ...</a><br /></td></tr>
 <tr class="separator:ab45d3ac600f1ae2ccf57164f78697b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af70a19c4aea600d85f6fb6131dbc94da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#af70a19c4aea600d85f6fb6131dbc94da">moveDown</a> (<a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt; *shiftedOutRow)</td></tr>
 <tr class="separator:af70a19c4aea600d85f6fb6131dbc94da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a908bf8b4e396cfc55fb7900c46c1ee07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a908bf8b4e396cfc55fb7900c46c1ee07">moveDown</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt; &amp;shiftedInColumn)</td></tr>
+<tr class="memdesc:a908bf8b4e396cfc55fb7900c46c1ee07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt alle Splaten eins nach unten.  <a href="../../d9/def/class_led_controller.html#a908bf8b4e396cfc55fb7900c46c1ee07">Mehr ...</a><br /></td></tr>
 <tr class="separator:a908bf8b4e396cfc55fb7900c46c1ee07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac38c318e889f9f029e3bb247cc494198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ac38c318e889f9f029e3bb247cc494198">moveDown</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt; &amp;shiftedInRow, <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt; *shiftedOutRow)</td></tr>
 <tr class="separator:ac38c318e889f9f029e3bb247cc494198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3da6eccac282b504258dca0638e12e9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a3da6eccac282b504258dca0638e12e9a">moveLeft</a> ()</td></tr>
+<tr class="memdesc:a3da6eccac282b504258dca0638e12e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schibet die Daten eins nach links und 0x00 wird recht reingeschoben.  <a href="../../d9/def/class_led_controller.html#a3da6eccac282b504258dca0638e12e9a">Mehr ...</a><br /></td></tr>
 <tr class="separator:a3da6eccac282b504258dca0638e12e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3417811efc8d74840d6f4d464ec856"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a1f3417811efc8d74840d6f4d464ec856">moveLeft</a> (byte shiftedInColumn)</td></tr>
 <tr class="separator:a1f3417811efc8d74840d6f4d464ec856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b6eb3b72eb0cc1500be6a57ff74c421"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a9b6eb3b72eb0cc1500be6a57ff74c421">moveLeft</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; &amp;shiftedInColumn)</td></tr>
+<tr class="memdesc:a9b6eb3b72eb0cc1500be6a57ff74c421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt alle Reihen eins nach links.  <a href="../../d9/def/class_led_controller.html#a9b6eb3b72eb0cc1500be6a57ff74c421">Mehr ...</a><br /></td></tr>
 <tr class="separator:a9b6eb3b72eb0cc1500be6a57ff74c421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac677c3727951ef0e917131aee6195461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ac677c3727951ef0e917131aee6195461">moveLeft</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; &amp;shiftedInColumn, <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; *shiftedOutColumn)</td></tr>
 <tr class="separator:ac677c3727951ef0e917131aee6195461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eedcc41a35ee2357e1c2027d40387ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a7eedcc41a35ee2357e1c2027d40387ee">moveRight</a> ()</td></tr>
+<tr class="memdesc:a7eedcc41a35ee2357e1c2027d40387ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schibet die Daten eins nach rechts und 0x00 wird links reingeschoben.  <a href="../../d9/def/class_led_controller.html#a7eedcc41a35ee2357e1c2027d40387ee">Mehr ...</a><br /></td></tr>
 <tr class="separator:a7eedcc41a35ee2357e1c2027d40387ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa75c4f7f56bd4337eeff980e81b37092"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aa75c4f7f56bd4337eeff980e81b37092">moveRight</a> (byte shiftedInColumn)</td></tr>
 <tr class="separator:aa75c4f7f56bd4337eeff980e81b37092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace818ec79d2bdd0914ffe88afa438a97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ace818ec79d2bdd0914ffe88afa438a97">moveRight</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; &amp;shiftedInColumn)</td></tr>
+<tr class="memdesc:ace818ec79d2bdd0914ffe88afa438a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt alle Reihen eins nach rechts.  <a href="../../d9/def/class_led_controller.html#ace818ec79d2bdd0914ffe88afa438a97">Mehr ...</a><br /></td></tr>
 <tr class="separator:ace818ec79d2bdd0914ffe88afa438a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7740c23d93167d6cf97239ac351e160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ab7740c23d93167d6cf97239ac351e160">moveRight</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; &amp;shiftedInColumn, <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; rows &gt; *shiftedOutColumn)</td></tr>
 <tr class="separator:ab7740c23d93167d6cf97239ac351e160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141eb3a646c42f3d7fad03f706e86cf9"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a141eb3a646c42f3d7fad03f706e86cf9">moveRowLeft</a> (byte shiftedInColumn=0x00, unsigned int row_num=0)</td></tr>
+<tr class="memdesc:a141eb3a646c42f3d7fad03f706e86cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">schiebt die Daten einer Zeile eins nach links.  <a href="../../d9/def/class_led_controller.html#a141eb3a646c42f3d7fad03f706e86cf9">Mehr ...</a><br /></td></tr>
 <tr class="separator:a141eb3a646c42f3d7fad03f706e86cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e06e883b4b6bd241fcc9d4fe97730d"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a29e06e883b4b6bd241fcc9d4fe97730d">moveRowRight</a> (byte shiftedInColumn=0x00, unsigned int row_num=0)</td></tr>
+<tr class="memdesc:a29e06e883b4b6bd241fcc9d4fe97730d"><td class="mdescLeft">&#160;</td><td class="mdescRight">schiebt die Daten einer Zeile eins nach rechts.  <a href="../../d9/def/class_led_controller.html#a29e06e883b4b6bd241fcc9d4fe97730d">Mehr ...</a><br /></td></tr>
 <tr class="separator:a29e06e883b4b6bd241fcc9d4fe97730d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d2639c68eebd83b2b45e227cf3490c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a96d2639c68eebd83b2b45e227cf3490c">moveUp</a> ()</td></tr>
+<tr class="memdesc:a96d2639c68eebd83b2b45e227cf3490c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schibet die Daten eins nach oben und 0x00 wird unten reingeschoben.  <a href="../../d9/def/class_led_controller.html#a96d2639c68eebd83b2b45e227cf3490c">Mehr ...</a><br /></td></tr>
 <tr class="separator:a96d2639c68eebd83b2b45e227cf3490c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e99ec0b7d28fe91639c720dd01767d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a7e99ec0b7d28fe91639c720dd01767d7">moveUp</a> (<a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt; *shiftedOutRow)</td></tr>
 <tr class="separator:a7e99ec0b7d28fe91639c720dd01767d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af404c0bb17c433d67bbf74bd23e43f92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#af404c0bb17c433d67bbf74bd23e43f92">moveUp</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt; &amp;shiftedInColumn)</td></tr>
+<tr class="memdesc:af404c0bb17c433d67bbf74bd23e43f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt alle Splaten eins nach oben.  <a href="../../d9/def/class_led_controller.html#af404c0bb17c433d67bbf74bd23e43f92">Mehr ...</a><br /></td></tr>
 <tr class="separator:af404c0bb17c433d67bbf74bd23e43f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7047002711dfe8acda169f8b34ccdb80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a7047002711dfe8acda169f8b34ccdb80">moveUp</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt; &amp;shiftedInRow, <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; columns &gt; *shiftedOutRow)</td></tr>
 <tr class="separator:a7047002711dfe8acda169f8b34ccdb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae27f774032468a0f017f295a5c55db3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ae27f774032468a0f017f295a5c55db3c">refreshSegment</a> (unsigned int segmentNumber)</td></tr>
+<tr class="memdesc:ae27f774032468a0f017f295a5c55db3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lädt eine Segment neu (zurücksetzten und dann updaten).  <a href="../../d9/def/class_led_controller.html#ae27f774032468a0f017f295a5c55db3c">Mehr ...</a><br /></td></tr>
 <tr class="separator:ae27f774032468a0f017f295a5c55db3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d60a4af86e457e4e1022bd674285d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a3d60a4af86e457e4e1022bd674285d24">refreshSegments</a> ()</td></tr>
+<tr class="memdesc:a3d60a4af86e457e4e1022bd674285d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lädt alle Segmente neu (zurücksetzten und dann updaten).  <a href="../../d9/def/class_led_controller.html#a3d60a4af86e457e4e1022bd674285d24">Mehr ...</a><br /></td></tr>
 <tr class="separator:a3d60a4af86e457e4e1022bd674285d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3b62a70ce6c1e2e303a2b3f8d667776"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#af3b62a70ce6c1e2e303a2b3f8d667776">resetMatrix</a> ()</td></tr>
+<tr class="memdesc:af3b62a70ce6c1e2e303a2b3f8d667776"><td class="mdescLeft">&#160;</td><td class="mdescRight">aktiviere alle Segmente, setzte alle auf die gleiche Helligkeit und leere den Inhalt.  <a href="../../d9/def/class_led_controller.html#af3b62a70ce6c1e2e303a2b3f8d667776">Mehr ...</a><br /></td></tr>
 <tr class="separator:af3b62a70ce6c1e2e303a2b3f8d667776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99cdec576fed2956be33279f7c662f79"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">reverse</a> (byte input)</td></tr>
+<tr class="memdesc:a99cdec576fed2956be33279f7c662f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Funktion ändert die Bitreihnfolge eines Bytes bzw.  <a href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">Mehr ...</a><br /></td></tr>
 <tr class="separator:a99cdec576fed2956be33279f7c662f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d8b960beccc10682e610d9952e35af2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a9d8b960beccc10682e610d9952e35af2">reverse</a> (<a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> input)</td></tr>
+<tr class="memdesc:a9d8b960beccc10682e610d9952e35af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Funktion kehrt die Reihnfolge der einzelnen Zeilen um (spiegeln in x-Richtung).  <a href="../../d9/def/class_led_controller.html#a9d8b960beccc10682e610d9952e35af2">Mehr ...</a><br /></td></tr>
 <tr class="separator:a9d8b960beccc10682e610d9952e35af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6aad659a9654c8f0e37573a1afcdc0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ae6aad659a9654c8f0e37573a1afcdc0d">reverse</a> (<a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> input, <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> *reversedInput)</td></tr>
 <tr class="separator:ae6aad659a9654c8f0e37573a1afcdc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac61af7e100284d465a37573fbf960c22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a> (<a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> input)</td></tr>
+<tr class="memdesc:ac61af7e100284d465a37573fbf960c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotiert einen <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> um 180 Grad  <a href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">Mehr ...</a><br /></td></tr>
 <tr class="separator:ac61af7e100284d465a37573fbf960c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0332a7eaf650e1d043ef71da906e47f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aa0332a7eaf650e1d043ef71da906e47f">rotate180</a> (<a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> input, <a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a> *rotatedInput)</td></tr>
 <tr class="separator:aa0332a7eaf650e1d043ef71da906e47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f14f9d73d1e8bace569965108ac5595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a6f14f9d73d1e8bace569965108ac5595">setChar</a> (unsigned int segmentNumber, unsigned int digit, char value, boolean dp)</td></tr>
+<tr class="memdesc:a6f14f9d73d1e8bace569965108ac5595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzte ein Zeichen auf einem 7-Segment display.  <a href="../../d9/def/class_led_controller.html#a6f14f9d73d1e8bace569965108ac5595">Mehr ...</a><br /></td></tr>
 <tr class="separator:a6f14f9d73d1e8bace569965108ac5595"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dd25dfd3a6f1a37f021f3887466710e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a6dd25dfd3a6f1a37f021f3887466710e">setColumn</a> (unsigned int segmentNumber, unsigned int col, byte value)</td></tr>
+<tr class="memdesc:a6dd25dfd3a6f1a37f021f3887466710e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzte eine Spalte eines Segments.  <a href="../../d9/def/class_led_controller.html#a6dd25dfd3a6f1a37f021f3887466710e">Mehr ...</a><br /></td></tr>
 <tr class="separator:a6dd25dfd3a6f1a37f021f3887466710e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a698d996b774311e675b282a2f77c4e0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">setDigit</a> (unsigned int segmentNumber, unsigned int digit, byte value, boolean dp)</td></tr>
+<tr class="memdesc:a698d996b774311e675b282a2f77c4e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzte eine Hexadecimalziffer auf einem 7-Segment Display.  <a href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">Mehr ...</a><br /></td></tr>
 <tr class="separator:a698d996b774311e675b282a2f77c4e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205bc47c86d9957bdbff842a4ec334d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a205bc47c86d9957bdbff842a4ec334d9">setIntensity</a> (unsigned int newIntesityLevel)</td></tr>
+<tr class="memdesc:a205bc47c86d9957bdbff842a4ec334d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt die Helligkeit der gesamten Matrix auf den gegebenen Wert.  <a href="../../d9/def/class_led_controller.html#a205bc47c86d9957bdbff842a4ec334d9">Mehr ...</a><br /></td></tr>
 <tr class="separator:a205bc47c86d9957bdbff842a4ec334d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1dc34f422c6a6755b4ef78f1e2a0ef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#af1dc34f422c6a6755b4ef78f1e2a0ef1">setLed</a> (unsigned int segmentNumber, unsigned int row, unsigned int column, boolean state)</td></tr>
+<tr class="memdesc:af1dc34f422c6a6755b4ef78f1e2a0ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzte eine einzalne Led auf einen bestimmten Wert.  <a href="../../d9/def/class_led_controller.html#af1dc34f422c6a6755b4ef78f1e2a0ef1">Mehr ...</a><br /></td></tr>
 <tr class="separator:af1dc34f422c6a6755b4ef78f1e2a0ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc1c6c5936a6c114ac29eaba6ddfc54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54">setRow</a> (unsigned int segmentNumber, unsigned int row, byte value)</td></tr>
+<tr class="memdesc:afdc1c6c5936a6c114ac29eaba6ddfc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setze eine Reihe eines Segments.  <a href="../../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54">Mehr ...</a><br /></td></tr>
 <tr class="separator:afdc1c6c5936a6c114ac29eaba6ddfc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab0a3f793543847c937eda59e75023fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#aab0a3f793543847c937eda59e75023fa">setScanLimit</a> (unsigned int segmentNumber, unsigned int limit)</td></tr>
+<tr class="memdesc:aab0a3f793543847c937eda59e75023fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzte die Anzahl der Zeilen/Stellen, die auf einem Segment angezeigt werden.  <a href="../../d9/def/class_led_controller.html#aab0a3f793543847c937eda59e75023fa">Mehr ...</a><br /></td></tr>
 <tr class="separator:aab0a3f793543847c937eda59e75023fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1adfb3528b2d7a18832b979de2428e92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a1adfb3528b2d7a18832b979de2428e92">shutdownAllSegments</a> ()</td></tr>
+<tr class="memdesc:a1adfb3528b2d7a18832b979de2428e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deaktiviere alle Segmente.  <a href="../../d9/def/class_led_controller.html#a1adfb3528b2d7a18832b979de2428e92">Mehr ...</a><br /></td></tr>
 <tr class="separator:a1adfb3528b2d7a18832b979de2428e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f3417813892706dc51644336b85efc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ab8f3417813892706dc51644336b85efc">shutdownSegment</a> (unsigned int segmentNumber)</td></tr>
+<tr class="memdesc:ab8f3417813892706dc51644336b85efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deaktiviere ein Segment.  <a href="../../d9/def/class_led_controller.html#ab8f3417813892706dc51644336b85efc">Mehr ...</a><br /></td></tr>
 <tr class="separator:ab8f3417813892706dc51644336b85efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbc7958733e32840b4f9b5580ae1d2cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#abbc7958733e32840b4f9b5580ae1d2cc">updateSegment</a> (unsigned int segmentNumber)</td></tr>
+<tr class="memdesc:abbc7958733e32840b4f9b5580ae1d2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lädt den Inhalt der internen Daten auf ein Segmente hoch.  <a href="../../d9/def/class_led_controller.html#abbc7958733e32840b4f9b5580ae1d2cc">Mehr ...</a><br /></td></tr>
 <tr class="separator:abbc7958733e32840b4f9b5580ae1d2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d365aa279673d398f1083162bb6343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a84d365aa279673d398f1083162bb6343">updateSegments</a> ()</td></tr>
+<tr class="memdesc:a84d365aa279673d398f1083162bb6343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lädt den Inhalt der internen Daten auf alle Segmente hoch.  <a href="../../d9/def/class_led_controller.html#a84d365aa279673d398f1083162bb6343">Mehr ...</a><br /></td></tr>
 <tr class="separator:a84d365aa279673d398f1083162bb6343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63f966b169e07058748e53a4ffec6a5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a63f966b169e07058748e53a4ffec6a5b">~LedController</a> ()</td></tr>
+<tr class="memdesc:a63f966b169e07058748e53a4ffec6a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zerstöre das Objekt und leere den Speicher.  <a href="../../d9/def/class_led_controller.html#a63f966b169e07058748e53a4ffec6a5b">Mehr ...</a><br /></td></tr>
 <tr class="separator:a63f966b169e07058748e53a4ffec6a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Geschützte Methoden</h2></td></tr>
 <tr class="memitem:a2c1e2674c7ab83b09efc27f907dde570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a2c1e2674c7ab83b09efc27f907dde570">initConf</a> ()</td></tr>
+<tr class="memdesc:a2c1e2674c7ab83b09efc27f907dde570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisiere die Konfiguration.  <a href="../../d9/def/class_led_controller.html#a2c1e2674c7ab83b09efc27f907dde570">Mehr ...</a><br /></td></tr>
 <tr class="separator:a2c1e2674c7ab83b09efc27f907dde570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae24a5279fe69824527adf446e9a3b897"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#ae24a5279fe69824527adf446e9a3b897">initSPI</a> ()</td></tr>
+<tr class="memdesc:ae24a5279fe69824527adf446e9a3b897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisiere die SPI Ausgabe.  <a href="../../d9/def/class_led_controller.html#ae24a5279fe69824527adf446e9a3b897">Mehr ...</a><br /></td></tr>
 <tr class="separator:ae24a5279fe69824527adf446e9a3b897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d9d2f1a084ec28247459985429cf1ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a7d9d2f1a084ec28247459985429cf1ec">resetBuffers</a> ()</td></tr>
+<tr class="memdesc:a7d9d2f1a084ec28247459985429cf1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisiere die internen Puffer des <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>.  <a href="../../d9/def/class_led_controller.html#a7d9d2f1a084ec28247459985429cf1ec">Mehr ...</a><br /></td></tr>
 <tr class="separator:a7d9d2f1a084ec28247459985429cf1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d17bae56676db2dbb09f0f077ffd03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">setIntensity</a> (unsigned int segmentNumber, unsigned int newIntesityLevel)</td></tr>
+<tr class="memdesc:a5d17bae56676db2dbb09f0f077ffd03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzte die Helligkeit eines Segments.  <a href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">Mehr ...</a><br /></td></tr>
 <tr class="separator:a5d17bae56676db2dbb09f0f077ffd03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7a6a6555068829f4d54cc9b3a77c61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a5d7a6a6555068829f4d54cc9b3a77c61">spiTransfer</a> (unsigned int segment, byte opcode, byte data)</td></tr>
+<tr class="memdesc:a5d7a6a6555068829f4d54cc9b3a77c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Funktion überträgt einen Befehl an das angeschlosssene Modul.  <a href="../../d9/def/class_led_controller.html#a5d7a6a6555068829f4d54cc9b3a77c61">Mehr ...</a><br /></td></tr>
 <tr class="separator:a5d7a6a6555068829f4d54cc9b3a77c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Geschützte Attribute</h2></td></tr>
 <tr class="memitem:a902807aad59effe566ce4c5872ab69fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df4/classcontroller__configuration.html">controller_configuration</a>&lt; columns, rows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a902807aad59effe566ce4c5872ab69fc">conf</a></td></tr>
+<tr class="memdesc:a902807aad59effe566ce4c5872ab69fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Konfiguration des <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>.  <a href="../../d9/def/class_led_controller.html#a902807aad59effe566ce4c5872ab69fc">Mehr ...</a><br /></td></tr>
 <tr class="separator:a902807aad59effe566ce4c5872ab69fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b8870eb7bb2c0de2850c348086b298"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a42b8870eb7bb2c0de2850c348086b298">initilized</a> = false</td></tr>
+<tr class="memdesc:a42b8870eb7bb2c0de2850c348086b298"><td class="mdescLeft">&#160;</td><td class="mdescRight">True wenn, der <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> vollständig initialisiert ist.  <a href="../../d9/def/class_led_controller.html#a42b8870eb7bb2c0de2850c348086b298">Mehr ...</a><br /></td></tr>
 <tr class="separator:a42b8870eb7bb2c0de2850c348086b298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46879e5eff8a9fc7f8a96555d21b3329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d65/class_byte_block.html">ByteBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a46879e5eff8a9fc7f8a96555d21b3329">LedStates</a> [columns *rows]</td></tr>
-<tr class="memdesc:a46879e5eff8a9fc7f8a96555d21b3329"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state of all the Leds.  <a href="../../d9/def/class_led_controller.html#a46879e5eff8a9fc7f8a96555d21b3329">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:a46879e5eff8a9fc7f8a96555d21b3329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dieses Array beinhaltet den Status von allen LEDs.  <a href="../../d9/def/class_led_controller.html#a46879e5eff8a9fc7f8a96555d21b3329">Mehr ...</a><br /></td></tr>
 <tr class="separator:a46879e5eff8a9fc7f8a96555d21b3329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da1eb2ad6f85d3dd6344a685f6d81a0"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/def/class_led_controller.html#a7da1eb2ad6f85d3dd6344a685f6d81a0">spidata</a> [rows][columns *2]</td></tr>
+<tr class="memdesc:a7da1eb2ad6f85d3dd6344a685f6d81a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das Array was benötigt wird, um Daten auf das Gerät zu übertragen.  <a href="../../d9/def/class_led_controller.html#a7da1eb2ad6f85d3dd6344a685f6d81a0">Mehr ...</a><br /></td></tr>
 <tr class="separator:a7da1eb2ad6f85d3dd6344a685f6d81a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -290,6 +349,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Erstelle einen neuen <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> ohne etwas zu initialisieren. </p>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00015">15</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
@@ -311,6 +372,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Erstelle einen neuen <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> für die Nutzung mit hardwareSPI. </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>Nur virtualMultiRow ist mit diesem Konstruktor möglich. Eine angepasste Konfiguration ist notwendig, um untersciedliche CS Pins für jede Zeile zu haben.</dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csPin</td><td>Der CS Pin über den die Matrix gesteuert wird. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00018">18</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -356,6 +426,18 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Konstruiere ein neues <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> Objekt mit gegeben Pins. </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>Nur virtualMultiRow ist mit diesem Konstruktor möglich. Eine angepasste Konfiguration ist notwendig, um untersciedliche CS Pins für jede Zeile zu haben.</dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataPin</td><td>Der Pin an dem die Daten ausgegeben werden (DIN) </td></tr>
+    <tr><td class="paramname">clkPin</td><td>Der Pin für das Taktsignal (CLK) </td></tr>
+    <tr><td class="paramname">csPin</td><td>Der Pin zum auswählen der Matrix (CS) </td></tr>
+    <tr><td class="paramname">useHardwareSpi</td><td>true wenn hardware SPI genutzt werden soll (schaue <a href="https://www.arduino.cc/en/Reference/SPI">https://www.arduino.cc/en/Reference/SPI</a> für die Pin Konfiguration) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00023">23</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
@@ -378,6 +460,14 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Erstelle ein neues <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> Objekt aus einer Konfiguration. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configuration</td><td>die Konfiguration die zum erstellen verwendet werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00029">29</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
@@ -395,6 +485,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Zerstöre das Objekt und leere den Speicher. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00010">10</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -418,9 +510,17 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Der Kopierkonstruktor für den <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>der <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>, der kopiert werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00034">34</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
-<p class="reference">Benutzt <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00078">LedController&lt; columns, rows &gt;::conf</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00111">LedController&lt; columns, rows &gt;::initilized</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00070">LedController&lt; columns, rows &gt;::LedStates</a> und <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00095">LedController&lt; columns, rows &gt;::spidata</a>.</p>
+<p class="reference">Benutzt <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00088">LedController&lt; columns, rows &gt;::conf</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00140">LedController&lt; columns, rows &gt;::initilized</a>, <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00078">LedController&lt; columns, rows &gt;::LedStates</a> und <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00115">LedController&lt; columns, rows &gt;::spidata</a>.</p>
 
 </div>
 </div>
@@ -438,6 +538,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Aktiviere alle Segmente. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00101">101</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -461,6 +563,14 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Aktiviere ein Segment. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00081">81</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 <p class="reference">Benutzt <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00028">OP_SHUTDOWN</a>.</p>
@@ -480,6 +590,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>leere alle Segmente (alle LEDs aus). </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00043">43</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -502,6 +614,14 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>leere ein Segment (alle LEDs aus). </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00112">112</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -541,6 +661,16 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Zeige einen gegebenen <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> auf einem Segemnt an (setzte alle 8 Zeilen). </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td>Die Spalte in der das Segment ist. </td></tr>
+    <tr><td class="paramname">row_num</td><td>Die Zeile in der das Segment ist. </td></tr>
+    <tr><td class="paramname">data</td><td>Die Daten, die angezeigt werden sollen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00066">66</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
@@ -573,6 +703,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Zeige einen gegebenen <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> auf einem Segemnt an (setzte alle 8 Zeilen). </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentindex</td><td>Die Nummer des gewünschten Segments </td></tr>
+    <tr><td class="paramname">data</td><td>Die Daten, die angezeigt werden sollen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00054">54</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
@@ -590,6 +729,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Hole die Konfiguration des <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>. </p>
+<dl class="section return"><dt>Rückgabe</dt><dd>controlller_configuration Die aktuelle Konfiguration </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00181">181</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -623,6 +765,16 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Hole den Zustand einer Reihe eines Segments. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments </td></tr>
+    <tr><td class="paramname">row</td><td>Die Reihe in dem Segment, welche gewünscht ist. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>byte Der Wert, der angezeigt wird. </dd></dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00136">136</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
@@ -640,6 +792,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Hole die geasmate Anzahl der konfigurierten Segmenten. </p>
+<dl class="section return"><dt>Rückgabe</dt><dd>unsigned int Die Anzahl aller konfigurierten Segemente. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00176">176</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -672,6 +827,16 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Hole den Zustand eines Segments. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">column</td><td>Die Spalte in der das Segment ist. </td></tr>
+    <tr><td class="paramname">row_num</td><td>Die Zeile in der das Segment ist. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> Die Daten, die in dem Segment angezeigt werden. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00171">171</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -710,7 +875,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000003">Noch zu erledigen:</a></b></dt><dd>remove following functions in version 2.2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000003">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000004">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00146">146</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -733,6 +899,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Hole den Zustand eines Segments. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentindex</td><td>Die Nummer des gewünschten Segments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> Die Daten, die in dem Segment angezeigt werden. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00165">165</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -765,6 +940,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000004">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000005">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00152">152</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -788,6 +965,14 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Initialisiere einen <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> mit einer gegebenen Konfiguration. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configuration</td><td>Die Konfiguration, die verwendet werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00084">84</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 <p class="reference">Benutzt <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00174">controller_configuration&lt; columns, rows &gt;::isValid()</a>.</p>
@@ -796,7 +981,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/def/class_led_controller_aaa67b66769e03f92b2ec575eb2f83097_cgraph.png" border="0" usemap="#d9/def/class_led_controller_aaa67b66769e03f92b2ec575eb2f83097_cgraph" alt=""/></div>
 <map name="d9/def/class_led_controller_aaa67b66769e03f92b2ec575eb2f83097_cgraph" id="d9/def/class_led_controller_aaa67b66769e03f92b2ec575eb2f83097_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,144,39"/>
+<area shape="rect" title="Initialisiere einen LedController mit einer gegebenen Konfiguration." alt="" coords="5,13,144,39"/>
 <area shape="rect" href="../../db/df4/classcontroller__configuration.html#a0f0fd75e4c76c23ff7c0f9b70905d0cf" title="Prüft ob diese Konfiguration gültig ist." alt="" coords="192,5,368,47"/>
 <area shape="rect" href="../../db/df4/classcontroller__configuration.html#ad237ddfbc408f4c6e42a4ea180dad5bc" title="Prüfe ob die gegebene Konfiguration gültig ist." alt="" coords="416,5,592,47"/>
 </map>
@@ -821,6 +1006,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialisiere den <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> für Nutzung mit hardware SPI. </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>Nur virtualMultiRow ist mit diesem Initialisieren möglich. Eine angepasste Konfiguration ist notwendig, um untersciedliche CS Pins für jede Zeile zu haben.</dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csPin</td><td>Der Pin um die LedMatrix auszuwählen. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00057">57</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -868,6 +1062,18 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Initialisiere einen <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> Objekt mit gegeben Pins. </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>Nur virtualMultiRow ist mit diesem Initialisieren möglich. Eine angepasste Konfiguration ist notwendig, um untersciedliche CS Pins für jede Zeile zu haben.</dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataPin</td><td>Der Pin an dem die Daten ausgegeben werden (DIN) </td></tr>
+    <tr><td class="paramname">clkPin</td><td>Der Pin für das Taktsignal (CLK) </td></tr>
+    <tr><td class="paramname">csPin</td><td>Der Pin zum auswählen der Matrix (CS) </td></tr>
+    <tr><td class="paramname">useHardwareSpi</td><td>true wenn hardware SPI genutzt werden soll (schaue <a href="https://www.arduino.cc/en/Reference/SPI">https://www.arduino.cc/en/Reference/SPI</a> für die Pin Konfiguration) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00067">67</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 <p class="reference">Benutzt <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00067">controller_configuration&lt; columns, rows &gt;::SPI_CLK</a>, <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00056">controller_configuration&lt; columns, rows &gt;::SPI_CS</a>, <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00045">controller_configuration&lt; columns, rows &gt;::SPI_MOSI</a> und <a class="el" href="../../df/d2a/_led_controller__config_8hpp_source.html#l00080">controller_configuration&lt; columns, rows &gt;::useHardwareSpi</a>.</p>
@@ -896,6 +1102,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Initialisiere die Konfiguration. </p>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00102">102</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
@@ -922,6 +1130,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Initialisiere die SPI Ausgabe. </p>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00112">112</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
 </div>
@@ -939,6 +1149,11 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>gibt den Status des <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> zurück. </p>
+<dl class="section return"><dt>Rückgabe</dt><dd>true der <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> ist initialisiert </dd>
+<dd>
+false der <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> ist nicht initialisiert </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html#l00142">142</a> der Datei <a class="el" href="../../d9/d4a/_led_controller_8hpp_source.html">LedController.hpp</a>.</p>
 
@@ -961,6 +1176,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Wandelt einen Block aus Zeilen in einen Block aus Spalten. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rowArray</td><td>Der Block aus Zeilen </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> Die Splaten des gegebenen Blocks </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00028">28</a> der Datei <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
@@ -993,6 +1217,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000005">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000006">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00065">65</a> der Datei <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
@@ -1026,6 +1252,17 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>schiebt die Daten einer Spalte eins nach unten. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiftedInColumn</td><td>Die Daten, die oben reingeschoben werden (default 0x00) </td></tr>
+    <tr><td class="paramname">row_num</td><td>Die Spalte, die geschoben werden soll </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warnung</dt><dd>Nur EINE SPALTE wird verschoben </dd></dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>byte Die Daten, die unten rausgeschoben werden. </dd></dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00113">113</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
 </div>
@@ -1058,6 +1295,17 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>schiebt die Daten einer Spalte eins nach oben. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiftedInColumn</td><td>Die Daten, die unten reingeschoben werden (default 0x00) </td></tr>
+    <tr><td class="paramname">row_num</td><td>Die Spalte, die geschoben werden soll </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warnung</dt><dd>Nur EINE SPALTE wird verschoben </dd></dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>byte Die Daten, die oben rausgeschoben werden. </dd></dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00082">82</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
 </div>
@@ -1075,6 +1323,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Schibet die Daten eins nach unten und 0x00 wird oben reingeschoben. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00143">143</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1097,6 +1347,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000011">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000012">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00220">220</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1119,6 +1371,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Schiebt alle Splaten eins nach unten. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiftedInColumn</td><td>Die Reihen die reingeschoben werden. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>ByteRow&lt;rows&gt; Die Reihen die rausgeschoben werden. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00190">190</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1151,6 +1412,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000009">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000010">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00226">226</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1169,6 +1432,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Schibet die Daten eins nach links und 0x00 wird recht reingeschoben. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00153">153</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1191,7 +1456,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000002">Noch zu erledigen:</a></b></dt><dd>remove following functions in version 2.1.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000001">Veraltet:</a></b></dt><dd>to be reomoved in version 2.1.0, moveRowLeft should be used </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000002">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.1.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00202">202</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1214,6 +1480,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Schiebt alle Reihen eins nach links. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiftedInColumn</td><td>Die Splaten die reingeschoben werden. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>ByteRow&lt;rows&gt; Die Splaten die rausgeschoben werden. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00163">163</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1246,6 +1521,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000012">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000013">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00246">246</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1264,6 +1541,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Schibet die Daten eins nach rechts und 0x00 wird links reingeschoben. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00158">158</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1286,6 +1565,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000002">Veraltet:</a></b></dt><dd>to be reomoved in version 2.1.0, moveRowLeft should be used </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000003">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.1.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00208">208</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1308,6 +1589,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Schiebt alle Reihen eins nach rechts. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiftedInColumn</td><td>Die Splaten die reingeschoben werden. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>ByteRow&lt;rows&gt; Die Splaten die rausgeschoben werden. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00172">172</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1340,6 +1630,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000013">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000014">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00256">256</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1373,6 +1665,17 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>schiebt die Daten einer Zeile eins nach links. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiftedInColumn</td><td>Die Daten, die rechts reingeschoben werden (default 0x00) </td></tr>
+    <tr><td class="paramname">row_num</td><td>Die Zeile, die geschoben werden soll </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warnung</dt><dd>Nur EINE ZEILE wird verschoben </dd></dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>byte Die Daten, die links rausgeschoben werden. </dd></dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00049">49</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
 </div>
@@ -1405,6 +1708,17 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>schiebt die Daten einer Zeile eins nach rechts. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiftedInColumn</td><td>Die Daten, die links reingeschoben werden (default 0x00) </td></tr>
+    <tr><td class="paramname">row_num</td><td>Die Zeile, die geschoben werden soll </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warnung</dt><dd>Nur EINE ZEILE wird verschoben </dd></dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>byte Die Daten, die rechts rausgeschoben werden. </dd></dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00016">16</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
 </div>
@@ -1422,6 +1736,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Schibet die Daten eins nach oben und 0x00 wird unten reingeschoben. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00148">148</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1444,6 +1760,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000010">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000011">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00214">214</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1466,6 +1784,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Schiebt alle Splaten eins nach oben. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiftedInColumn</td><td>Die Reihen die reingeschoben werden. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>ByteRow&lt;rows&gt; Die Reihen die rausgeschoben werden. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00181">181</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1498,6 +1825,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000008">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000009">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00236">236</a> der Datei <a class="el" href="../../d4/d0e/_led_controller__movement_8hpp_source.html">LedController_movement.hpp</a>.</p>
 
@@ -1521,6 +1850,14 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Lädt eine Segment neu (zurücksetzten und dann updaten). </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00119">119</a> der Datei <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
 <p class="reference">Benutzt <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00025">OP_DECODEMODE</a> und <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00029">OP_DISPLAYTEST</a>.</p>
@@ -1540,6 +1877,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Lädt alle Segmente neu (zurücksetzten und dann updaten). </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00221">221</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -1567,6 +1906,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Initialisiere die internen Puffer des <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>. </p>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00017">17</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
@@ -1584,6 +1925,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>aktiviere alle Segmente, setzte alle auf die gleiche Helligkeit und leere den Inhalt. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00032">32</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -1607,6 +1950,16 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Diese Funktion ändert die Bitreihnfolge eines Bytes bzw. </p>
+<p>kehrt ein Bit um.</p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Das byte, das umgekehrt werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>byte Das umgekehrte Byte </dd></dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00017">17</a> der Datei <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
 </div>
@@ -1628,6 +1981,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Diese Funktion kehrt die Reihnfolge der einzelnen Zeilen um (spiegeln in x-Richtung). </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Der <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> der umgekehrt werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> Der umgekehrte <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a>. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00042">42</a> der Datei <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
@@ -1660,6 +2022,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000006">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000007">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00080">80</a> der Datei <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
@@ -1682,6 +2046,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>rotiert einen <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> um 180 Grad </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Der zu rotierende <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> Der rotierte byteBlock. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00053">53</a> der Datei <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
@@ -1714,6 +2087,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000007">Veraltet:</a></b></dt><dd>the function with <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> as return type should be used.</dd></dl>
+<p>Will be removed in version 2.2.0 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000008">Noch zu erledigen:</a></b></dt><dd>remove function in version 2.2.0</dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00092">92</a> der Datei <a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp_source.html">LedController_transformation.hpp</a>.</p>
 
@@ -1759,6 +2134,18 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Setzte ein Zeichen auf einem 7-Segment display. </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>Es gibt nur einige Zeichen die Sinn ergeben: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'A', 'b', 'c', 'd', 'E', 'F', 'H', 'L', 'P', '.', '-', '_', ' ' </dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments </td></tr>
+    <tr><td class="paramname">digit</td><td>Die Position der Zeichens (0..7) </td></tr>
+    <tr><td class="paramname">value</td><td>Der Wert, der angezeigt werden soll. </td></tr>
+    <tr><td class="paramname">dp</td><td>true wenn der Dezimalpunkt gesetzt werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00199">199</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
@@ -1796,6 +2183,16 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Setzte eine Spalte eines Segments. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments </td></tr>
+    <tr><td class="paramname">col</td><td>die Spalte im Segment </td></tr>
+    <tr><td class="paramname">value</td><td>Der Wert der gesetzt werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00165">165</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -1841,6 +2238,17 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Setzte eine Hexadecimalziffer auf einem 7-Segment Display. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments </td></tr>
+    <tr><td class="paramname">digit</td><td>Die Position der Ziffer (0..7) </td></tr>
+    <tr><td class="paramname">value</td><td>Der Wert, der angezeigt werden soll. (0x00..0x0F) </td></tr>
+    <tr><td class="paramname">dp</td><td>true wenn der Dezimalpunkt gesetzt werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00183">183</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
@@ -1862,6 +2270,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Setzt die Helligkeit der gesamten Matrix auf den gegebenen Wert. </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>Falls du Energie sparen willst, schalte segmente aus, die nicht benötigt werden oder verringere die Helligkeit. </dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newIntesityLevel</td><td>the new brightness of the matrix. (0..15) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00094">94</a> der Datei <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
@@ -1902,6 +2319,15 @@ template&lt;size_t columns, size_t rows&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Setzte die Helligkeit eines Segments. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer, des Segemnts. </td></tr>
+    <tr><td class="paramname">newIntesityLevel</td><td>Die gewünschte Helligkeit inklusive der Grenzen von 0 &amp; 15. (0..15) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00108">108</a> der Datei <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
@@ -1949,6 +2375,17 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Setzte eine einzalne Led auf einen bestimmten Wert. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments </td></tr>
+    <tr><td class="paramname">row</td><td>die Zeile der LED im Segment (0..7) </td></tr>
+    <tr><td class="paramname">column</td><td>die Spalte der LED im Segment (0..7) </td></tr>
+    <tr><td class="paramname">state</td><td>true wenn sie an sein soll, ansonsten false </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00145">145</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
@@ -1987,6 +2424,16 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Setze eine Reihe eines Segments. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments </td></tr>
+    <tr><td class="paramname">row</td><td>Die Reihe in dem Segment, welche gesetzte werden soll. </td></tr>
+    <tr><td class="paramname">value</td><td>Der Wert der gesetzt werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00124">124</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
@@ -2019,6 +2466,16 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Setzte die Anzahl der Zeilen/Stellen, die auf einem Segment angezeigt werden. </p>
+<dl class="section warning"><dt>Warnung</dt><dd>Schau in das Datenblatt für Nebenwirkungen vom scanlimit auf die Helligkeit. </dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die nummer des gewünschten Segments. </td></tr>
+    <tr><td class="paramname">limit</td><td>Die Anzahl der Zeilen/Stellen die angezwigt werden sollen (0..7) </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00083">83</a> der Datei <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
 <p class="reference">Benutzt <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00027">OP_SCANLIMIT</a>.</p>
@@ -2038,6 +2495,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deaktiviere alle Segmente. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00090">90</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -2060,6 +2519,14 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deaktiviere ein Segment. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00072">72</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -2109,6 +2576,16 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Diese Funktion überträgt einen Befehl an das angeschlosssene Modul. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segment</td><td>Das Segment, das den Befehl ausführen soll. </td></tr>
+    <tr><td class="paramname">opcode</td><td>Der Befehl, der ausgeführt werden soll. </td></tr>
+    <tr><td class="paramname">data</td><td>Die Daten, die für den Befehl benötigt werden. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00032">32</a> der Datei <a class="el" href="../../dc/d38/_led_controller__low__level_8hpp_source.html">LedController_low_level.hpp</a>.</p>
 
 </div>
@@ -2131,6 +2608,14 @@ template&lt;size_t columns, size_t rows&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Lädt den Inhalt der internen Daten auf ein Segmente hoch. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">segmentNumber</td><td>Die Nummer des gewünschten Segments </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00243">243</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
 </div>
@@ -2148,6 +2633,8 @@ template&lt;size_t columns, size_t rows&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Lädt den Inhalt der internen Daten auf alle Segmente hoch. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html#l00232">232</a> der Datei <a class="el" href="../../d6/d76/_led_controller__display_8hpp_source.html">LedController_display.hpp</a>.</p>
 
@@ -2176,7 +2663,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definiert in Zeile <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00078">78</a> der Datei <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
+<p>Die Konfiguration des <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>. </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00088">88</a> der Datei <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
 
 </div>
 </div>
@@ -2202,7 +2691,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definiert in Zeile <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00111">111</a> der Datei <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
+<p>True wenn, der <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> vollständig initialisiert ist. </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00140">140</a> der Datei <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
 
 </div>
 </div>
@@ -2228,9 +2719,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The state of all the Leds. </p>
+<p>Dieses Array beinhaltet den Status von allen LEDs. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00070">70</a> der Datei <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00078">78</a> der Datei <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
 
 </div>
 </div>
@@ -2256,7 +2747,9 @@ template&lt;size_t columns, size_t rows&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definiert in Zeile <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00095">95</a> der Datei <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
+<p>Das Array was benötigt wird, um Daten auf das Gerät zu übertragen. </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html#l00115">115</a> der Datei <a class="el" href="../../db/dcc/_led_controller__template_8hpp_source.html">LedController_template.hpp</a>.</p>
 
 </div>
 </div>

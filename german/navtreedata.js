@@ -36,11 +36,12 @@ var NAVTREE =
     ] ],
     [ "Wähle eine Sprache", "d4/d12/lang_selection.html", null ],
     [ "Migrationsinformationen", "d9/dbb/migration_notes.html", null ],
-    [ "Moving the displayed data", "d3/ddb/md_doc_pages_movement.html", null ],
-    [ "Controlling multiple rows", "d3/df7/md_doc_pages_multi_row.html", null ],
+    [ "Bewegen der angezeigten Daten", "df/d3a/movement.html", null ],
+    [ "Steuern von mehreren Zeilen", "dd/d36/multi_row.html", null ],
     [ "How to use this library", "d2/d1c/md_doc_pages_usage.html", null ],
     [ "Security Policy", "d7/d88/md__s_e_c_u_r_i_t_y.html", null ],
     [ "Ausstehende Aufgaben", "dd/da0/todo.html", null ],
+    [ "Veraltete Elemente", "da/d58/deprecated.html", null ],
     [ "Klassen", "annotated.html", [
       [ "Auflistung der Klassen", "annotated.html", "annotated_dup" ],
       [ "Klassen-Verzeichnis", "classes.html", null ],
@@ -55,7 +56,6 @@ var NAVTREE =
       [ "Auflistung der Dateien", "files.html", "files_dup" ],
       [ "Datei-Elemente", "globals.html", [
         [ "Alle", "globals.html", null ],
-        [ "Funktionen", "globals_func.html", null ],
         [ "Makrodefinitionen", "globals_defs.html", null ]
       ] ]
     ] ],

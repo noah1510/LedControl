@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc1</span>
+   &#160;<span id="projectnumber">2.0.0-rc2</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('dc/d76/_led_controller_demo_counting_8
 <div class="title">LedControllerDemoCounting.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>An example on how to use the <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> to create a counter.</p>
+<p>Ein Beispiel wie man den <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> nutzen kann um einen Zähler zu erstellen.</p>
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
 <div class="line"> </div>
@@ -254,12 +254,12 @@ $(document).ready(function(){initNavTree('dc/d76/_led_controller_demo_counting_8
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_led_controller_html_ae706d5741aa89433a3607e2ce07482a1"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">LedController::clearMatrix</a></div><div class="ttdeci">void clearMatrix()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00043">LedController_display.hpp:43</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_ae706d5741aa89433a3607e2ce07482a1"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">LedController::clearMatrix</a></div><div class="ttdeci">void clearMatrix()</div><div class="ttdoc">leere alle Segmente (alle LEDs aus).</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00043">LedController_display.hpp:43</a></div></div>
 <div class="ttc" id="a_led_controller_8hpp_html"><div class="ttname"><a href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a></div></div>
 <div class="ttc" id="aclass_byte_block_html"><div class="ttname"><a href="../../dd/d65/class_byte_block.html">ByteBlock</a></div><div class="ttdoc">Ein Block an bytes, der alle Daten in einem Segment darstellt.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00024">LedController_byteblock.hpp:24</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a058d42aeb995a85675c86662fe29a0dd"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a058d42aeb995a85675c86662fe29a0dd">LedController::displayOnSegment</a></div><div class="ttdeci">void displayOnSegment(unsigned int segmentindex, ByteBlock data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00054">LedController_display.hpp:54</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_a058d42aeb995a85675c86662fe29a0dd"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a058d42aeb995a85675c86662fe29a0dd">LedController::displayOnSegment</a></div><div class="ttdeci">void displayOnSegment(unsigned int segmentindex, ByteBlock data)</div><div class="ttdoc">Zeige einen gegebenen ByteBlock auf einem Segemnt an (setzte alle 8 Zeilen).</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00054">LedController_display.hpp:54</a></div></div>
 <div class="ttc" id="aclass_led_controller_html"><div class="ttname"><a href="../../d9/def/class_led_controller.html">LedController</a></div><div class="ttdoc">Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/_led_controller__template_8hpp_source.html#l00067">LedController_template.hpp:67</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_ac61af7e100284d465a37573fbf960c22"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">LedController::rotate180</a></div><div class="ttdeci">ByteBlock rotate180(ByteBlock input)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00053">LedController_transformation.hpp:53</a></div></div>
+<div class="ttc" id="aclass_led_controller_html_ac61af7e100284d465a37573fbf960c22"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">LedController::rotate180</a></div><div class="ttdeci">ByteBlock rotate180(ByteBlock input)</div><div class="ttdoc">rotiert einen ByteBlock um 180 Grad</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00053">LedController_transformation.hpp:53</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

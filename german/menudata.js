@@ -62,16 +62,6 @@ var menudata={children:[
 {text:"Dateien",url:"files.html",children:[
 {text:"Auflistung der Dateien",url:"files.html"},
 {text:"Datei-Elemente",url:"globals.html",children:[
-{text:"Alle",url:"globals.html",children:[
-{text:"c",url:"globals.html#index_c"},
-{text:"g",url:"globals.html#index_g"},
-{text:"i",url:"globals.html#index_i"},
-{text:"m",url:"globals.html#index_m"},
-{text:"o",url:"globals.html#index_o"},
-{text:"p",url:"globals.html#index_p"},
-{text:"r",url:"globals.html#index_r"},
-{text:"s",url:"globals.html#index_s"},
-{text:"t",url:"globals.html#index_t"}]},
-{text:"Funktionen",url:"globals_func.html"},
+{text:"Alle",url:"globals.html"},
 {text:"Makrodefinitionen",url:"globals_defs.html"}]}]},
 {text:"Beispiele",url:"examples.html"}]}
