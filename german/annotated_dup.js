@@ -5,6 +5,11 @@ var annotated_dup =
     [ "Datenstruktur", "dd/d36/multi_row.html#multi_data_structure", null ],
     [ "Erstellen einer gültigen controller_configuration", "dd/d36/multi_row.html#valid_multi_conf", null ],
     [ "Daten auf den Segmenten anzeigen", "dd/d36/multi_row.html#display_multi_data", null ],
+    [ "Initialisieren der Bibliothek", "da/d1b/usage.html#init_lib", [
+      [ "Kleine Einführung in  SPI", "da/d1b/usage.html#SPI_intro", null ]
+    ] ],
+    [ "Getting started", "da/d1b/usage.html#getting_started", null ],
+    [ "Was jetzt?", "da/d1b/usage.html#what_after_intro", null ],
     [ "ByteBlock", "dd/d65/class_byte_block.html", "dd/d65/class_byte_block" ],
     [ "ByteRow", "df/d74/class_byte_row.html", "df/d74/class_byte_row" ],
     [ "controller_configuration", "db/df4/classcontroller__configuration.html", "db/df4/classcontroller__configuration" ],

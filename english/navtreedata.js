@@ -38,7 +38,7 @@ var NAVTREE =
     [ "Migration Notes", "d9/dbb/migration_notes.html", null ],
     [ "Moving the displayed data", "df/d3a/movement.html", null ],
     [ "Controlling multiple rows", "dd/d36/multi_row.html", null ],
-    [ "How to use this library", "d2/d1c/md_doc_pages_usage.html", null ],
+    [ "How to use this library", "da/d1b/usage.html", null ],
     [ "Security Policy", "d7/d88/md__s_e_c_u_r_i_t_y.html", null ],
     [ "Todo List", "dd/da0/todo.html", null ],
     [ "Deprecated List", "da/d58/deprecated.html", null ],
