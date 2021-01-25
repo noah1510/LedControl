@@ -36,9 +36,22 @@ var NAVTREE =
     ] ],
     [ "Wähle eine Sprache", "d4/d12/lang_selection.html", null ],
     [ "Migrationsinformationen", "d9/dbb/migration_notes.html", null ],
-    [ "Bewegen der angezeigten Daten", "df/d3a/movement.html", null ],
-    [ "Steuern von mehreren Zeilen", "dd/d36/multi_row.html", null ],
-    [ "Nutzungsanleitung", "da/d1b/usage.html", null ],
+    [ "Bewegen der angezeigten Daten", "df/d3a/movement.html", [
+      [ "Bewegen einzelner Zeilen/Spalten", "df/d3a/movement.html#move_single", null ],
+      [ "Bewegen aller Zeilen/Spalten", "df/d3a/movement.html#move_all", null ]
+    ] ],
+    [ "Steuern von mehreren Zeilen", "dd/d36/multi_row.html", [
+      [ "Datenstruktur", "dd/d36/multi_row.html#multi_data_structure", null ],
+      [ "Erstellen einer gültigen controller_configuration", "dd/d36/multi_row.html#valid_multi_conf", null ],
+      [ "Daten auf den Segmenten anzeigen", "dd/d36/multi_row.html#display_multi_data", null ]
+    ] ],
+    [ "Nutzungsanleitung", "da/d1b/usage.html", [
+      [ "Initialisieren der Bibliothek", "da/d1b/usage.html#init_lib", [
+        [ "Kleine Einführung in  SPI", "da/d1b/usage.html#SPI_intro", null ]
+      ] ],
+      [ "Getting started", "da/d1b/usage.html#getting_started", null ],
+      [ "Was jetzt?", "da/d1b/usage.html#what_after_intro", null ]
+    ] ],
     [ "Security Policy", "d7/d88/md__s_e_c_u_r_i_t_y.html", null ],
     [ "Ausstehende Aufgaben", "dd/da0/todo.html", null ],
     [ "Veraltete Elemente", "da/d58/deprecated.html", null ],

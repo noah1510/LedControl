@@ -89,12 +89,13 @@ $(document).ready(function(){initNavTree('da/d9d/_led_controller_demo_hw_s_p_i_8
 <div class="contents">
 <p>This is simply <a class="el" href="../../db/d6d/_led_controller_demo_rocket_8ino-example.html">LedControllerDemoRocket.ino</a> just with hardware spi.</p>
 <div class="fragment"><div class="line"> </div>
+<div class="line"><span class="comment">//Since this is just LedControllerDemoRocket.ino with hardware SPI, view its site for more details.</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define CS 15</span></div>
 <div class="line"><span class="preprocessor">#define Segments 4</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#define delayTime 200 // Delay between Frames</span></div>
+<div class="line"><span class="preprocessor">#define delayTime 200</span></div>
 <div class="line"> </div>
 <div class="line"><a name="_a0"></a><a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;Segments,1&gt;</a> lc = <a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;Segments,1&gt;</a>();  </div>
 <div class="line"> </div>
@@ -111,7 +112,6 @@ $(document).ready(function(){initNavTree('da/d9d/_led_controller_demo_hw_s_p_i_8
 <div class="line"> </div>
 <div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> rocketColumns;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">//sets all rows on all displays to 0</span></div>
 <div class="line"><span class="keywordtype">void</span> switchLED(){</div>
 <div class="line">  <span class="keyword">static</span> <span class="keywordtype">bool</span> LEDON = <span class="keyword">false</span>;</div>
 <div class="line">  <span class="keywordflow">if</span>(LEDON){</div>
@@ -123,7 +123,8 @@ $(document).ready(function(){initNavTree('da/d9d/_led_controller_demo_hw_s_p_i_8
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup(){</div>
-<div class="line">  lc.<a name="a2"></a><a class="code" href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">init</a>(CS);<span class="comment">// Pins: CS, # of Display connected</span></div>
+<div class="line">  <span class="comment">//Only the following line is different from the example without hardware SPI since in this case only one Pin needs to be specified</span></div>
+<div class="line">  lc.<a name="a2"></a><a class="code" href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">init</a>(CS);</div>
 <div class="line"> </div>
 <div class="line">  lc.<a name="a3"></a><a class="code" href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">makeColumns</a>(rocket, &amp;rocketColumns);</div>
 <div class="line"> </div>

@@ -36,9 +36,22 @@ var NAVTREE =
     ] ],
     [ "Select a Language", "d4/d12/lang_selection.html", null ],
     [ "Migration Notes", "d9/dbb/migration_notes.html", null ],
-    [ "Moving the displayed data", "df/d3a/movement.html", null ],
-    [ "Controlling multiple rows", "dd/d36/multi_row.html", null ],
-    [ "How to use this library", "da/d1b/usage.html", null ],
+    [ "Moving the displayed data", "df/d3a/movement.html", [
+      [ "Moving a single Row/Column", "df/d3a/movement.html#move_single", null ],
+      [ "Moving all Rows/Columns", "df/d3a/movement.html#move_all", null ]
+    ] ],
+    [ "Controlling multiple rows", "dd/d36/multi_row.html", [
+      [ "Data structure", "dd/d36/multi_row.html#multi_data_structure", null ],
+      [ "Creating a valid controller_configuration", "dd/d36/multi_row.html#valid_multi_conf", null ],
+      [ "Displaying data on segments", "dd/d36/multi_row.html#display_multi_data", null ]
+    ] ],
+    [ "How to use this library", "da/d1b/usage.html", [
+      [ "Initilizing the Library", "da/d1b/usage.html#init_lib", [
+        [ "Small introduction to SPI", "da/d1b/usage.html#SPI_intro", null ]
+      ] ],
+      [ "Getting started", "da/d1b/usage.html#getting_started", null ],
+      [ "What is next?", "da/d1b/usage.html#what_after_intro", null ]
+    ] ],
     [ "Security Policy", "d7/d88/md__s_e_c_u_r_i_t_y.html", null ],
     [ "Todo List", "dd/da0/todo.html", null ],
     [ "Deprecated List", "da/d58/deprecated.html", null ],

@@ -88,52 +88,43 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="comment">//We always have to include the library</span></div>
+<div class="line"><span class="comment">//Wie immer muss am Anfang die Bibliothek eingebunden werden.</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> You might need to change the following 3 Variables depending on your board.</span></div>
-<div class="line"><span class="comment"> pin 15 is connected to the DataIn </span></div>
-<div class="line"><span class="comment"> pin 14 is connected to the CLK</span></div>
-<div class="line"><span class="comment"> pin 13 is connected to LOAD/ChipSelect</span></div>
+<div class="line"><span class="comment"> Die folgenden 3 Variabeln müssen abhängig vom board ggf geändert werden.</span></div>
+<div class="line"><span class="comment"> pin 15 ist verbunden mit DataIn </span></div>
+<div class="line"><span class="comment"> pin 14 ist verbunden mit CLK</span></div>
+<div class="line"><span class="comment"> pin 13 ist verbunden mit LOAD/ChipSelect</span></div>
 <div class="line"><span class="comment">*/</span></div>
 <div class="line"><span class="preprocessor">#define DIN 15</span></div>
-<div class="line"><span class="preprocessor">#define CS 13</span></div>
 <div class="line"><span class="preprocessor">#define CLK 14</span></div>
+<div class="line"><span class="preprocessor">#define CS 13</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> Now we need a LedControl to work with.</span></div>
-<div class="line"><span class="comment"> We have only a single MAX72XX.</span></div>
-<div class="line"><span class="comment"> */</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Nun wird die Variable erstellt in der der LedController mit nur einem Segment(nur ein MAX72XX) gespeichert wird.</span></div>
 <div class="line"><a name="_a0"></a><a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;1,1&gt;</a> lc;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/* we always wait a bit between updates of the display */</span></div>
+<div class="line"><span class="comment">//Die verzögerung zwischen updates des Displays</span></div>
 <div class="line"><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> delaytime=250;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line"> </div>
+<div class="line">  <span class="comment">//Nun wird das LedController Objekt ohne Hardware SPI erstellt.</span></div>
 <div class="line">  lc=<a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;1,1&gt;</a>(CS,CLK,DIN);</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">/*</span></div>
-<div class="line"><span class="comment">   The MAX72XX is in power-saving mode on startup,</span></div>
-<div class="line"><span class="comment">   we have to do a wakeup call</span></div>
-<div class="line"><span class="comment">   */</span></div>
-<div class="line">  lc.<a name="a1"></a><a class="code" href="../../d9/def/class_led_controller.html#a5059529d3bd82e8fbbb1362a1830aa76">activateAllSegments</a>();</div>
-<div class="line">  <span class="comment">/* Set the brightness to a medium values */</span></div>
-<div class="line">  lc.<a name="a2"></a><a class="code" href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">setIntensity</a>(8);</div>
-<div class="line">  <span class="comment">/* and clear the display */</span></div>
-<div class="line">  lc.<a name="a3"></a><a class="code" href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">clearMatrix</a>();</div>
+<div class="line">  <span class="comment">//Setzt die Helligkeit auf einen Mittleren Wert</span></div>
+<div class="line">  lc.<a name="a1"></a><a class="code" href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">setIntensity</a>(8);</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//leere den Inhalt des Segments</span></div>
+<div class="line">  lc.<a name="a2"></a><a class="code" href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">clearMatrix</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"> </div>
-<div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> This method will display the characters for the</span></div>
-<div class="line"><span class="comment"> word &quot;Arduino&quot; one after the other on digit 0. </span></div>
-<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment">//Diese Funktion wird das Wort Arduino an Stelle 0 buchstabiert anzeigen.</span></div>
 <div class="line"><span class="keywordtype">void</span> writeArduinoOn7Segment() {</div>
-<div class="line">  lc.<a name="a4"></a><a class="code" href="../../d9/def/class_led_controller.html#a6f14f9d73d1e8bace569965108ac5595">setChar</a>(0,0,<span class="charliteral">&#39;a&#39;</span>,<span class="keyword">false</span>);</div>
+<div class="line">  lc.<a name="a3"></a><a class="code" href="../../d9/def/class_led_controller.html#a6f14f9d73d1e8bace569965108ac5595">setChar</a>(0,0,<span class="charliteral">&#39;a&#39;</span>,<span class="keyword">false</span>);</div>
 <div class="line">  delay(delaytime);</div>
-<div class="line">  lc.<a name="a5"></a><a class="code" href="../../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54">setRow</a>(0,0,0x05);</div>
+<div class="line">  lc.<a name="a4"></a><a class="code" href="../../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54">setRow</a>(0,0,0x05);</div>
 <div class="line">  delay(delaytime);</div>
 <div class="line">  lc.<a class="code" href="../../d9/def/class_led_controller.html#a6f14f9d73d1e8bace569965108ac5595">setChar</a>(0,0,<span class="charliteral">&#39;d&#39;</span>,<span class="keyword">false</span>);</div>
 <div class="line">  delay(delaytime);</div>
@@ -147,16 +138,13 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="line">  delay(delaytime);</div>
 <div class="line">  lc.<a class="code" href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">clearMatrix</a>();</div>
 <div class="line">  delay(delaytime);</div>
-<div class="line">} </div>
+<div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment">  This method will scroll all the hexa-decimal</span></div>
-<div class="line"><span class="comment"> numbers and letters on the display. You will need at least</span></div>
-<div class="line"><span class="comment"> four 7-Segment digits. otherwise it won&#39;t really look that good.</span></div>
-<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment">//Diese Funktion wird alle Hexadezimalziffern entlang des Displays bewegen.</span></div>
+<div class="line"><span class="comment">//Es werden mindestens vier 7-Segment Elemente benötigt damit die Anzeige gut aussieht.</span></div>
 <div class="line"><span class="keywordtype">void</span> scrollDigits() {</div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;13;i++) {</div>
-<div class="line">    lc.<a name="a6"></a><a class="code" href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">setDigit</a>(0,3,i,<span class="keyword">false</span>);</div>
+<div class="line">    lc.<a name="a5"></a><a class="code" href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">setDigit</a>(0,3,i,<span class="keyword">false</span>);</div>
 <div class="line">    lc.<a class="code" href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">setDigit</a>(0,2,i+1,<span class="keyword">false</span>);</div>
 <div class="line">    lc.<a class="code" href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">setDigit</a>(0,1,i+2,<span class="keyword">false</span>);</div>
 <div class="line">    lc.<a class="code" href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">setDigit</a>(0,0,i+3,<span class="keyword">false</span>);</div>
@@ -173,7 +161,6 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_led_controller_html_a698d996b774311e675b282a2f77c4e0a"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a698d996b774311e675b282a2f77c4e0a">LedController::setDigit</a></div><div class="ttdeci">void setDigit(unsigned int segmentNumber, unsigned int digit, byte value, boolean dp)</div><div class="ttdoc">Setzte eine Hexadecimalziffer auf einem 7-Segment Display.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00183">LedController_display.hpp:183</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a5059529d3bd82e8fbbb1362a1830aa76"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a5059529d3bd82e8fbbb1362a1830aa76">LedController::activateAllSegments</a></div><div class="ttdeci">void activateAllSegments()</div><div class="ttdoc">Aktiviere alle Segmente.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00101">LedController_display.hpp:101</a></div></div>
 <div class="ttc" id="aclass_led_controller_html_ae706d5741aa89433a3607e2ce07482a1"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">LedController::clearMatrix</a></div><div class="ttdeci">void clearMatrix()</div><div class="ttdoc">leere alle Segmente (alle LEDs aus).</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00043">LedController_display.hpp:43</a></div></div>
 <div class="ttc" id="a_led_controller_8hpp_html"><div class="ttname"><a href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a></div></div>
 <div class="ttc" id="aclass_led_controller_html_afdc1c6c5936a6c114ac29eaba6ddfc54"><div class="ttname"><a href="../../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54">LedController::setRow</a></div><div class="ttdeci">void setRow(unsigned int segmentNumber, unsigned int row, byte value)</div><div class="ttdoc">Setze eine Reihe eines Segments.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00124">LedController_display.hpp:124</a></div></div>

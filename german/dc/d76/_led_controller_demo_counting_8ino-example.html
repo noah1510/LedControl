@@ -89,18 +89,22 @@ $(document).ready(function(){initNavTree('dc/d76/_led_controller_demo_counting_8
 <div class="contents">
 <p>Ein Beispiel wie man den <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> nutzen kann um einen Zähler zu erstellen.</p>
 <div class="fragment"><div class="line"> </div>
+<div class="line"><span class="comment">//Wie immer muss zuerst die Library verwendet werden</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">//the pin where the chip select is connected to</span></div>
+<div class="line"><span class="comment">//Der Pin an den das Chip Select signal der Matrix angeschlossen ist</span></div>
 <div class="line"><span class="preprocessor">#define CS 15</span></div>
 <div class="line"> </div>
+<div class="line"><span class="comment">//Die Anzahl der Segmente in der einen Reihe</span></div>
 <div class="line"><span class="preprocessor">#define Segments 4</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#define delayTime 200 // Delay between Frames</span></div>
+<div class="line"><span class="comment">//Die Zeitverzögerung bis eins weiter gezählt wird</span></div>
+<div class="line"><span class="preprocessor">#define delayTime 200</span></div>
 <div class="line"> </div>
+<div class="line"><span class="comment">//Das ist die Variable in der das verwendete Objekt gespeichert wird.</span></div>
 <div class="line"><a name="_a0"></a><a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;Segments,1&gt;</a> lc; </div>
 <div class="line"> </div>
-<div class="line"><span class="comment">//these are just some digits to display numbers on the matrix</span></div>
+<div class="line"><span class="comment">//Dieses Array definiert nur wie die Ziffern aussehen.</span></div>
 <div class="line"><a name="_a1"></a><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> digits[10] = {</div>
 <div class="line">  {</div>
 <div class="line">    B00000000,</div>
@@ -195,24 +199,24 @@ $(document).ready(function(){initNavTree('dc/d76/_led_controller_demo_counting_8
 <div class="line">  }</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">//this function sets the matrix to a given number</span></div>
+<div class="line"><span class="comment">//Diese Funktion zeigt einene gegebene Nummer auf der Matrix an</span></div>
 <div class="line"><span class="keywordtype">void</span> setLEDs (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> number) {</div>
-<div class="line">  <span class="comment">//the loop is used to split the given number and set the right digit on the matix</span></div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> places[4];</div>
+<div class="line">  <span class="comment">//Die Schleife zerlegt die Nummer in die einzalnen Ziffern</span></div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> places[Segments];</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0;i &lt; 4;i++){</div>
+<div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0;i &lt; Segments;i++){</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> divisor = 1;</div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j=0;j &lt; i;j++){</div>
 <div class="line">      divisor *= 10;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    places[3-i] = number/divisor % 10;</div>
-<div class="line">    lc.<a name="a2"></a><a class="code" href="../../d9/def/class_led_controller.html#a058d42aeb995a85675c86662fe29a0dd">displayOnSegment</a>(3-i,digits[places[3-i]]);</div>
+<div class="line">    places[Segments-1-i] = number/divisor % 10;</div>
+<div class="line">    lc.<a name="a2"></a><a class="code" href="../../d9/def/class_led_controller.html#a058d42aeb995a85675c86662fe29a0dd">displayOnSegment</a>(Segments-1-i,digits[places[Segments-1-i]]);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">//this function switches a led to have a </span></div>
+<div class="line"><span class="comment">//Diese Funktion lässt die interne LED blinken</span></div>
 <div class="line"><span class="keywordtype">void</span> switchLED(){</div>
 <div class="line">  <span class="keyword">static</span> <span class="keywordtype">bool</span> LEDON = <span class="keyword">false</span>;</div>
 <div class="line">  <span class="keywordflow">if</span>(LEDON){</div>
@@ -225,14 +229,14 @@ $(document).ready(function(){initNavTree('dc/d76/_led_controller_demo_counting_8
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup(){</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">//create a ledcontroller with a hardware spi and one row</span></div>
+<div class="line">  <span class="comment">//Hier wird ein LedController mit Hardware SPI erstelle und lc zugewiesen</span></div>
 <div class="line">  lc = <a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;Segments,1&gt;</a>(CS);</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">//enable the led</span></div>
+<div class="line">  <span class="comment">//Der Pin für die interne LED wird auf output gesetzt</span></div>
 <div class="line">  pinMode(13, OUTPUT);</div>
-<div class="line">    </div>
-<div class="line">  <span class="comment">//rotate all digits by 180 degress to display them correctly</span></div>
-<div class="line">  <span class="comment">//you could leave this but then the orientation would be wrong</span></div>
+<div class="line">  </div>
+<div class="line">  <span class="comment">//alle Ziffern müssen um 180 Grad gedreht werden, um sie richtig anzuzeigen.</span></div>
+<div class="line">  <span class="comment">//man kann das weglassen, aber dann sine die Ziffern falsch</span></div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 10; i++){</div>
 <div class="line">    digits[i] = lc.<a name="a3"></a><a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>(digits[i]);</div>
 <div class="line">  }</div>
@@ -241,10 +245,10 @@ $(document).ready(function(){initNavTree('dc/d76/_led_controller_demo_counting_8
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop(){</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">//clear the matrix just to be sure there is nothing on it</span></div>
+<div class="line">  <span class="comment">//erst wird die Matrix geleert</span></div>
 <div class="line">  lc.<a name="a4"></a><a class="code" href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">clearMatrix</a>();</div>
 <div class="line">  </div>
-<div class="line">  <span class="comment">//count up and display the number</span></div>
+<div class="line">  <span class="comment">//In dieser Schleife wird einfach gezählt und jeweils die nummer angezeigt</span></div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i&lt;10000; i++) {</div>
 <div class="line">    delay(500);</div>
 <div class="line">    switchLED();</div>

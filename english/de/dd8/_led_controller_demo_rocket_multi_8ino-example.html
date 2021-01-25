@@ -93,8 +93,11 @@ $(document).ready(function(){initNavTree('de/dd8/_led_controller_demo_rocket_mul
 <div class="line"> </div>
 <div class="line"><span class="comment">//spi pins if you do not wat to use hardwware spi</span></div>
 <div class="line"><span class="preprocessor">#define DIN 27</span></div>
-<div class="line"><span class="preprocessor">#define CS 16</span></div>
 <div class="line"><span class="preprocessor">#define CLK 25</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//The CS pins that should be used for the bottom/top row</span></div>
+<div class="line"><span class="preprocessor">#define CS_BOTTOM 25</span></div>
+<div class="line"><span class="preprocessor">#define CS_TOP 15</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//the number of segments per row</span></div>
 <div class="line"><span class="preprocessor">#define Segments 4</span></div>
@@ -102,7 +105,8 @@ $(document).ready(function(){initNavTree('de/dd8/_led_controller_demo_rocket_mul
 <div class="line"><span class="comment">//the pin number of the builtin led or an external led to signal a clock.</span></div>
 <div class="line"><span class="preprocessor">#define LED 13</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#define delayTime 200 // Delay between Frames</span></div>
+<div class="line"><span class="comment">// Delay between Frames</span></div>
+<div class="line"><span class="preprocessor">#define delayTime 200</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//creating an LedController which is not initilized.</span></div>
 <div class="line"><span class="keyword">auto</span> lc = <a name="_a0"></a><a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;Segments,2&gt;</a>();</div>
@@ -119,7 +123,6 @@ $(document).ready(function(){initNavTree('de/dd8/_led_controller_demo_rocket_mul
 <div class="line">  B00000000</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">//the rocket rotated by 180 degrees to display it properly.</span></div>
 <div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> rocketColumns;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//switches the state of the builtin led</span></div>
@@ -138,13 +141,13 @@ $(document).ready(function(){initNavTree('de/dd8/_led_controller_demo_rocket_mul
 <div class="line">  <span class="comment">//creating the configuration of the controller</span></div>
 <div class="line">  <a name="_a2"></a><a class="code" href="../../db/df4/classcontroller__configuration.html">controller_configuration&lt;Segments,2&gt;</a> conf;</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">//since more than one row is used make sure to set this to 0 (should be 0 but better safe than sorry)</span></div>
+<div class="line">  <span class="comment">//since more than one row is used (without virtual mult row) make sure to set this to 0</span></div>
 <div class="line">  conf.<a name="a3"></a><a class="code" href="../../db/df4/classcontroller__configuration.html#ad869ed7bfd48eb156ad8430cc05736d6">SPI_CS</a> = 0;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//These are the chip select pins for each row.</span></div>
 <div class="line">  <span class="comment">//The bottom row (row 0) is connected to pin 25 and the top row (row 1) is connected to pin 15</span></div>
-<div class="line">  conf.<a name="a4"></a><a class="code" href="../../db/df4/classcontroller__configuration.html#ae729b80e149455a0302aec8b27353615">row_SPI_CS</a>[0] = 25;</div>
-<div class="line">  conf.<a class="code" href="../../db/df4/classcontroller__configuration.html#ae729b80e149455a0302aec8b27353615">row_SPI_CS</a>[1] = 15;</div>
+<div class="line">  conf.<a name="a4"></a><a class="code" href="../../db/df4/classcontroller__configuration.html#ae729b80e149455a0302aec8b27353615">row_SPI_CS</a>[0] = CS_BOTTOM;</div>
+<div class="line">  conf.<a class="code" href="../../db/df4/classcontroller__configuration.html#ae729b80e149455a0302aec8b27353615">row_SPI_CS</a>[1] = CS_TOP;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//this enables hardware spi check what pins to use for your board</span></div>
 <div class="line">  conf.<a name="a5"></a><a class="code" href="../../db/df4/classcontroller__configuration.html#ad8b4225d8adb5ec332edab2774f3314f">useHardwareSpi</a> = <span class="keyword">true</span>;</div>
@@ -170,18 +173,15 @@ $(document).ready(function(){initNavTree('de/dd8/_led_controller_demo_rocket_mul
 <div class="line">  </div>
 <div class="line">}</div>
 <div class="line"> </div>
+<div class="line"><span class="comment">//This is basically the same as LedControllerDemoRocket.ino</span></div>
 <div class="line"><span class="keywordtype">void</span> loop(){</div>
-<div class="line">  <span class="comment">//clear the data to make sure the are not leftovers</span></div>
 <div class="line">  lc.clearMatrix();</div>
 <div class="line">  </div>
-<div class="line">  <span class="comment">//Let the rocket fly in</span></div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0;i &lt; 8*(Segments+1);i++){</div>
 <div class="line">    delay(delayTime);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">//blink led for each iteration</span></div>
 <div class="line">    switchLED();</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">//if rocket not fully inside let it fly in and shift it</span></div>
 <div class="line">    <span class="keywordflow">if</span>(i &lt; 8){</div>
 <div class="line">      lc.moveRowRight(rocketColumns[i]);   </div>
 <div class="line">    }<span class="keywordflow">else</span>{</div>
@@ -202,10 +202,8 @@ $(document).ready(function(){initNavTree('de/dd8/_led_controller_demo_rocket_mul
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0;i &lt; 8*(Segments+1);i++){</div>
 <div class="line">    delay(delayTime);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">//blink led for each iteration</span></div>
 <div class="line">    switchLED();</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">//if rocket not fully inside let it fly in and shift it</span></div>
 <div class="line">    <span class="keywordflow">if</span>(i &lt; 8){</div>
 <div class="line">      lc.moveRowLeft(rocketColumns[i]);   </div>
 <div class="line">    }<span class="keywordflow">else</span>{</div>
