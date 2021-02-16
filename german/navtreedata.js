@@ -26,7 +26,14 @@ var NAVTREE =
     [ "Dokumentation", "index.html#Dokumentation", null ],
     [ "SPI Pin Zuweisung", "index.html#Hardware", null ],
     [ "Migration von 1.x.y zu 2.0.z", "d8/dfe/1_8x_8y_to_2_80_8z.html", null ],
-    [ "The controller_configuration", "df/d21/md_doc_pages_controller_configuration.html", null ],
+    [ "Die controller_configuration Klasse", "da/df8/controller_configuration_page.html", [
+      [ "Benötigte Entscheidungen/Optionen", "da/df8/controller_configuration_page.html#configuration_required_fields", [
+        [ "SPI Konfiguration", "da/df8/controller_configuration_page.html#configuration_spi_choices", null ],
+        [ "Multi Row Konfiguration", "da/df8/controller_configuration_page.html#configuration_multi_row", null ]
+      ] ],
+      [ "Optionale Entscheidungen/Optionen", "da/df8/controller_configuration_page.html#configuration_optional_fields", null ],
+      [ "Entfernte Entscheidungen/Optionen", "da/df8/controller_configuration_page.html#removed_configuration_options", null ]
+    ] ],
     [ "Installationsanweisungen", "d9/d87/install.html", [
       [ "Arduino Ide", "d9/d87/install.html#arduino_install", null ],
       [ "PlatformIO", "d9/d87/install.html#PlatformIO", [

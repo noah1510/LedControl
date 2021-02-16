@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc2</span>
+   &#160;<span id="projectnumber">2.0.0-rc3</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -100,8 +100,8 @@ Klassendiagramm für ByteBlock:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/de7/class_byte_block__inherit__graph.png" border="0" usemap="#_byte_block_inherit__map" alt="Inheritance graph"/></div>
 <map name="_byte_block_inherit__map" id="_byte_block_inherit__map">
-<area shape="rect" title="Ein Block an bytes, der alle Daten in einem Segment darstellt." alt="" coords="8,219,121,325"/>
-<area shape="rect" href="../../df/d74/class_byte_row.html" title=" " alt="" coords="5,5,124,171"/>
+<area shape="rect" title="Ein Block an bytes, der alle Daten in einem Segment darstellt." alt="" coords="11,292,124,413"/>
+<area shape="rect" href="../../df/d74/class_byte_row.html" title=" " alt="" coords="5,5,129,244"/>
 </map>
 </div>
 <div class="dynheader">
@@ -109,8 +109,8 @@ Zusammengehörigkeiten von ByteBlock:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d7/d2a/class_byte_block__coll__graph.png" border="0" usemap="#_byte_block_coll__map" alt="Collaboration graph"/></div>
 <map name="_byte_block_coll__map" id="_byte_block_coll__map">
-<area shape="rect" title="Ein Block an bytes, der alle Daten in einem Segment darstellt." alt="" coords="8,219,121,325"/>
-<area shape="rect" href="../../df/d74/class_byte_row.html" title=" " alt="" coords="5,5,124,171"/>
+<area shape="rect" title="Ein Block an bytes, der alle Daten in einem Segment darstellt." alt="" coords="11,292,124,413"/>
+<area shape="rect" href="../../df/d74/class_byte_row.html" title=" " alt="" coords="5,5,129,244"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -125,6 +125,9 @@ Zusammengehörigkeiten von ByteBlock:</div>
 <tr class="memitem:a825407ed9dac4b07ff599ea58eb2cbab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d65/class_byte_block.html#a825407ed9dac4b07ff599ea58eb2cbab">ByteBlock</a> (byte newdata[8])</td></tr>
 <tr class="memdesc:a825407ed9dac4b07ff599ea58eb2cbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruiere ein neues Object aus einem Array.  <a href="../../dd/d65/class_byte_block.html#a825407ed9dac4b07ff599ea58eb2cbab">Mehr ...</a><br /></td></tr>
 <tr class="separator:a825407ed9dac4b07ff599ea58eb2cbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4585909d3dc82b917eb5ef3ae6f173"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d65/class_byte_block.html#adb4585909d3dc82b917eb5ef3ae6f173">ByteBlock</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; 8 &gt; &amp;data)</td></tr>
+<tr class="memdesc:adb4585909d3dc82b917eb5ef3ae6f173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruiere ein neuess Objekt aus einer <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a>.  <a href="../../dd/d65/class_byte_block.html#adb4585909d3dc82b917eb5ef3ae6f173">Mehr ...</a><br /></td></tr>
+<tr class="separator:adb4585909d3dc82b917eb5ef3ae6f173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_byte_row"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_byte_row')"><img src="../../closed.png" alt="-"/>&#160;Öffentliche Methoden geerbt von <a class="el" href="../../df/d74/class_byte_row.html">ByteRow&lt; 8 &gt;</a></td></tr>
 <tr class="memitem:a18182806495de3ace2e5ad163adce500 inherit pub_methods_class_byte_row"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a18182806495de3ace2e5ad163adce500">at</a> (uint64_t index) const</td></tr>
 <tr class="memdesc:a18182806495de3ace2e5ad163adce500 inherit pub_methods_class_byte_row"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greife auf das Objekt zu, wie auf das unterliegende Array.  <a href="../../df/d74/class_byte_row.html#a18182806495de3ace2e5ad163adce500">Mehr ...</a><br /></td></tr>
@@ -135,9 +138,24 @@ Zusammengehörigkeiten von ByteBlock:</div>
 <tr class="memitem:a645038778cea07981c8d06654a232313 inherit pub_methods_class_byte_row"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a645038778cea07981c8d06654a232313">ByteRow</a> (byte newdata[SIZE])</td></tr>
 <tr class="memdesc:a645038778cea07981c8d06654a232313 inherit pub_methods_class_byte_row"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruiere ein neues Object aus einem Array.  <a href="../../df/d74/class_byte_row.html#a645038778cea07981c8d06654a232313">Mehr ...</a><br /></td></tr>
 <tr class="separator:a645038778cea07981c8d06654a232313 inherit pub_methods_class_byte_row"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15aec7a6b029fb190e162ad97fe79927 inherit pub_methods_class_byte_row"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a15aec7a6b029fb190e162ad97fe79927">operator&amp;</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; SIZE &gt; &amp;other) const</td></tr>
+<tr class="memdesc:a15aec7a6b029fb190e162ad97fe79927 inherit pub_methods_class_byte_row"><td class="mdescLeft">&#160;</td><td class="mdescRight">Überlappt zwei <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Objeckte (bitweises oder) Dieser operator kann genutzt werden, um zwei <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Objekte in einem Anzuzeigen.  <a href="../../df/d74/class_byte_row.html#a15aec7a6b029fb190e162ad97fe79927">Mehr ...</a><br /></td></tr>
+<tr class="separator:a15aec7a6b029fb190e162ad97fe79927 inherit pub_methods_class_byte_row"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28951b69ac584f7acb230ae2553001a5 inherit pub_methods_class_byte_row"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a28951b69ac584f7acb230ae2553001a5">operator++</a> () const</td></tr>
+<tr class="memdesc:a28951b69ac584f7acb230ae2553001a5 inherit pub_methods_class_byte_row"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt die Daten um 1 Distanz nach oben.  <a href="../../df/d74/class_byte_row.html#a28951b69ac584f7acb230ae2553001a5">Mehr ...</a><br /></td></tr>
+<tr class="separator:a28951b69ac584f7acb230ae2553001a5 inherit pub_methods_class_byte_row"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9b42318607f6e2ba15bdbd3af399ed inherit pub_methods_class_byte_row"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#ade9b42318607f6e2ba15bdbd3af399ed">operator--</a> () const</td></tr>
+<tr class="memdesc:ade9b42318607f6e2ba15bdbd3af399ed inherit pub_methods_class_byte_row"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt die Daten um 1 Distanz nach unten.  <a href="../../df/d74/class_byte_row.html#ade9b42318607f6e2ba15bdbd3af399ed">Mehr ...</a><br /></td></tr>
+<tr class="separator:ade9b42318607f6e2ba15bdbd3af399ed inherit pub_methods_class_byte_row"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3a8ceaee1d449063d60c455cf56301 inherit pub_methods_class_byte_row"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#aef3a8ceaee1d449063d60c455cf56301">operator&lt;&lt;</a> (unsigned int distance) const</td></tr>
+<tr class="memdesc:aef3a8ceaee1d449063d60c455cf56301 inherit pub_methods_class_byte_row"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt die Daten um eine gegebene Distanz nach links.  <a href="../../df/d74/class_byte_row.html#aef3a8ceaee1d449063d60c455cf56301">Mehr ...</a><br /></td></tr>
+<tr class="separator:aef3a8ceaee1d449063d60c455cf56301 inherit pub_methods_class_byte_row"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ab975d1874ca757e4462c088bc10ba6 inherit pub_methods_class_byte_row"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a3ab975d1874ca757e4462c088bc10ba6">operator=</a> (byte newdata[SIZE])</td></tr>
 <tr class="memdesc:a3ab975d1874ca757e4462c088bc10ba6 inherit pub_methods_class_byte_row"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weise diesem Objekt ein array zu.  <a href="../../df/d74/class_byte_row.html#a3ab975d1874ca757e4462c088bc10ba6">Mehr ...</a><br /></td></tr>
 <tr class="separator:a3ab975d1874ca757e4462c088bc10ba6 inherit pub_methods_class_byte_row"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0227d7d3b54bfc37e214953ecd96f527 inherit pub_methods_class_byte_row"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a0227d7d3b54bfc37e214953ecd96f527">operator&gt;&gt;</a> (unsigned int distance) const</td></tr>
+<tr class="memdesc:a0227d7d3b54bfc37e214953ecd96f527 inherit pub_methods_class_byte_row"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt die Daten um eine gegebene Distanz nach rechts.  <a href="../../df/d74/class_byte_row.html#a0227d7d3b54bfc37e214953ecd96f527">Mehr ...</a><br /></td></tr>
+<tr class="separator:a0227d7d3b54bfc37e214953ecd96f527 inherit pub_methods_class_byte_row"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a786c9b90b4d334b1405f28a0fdbd2fe9 inherit pub_methods_class_byte_row"><td class="memItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a786c9b90b4d334b1405f28a0fdbd2fe9">operator[]</a> (uint64_t index)</td></tr>
 <tr class="memdesc:a786c9b90b4d334b1405f28a0fdbd2fe9 inherit pub_methods_class_byte_row"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greife auf das Objekt zu, wie auf das unterliegende Array.  <a href="../../df/d74/class_byte_row.html#a786c9b90b4d334b1405f28a0fdbd2fe9">Mehr ...</a><br /></td></tr>
 <tr class="separator:a786c9b90b4d334b1405f28a0fdbd2fe9 inherit pub_methods_class_byte_row"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,13 +176,13 @@ Weitere Geerbte Elemente</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><p>Ein Block an bytes, der alle Daten in einem Segment darstellt. </p>
 <p>Es ist einfach eine <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> mit Länge 8, trotzdem nützlich. </p>
-<dl class="section examples"><dt>Beispiele</dt><dd><a class="el" href="../../dc/d76/_led_controller_demo_counting_8ino-example.html#_a1">LedControllerDemoCounting.ino</a>, <a class="el" href="../../da/d9d/_led_controller_demo_hw_s_p_i_8ino-example.html#_a1">LedControllerDemoHwSPI.ino</a>, <a class="el" href="../../db/d6d/_led_controller_demo_rocket_8ino-example.html#_a1">LedControllerDemoRocket.ino</a> und <a class="el" href="../../de/dd8/_led_controller_demo_rocket_multi_8ino-example.html#_a1">LedControllerDemoRocketMulti.ino</a>.</dd>
+<dl class="section examples"><dt>Beispiele</dt><dd><a class="el" href="../../de/d8c/_led-matrix-counting_8ino-example.html#_a1">Led-matrix-counting.ino</a>, <a class="el" href="../../de/d90/_led-matrix-message_8ino-example.html#_a1">Led-matrix-message.ino</a>, <a class="el" href="../../dc/d78/_led-matrix-rocket-hw_s_p_i_8ino-example.html#_a1">Led-matrix-rocket-hwSPI.ino</a>, <a class="el" href="../../db/d45/_led-matrix-rocket-multi_8ino-example.html#_a1">Led-matrix-rocket-multi.ino</a> und <a class="el" href="../../d2/d7f/_led-matrix-rocket_8ino-example.html#_a1">Led-matrix-rocket.ino</a>.</dd>
 </dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00024">24</a> der Datei <a class="el" href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html">LedController_byteblock.hpp</a>.</p>
 </div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
 <a id="a825407ed9dac4b07ff599ea58eb2cbab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a825407ed9dac4b07ff599ea58eb2cbab">&#9670;&nbsp;</a></span>ByteBlock() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a825407ed9dac4b07ff599ea58eb2cbab">&#9670;&nbsp;</a></span>ByteBlock() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,7 +218,7 @@ Weitere Geerbte Elemente</h2></td></tr>
 </div>
 </div>
 <a id="ae822606d230d41ab90b838418cd012ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae822606d230d41ab90b838418cd012ff">&#9670;&nbsp;</a></span>ByteBlock() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae822606d230d41ab90b838418cd012ff">&#9670;&nbsp;</a></span>ByteBlock() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +297,7 @@ Weitere Geerbte Elemente</h2></td></tr>
 </div>
 </div>
 <a id="a49af3586f5ae35ed5bd90c447ef0066d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49af3586f5ae35ed5bd90c447ef0066d">&#9670;&nbsp;</a></span>ByteBlock() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49af3586f5ae35ed5bd90c447ef0066d">&#9670;&nbsp;</a></span>ByteBlock() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,6 +322,43 @@ Weitere Geerbte Elemente</h2></td></tr>
 <p>Konstruiere ein neuess Objekt mit 0en. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00067">67</a> der Datei <a class="el" href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html">LedController_byteblock.hpp</a>.</p>
+
+</div>
+</div>
+<a id="adb4585909d3dc82b917eb5ef3ae6f173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb4585909d3dc82b917eb5ef3ae6f173">&#9670;&nbsp;</a></span>ByteBlock() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ByteBlock::ByteBlock </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; 8 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konstruiere ein neuess Objekt aus einer <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a>. </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>Dieser Konstruktor existiert hauptsächlich für Typumwandlungen. </dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Die daten, die zugewiesen werden sollen </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00080">80</a> der Datei <a class="el" href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html">LedController_byteblock.hpp</a>.</p>
 
 </div>
 </div>

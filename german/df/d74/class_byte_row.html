@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc2</span>
+   &#160;<span id="projectnumber">2.0.0-rc3</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -101,7 +101,7 @@ Zusammengehörigkeiten von ByteRow&lt; SIZE &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dd/df0/class_byte_row__coll__graph.png" border="0" usemap="#_byte_row_3_01_s_i_z_e_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="_byte_row_3_01_s_i_z_e_01_4_coll__map" id="_byte_row_3_01_s_i_z_e_01_4_coll__map">
-<area shape="rect" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben." alt="" coords="5,5,144,171"/>
+<area shape="rect" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben." alt="" coords="5,5,144,244"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -116,9 +116,24 @@ Zusammengehörigkeiten von ByteRow&lt; SIZE &gt;:</div>
 <tr class="memitem:a645038778cea07981c8d06654a232313"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a645038778cea07981c8d06654a232313">ByteRow</a> (byte newdata[SIZE])</td></tr>
 <tr class="memdesc:a645038778cea07981c8d06654a232313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruiere ein neues Object aus einem Array.  <a href="../../df/d74/class_byte_row.html#a645038778cea07981c8d06654a232313">Mehr ...</a><br /></td></tr>
 <tr class="separator:a645038778cea07981c8d06654a232313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15aec7a6b029fb190e162ad97fe79927"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a15aec7a6b029fb190e162ad97fe79927">operator&amp;</a> (const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; SIZE &gt; &amp;other) const</td></tr>
+<tr class="memdesc:a15aec7a6b029fb190e162ad97fe79927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Überlappt zwei <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Objeckte (bitweises oder) Dieser operator kann genutzt werden, um zwei <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Objekte in einem Anzuzeigen.  <a href="../../df/d74/class_byte_row.html#a15aec7a6b029fb190e162ad97fe79927">Mehr ...</a><br /></td></tr>
+<tr class="separator:a15aec7a6b029fb190e162ad97fe79927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28951b69ac584f7acb230ae2553001a5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a28951b69ac584f7acb230ae2553001a5">operator++</a> () const</td></tr>
+<tr class="memdesc:a28951b69ac584f7acb230ae2553001a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt die Daten um 1 Distanz nach oben.  <a href="../../df/d74/class_byte_row.html#a28951b69ac584f7acb230ae2553001a5">Mehr ...</a><br /></td></tr>
+<tr class="separator:a28951b69ac584f7acb230ae2553001a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9b42318607f6e2ba15bdbd3af399ed"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#ade9b42318607f6e2ba15bdbd3af399ed">operator--</a> () const</td></tr>
+<tr class="memdesc:ade9b42318607f6e2ba15bdbd3af399ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt die Daten um 1 Distanz nach unten.  <a href="../../df/d74/class_byte_row.html#ade9b42318607f6e2ba15bdbd3af399ed">Mehr ...</a><br /></td></tr>
+<tr class="separator:ade9b42318607f6e2ba15bdbd3af399ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3a8ceaee1d449063d60c455cf56301"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#aef3a8ceaee1d449063d60c455cf56301">operator&lt;&lt;</a> (unsigned int distance) const</td></tr>
+<tr class="memdesc:aef3a8ceaee1d449063d60c455cf56301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt die Daten um eine gegebene Distanz nach links.  <a href="../../df/d74/class_byte_row.html#aef3a8ceaee1d449063d60c455cf56301">Mehr ...</a><br /></td></tr>
+<tr class="separator:aef3a8ceaee1d449063d60c455cf56301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ab975d1874ca757e4462c088bc10ba6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a3ab975d1874ca757e4462c088bc10ba6">operator=</a> (byte newdata[SIZE])</td></tr>
 <tr class="memdesc:a3ab975d1874ca757e4462c088bc10ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weise diesem Objekt ein array zu.  <a href="../../df/d74/class_byte_row.html#a3ab975d1874ca757e4462c088bc10ba6">Mehr ...</a><br /></td></tr>
 <tr class="separator:a3ab975d1874ca757e4462c088bc10ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0227d7d3b54bfc37e214953ecd96f527"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a0227d7d3b54bfc37e214953ecd96f527">operator&gt;&gt;</a> (unsigned int distance) const</td></tr>
+<tr class="memdesc:a0227d7d3b54bfc37e214953ecd96f527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schiebt die Daten um eine gegebene Distanz nach rechts.  <a href="../../df/d74/class_byte_row.html#a0227d7d3b54bfc37e214953ecd96f527">Mehr ...</a><br /></td></tr>
+<tr class="separator:a0227d7d3b54bfc37e214953ecd96f527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a786c9b90b4d334b1405f28a0fdbd2fe9"><td class="memItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d74/class_byte_row.html#a786c9b90b4d334b1405f28a0fdbd2fe9">operator[]</a> (uint64_t index)</td></tr>
 <tr class="memdesc:a786c9b90b4d334b1405f28a0fdbd2fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greife auf das Objekt zu, wie auf das unterliegende Array.  <a href="../../df/d74/class_byte_row.html#a786c9b90b4d334b1405f28a0fdbd2fe9">Mehr ...</a><br /></td></tr>
 <tr class="separator:a786c9b90b4d334b1405f28a0fdbd2fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,6 +304,149 @@ template&lt;size_t SIZE&gt; </div>
 
 </div>
 </div>
+<a id="a15aec7a6b029fb190e162ad97fe79927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15aec7a6b029fb190e162ad97fe79927">&#9670;&nbsp;</a></span>operator&amp;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a> <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; SIZE &gt;::operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; SIZE &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Überlappt zwei <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Objeckte (bitweises oder) Dieser operator kann genutzt werden, um zwei <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Objekte in einem Anzuzeigen. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Die ByteRows, welche mit diesem Objekt überladen werden soll </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Die resultierende <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> </dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html#l00164">164</a> der Datei <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html">LedController_byterow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a28951b69ac584f7acb230ae2553001a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28951b69ac584f7acb230ae2553001a5">&#9670;&nbsp;</a></span>operator++()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a> <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; SIZE &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Schiebt die Daten um 1 Distanz nach oben. </p>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Die resultierende <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> </dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html#l00240">240</a> der Datei <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html">LedController_byterow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ade9b42318607f6e2ba15bdbd3af399ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9b42318607f6e2ba15bdbd3af399ed">&#9670;&nbsp;</a></span>operator--()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a> <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; SIZE &gt;::operator-- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Schiebt die Daten um 1 Distanz nach unten. </p>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Die resultierende <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> </dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html#l00223">223</a> der Datei <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html">LedController_byterow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aef3a8ceaee1d449063d60c455cf56301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef3a8ceaee1d449063d60c455cf56301">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a> <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; SIZE &gt;::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Schiebt die Daten um eine gegebene Distanz nach links. </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>Jeder Wert wird einzeln geschoben und nicht alles als eine Reihe. </dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance</td><td>Die Distanz die geschoben werden soll </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Die resultierende <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> </dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html#l00185">185</a> der Datei <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html">LedController_byterow.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a3ab975d1874ca757e4462c088bc10ba6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ab975d1874ca757e4462c088bc10ba6">&#9670;&nbsp;</a></span>operator=()</h2>
 
@@ -325,6 +483,46 @@ template&lt;size_t SIZE&gt; </div>
 <dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a>&amp; Das modifizierte Objekt. </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html#l00144">144</a> der Datei <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html">LedController_byterow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0227d7d3b54bfc37e214953ecd96f527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0227d7d3b54bfc37e214953ecd96f527">&#9670;&nbsp;</a></span>operator&gt;&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a> <a class="el" href="../../df/d74/class_byte_row.html">ByteRow</a>&lt; SIZE &gt;::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Schiebt die Daten um eine gegebene Distanz nach rechts. </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>Jeder Wert wird einzeln geschoben und nicht alles als eine Reihe. </dd></dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance</td><td>Die Distanz die geschoben werden soll </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd><a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> Die resultierende <a class="el" href="../../df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben.">ByteRow</a> </dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html#l00206">206</a> der Datei <a class="el" href="../../d8/d37/_led_controller__byterow_8hpp_source.html">LedController_byterow.hpp</a>.</p>
 
 </div>
 </div>

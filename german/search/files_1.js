@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['controller_5fconfiguration_2emd_125',['controller_configuration.md',['../dd/da2/controller__configuration_8md.html',1,'']]]
+  ['controller_5fconfiguration_2edoc_130',['controller_configuration.doc',['../de/d77/controller__configuration_8doc.html',1,'']]]
 ];

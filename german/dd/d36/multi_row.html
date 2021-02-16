@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc2</span>
+   &#160;<span id="projectnumber">2.0.0-rc3</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -96,7 +96,7 @@ Datenstruktur</h1>
 <div class="caption">
 Datenstruktur der Segmente</div></div>
 <p>Wie man sehen kann ist die 0 in der Ecke unten links (außer man sreht die Matrix). Wenn ein neues <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> objekt erstellt wird, müssen die Dimensionen der matrix angegeben werden, also die Zahl der Zeilen und Spalten. In diesem Beispiel wäre der Datentyp des <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> <code><a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>&lt;4,2&gt;</code>, da es 4 Splaten und 2 Zeilen hat. Die Dimensionen können beliebig groß sein, solang man genug Arbeitsspeicher und Hardware besitzt.</p>
-<p>Das Beispiel <a class="el" href="../../de/dd8/_led_controller_demo_rocket_multi_8ino-example.html">LedControllerDemoRocketMulti</a> wird genutzt um zu zeigen wie man mehrere Zeilen nutzt.</p>
+<p>Das Beispiel <a class="el" href="../../db/d45/_led-matrix-rocket-multi_8ino-example.html">LedControllerDemoRocketMulti</a> wird genutzt um zu zeigen wie man mehrere Zeilen nutzt.</p>
 <h1><a class="anchor" id="valid_multi_conf"></a>
 Erstellen einer gültigen controller_configuration</h1>
 <p>Falls man verschiedene CS pins für die einzelnen Zeilen verwenden möchte, dann muss man eine eigene <a class="el" href="../../db/df4/classcontroller__configuration.html" title="Diese Klasse wird zur Konfiguration des LedController verwendet.">controller_configuration</a> erstellen, welche die selben Dimensionen hat wie der <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a>. Standardmäßig wird angenommen, dass alle Segment in Reihe der Indexe angeschlossen sind.</p>
@@ -110,7 +110,7 @@ Erstellen einer gültigen controller_configuration</h1>
 <div class="line">conf.<a class="code" href="../../db/df4/classcontroller__configuration.html#ae729b80e149455a0302aec8b27353615">row_SPI_CS</a>[0] = 25;</div>
 <div class="line">conf.<a class="code" href="../../db/df4/classcontroller__configuration.html#ae729b80e149455a0302aec8b27353615">row_SPI_CS</a>[1] = 15;</div>
 </div><!-- fragment --><p>Falls virtual_multi_row (alle Segmente in Reihe geschaltet) verwendet werden soll, dann muss SPI_CS auf den gewünschten CS pin gesetzt werden und virtual_multi_row muss true sein (was der Standardwert ist). Solange diese beiden Bedingungen erfüllt sind wird der Wert von row_SPI_CS ignoriert.</p>
-<p>Schau die <a class="el" href="../../dd/da2/controller__configuration_8md.html">controller_configuration Seite</a> für die Details über die anderen Felder an.</p>
+<p>Schau die <a class="el" href="../../da/df8/controller_configuration_page.html">controller_configuration Seite</a> für die Details über die anderen Felder an.</p>
 <h1><a class="anchor" id="display_multi_data"></a>
 Daten auf den Segmenten anzeigen</h1>
 <p>Nun können Daten wie in <a class="el" href="../../da/d1b/usage.html">usage information</a> beschreiben mit <code>setSegment</code> mit den Koordinaten des Segments angezeigt werden. <code>getConfig().getSegmentNumber</code> kann verwendet werden um die Segmentnummer zu bestimmen, welche mitunter für <a class="el" href="../../d9/def/class_led_controller.html#afdc1c6c5936a6c114ac29eaba6ddfc54" title="Setze eine Reihe eines Segments.">LedController.setRow</a> und <a class="el" href="../../d9/def/class_led_controller.html#a6dd25dfd3a6f1a37f021f3887466710e" title="Setzte eine Spalte eines Segments.">LedController.setColumn</a> benötigt wird. </p>

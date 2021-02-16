@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc2</span>
+   &#160;<span id="projectnumber">2.0.0-rc3</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -96,7 +96,7 @@ Data structure</h1>
 <div class="caption">
 Data order of the Segements</div></div>
 <p>As you can see the 0 is in the bottom left corner (unless you rotate your matrix). When you create a new <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> object it is required to specifiy the dimensions of the matrix, in other words the number of columns and rows. For this example the type of the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> would be <code><a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a>&lt;4,2&gt;</code> because there are 4 columns and 2 rows. These dimensions can be an arbitary size as long as you have enough memory (you will notice if you don't have enough).</p>
-<p>The example <a class="el" href="../../de/dd8/_led_controller_demo_rocket_multi_8ino-example.html">LedControllerDemoRocketMulti</a> will be used to demonstrate each of the parts that need to be done.</p>
+<p>The example <a class="el" href="../../db/d45/_led-matrix-rocket-multi_8ino-example.html">LedControllerDemoRocketMulti</a> will be used to demonstrate each of the parts that need to be done.</p>
 <h1><a class="anchor" id="valid_multi_conf"></a>
 Creating a valid controller_configuration</h1>
 <p>If you have a different Chip Select pin for each row, you need to create a custom <a class="el" href="../../db/df4/classcontroller__configuration.html" title="This class is used to handle the configuration of the LedController.">controller_configuration</a> with the same dimensions as your controller. By default it is assumed that all of the segments are connected in series in the order of their indexes.</p>
@@ -109,7 +109,7 @@ Creating a valid controller_configuration</h1>
 <div class="line">conf.<a class="code" href="../../db/df4/classcontroller__configuration.html#ae729b80e149455a0302aec8b27353615">row_SPI_CS</a>[0] = 25;</div>
 <div class="line">conf.<a class="code" href="../../db/df4/classcontroller__configuration.html#ae729b80e149455a0302aec8b27353615">row_SPI_CS</a>[1] = 15;</div>
 </div><!-- fragment --><p>If you want to use virtual_multi_row (have all of the segments connected in series) then you have to set SPI_CS to you CS pin and set virtual_multi_row to true (which is the default). As long as those conditions are satisfied, the values of row_SPI_CS will be ignored.</p>
-<p>Look at the <a class="el" href="../../dd/da2/controller__configuration_8md.html">controller_configuration page</a> for details on how to use all of the other fields.</p>
+<p>Look at the <a class="el" href="../../da/df8/controller_configuration_page.html">controller_configuration page</a> for details on how to use all of the other fields.</p>
 <h1><a class="anchor" id="display_multi_data"></a>
 Displaying data on segments</h1>
 <p>Now you can display data just as in <a class="el" href="../../da/d1b/usage.html">usage information</a> using <code>setSegment</code> with the coordinates of the segment. <code>getConfig().getSegmentNumber</code> can be used to calculate the segment index which is required by the <code>setRow</code> and <code>setColumn</code> function to set a single row or column. </p>

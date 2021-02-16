@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc2</span>
+   &#160;<span id="projectnumber">2.0.0-rc3</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('dc/d38/_led_controller__low__level_8hp
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  spidata[row][offset + 1] = opcode;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  spidata[row][offset] = data;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> r = 0; r &lt; rows ;r++){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> r = 0; r &lt; rows ;r++){</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//enable the line</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">auto</span> cs = (conf.virtual_multi_row &amp;&amp; conf.SPI_CS != 0) ? conf.SPI_CS : conf.row_SPI_CS[r];</div>

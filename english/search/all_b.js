@@ -15,6 +15,11 @@ var searchData=
   ['op_5fnoop_77',['OP_NOOP',['../dc/d38/_led_controller__low__level_8hpp.html#a6c542d212fef9a9b5ba82222089a306b',1,'LedController_low_level.hpp']]],
   ['op_5fscanlimit_78',['OP_SCANLIMIT',['../dc/d38/_led_controller__low__level_8hpp.html#a13d91ddca53029535b6cf314b28ed15e',1,'LedController_low_level.hpp']]],
   ['op_5fshutdown_79',['OP_SHUTDOWN',['../dc/d38/_led_controller__low__level_8hpp.html#ac4772c1c1c24a4b5837a2000c62aa0a3',1,'LedController_low_level.hpp']]],
-  ['operator_3d_80',['operator=',['../df/d74/class_byte_row.html#a3ab975d1874ca757e4462c088bc10ba6',1,'ByteRow']]],
-  ['operator_5b_5d_81',['operator[]',['../df/d74/class_byte_row.html#a786c9b90b4d334b1405f28a0fdbd2fe9',1,'ByteRow::operator[](uint64_t index)'],['../df/d74/class_byte_row.html#adb28018f447a447ef4051d4ee4d22740',1,'ByteRow::operator[](uint64_t index) const']]]
+  ['operator_26_80',['operator&amp;',['../df/d74/class_byte_row.html#a15aec7a6b029fb190e162ad97fe79927',1,'ByteRow']]],
+  ['operator_2b_2b_81',['operator++',['../df/d74/class_byte_row.html#a28951b69ac584f7acb230ae2553001a5',1,'ByteRow']]],
+  ['operator_2d_2d_82',['operator--',['../df/d74/class_byte_row.html#ade9b42318607f6e2ba15bdbd3af399ed',1,'ByteRow']]],
+  ['operator_3c_3c_83',['operator&lt;&lt;',['../df/d74/class_byte_row.html#aef3a8ceaee1d449063d60c455cf56301',1,'ByteRow']]],
+  ['operator_3d_84',['operator=',['../df/d74/class_byte_row.html#a3ab975d1874ca757e4462c088bc10ba6',1,'ByteRow']]],
+  ['operator_3e_3e_85',['operator&gt;&gt;',['../df/d74/class_byte_row.html#a0227d7d3b54bfc37e214953ecd96f527',1,'ByteRow']]],
+  ['operator_5b_5d_86',['operator[]',['../df/d74/class_byte_row.html#a786c9b90b4d334b1405f28a0fdbd2fe9',1,'ByteRow::operator[](uint64_t index)'],['../df/d74/class_byte_row.html#adb28018f447a447ef4051d4ee4d22740',1,'ByteRow::operator[](uint64_t index) const']]]
 ];

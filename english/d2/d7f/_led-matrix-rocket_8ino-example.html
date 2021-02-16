@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LedController: LedControllerDemoHwSPI.ino</title>
+<title>LedController: Led-matrix-rocket.ino</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc2</span>
+   &#160;<span id="projectnumber">2.0.0-rc3</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -64,7 +64,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('da/d9d/_led_controller_demo_hw_s_p_i_8ino-example.html','../../'); initResizable(); });
+$(document).ready(function(){initNavTree('d2/d7f/_led-matrix-rocket_8ino-example.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,21 +84,31 @@ $(document).ready(function(){initNavTree('da/d9d/_led_controller_demo_hw_s_p_i_8
 
 <div class="header">
   <div class="headertitle">
-<div class="title">LedControllerDemoHwSPI.ino</div>  </div>
+<div class="title">Led-matrix-rocket.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>This is simply <a class="el" href="../../db/d6d/_led_controller_demo_rocket_8ino-example.html">LedControllerDemoRocket.ino</a> just with hardware spi.</p>
+<p>An example on how to use the <a class="el" href="../../d9/def/class_led_controller.html" title="This class provied a control interface for MAX7219 and MAX7221 Led display drivers.">LedController</a> to move a rocket across a led matrix</p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="comment">//Since this is just LedControllerDemoRocket.ino with hardware SPI, view its site for more details.</span></div>
+<div class="line"><span class="comment">//as always include the LedController header on the top</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#define CS 15</span></div>
+<div class="line"><span class="comment">//These are the Pins used for the SPI transfer</span></div>
+<div class="line"><span class="comment">//See the usage instructions for their meaning</span></div>
+<div class="line"><span class="preprocessor">#define DIN 27</span></div>
+<div class="line"><span class="preprocessor">#define CS 26</span></div>
+<div class="line"><span class="preprocessor">#define CLK 25</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//The total numer of Segments</span></div>
 <div class="line"><span class="preprocessor">#define Segments 4</span></div>
 <div class="line"> </div>
+<div class="line"><span class="comment">//The delay between movements</span></div>
 <div class="line"><span class="preprocessor">#define delayTime 200</span></div>
 <div class="line"> </div>
+<div class="line"><span class="comment">//This creates an uninitilized LedController object.</span></div>
+<div class="line"><span class="comment">//It will be initilized in the setup function.</span></div>
 <div class="line"><a name="_a0"></a><a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;Segments,1&gt;</a> lc = <a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;Segments,1&gt;</a>();  </div>
 <div class="line"> </div>
+<div class="line"><span class="comment">//This is my pixelart of a rocket which will be used in this example</span></div>
 <div class="line"><a name="_a1"></a><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> rocket= {</div>
 <div class="line">  B00000000,</div>
 <div class="line">  B00001111,</div>
@@ -112,6 +122,7 @@ $(document).ready(function(){initNavTree('da/d9d/_led_controller_demo_hw_s_p_i_8
 <div class="line"> </div>
 <div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> rocketColumns;</div>
 <div class="line"> </div>
+<div class="line"><span class="comment">//switches the state of the internal LED</span></div>
 <div class="line"><span class="keywordtype">void</span> switchLED(){</div>
 <div class="line">  <span class="keyword">static</span> <span class="keywordtype">bool</span> LEDON = <span class="keyword">false</span>;</div>
 <div class="line">  <span class="keywordflow">if</span>(LEDON){</div>
@@ -123,91 +134,48 @@ $(document).ready(function(){initNavTree('da/d9d/_led_controller_demo_hw_s_p_i_8
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup(){</div>
-<div class="line">  <span class="comment">//Only the following line is different from the example without hardware SPI since in this case only one Pin needs to be specified</span></div>
-<div class="line">  lc.<a name="a2"></a><a class="code" href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">init</a>(CS);</div>
 <div class="line"> </div>
-<div class="line">  lc.<a name="a3"></a><a class="code" href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">makeColumns</a>(rocket, &amp;rocketColumns);</div>
+<div class="line">  <span class="comment">//initilizes the LedController without hardware spi.</span></div>
+<div class="line">  lc.<a name="a2"></a><a class="code" href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">init</a>(DIN,CLK,CS); </div>
 <div class="line"> </div>
+<div class="line">  <span class="comment">//make a array of columns out of the rocket</span></div>
+<div class="line">  <span class="comment">//this is needed to shift it in correctly (you can leave this line if you want to)</span></div>
+<div class="line">  rocketColumns = lc.<a name="a3"></a><a class="code" href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">makeColumns</a>(rocket);</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//enable the LED to have a clock</span></div>
 <div class="line">  pinMode(13, OUTPUT);</div>
-<div class="line"> </div>
-<div class="line">  lc.<a name="a4"></a><a class="code" href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">setIntensity</a>(0);</div>
 <div class="line">    </div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop(){</div>
 <div class="line">  </div>
-<div class="line">    lc.<a name="a5"></a><a class="code" href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">clearMatrix</a>();</div>
+<div class="line">    lc.<a name="a4"></a><a class="code" href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">clearMatrix</a>();</div>
 <div class="line">    </div>
-<div class="line">    <span class="comment">//Let the rocket fly in</span></div>
-<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0;i &lt; 8*(Segments+1);i++){</div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> dir = 0; dir &lt; 2;dir++){</div>
 <div class="line">      delay(delayTime);</div>
+<div class="line">      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0;i &lt; 8*(Segments+1);i++){</div>
+<div class="line">        <span class="comment">//blink led for each iteration</span></div>
+<div class="line">        switchLED();</div>
 <div class="line"> </div>
-<div class="line">      <span class="comment">//blink led for each iteration</span></div>
-<div class="line">      switchLED();</div>
+<div class="line">        <span class="comment">//if rocket not fully inside let it fly in</span></div>
+<div class="line">        <span class="keyword">auto</span> in = (i&lt;8) ? rocketColumns[i] : 0x00;</div>
+<div class="line">        </div>
+<div class="line">        <span class="comment">//if dir is 0 move right if not move left</span></div>
+<div class="line">        dir == 0 ? lc.<a name="a5"></a><a class="code" href="../../d9/def/class_led_controller.html#a7eedcc41a35ee2357e1c2027d40387ee">moveRight</a>(in) : lc.<a name="a6"></a><a class="code" href="../../d9/def/class_led_controller.html#a3da6eccac282b504258dca0638e12e9a">moveLeft</a>(in);</div>
+<div class="line">        </div>
+<div class="line">        delay(delayTime);</div>
 <div class="line"> </div>
-<div class="line">      <span class="comment">//if rocket not fully inside let it fly in and shift it</span></div>
-<div class="line">      <span class="keywordflow">if</span>(i &lt; 8){</div>
-<div class="line">        lc.<a name="a6"></a><a class="code" href="../../d9/def/class_led_controller.html#a7eedcc41a35ee2357e1c2027d40387ee">moveRight</a>(rocketColumns[i]);   </div>
-<div class="line">      }<span class="keywordflow">else</span>{</div>
-<div class="line">        lc.<a class="code" href="../../d9/def/class_led_controller.html#a7eedcc41a35ee2357e1c2027d40387ee">moveRight</a>();</div>
+<div class="line">        <span class="comment">//decide whether to move up or down</span></div>
+<div class="line">        <span class="keywordflow">if</span>(i % 6 &lt; 3){</div>
+<div class="line">          lc.<a name="a7"></a><a class="code" href="../../d9/def/class_led_controller.html#ab45d3ac600f1ae2ccf57164f78697b26">moveDown</a>();</div>
+<div class="line">        }<span class="keywordflow">else</span>{</div>
+<div class="line">          lc.<a name="a8"></a><a class="code" href="../../d9/def/class_led_controller.html#a96d2639c68eebd83b2b45e227cf3490c">moveUp</a>();</div>
+<div class="line">        }</div>
 <div class="line"> </div>
 <div class="line">        delay(delayTime);</div>
-<div class="line">        <span class="keywordflow">switch</span>(i % 6){</div>
-<div class="line">          <span class="keywordflow">case</span>(3):</div>
-<div class="line">          <span class="keywordflow">case</span>(4):</div>
-<div class="line">          <span class="keywordflow">case</span>(5):</div>
-<div class="line">            lc.<a name="a7"></a><a class="code" href="../../d9/def/class_led_controller.html#a96d2639c68eebd83b2b45e227cf3490c">moveUp</a>();</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line"> </div>
-<div class="line">          <span class="keywordflow">case</span>(0):</div>
-<div class="line">          <span class="keywordflow">case</span>(1):</div>
-<div class="line">          <span class="keywordflow">case</span>(2):</div>
-<div class="line">            lc.<a name="a8"></a><a class="code" href="../../d9/def/class_led_controller.html#ab45d3ac600f1ae2ccf57164f78697b26">moveDown</a>();</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line"> </div>
-<div class="line">          <span class="keywordflow">default</span>:</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        }</div>
 <div class="line">      }</div>
-<div class="line">         </div>
 <div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    delay(delayTime);</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0;i &lt; 8*(Segments+1);i++){</div>
-<div class="line">      delay(delayTime);</div>
-<div class="line"> </div>
-<div class="line">      <span class="comment">//blink led for each iteration</span></div>
-<div class="line">      switchLED();</div>
-<div class="line"> </div>
-<div class="line">      <span class="comment">//if rocket not fully inside let it fly in and shift it</span></div>
-<div class="line">      <span class="keywordflow">if</span>(i &lt; 8){</div>
-<div class="line">        lc.<a name="a9"></a><a class="code" href="../../d9/def/class_led_controller.html#a3da6eccac282b504258dca0638e12e9a">moveLeft</a>(rocketColumns[i]);   </div>
-<div class="line">      }<span class="keywordflow">else</span>{</div>
-<div class="line">        lc.<a class="code" href="../../d9/def/class_led_controller.html#a3da6eccac282b504258dca0638e12e9a">moveLeft</a>();</div>
-<div class="line"> </div>
-<div class="line">        delay(delayTime);</div>
-<div class="line">        <span class="keywordflow">switch</span>(i % 6){</div>
-<div class="line">          <span class="keywordflow">case</span>(3):</div>
-<div class="line">          <span class="keywordflow">case</span>(4):</div>
-<div class="line">          <span class="keywordflow">case</span>(5):</div>
-<div class="line">            lc.<a class="code" href="../../d9/def/class_led_controller.html#a96d2639c68eebd83b2b45e227cf3490c">moveUp</a>();</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line"> </div>
-<div class="line">          <span class="keywordflow">case</span>(0):</div>
-<div class="line">          <span class="keywordflow">case</span>(1):</div>
-<div class="line">          <span class="keywordflow">case</span>(2):</div>
-<div class="line">            lc.<a class="code" href="../../d9/def/class_led_controller.html#ab45d3ac600f1ae2ccf57164f78697b26">moveDown</a>();</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line"> </div>
-<div class="line">          <span class="keywordflow">default</span>:</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        }</div>
-<div class="line">      }</div>
-<div class="line">         </div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    delay(delayTime);</div>
 <div class="line"> </div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
@@ -222,7 +190,6 @@ $(document).ready(function(){initNavTree('da/d9d/_led_controller_demo_hw_s_p_i_8
 <div class="ttc" id="aclass_led_controller_html_ab45d3ac600f1ae2ccf57164f78697b26"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ab45d3ac600f1ae2ccf57164f78697b26">LedController::moveDown</a></div><div class="ttdeci">void moveDown()</div><div class="ttdoc">moves the data down by one and 0x00 will be shifted in</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00143">LedController_movement.hpp:143</a></div></div>
 <div class="ttc" id="aclass_led_controller_html_a3da6eccac282b504258dca0638e12e9a"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a3da6eccac282b504258dca0638e12e9a">LedController::moveLeft</a></div><div class="ttdeci">void moveLeft()</div><div class="ttdoc">moves the data left by one and 0x00 will be shifted in</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00153">LedController_movement.hpp:153</a></div></div>
 <div class="ttc" id="aclass_led_controller_html"><div class="ttname"><a href="../../d9/def/class_led_controller.html">LedController</a></div><div class="ttdoc">This class provied a control interface for MAX7219 and MAX7221 Led display drivers.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/_led_controller__template_8hpp_source.html#l00067">LedController_template.hpp:67</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a5d17bae56676db2dbb09f0f077ffd03b"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">LedController::setIntensity</a></div><div class="ttdeci">void setIntensity(unsigned int segmentNumber, unsigned int newIntesityLevel)</div><div class="ttdoc">Set the brightness of the segment.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00108">LedController_low_level.hpp:108</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

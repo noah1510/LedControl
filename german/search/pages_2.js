@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['installationsanweisungen_232',['Installationsanweisungen',['../d9/d87/install.html',1,'']]]
+  ['die_20controller_5fconfiguration_20klasse_242',['Die controller_configuration Klasse',['../da/df8/controller_configuration_page.html',1,'']]]
 ];

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc2</span>
+   &#160;<span id="projectnumber">2.0.0-rc3</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -109,11 +109,11 @@ $(document).ready(function(){initNavTree('dd/d4b/_led_controller__transformation
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    columnArray[i] = 0x00;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; 8; j++) {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      columnArray[i] |= (0x01 &amp; (rowArray[j] &gt;&gt; (7 - i))) &lt;&lt; (7 - j);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      columnArray[i] |= (0x80 &amp; (rowArray[j]&lt;&lt;i)) &gt;&gt; (7 - j);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> columnArray;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> rotate180(columnArray);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>

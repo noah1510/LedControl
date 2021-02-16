@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['updatesegment_110',['updateSegment',['../d9/def/class_led_controller.html#abbc7958733e32840b4f9b5580ae1d2cc',1,'LedController']]],
-  ['updatesegments_111',['updateSegments',['../d9/def/class_led_controller.html#a84d365aa279673d398f1083162bb6343',1,'LedController']]],
-  ['usage_2edoc_112',['usage.doc',['../d3/dd3/usage_8doc.html',1,'']]],
-  ['usehardwarespi_113',['useHardwareSpi',['../db/df4/classcontroller__configuration.html#ad8b4225d8adb5ec332edab2774f3314f',1,'controller_configuration']]]
+  ['veraltete_20elemente_119',['Veraltete Elemente',['../da/d58/deprecated.html',1,'']]],
+  ['virtual_5fmulti_5frow_120',['virtual_multi_row',['../db/df4/classcontroller__configuration.html#ad54175497c4d852177086548c4595d0d',1,'controller_configuration']]]
 ];
