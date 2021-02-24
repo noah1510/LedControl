@@ -9,7 +9,7 @@
  * 
  */
 
-//Since this is just Led-matrix-rocket.ino with hardware SPI, view its site for more details.
+//Da dieses Beispiel einfach Led-matrix-rocket.ino mit hardware SPI ist, schau auf dessen Seite für Details.
 #include "LedController.hpp"
 
 #define CS 15
@@ -43,7 +43,7 @@ void switchLED(){
 }
 
 void setup(){
-  //Only the following line is different from the example without hardware SPI since in this case only one Pin needs to be specified
+  //Nur die folgende Zeile unterscheidet sich von dem Beispiel ohne Hardware SPI, da hier nur ein Pin angegeben werden muss.
   lc.init(CS);
 
   lc.makeColumns(rocket, &rocketColumns);
@@ -54,6 +54,7 @@ void setup(){
     
 }
 
+//Das ist mehr oder weniger identisch zu Led-matrix-rocket.ino
 void loop(){
   
     lc.clearMatrix();
@@ -61,24 +62,23 @@ void loop(){
     for(int dir = 0; dir < 2;dir++){
       delay(delayTime);
       for(int i = 0;i < 8*(Segments+1);i++){
-        //blink led for each iteration
+        //einmal Bilinken für jeden Durchlauf
         switchLED();
 
-        //if rocket not fully inside let it fly in
+        //rakete reinfliegen lassen falls sie nicht drin ist
         auto in = (i<8) ? rocketColumns[i] : 0x00;
         
-        //if dir is 0 move right if not move left
+        //fall dir 0 ist nach rechsts sonst nach links
         dir == 0 ? lc.moveRight(in) : lc.moveLeft(in);
         
         delay(delayTime);
 
-        //decide whether to move up or down
+        //hoch- und runterbewegen
         if(i % 6 < 3){
           lc.moveDown();
         }else{
           lc.moveUp();
         }
-
         delay(delayTime);
 
       }
