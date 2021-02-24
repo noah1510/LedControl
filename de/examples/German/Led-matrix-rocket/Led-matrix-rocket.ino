@@ -9,26 +9,26 @@
  * 
  */
 
-//as always include the LedController header on the top
+//wie immer muss zuerst die Bibliothek eingebunden werden
 #include "LedController.hpp"
 
-//These are the Pins used for the SPI transfer
-//See the usage instructions for their meaning
+//Diese Pins werden für die SPI übertragung verwendet
+//Schau in die Nutzungsanweisung für eine Beschreibung
 #define DIN 27
 #define CS 26
 #define CLK 25
 
-//The total numer of Segments
+//Dies Gesamtzahl der Segmente
 #define Segments 4
 
-//The delay between movements
+//Die verzögerung zwischen Bewegungen
 #define delayTime 200
 
-//This creates an uninitilized LedController object.
-//It will be initilized in the setup function.
+//Diese Zeile erstellt ein unitialisierten LedController.
+//Dieser wird dann in der setup Funktion initialisiert.
 LedController<Segments,1> lc = LedController<Segments,1>();  
 
-//This is my pixelart of a rocket which will be used in this example
+//Das ist mein Pixelart und ist die Raktete die angezeigt wird.
 ByteBlock rocket= {
   B00000000,
   B00001111,
@@ -42,7 +42,7 @@ ByteBlock rocket= {
 
 ByteBlock rocketColumns;
 
-//switches the state of the internal LED
+//die LED wechselt den Zustand der internen LED
 void switchLED(){
   static bool LEDON = false;
   if(LEDON){
@@ -55,14 +55,15 @@ void switchLED(){
 
 void setup(){
 
-  //initilizes the LedController without hardware spi.
-  lc.init(DIN,CLK,CS); 
+  //hier wird der LedController ohne Hardware SPI initialisiert.
+  lc.init(DIN,CLK,CS);
 
-  //make a array of columns out of the rocket
-  //this is needed to shift it in correctly (you can leave this line if you want to)
+  //Hier wird ein Array aus Spalten der Rakete erstellt.
+  //Dies wird vewendet, um die Rakete Stück für Stück reinzuschieben
+  //Man kann auch rocketColumns = rocket schreiben, aber dann wird die Rakete um 90 Grad gedreht sein.
   rocketColumns = lc.makeColumns(rocket);
  
-  //enable the LED to have a clock
+  //Erlaubt das Schalten der internen LED
   pinMode(13, OUTPUT);
     
 }
@@ -74,24 +75,23 @@ void loop(){
     for(int dir = 0; dir < 2;dir++){
       delay(delayTime);
       for(int i = 0;i < 8*(Segments+1);i++){
-        //blink led for each iteration
+        //einmal Bilinken für jeden Durchlauf
         switchLED();
 
-        //if rocket not fully inside let it fly in
+        //rakete reinfliegen lassen falls sie nicht drin ist
         auto in = (i<8) ? rocketColumns[i] : 0x00;
         
-        //if dir is 0 move right if not move left
+        //fall dir 0 ist nach rechsts sonst nach links
         dir == 0 ? lc.moveRight(in) : lc.moveLeft(in);
         
         delay(delayTime);
 
-        //decide whether to move up or down
+        //hoch- und runterbewegen
         if(i % 6 < 3){
           lc.moveDown();
         }else{
           lc.moveUp();
         }
-
         delay(delayTime);
 
       }
