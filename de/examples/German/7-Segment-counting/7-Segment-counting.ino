@@ -9,40 +9,39 @@
  *
  */
 
-//As always include the libraray
+//Wie immer die Bibliothek einbinden
 #include "LedController.hpp"
-//for this example math.h is also needed
+//in diesem Beispiel wird zusätzlich math-h benötigt
 #include "math.h"
 
-//the pin where the chip select is connected to
+//Der Pin an dem CS angeschlossen ist
 #define CS 22
 
-//There are two Segments that are connected in series
+//Die Anzahl der in Reihe geschlossenen Segmente
 #define Segments 2
 
-//Each segment has two digits enabled.
-//This can be any number between 1 and 8 and can be changed
-//without needing to change any other line of code
+//Die Anzahl der Ziffern pro Segment.
+//Der Wert kann aller von 1 bis 8 sein und frei geändert werden.
 #define digitsPerSegment 2
 
-//offset to switch which Digits will be used for output
-//play around with this value
+//Eine Verschiebung, um auszuwählen auf welche Ziffern ausgegeben wird.
+//probier einfach ein paar Werte aus.
 #define positionOffset 2
 
-//delay before incrementing the counter
+//Verzögerung vor dem Erhöhen des Zählers
 #define delayTime 500
 
-//the uninitilized controller object
+//Das uninitialisierte controller Objekt
 LedController<Segments,1> lc = LedController<Segments,1>();
 
-//This function calculates the largest number that can be displayed
+//Diese Funktion berechnet die größte Zahl, die angezeigt werden kann
 unsigned long long getLargestNumber() {
   return (unsigned long long) pow(10,Segments*digitsPerSegment);
 }
 
-//this function sets the Segments to a given number
+//Diese Funktion setzt die Anzeige auf eine gegebene Zahl
 void setLEDs (unsigned long long number) {
-  //the loop is used to split the given number and set the right digit on the Segments
+  //Diese Schleife zerlegt die Zahl und setzt die einzelnen Ziffern
   for(unsigned int i = 0; i < Segments*digitsPerSegment; i++) {
     unsigned long long divisor = 1;
     for(unsigned int j=0; j < i; j++) {
@@ -56,32 +55,32 @@ void setLEDs (unsigned long long number) {
 }
 
 void setup() {
-  //just make sure that the config is valid
+  //Sicherstellen, dass die Konfiguration gültig ist
   static_assert(positionOffset+digitsPerSegment<9,"invalid configuration");
 
-  //initilize a ledcontroller with a hardware spi and one row
+  //initialisieren des LedController Objektes mit hardware SPI und einer Reihe
   lc.init(CS);
 
-  //disables all Digits by default
+  //alle Segmente sind standardmäßig ausgeschaltet
   for(unsigned int i = 0; i < Segments; i++) {
     for(unsigned int j = 0; j < 8; j++) {
       lc.setRow(i,j,0x00);
     }
   }
 
-  //Set them to the lowest brightness
+  //Helligkeit auf das minimum setzten
   lc.setIntensity(0);
 }
 
 void loop() {
 
-  //clear the matrix just to be sure there is nothing on it
+  //Sicherheitshalber die Ausgabe zurücksetzten
   lc.clearMatrix();
 
-  //calculate the highest possible number and set it as end condition for the loop
+  //bestimmen der größten Zahl
   auto limit = getLargestNumber();
 
-  //count up and display the number
+  //Hochzählen und anzeigen der Zahl
   for (unsigned long long i = 0; i<limit; i++) {
     setLEDs(i);
     delay(delayTime);
