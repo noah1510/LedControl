@@ -1,3 +1,4 @@
 <map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node1" href="$df/d74/class_byte_row.html" title="Diese Klasse wird genutzt, um eine Reihe aus bytes mit bekannter Länge zu handhaben." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node1" href="$d7/dab/classsakurajin_1_1_byte_row.html" title=" " alt="" coords="5,5,191,32"/>
+<area shape="rect" id="node2" href="$d6/d30/classsakurajin_1_1_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt." alt="" coords="239,5,393,32"/>
 </map>

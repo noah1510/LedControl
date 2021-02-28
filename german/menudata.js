@@ -23,6 +23,8 @@ for the JavaScript code in this file
 var menudata={children:[
 {text:"Hauptseite",url:"index.html"},
 {text:"Zusätzliche Informationen",url:"pages.html"},
+{text:"Namensbereiche",url:"namespaces.html",children:[
+{text:"Liste aller Namensbereiche",url:"namespaces.html"}]},
 {text:"Klassen",url:"annotated.html",children:[
 {text:"Auflistung der Klassen",url:"annotated.html"},
 {text:"Klassen-Verzeichnis",url:"classes.html"},
@@ -41,6 +43,7 @@ var menudata={children:[
 {text:"o",url:"functions.html#index_o"},
 {text:"r",url:"functions.html#index_r"},
 {text:"s",url:"functions.html#index_s"},
+{text:"t",url:"functions.html#index_t"},
 {text:"u",url:"functions.html#index_u"},
 {text:"v",url:"functions.html#index_v"},
 {text:"~",url:"functions.html#index__7E"}]},
@@ -56,6 +59,7 @@ var menudata={children:[
 {text:"o",url:"functions_func.html#index_o"},
 {text:"r",url:"functions_func.html#index_r"},
 {text:"s",url:"functions_func.html#index_s"},
+{text:"t",url:"functions_func.html#index_t"},
 {text:"u",url:"functions_func.html#index_u"},
 {text:"~",url:"functions_func.html#index__7E"}]},
 {text:"Variablen",url:"functions_vars.html"}]}]},

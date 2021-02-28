@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['init_164',['init',['../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9',1,'LedController::init(unsigned int csPin)'],['../d9/def/class_led_controller.html#a02ddc9a8b5e8cbfbabe2303a3accf03a',1,'LedController::init(unsigned int dataPin, unsigned int clkPin, unsigned int csPin, bool useHardwareSpi=false)'],['../d9/def/class_led_controller.html#aaa67b66769e03f92b2ec575eb2f83097',1,'LedController::init(const controller_configuration&lt; columns, rows &gt; &amp;configuration)']]],
-  ['initconf_165',['initConf',['../d9/def/class_led_controller.html#a2c1e2674c7ab83b09efc27f907dde570',1,'LedController']]],
-  ['initspi_166',['initSPI',['../d9/def/class_led_controller.html#ae24a5279fe69824527adf446e9a3b897',1,'LedController']]],
-  ['isinitilized_167',['isInitilized',['../d9/def/class_led_controller.html#acfd674c9302e0391ec3fb55247400d5d',1,'LedController']]],
-  ['isvalid_168',['isValid',['../db/df4/classcontroller__configuration.html#a0f0fd75e4c76c23ff7c0f9b70905d0cf',1,'controller_configuration']]],
-  ['isvalidconfig_169',['isValidConfig',['../db/df4/classcontroller__configuration.html#ad237ddfbc408f4c6e42a4ea180dad5bc',1,'controller_configuration']]]
+  ['init_189',['init',['../d6/df8/classsakurajin_1_1_led_controller.html#a707d1906e9f56b81ce206c53f1d4bc9a',1,'sakurajin::LedController::init(unsigned int csPin)'],['../d6/df8/classsakurajin_1_1_led_controller.html#a92fcf6e5795a7d0828c7d9044a520526',1,'sakurajin::LedController::init(unsigned int dataPin, unsigned int clkPin, unsigned int csPin, bool useHardwareSpi=false)'],['../d6/df8/classsakurajin_1_1_led_controller.html#ac1734c846bfd825def5fda08802757bb',1,'sakurajin::LedController::init(const sakurajin::controller_configuration&lt; columns, rows &gt; &amp;configuration)']]],
+  ['initconf_190',['initConf',['../d6/df8/classsakurajin_1_1_led_controller.html#a2a76057e463e89516cf6fc27014ac7f4',1,'sakurajin::LedController']]],
+  ['initspi_191',['initSPI',['../d6/df8/classsakurajin_1_1_led_controller.html#a255863a175f36c300e9db25e972173a7',1,'sakurajin::LedController']]],
+  ['isinitilized_192',['isInitilized',['../d6/df8/classsakurajin_1_1_led_controller.html#a0ab0e9206f42bccdb25a819fa5991869',1,'sakurajin::LedController']]],
+  ['isvalid_193',['isValid',['../d0/d17/classsakurajin_1_1controller__configuration.html#a2b424afc2e2d12eaace7a032e13858ce',1,'sakurajin::controller_configuration']]],
+  ['isvalidconfig_194',['isValidConfig',['../d0/d17/classsakurajin_1_1controller__configuration.html#a53e76f4267255975145050669b33b1f5',1,'sakurajin::controller_configuration']]]
 ];

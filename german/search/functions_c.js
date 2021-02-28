@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7ebyterow_206',['~ByteRow',['../df/d74/class_byte_row.html#afa9b0be7e832b8f2382029fbe69b1bf3',1,'ByteRow']]],
-  ['_7eledcontroller_207',['~LedController',['../d9/def/class_led_controller.html#a63f966b169e07058748e53a4ffec6a5b',1,'LedController']]]
+  ['updatesegment_233',['updateSegment',['../d6/df8/classsakurajin_1_1_led_controller.html#a38f831e701085490e0235d67f45ef2ec',1,'sakurajin::LedController']]],
+  ['updatesegments_234',['updateSegments',['../d6/df8/classsakurajin_1_1_led_controller.html#ac862a742b719a19310050af164919308',1,'sakurajin::LedController']]]
 ];

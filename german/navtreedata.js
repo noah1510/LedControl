@@ -26,13 +26,13 @@ var NAVTREE =
     [ "Dokumentation", "index.html#Dokumentation", null ],
     [ "SPI Pin Zuweisung", "index.html#Hardware", null ],
     [ "Migration von 1.x.y zu 2.0.z", "d8/dfe/1_8x_8y_to_2_80_8z.html", null ],
-    [ "Die controller_configuration Klasse", "da/df8/controller_configuration_page.html", [
-      [ "Benötigte Entscheidungen/Optionen", "da/df8/controller_configuration_page.html#configuration_required_fields", [
-        [ "SPI Konfiguration", "da/df8/controller_configuration_page.html#configuration_spi_choices", null ],
-        [ "Multi Row Konfiguration", "da/df8/controller_configuration_page.html#configuration_multi_row", null ]
+    [ "Die sakurajin::controller_configuration Klasse", "d5/dae/sakurajin_1_1controller_configuration_page.html", [
+      [ "Benötigte Entscheidungen/Optionen", "d5/dae/sakurajin_1_1controller_configuration_page.html#configuration_required_fields", [
+        [ "SPI Konfiguration", "d5/dae/sakurajin_1_1controller_configuration_page.html#configuration_spi_choices", null ],
+        [ "Multi Row Konfiguration", "d5/dae/sakurajin_1_1controller_configuration_page.html#configuration_multi_row", null ]
       ] ],
-      [ "Optionale Entscheidungen/Optionen", "da/df8/controller_configuration_page.html#configuration_optional_fields", null ],
-      [ "Entfernte Entscheidungen/Optionen", "da/df8/controller_configuration_page.html#removed_configuration_options", null ]
+      [ "Optionale Entscheidungen/Optionen", "d5/dae/sakurajin_1_1controller_configuration_page.html#configuration_optional_fields", null ],
+      [ "Entfernte Entscheidungen/Optionen", "d5/dae/sakurajin_1_1controller_configuration_page.html#removed_configuration_options", null ]
     ] ],
     [ "Installationsanweisungen", "d9/d87/install.html", [
       [ "Arduino Ide", "d9/d87/install.html#arduino_install", null ],
@@ -49,7 +49,7 @@ var NAVTREE =
     ] ],
     [ "Steuern von mehreren Zeilen", "dd/d36/multi_row.html", [
       [ "Datenstruktur", "dd/d36/multi_row.html#multi_data_structure", null ],
-      [ "Erstellen einer gültigen controller_configuration", "dd/d36/multi_row.html#valid_multi_conf", null ],
+      [ "Erstellen einer gültigen sakurajin::controller_configuration", "dd/d36/multi_row.html#valid_multi_conf", null ],
       [ "Daten auf den Segmenten anzeigen", "dd/d36/multi_row.html#display_multi_data", null ]
     ] ],
     [ "Nutzungsanleitung", "da/d1b/usage.html", [
@@ -62,6 +62,9 @@ var NAVTREE =
     [ "Security Policy", "d7/d88/md__s_e_c_u_r_i_t_y.html", null ],
     [ "Ausstehende Aufgaben", "dd/da0/todo.html", null ],
     [ "Veraltete Elemente", "da/d58/deprecated.html", null ],
+    [ "Namensbereiche", "namespaces.html", [
+      [ "Liste aller Namensbereiche", "namespaces.html", "namespaces_dup" ]
+    ] ],
     [ "Klassen", "annotated.html", [
       [ "Auflistung der Klassen", "annotated.html", "annotated_dup" ],
       [ "Klassen-Verzeichnis", "classes.html", null ],

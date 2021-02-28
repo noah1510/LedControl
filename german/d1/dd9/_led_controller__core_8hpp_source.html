@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LedController: src/implementations/LedController_core.hpp Quellcode</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LedController
+   &#160;<span id="projectnumber">2.0.0-rc4</span>
+   </div>
+   <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Suchen');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d1/dd9/_led_controller__core_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">LedController_core.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d1/dd9/_led_controller__core_8hpp.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a98743b812fd85ba7546ec79287e6509b">    4</a></span>&#160;<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a98743b812fd85ba7546ec79287e6509b">sakurajin::LedController&lt;columns,rows&gt;::~LedController</a>() {</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    initilized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad0af25190856384505f3ade4d973b6a5">    9</a></span>&#160;<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad0af25190856384505f3ade4d973b6a5">sakurajin::LedController&lt;columns,rows&gt;::LedController</a>() {};</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a22da1b84a63865881da3b4483935c4e0">   12</a></span>&#160;<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad0af25190856384505f3ade4d973b6a5">sakurajin::LedController&lt;columns,rows&gt;::LedController</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> csPin) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    init(csPin);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#aee1aaccc15aeed9c4cf3b02aef5cbd9c">   17</a></span>&#160;<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad0af25190856384505f3ade4d973b6a5">sakurajin::LedController&lt;columns,rows&gt;::LedController</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dataPin, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> clkPin,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> csPin, <span class="keywordtype">bool</span> useHardwareSpiParam) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    init(dataPin, clkPin, csPin, useHardwareSpiParam);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a0761d1410ee24537100ad0262ac02b92">   23</a></span>&#160;<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad0af25190856384505f3ade4d973b6a5">sakurajin::LedController&lt;columns,rows&gt;::LedController</a>(<span class="keyword">const</span> <a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html">sakurajin::controller_configuration&lt;columns,rows&gt;</a> &amp;config) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    init(config);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a95e11c9b3e0f56567ef741ba809776d9">   28</a></span>&#160;<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad0af25190856384505f3ade4d973b6a5">sakurajin::LedController&lt;columns,rows&gt;::LedController</a>(<span class="keyword">const</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html">sakurajin::LedController&lt;columns,rows&gt;</a> &amp;other) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (!other.<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a76e9e560be3a9f9591398d038882431c">initilized</a>) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    init(other.<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a9b5bae7f6e930104e3a3f58554c9615f">conf</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; conf.SegmentCount(); i++) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; i &lt; 8; i++) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            LedStates[i][j] = other.<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ab49fdf6ead1e4d32233c4c468ff0d1b5">LedStates</a>[i][j];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; rows*columns*2; j++) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        spidata[j] = other.<a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ac0bef8cc901bbff20df66ffe79141a80">spidata</a>[j];</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    refreshSegments();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a707d1906e9f56b81ce206c53f1d4bc9a">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a707d1906e9f56b81ce206c53f1d4bc9a">sakurajin::LedController&lt;columns,rows&gt;::init</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> csPin) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html">sakurajin::controller_configuration&lt;columns,rows&gt;</a> config;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    config.<a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a04cb0d8d4e95440fe5b780141bcf4cfc">SPI_CS</a> = csPin;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    config.<a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a9faea9cf858e4222c6d9c5b7fe4acfc3">useHardwareSpi</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> init(config);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a92fcf6e5795a7d0828c7d9044a520526">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a707d1906e9f56b81ce206c53f1d4bc9a">sakurajin::LedController&lt;columns,rows&gt;::init</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dataPin, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> clkPin,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> csPin, <span class="keywordtype">bool</span> useHardwareSpiParam) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (initilized) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html">sakurajin::controller_configuration&lt;columns,rows&gt;</a> config;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    config.<a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a499afafecb57c25afd086272b5e318ca">SPI_MOSI</a> = dataPin;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    config.<a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a5fb3ff5992600d019e9250b63eb15acb">SPI_CLK</a> = clkPin;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    config.<a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a04cb0d8d4e95440fe5b780141bcf4cfc">SPI_CS</a> = csPin;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    config.<a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a9faea9cf858e4222c6d9c5b7fe4acfc3">useHardwareSpi</a> = useHardwareSpiParam;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    init(config);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ac1734c846bfd825def5fda08802757bb">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a707d1906e9f56b81ce206c53f1d4bc9a">sakurajin::LedController&lt;columns,rows&gt;::init</a>(<span class="keyword">const</span> <a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html">sakurajin::controller_configuration&lt;columns,rows&gt;</a> &amp;configuration) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (initilized) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (!configuration.<a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a2b424afc2e2d12eaace7a032e13858ce">isValid</a>()) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    conf = configuration;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    initConf();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    initSPI();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    initilized = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    refreshSegments();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a2a76057e463e89516cf6fc27014ac7f4">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a2a76057e463e89516cf6fc27014ac7f4">sakurajin::LedController&lt;columns,rows&gt;::initConf</a>() {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (conf.useHardwareSpi) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        conf.SPI_CLK = SCK;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        conf.SPI_MOSI = MOSI;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    resetBuffers();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a255863a175f36c300e9db25e972173a7">  104</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a255863a175f36c300e9db25e972173a7">sakurajin::LedController&lt;columns,rows&gt;::initSPI</a>() {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    pinMode(conf.SPI_MOSI, OUTPUT);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    pinMode(conf.SPI_CLK, OUTPUT);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span>(conf.virtual_multi_row) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        pinMode(conf.SPI_CS,OUTPUT);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        digitalWrite(conf.SPI_CS,LOW);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; rows; i++) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            pinMode(conf.row_SPI_CS[i],OUTPUT);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            digitalWrite(conf.row_SPI_CS[i],LOW);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">if</span> (conf.useHardwareSpi) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        SPI.setBitOrder(MSBFIRST);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        SPI.setDataMode(SPI_MODE0);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        SPI.begin();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span>(conf.virtual_multi_row) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        digitalWrite(conf.SPI_CS,HIGH);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; rows; i++) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            digitalWrite(conf.row_SPI_CS[i],HIGH);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a0ab0e9206f42bccdb25a819fa5991869">  134</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a0ab0e9206f42bccdb25a819fa5991869">sakurajin::LedController&lt;columns,rows&gt;::isInitilized</a>() {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> initilized;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">// to be remvoed for version 2.2.0</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#aa8f3f98c38d46d6189d1a8b4b42e74fc">  140</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#abe3d8b24f6892a30d3fbd94d20f532d1">sakurajin::LedController&lt;columns,rows&gt;::getSegmentData</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> column, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> row_num, <a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a>* resultLocation) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    getSegmentData(conf.getSegmentNumber(column,row_num),resultLocation);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">// to be removed for version 2.2.0</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a10bc0fde6e19f5ed958876c8959e538a">  146</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#abe3d8b24f6892a30d3fbd94d20f532d1">sakurajin::LedController&lt;columns,rows&gt;::getSegmentData</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> segmentindex,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> *resultLocation) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">if</span> (!initilized || segmentindex &gt;= conf.SegmentCount() ||</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            resultLocation == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        (*resultLocation)[i] = LedStates[segmentindex][i];</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#aa7be7a056eb67fddbddea1311d436428">  159</a></span>&#160;<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#abe3d8b24f6892a30d3fbd94d20f532d1">sakurajin::LedController&lt;columns,rows&gt;::getSegmentData</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> segmentindex) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">if</span> (!initilized || segmentindex &gt;= conf.SegmentCount()) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    };</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> LedStates[segmentindex];</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#abe3d8b24f6892a30d3fbd94d20f532d1">  167</a></span>&#160;<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#abe3d8b24f6892a30d3fbd94d20f532d1">sakurajin::LedController&lt;columns,rows&gt;::getSegmentData</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> column, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> row_num) {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> getSegmentData(conf.getSegmentNumber(column,row_num));</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a565bfc99bbd677b657b2cf91bdb5e001">  172</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a565bfc99bbd677b657b2cf91bdb5e001">sakurajin::LedController&lt;columns,rows&gt;::getSegmentCount</a>() {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">return</span> columns*rows;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#aef1842a33462ef1e9d36b6a1be7d8584">  177</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d0/d17/classsakurajin_1_1controller__configuration.html">sakurajin::controller_configuration&lt;columns,rows&gt;</a>&amp; <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#aef1842a33462ef1e9d36b6a1be7d8584">sakurajin::LedController&lt;columns,rows&gt;::getConfig</a>() {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">return</span> conf;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclasssakurajin_1_1controller__configuration_html_a9faea9cf858e4222c6d9c5b7fe4acfc3"><div class="ttname"><a href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a9faea9cf858e4222c6d9c5b7fe4acfc3">sakurajin::controller_configuration::useHardwareSpi</a></div><div class="ttdeci">bool useHardwareSpi</div><div class="ttdoc">true falls hardware SPI genutzt werden soll (schaue https://www.arduino.cc/en/Reference/SPI für die P...</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00078">LedController_config.hpp:78</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_a98743b812fd85ba7546ec79287e6509b"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#a98743b812fd85ba7546ec79287e6509b">sakurajin::LedController::~LedController</a></div><div class="ttdeci">~LedController()</div><div class="ttdoc">Zerstöre das Objekt und leere den Speicher.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd9/_led_controller__core_8hpp_source.html#l00004">LedController_core.hpp:4</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_byte_block_html"><div class="ttname"><a href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a></div><div class="ttdoc">Ein Block an bytes, der alle Daten in einem Segment darstellt.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00026">LedController_byteblock.hpp:26</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_aef1842a33462ef1e9d36b6a1be7d8584"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#aef1842a33462ef1e9d36b6a1be7d8584">sakurajin::LedController::getConfig</a></div><div class="ttdeci">const sakurajin::controller_configuration&lt; columns, rows &gt; &amp; getConfig()</div><div class="ttdoc">Hole die Konfiguration des LedController.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd9/_led_controller__core_8hpp_source.html#l00177">LedController_core.hpp:177</a></div></div>
+<div class="ttc" id="a_led_controller_8hpp_html"><div class="ttname"><a href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_abe3d8b24f6892a30d3fbd94d20f532d1"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#abe3d8b24f6892a30d3fbd94d20f532d1">sakurajin::LedController::getSegmentData</a></div><div class="ttdeci">sakurajin::ByteBlock getSegmentData(unsigned int column, unsigned int row_num)</div><div class="ttdoc">Hole den Zustand eines Segments.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd9/_led_controller__core_8hpp_source.html#l00167">LedController_core.hpp:167</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_a2a76057e463e89516cf6fc27014ac7f4"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#a2a76057e463e89516cf6fc27014ac7f4">sakurajin::LedController::initConf</a></div><div class="ttdeci">void initConf()</div><div class="ttdoc">Initialisiere die Konfiguration.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd9/_led_controller__core_8hpp_source.html#l00094">LedController_core.hpp:94</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_ad0af25190856384505f3ade4d973b6a5"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad0af25190856384505f3ade4d973b6a5">sakurajin::LedController::LedController</a></div><div class="ttdeci">LedController()</div><div class="ttdoc">Erstelle einen neuen LedController ohne etwas zu initialisieren.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd9/_led_controller__core_8hpp_source.html#l00009">LedController_core.hpp:9</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1controller__configuration_html"><div class="ttname"><a href="../../d0/d17/classsakurajin_1_1controller__configuration.html">sakurajin::controller_configuration</a></div><div class="ttdoc">Diese Klasse wird zur Konfiguration des sakurajin::LedController verwendet.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00031">LedController_config.hpp:31</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_a76e9e560be3a9f9591398d038882431c"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#a76e9e560be3a9f9591398d038882431c">sakurajin::LedController::initilized</a></div><div class="ttdeci">bool initilized</div><div class="ttdoc">True wenn, der LedController vollständig initialisiert ist.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/_led_controller__template_8hpp_source.html#l00113">LedController_template.hpp:113</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1controller__configuration_html_a04cb0d8d4e95440fe5b780141bcf4cfc"><div class="ttname"><a href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a04cb0d8d4e95440fe5b780141bcf4cfc">sakurajin::controller_configuration::SPI_CS</a></div><div class="ttdeci">unsigned int SPI_CS</div><div class="ttdoc">Der pin für das chip select Signal (CS).</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00054">LedController_config.hpp:54</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_a707d1906e9f56b81ce206c53f1d4bc9a"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#a707d1906e9f56b81ce206c53f1d4bc9a">sakurajin::LedController::init</a></div><div class="ttdeci">void init(unsigned int csPin)</div><div class="ttdoc">Initialisiere den LedController für Nutzung mit hardware SPI.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd9/_led_controller__core_8hpp_source.html#l00049">LedController_core.hpp:49</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_ac0bef8cc901bbff20df66ffe79141a80"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#ac0bef8cc901bbff20df66ffe79141a80">sakurajin::LedController::spidata</a></div><div class="ttdeci">byte spidata[rows *columns *2]</div><div class="ttdoc">Das Array was benötigt wird, um Daten auf das Gerät zu übertragen.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/_led_controller__template_8hpp_source.html#l00088">LedController_template.hpp:88</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1controller__configuration_html_a499afafecb57c25afd086272b5e318ca"><div class="ttname"><a href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a499afafecb57c25afd086272b5e318ca">sakurajin::controller_configuration::SPI_MOSI</a></div><div class="ttdeci">unsigned int SPI_MOSI</div><div class="ttdoc">Der pin für das data transfer Signal (MOSI am Board und DIN an der Matrix).</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00043">LedController_config.hpp:43</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1controller__configuration_html_a2b424afc2e2d12eaace7a032e13858ce"><div class="ttname"><a href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a2b424afc2e2d12eaace7a032e13858ce">sakurajin::controller_configuration::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdoc">Prüft ob diese Konfiguration gültig ist.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00172">LedController_config.hpp:172</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1controller__configuration_html_a5fb3ff5992600d019e9250b63eb15acb"><div class="ttname"><a href="../../d0/d17/classsakurajin_1_1controller__configuration.html#a5fb3ff5992600d019e9250b63eb15acb">sakurajin::controller_configuration::SPI_CLK</a></div><div class="ttdeci">unsigned int SPI_CLK</div><div class="ttdoc">Der pin für das clock Signal (CLK).</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00065">LedController_config.hpp:65</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_a0ab0e9206f42bccdb25a819fa5991869"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#a0ab0e9206f42bccdb25a819fa5991869">sakurajin::LedController::isInitilized</a></div><div class="ttdeci">bool isInitilized()</div><div class="ttdoc">gibt den Status des LedController zurück.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd9/_led_controller__core_8hpp_source.html#l00134">LedController_core.hpp:134</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_ab49fdf6ead1e4d32233c4c468ff0d1b5"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#ab49fdf6ead1e4d32233c4c468ff0d1b5">sakurajin::LedController::LedStates</a></div><div class="ttdeci">sakurajin::ByteBlock LedStates[columns *rows]</div><div class="ttdoc">Dieses Array beinhaltet den Status von allen LEDs.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/_led_controller__template_8hpp_source.html#l00051">LedController_template.hpp:51</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_a255863a175f36c300e9db25e972173a7"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#a255863a175f36c300e9db25e972173a7">sakurajin::LedController::initSPI</a></div><div class="ttdeci">void initSPI()</div><div class="ttdoc">Initialisiere die SPI Ausgabe.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd9/_led_controller__core_8hpp_source.html#l00104">LedController_core.hpp:104</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html">sakurajin::LedController</a></div><div class="ttdoc">Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/_led_controller__template_8hpp_source.html#l00040">LedController_template.hpp:40</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_a9b5bae7f6e930104e3a3f58554c9615f"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#a9b5bae7f6e930104e3a3f58554c9615f">sakurajin::LedController::conf</a></div><div class="ttdeci">sakurajin::controller_configuration&lt; columns, rows &gt; conf</div><div class="ttdoc">Die Konfiguration des LedController.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/_led_controller__template_8hpp_source.html#l00061">LedController_template.hpp:61</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_a565bfc99bbd677b657b2cf91bdb5e001"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#a565bfc99bbd677b657b2cf91bdb5e001">sakurajin::LedController::getSegmentCount</a></div><div class="ttdeci">unsigned int getSegmentCount()</div><div class="ttdoc">Hole die geasmate Anzahl der konfigurierten Segmenten.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dd9/_led_controller__core_8hpp_source.html#l00172">LedController_core.hpp:172</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_bdf99280dcac04e783b9bc36dbad3f32.html">implementations</a></li><li class="navelem"><a class="el" href="../../d1/dd9/_led_controller__core_8hpp.html">LedController_core.hpp</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

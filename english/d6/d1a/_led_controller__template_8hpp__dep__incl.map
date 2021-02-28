@@ -1,8 +1,9 @@
 <map id="src/LedController_template.hpp" name="src/LedController_template.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="249,5,476,32"/>
-<area shape="rect" id="node2" href="$dc/d38/_led_controller__low__level_8hpp.html" title="This file contains the low level functions of the LedController which are needed to implement most ex..." alt="" coords="5,80,168,121"/>
-<area shape="rect" id="node3" href="$d9/d4a/_led_controller_8hpp.html" title=" " alt="" coords="283,169,442,196"/>
-<area shape="rect" id="node4" href="$d4/d0e/_led_controller__movement_8hpp.html" title="This file contains the functions to move data on the LedController." alt="" coords="243,87,482,114"/>
-<area shape="rect" id="node5" href="$d6/d76/_led_controller__display_8hpp.html" title="This file contains the functions to display data on an LedController." alt="" coords="506,87,718,114"/>
-<area shape="rect" id="node6" href="$dd/d4b/_led_controller__transformation_8hpp.html" title="This file contains the functions that transform given data (eg. rotation,reverse,...." alt="" coords="743,87,1007,114"/>
+<area shape="rect" id="node1" title=" " alt="" coords="266,5,493,32"/>
+<area shape="rect" id="node2" href="$d6/d76/_led_controller__display_8hpp.html" title=" " alt="" coords="5,80,199,121"/>
+<area shape="rect" id="node3" href="$d9/d4a/_led_controller_8hpp.html" title=" " alt="" coords="300,169,459,196"/>
+<area shape="rect" id="node5" href="$dc/d38/_led_controller__low__level_8hpp.html" title=" " alt="" coords="274,80,485,121"/>
+<area shape="rect" id="node6" href="$d4/d0e/_led_controller__movement_8hpp.html" title=" " alt="" coords="509,80,727,121"/>
+<area shape="rect" id="node7" href="$dd/d4b/_led_controller__transformation_8hpp.html" title=" " alt="" coords="751,80,997,121"/>
+<area shape="rect" id="node4" href="$d1/dd9/_led_controller__core_8hpp.html" title=" " alt="" coords="291,244,467,285"/>
 </map>

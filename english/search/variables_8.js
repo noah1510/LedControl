@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usehardwarespi_221',['useHardwareSpi',['../db/df4/classcontroller__configuration.html#ad8b4225d8adb5ec332edab2774f3314f',1,'controller_configuration']]]
+  ['table_264',['table',['../d2/dc4/classsakurajin_1_1_m_a_x72_x_x.html#ae9eae61674623ac7a1f0619b18e43b81',1,'sakurajin::MAX72XX']]]
 ];

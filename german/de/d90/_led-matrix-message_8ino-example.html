@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc3</span>
+   &#160;<span id="projectnumber">2.0.0-rc4</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('de/d90/_led-matrix-message_8ino-exampl
 <div class="title">Led-matrix-message.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>Ein Beispiel wie man den <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> nutzen kann um eine Nachricht auszugeben.</p>
+<p>Ein Beispiel wie man den LedController nutzen kann um eine Nachricht auszugeben.</p>
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="comment">//Wie immer die Bibliothek einbinden</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
@@ -103,38 +103,38 @@ $(document).ready(function(){initNavTree('de/d90/_led-matrix-message_8ino-exampl
 <div class="line"><span class="preprocessor">#define delayTime 200</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//Das uninitialisierte LedController Objekt</span></div>
-<div class="line"><a name="_a0"></a><a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;Segments,1&gt;</a> lc = <a class="code" href="../../d9/def/class_led_controller.html">LedController&lt;Segments,1&gt;</a>();  </div>
+<div class="line">LedController&lt;Segments,1&gt; lc = LedController&lt;Segments,1&gt;();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Zeichen und Buchstaben ---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="_a1"></a><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> A =  lc.<a name="a2"></a><a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00011000, B00100100, B00100100, B00111100, B00100100, B00100100, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> a =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B00111000, B01001000, B01001000, B01001000, B00111000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> b =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>(lc.<a name="a3"></a><a class="code" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">reverse</a>({ B00000000, B00001000, B00111000, B01001000, B01001000, B01001000, B00111000, B00000000 }))&lt;&lt;2;</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> c =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B00110000, B01000000, B01000000, B01000000, B00110000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> d =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00001000, B00111000, B01001000, B01001000, B01001000, B00111000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> e =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B00110000, B01001000, B01111000, B01000000, B00111000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> H =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B10010000, B10010000, B11110000, B10010000, B10010000, B10010000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> h =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B01000000, B01110000, B01001000, B01001000, B01001000, B01001000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> I =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B01000000, B01000000, B01000000, B01000000, B01000000, B01000000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> i =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B10000000, B00000000, B10000000, B10000000, B10000000, B10000000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> J =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00001000, B00001000, B00001000, B00001000, B01001000, B00110000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> K =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B10001000, B10010000, B11100000, B10100000, B10010000, B10001000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> k =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B10000000, B10010000, B10100000, B11000000, B10100000, B10010000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> l =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B10000000, B10000000, B10000000, B10000000, B10000000, B01000000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> M =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B01000100, B01101100, B01010100, B01000100, B01000100, B01000100, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> m =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B01110110, B01001001, B01001001, B01001001, B01001001, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> n =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B01110000, B01001000, B01001000, B01001000, B01001000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> o =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B01100000, B10010000, B10010000, B10010000, B01100000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> p =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B11100000, B10001000, B10001000, B10001000, B11100000, B10000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> q =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>(lc.<a class="code" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">reverse</a>({ B00000000, B00000000, B11100000, B10001000, B10001000, B10001000, B11100000, B10000000 }))&lt;&lt;2;</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> r =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B10100000, B11000000, B10000000, B10000000, B10000000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> s =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B01110000, B10000000, B01100000, B00010000, B11100000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> t =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B10000000, B11100000, B10000000, B10000000, B10000000, B01100000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> u =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B10010000, B10010000, B10010000, B10010000, B01100000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> w =  lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B10001000, B10001000, B10101000, B11011000, B10001000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> LB = lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B00000000, B00000000, B00000000, B00000000, B00000000, B00000000, B00000000, B00000000 });</div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> AZ = lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({ B01000000, B01000000, B01000000, B01000000, B01000000, B00000000, B01000000, B00000000 });</div>
+<div class="line">ByteBlock A =  ByteBlock::rotate180({ B00000000, B00011000, B00100100, B00100100, B00111100, B00100100, B00100100, B00000000 });</div>
+<div class="line">ByteBlock a =  ByteBlock::rotate180({ B00000000, B00000000, B00111000, B01001000, B01001000, B01001000, B00111000, B00000000 });</div>
+<div class="line">ByteBlock b =  ByteBlock::rotate180(ByteBlock::reverse({ B00000000, B00001000, B00111000, B01001000, B01001000, B01001000, B00111000, B00000000 }))&lt;&lt;2;</div>
+<div class="line">ByteBlock c =  ByteBlock::rotate180({ B00000000, B00000000, B00110000, B01000000, B01000000, B01000000, B00110000, B00000000 });</div>
+<div class="line">ByteBlock d =  ByteBlock::rotate180({ B00000000, B00001000, B00111000, B01001000, B01001000, B01001000, B00111000, B00000000 });</div>
+<div class="line">ByteBlock e =  ByteBlock::rotate180({ B00000000, B00000000, B00110000, B01001000, B01111000, B01000000, B00111000, B00000000 });</div>
+<div class="line">ByteBlock H =  ByteBlock::rotate180({ B00000000, B10010000, B10010000, B11110000, B10010000, B10010000, B10010000, B00000000 });</div>
+<div class="line">ByteBlock h =  ByteBlock::rotate180({ B00000000, B01000000, B01110000, B01001000, B01001000, B01001000, B01001000, B00000000 });</div>
+<div class="line">ByteBlock I =  ByteBlock::rotate180({ B00000000, B01000000, B01000000, B01000000, B01000000, B01000000, B01000000, B00000000 });</div>
+<div class="line">ByteBlock i =  ByteBlock::rotate180({ B00000000, B10000000, B00000000, B10000000, B10000000, B10000000, B10000000, B00000000 });</div>
+<div class="line">ByteBlock J =  ByteBlock::rotate180({ B00000000, B00001000, B00001000, B00001000, B00001000, B01001000, B00110000, B00000000 });</div>
+<div class="line">ByteBlock K =  ByteBlock::rotate180({ B00000000, B10001000, B10010000, B11100000, B10100000, B10010000, B10001000, B00000000 });</div>
+<div class="line">ByteBlock k =  ByteBlock::rotate180({ B00000000, B10000000, B10010000, B10100000, B11000000, B10100000, B10010000, B00000000 });</div>
+<div class="line">ByteBlock l =  ByteBlock::rotate180({ B00000000, B10000000, B10000000, B10000000, B10000000, B10000000, B01000000, B00000000 });</div>
+<div class="line">ByteBlock M =  ByteBlock::rotate180({ B00000000, B01000100, B01101100, B01010100, B01000100, B01000100, B01000100, B00000000 });</div>
+<div class="line">ByteBlock m =  ByteBlock::rotate180({ B00000000, B00000000, B01110110, B01001001, B01001001, B01001001, B01001001, B00000000 });</div>
+<div class="line">ByteBlock n =  ByteBlock::rotate180({ B00000000, B00000000, B01110000, B01001000, B01001000, B01001000, B01001000, B00000000 });</div>
+<div class="line">ByteBlock o =  ByteBlock::rotate180({ B00000000, B00000000, B01100000, B10010000, B10010000, B10010000, B01100000, B00000000 });</div>
+<div class="line">ByteBlock p =  ByteBlock::rotate180({ B00000000, B00000000, B11100000, B10001000, B10001000, B10001000, B11100000, B10000000 });</div>
+<div class="line">ByteBlock q =  ByteBlock::rotate180(ByteBlock::reverse({ B00000000, B00000000, B11100000, B10001000, B10001000, B10001000, B11100000, B10000000 }))&lt;&lt;2;</div>
+<div class="line">ByteBlock r =  ByteBlock::rotate180({ B00000000, B00000000, B10100000, B11000000, B10000000, B10000000, B10000000, B00000000 });</div>
+<div class="line">ByteBlock s =  ByteBlock::rotate180({ B00000000, B00000000, B01110000, B10000000, B01100000, B00010000, B11100000, B00000000 });</div>
+<div class="line">ByteBlock t =  ByteBlock::rotate180({ B00000000, B10000000, B11100000, B10000000, B10000000, B10000000, B01100000, B00000000 });</div>
+<div class="line">ByteBlock u =  ByteBlock::rotate180({ B00000000, B00000000, B10010000, B10010000, B10010000, B10010000, B01100000, B00000000 });</div>
+<div class="line">ByteBlock w =  ByteBlock::rotate180({ B00000000, B00000000, B10001000, B10001000, B10101000, B11011000, B10001000, B00000000 });</div>
+<div class="line">ByteBlock LB = ByteBlock::rotate180({ B00000000, B00000000, B00000000, B00000000, B00000000, B00000000, B00000000, B00000000 });</div>
+<div class="line">ByteBlock AZ = ByteBlock::rotate180({ B01000000, B01000000, B01000000, B01000000, B01000000, B00000000, B01000000, B00000000 });</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> Heart = lc.<a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">rotate180</a>({</div>
+<div class="line">ByteBlock Heart = ByteBlock::rotate180({</div>
 <div class="line">  B00000000,</div>
 <div class="line">  B01000010,</div>
 <div class="line">  B10100101,</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('de/d90/_led-matrix-message_8ino-exampl
 <div class="line"> </div>
 <div class="line"><span class="comment">//Dieses Array definiert die Nachricht, welche auf der Matrix angezeigt wird.</span></div>
 <div class="line"><span class="comment">//Standardmäßig wird &#39;Jahallo!! :heart:&#39; ausgegeben, kann aber frei geändert werden.</span></div>
-<div class="line"><a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> message[message_length] = {</div>
+<div class="line">ByteBlock message[message_length] = {</div>
 <div class="line">  J&amp;(a&gt;&gt;5), <span class="comment">//&#39;J&#39; und erste Hälfte von &#39;a&#39;</span></div>
 <div class="line">  (a&lt;&lt;3)&amp;(h&gt;&gt;2), <span class="comment">// zweite Hälfte von &#39;a&#39; und &#39;h&#39;</span></div>
 <div class="line">  (a&lt;&lt;1)&amp;(l&gt;&gt;5), <span class="comment">// &#39;a&#39; und &#39;l&#39;</span></div>
@@ -160,61 +160,48 @@ $(document).ready(function(){initNavTree('de/d90/_led-matrix-message_8ino-exampl
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> setup(){</div>
+<div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <span class="comment">//erstelle eine Konfiguration mit der gleichen Größe wie der Controller</span></div>
-<div class="line">  <a name="_a4"></a><a class="code" href="../../db/df4/classcontroller__configuration.html">controller_configuration&lt;Segments,1&gt;</a> conf;</div>
+<div class="line">  controller_configuration&lt;Segments,1&gt; conf;</div>
 <div class="line">  <span class="comment">//Nutze den CS pin</span></div>
-<div class="line">  conf.<a name="a5"></a><a class="code" href="../../db/df4/classcontroller__configuration.html#ad869ed7bfd48eb156ad8430cc05736d6">SPI_CS</a> = CS;</div>
+<div class="line">  conf.SPI_CS = CS;</div>
 <div class="line">  <span class="comment">//Setzt die Übertragungsgeschwindigkeit auf den höchsten stabilen Wert</span></div>
-<div class="line">  conf.<a name="a6"></a><a class="code" href="../../db/df4/classcontroller__configuration.html#a31c25621241c7b3d56845dccba4c7620">spiTransferSpeed</a> = 10000000;</div>
+<div class="line">  conf.spiTransferSpeed = 10000000;</div>
 <div class="line">  <span class="comment">//schaltet Hardware SPI an</span></div>
-<div class="line">  conf.<a name="a7"></a><a class="code" href="../../db/df4/classcontroller__configuration.html#ad8b4225d8adb5ec332edab2774f3314f">useHardwareSpi</a> = <span class="keyword">true</span>;</div>
+<div class="line">  conf.useHardwareSpi = <span class="keyword">true</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//initialisiere den Controller mit der Konfiguratin</span></div>
-<div class="line">  lc.<a name="a8"></a><a class="code" href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">init</a>(conf);</div>
+<div class="line">  lc.init(conf);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//setzte die Helligkeit auf das niedrigste</span></div>
-<div class="line">  lc.<a name="a9"></a><a class="code" href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">setIntensity</a>(0);</div>
+<div class="line">  lc.setIntensity(0);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> loop(){</div>
-<div class="line">    <span class="comment">//sicherheitshalber Matrix leeren</span></div>
-<div class="line">    lc.<a name="a10"></a><a class="code" href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">clearMatrix</a>();</div>
+<div class="line"><span class="keywordtype">void</span> loop() {</div>
+<div class="line">  <span class="comment">//sicherheitshalber Matrix leeren</span></div>
+<div class="line">  lc.clearMatrix();</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">//Daten reinschieben</span></div>
-<div class="line">    <span class="comment">//Jedes Segment der Nachricht wird einzeln reingeschoben</span></div>
-<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0;i &lt; message_length;i++){</div>
-<div class="line">      <span class="comment">//Da jedes Segment eine Breite von 8 pixeln hat noch eine Schleife</span></div>
-<div class="line">      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0;j &lt; 8;j++){</div>
-<div class="line">        <span class="comment">//Schiebt alles nach links und fügt rechts eine Spalte der Nachricht rein</span></div>
-<div class="line">        lc.<a name="a11"></a><a class="code" href="../../d9/def/class_led_controller.html#a3da6eccac282b504258dca0638e12e9a">moveLeft</a>(lc.<a name="a12"></a><a class="code" href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">makeColumns</a>(message[i])[j]);</div>
-<div class="line">        delay(delayTime);</div>
-<div class="line">      }</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">//schiebt die daten raus</span></div>
-<div class="line">    <span class="comment">//Da die größe der Matrix 8*Segments ist muss einfach so oft geschoben werden.</span></div>
-<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8*Segments;i++){</div>
-<div class="line">      lc.<a class="code" href="../../d9/def/class_led_controller.html#a3da6eccac282b504258dca0638e12e9a">moveLeft</a>();</div>
+<div class="line">  <span class="comment">//Daten reinschieben</span></div>
+<div class="line">  <span class="comment">//Jedes Segment der Nachricht wird einzeln reingeschoben</span></div>
+<div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; message_length; i++) {</div>
+<div class="line">    <span class="comment">//Da jedes Segment eine Breite von 8 pixeln hat noch eine Schleife</span></div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; 8; j++) {</div>
+<div class="line">      <span class="comment">//Schiebt alles nach links und fügt rechts eine Spalte der Nachricht rein</span></div>
+<div class="line">      lc.moveLeft(ByteBlock::makeColumns(message[i])[j]);</div>
 <div class="line">      delay(delayTime);</div>
 <div class="line">    }</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//schiebt die daten raus</span></div>
+<div class="line">  <span class="comment">//Da die größe der Matrix 8*Segments ist muss einfach so oft geschoben werden.</span></div>
+<div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8*Segments; i++) {</div>
+<div class="line">    lc.moveLeft();</div>
+<div class="line">    delay(delayTime);</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_led_controller_html_aff61bb1f8f61a8c4658d9a447c192363"><div class="ttname"><a href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">LedController::makeColumns</a></div><div class="ttdeci">ByteBlock makeColumns(ByteBlock rowArray)</div><div class="ttdoc">Wandelt einen Block aus Zeilen in einen Block aus Spalten.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00028">LedController_transformation.hpp:28</a></div></div>
-<div class="ttc" id="aclasscontroller__configuration_html_a31c25621241c7b3d56845dccba4c7620"><div class="ttname"><a href="../../db/df4/classcontroller__configuration.html#a31c25621241c7b3d56845dccba4c7620">controller_configuration::spiTransferSpeed</a></div><div class="ttdeci">uint64_t spiTransferSpeed</div><div class="ttdoc">Die Geschwindigkeit mit der hardware SPI die Daten übertragen soll.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00123">LedController_config.hpp:123</a></div></div>
-<div class="ttc" id="aclasscontroller__configuration_html"><div class="ttname"><a href="../../db/df4/classcontroller__configuration.html">controller_configuration</a></div><div class="ttdoc">Diese Klasse wird zur Konfiguration des LedController verwendet.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00033">LedController_config.hpp:33</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_ae706d5741aa89433a3607e2ce07482a1"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ae706d5741aa89433a3607e2ce07482a1">LedController::clearMatrix</a></div><div class="ttdeci">void clearMatrix()</div><div class="ttdoc">leere alle Segmente (alle LEDs aus).</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d76/_led_controller__display_8hpp_source.html#l00043">LedController_display.hpp:43</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a99cdec576fed2956be33279f7c662f79"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">LedController::reverse</a></div><div class="ttdeci">byte reverse(byte input)</div><div class="ttdoc">Diese Funktion ändert die Bitreihnfolge eines Bytes bzw.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00017">LedController_transformation.hpp:17</a></div></div>
 <div class="ttc" id="a_led_controller_8hpp_html"><div class="ttname"><a href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a></div></div>
-<div class="ttc" id="aclass_byte_block_html"><div class="ttname"><a href="../../dd/d65/class_byte_block.html">ByteBlock</a></div><div class="ttdoc">Ein Block an bytes, der alle Daten in einem Segment darstellt.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00024">LedController_byteblock.hpp:24</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a58369399b111c355e21bd3ebacd92db9"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9">LedController::init</a></div><div class="ttdeci">void init(unsigned int csPin)</div><div class="ttdoc">Initialisiere den LedController für Nutzung mit hardware SPI.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d4a/_led_controller_8hpp_source.html#l00057">LedController.hpp:57</a></div></div>
-<div class="ttc" id="aclasscontroller__configuration_html_ad869ed7bfd48eb156ad8430cc05736d6"><div class="ttname"><a href="../../db/df4/classcontroller__configuration.html#ad869ed7bfd48eb156ad8430cc05736d6">controller_configuration::SPI_CS</a></div><div class="ttdeci">unsigned int SPI_CS</div><div class="ttdoc">Der pin für das chip select Signal (CS).</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00056">LedController_config.hpp:56</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a3da6eccac282b504258dca0638e12e9a"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a3da6eccac282b504258dca0638e12e9a">LedController::moveLeft</a></div><div class="ttdeci">void moveLeft()</div><div class="ttdoc">Schibet die Daten eins nach links und 0x00 wird recht reingeschoben.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0e/_led_controller__movement_8hpp_source.html#l00153">LedController_movement.hpp:153</a></div></div>
-<div class="ttc" id="aclass_led_controller_html"><div class="ttname"><a href="../../d9/def/class_led_controller.html">LedController</a></div><div class="ttdoc">Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/_led_controller__template_8hpp_source.html#l00067">LedController_template.hpp:67</a></div></div>
-<div class="ttc" id="aclasscontroller__configuration_html_ad8b4225d8adb5ec332edab2774f3314f"><div class="ttname"><a href="../../db/df4/classcontroller__configuration.html#ad8b4225d8adb5ec332edab2774f3314f">controller_configuration::useHardwareSpi</a></div><div class="ttdeci">bool useHardwareSpi</div><div class="ttdoc">true falls hardware SPI genutzt werden soll (schaue https://www.arduino.cc/en/Reference/SPI für die P...</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d2a/_led_controller__config_8hpp_source.html#l00080">LedController_config.hpp:80</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a5d17bae56676db2dbb09f0f077ffd03b"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a5d17bae56676db2dbb09f0f077ffd03b">LedController::setIntensity</a></div><div class="ttdeci">void setIntensity(unsigned int segmentNumber, unsigned int newIntesityLevel)</div><div class="ttdoc">Setzte die Helligkeit eines Segments.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/_led_controller__low__level_8hpp_source.html#l00108">LedController_low_level.hpp:108</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_ac61af7e100284d465a37573fbf960c22"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">LedController::rotate180</a></div><div class="ttdeci">ByteBlock rotate180(ByteBlock input)</div><div class="ttdoc">rotiert einen ByteBlock um 180 Grad</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00053">LedController_transformation.hpp:53</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

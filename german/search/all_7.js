@@ -1,15 +1,14 @@
 var searchData=
 [
-  ['included_5fpgmspace_26',['INCLUDED_PGMSPACE',['../db/dcc/_led_controller__template_8hpp.html#a4e6b9fdd99c117e27f480835f1ad3774',1,'LedController_template.hpp']]],
-  ['index_2edoc_27',['index.doc',['../d4/d17/index_8doc.html',1,'']]],
-  ['init_28',['init',['../d9/def/class_led_controller.html#a58369399b111c355e21bd3ebacd92db9',1,'LedController::init(unsigned int csPin)'],['../d9/def/class_led_controller.html#a02ddc9a8b5e8cbfbabe2303a3accf03a',1,'LedController::init(unsigned int dataPin, unsigned int clkPin, unsigned int csPin, bool useHardwareSpi=false)'],['../d9/def/class_led_controller.html#aaa67b66769e03f92b2ec575eb2f83097',1,'LedController::init(const controller_configuration&lt; columns, rows &gt; &amp;configuration)']]],
-  ['initconf_29',['initConf',['../d9/def/class_led_controller.html#a2c1e2674c7ab83b09efc27f907dde570',1,'LedController']]],
-  ['initilized_30',['initilized',['../d9/def/class_led_controller.html#a42b8870eb7bb2c0de2850c348086b298',1,'LedController']]],
-  ['initspi_31',['initSPI',['../d9/def/class_led_controller.html#ae24a5279fe69824527adf446e9a3b897',1,'LedController']]],
-  ['installationsanweisungen_32',['Installationsanweisungen',['../d9/d87/install.html',1,'']]],
-  ['install_2edoc_33',['install.doc',['../d3/d12/install_8doc.html',1,'']]],
-  ['intensitylevel_34',['IntensityLevel',['../db/df4/classcontroller__configuration.html#a765e7c4de0bf324aa50032946d40f077',1,'controller_configuration']]],
-  ['isinitilized_35',['isInitilized',['../d9/def/class_led_controller.html#acfd674c9302e0391ec3fb55247400d5d',1,'LedController']]],
-  ['isvalid_36',['isValid',['../db/df4/classcontroller__configuration.html#a0f0fd75e4c76c23ff7c0f9b70905d0cf',1,'controller_configuration']]],
-  ['isvalidconfig_37',['isValidConfig',['../db/df4/classcontroller__configuration.html#ad237ddfbc408f4c6e42a4ea180dad5bc',1,'controller_configuration']]]
+  ['index_2edoc_31',['index.doc',['../d4/d17/index_8doc.html',1,'']]],
+  ['init_32',['init',['../d6/df8/classsakurajin_1_1_led_controller.html#a707d1906e9f56b81ce206c53f1d4bc9a',1,'sakurajin::LedController::init(unsigned int csPin)'],['../d6/df8/classsakurajin_1_1_led_controller.html#a92fcf6e5795a7d0828c7d9044a520526',1,'sakurajin::LedController::init(unsigned int dataPin, unsigned int clkPin, unsigned int csPin, bool useHardwareSpi=false)'],['../d6/df8/classsakurajin_1_1_led_controller.html#ac1734c846bfd825def5fda08802757bb',1,'sakurajin::LedController::init(const sakurajin::controller_configuration&lt; columns, rows &gt; &amp;configuration)']]],
+  ['initconf_33',['initConf',['../d6/df8/classsakurajin_1_1_led_controller.html#a2a76057e463e89516cf6fc27014ac7f4',1,'sakurajin::LedController']]],
+  ['initilized_34',['initilized',['../d6/df8/classsakurajin_1_1_led_controller.html#a76e9e560be3a9f9591398d038882431c',1,'sakurajin::LedController']]],
+  ['initspi_35',['initSPI',['../d6/df8/classsakurajin_1_1_led_controller.html#a255863a175f36c300e9db25e972173a7',1,'sakurajin::LedController']]],
+  ['installationsanweisungen_36',['Installationsanweisungen',['../d9/d87/install.html',1,'']]],
+  ['install_2edoc_37',['install.doc',['../d3/d12/install_8doc.html',1,'']]],
+  ['intensitylevel_38',['IntensityLevel',['../d0/d17/classsakurajin_1_1controller__configuration.html#a0a3e32450a11df94280206bb3ec1a63b',1,'sakurajin::controller_configuration']]],
+  ['isinitilized_39',['isInitilized',['../d6/df8/classsakurajin_1_1_led_controller.html#a0ab0e9206f42bccdb25a819fa5991869',1,'sakurajin::LedController']]],
+  ['isvalid_40',['isValid',['../d0/d17/classsakurajin_1_1controller__configuration.html#a2b424afc2e2d12eaace7a032e13858ce',1,'sakurajin::controller_configuration']]],
+  ['isvalidconfig_41',['isValidConfig',['../d0/d17/classsakurajin_1_1controller__configuration.html#a53e76f4267255975145050669b33b1f5',1,'sakurajin::controller_configuration']]]
 ];

@@ -1,4 +1,5 @@
-<map id="src/LedController_movement.hpp" name="src/LedController_movement.hpp">
-<area shape="rect" id="node1" title="This file contains the functions to move data on the LedController." alt="" coords="5,5,244,32"/>
-<area shape="rect" id="node2" href="$d9/d4a/_led_controller_8hpp.html" title=" " alt="" coords="45,80,204,107"/>
+<map id="src/implementations/LedController_movement.hpp" name="src/implementations/LedController_movement.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,224,47"/>
+<area shape="rect" id="node2" href="$d9/d4a/_led_controller_8hpp.html" title=" " alt="" coords="35,95,194,121"/>
+<area shape="rect" id="node3" href="$d1/dd9/_led_controller__core_8hpp.html" title=" " alt="" coords="27,169,203,211"/>
 </map>

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['updatesegment_117',['updateSegment',['../d9/def/class_led_controller.html#abbc7958733e32840b4f9b5580ae1d2cc',1,'LedController']]],
-  ['updatesegments_118',['updateSegments',['../d9/def/class_led_controller.html#a84d365aa279673d398f1083162bb6343',1,'LedController']]],
-  ['usage_2edoc_119',['usage.doc',['../d3/dd3/usage_8doc.html',1,'']]],
-  ['usehardwarespi_120',['useHardwareSpi',['../db/df4/classcontroller__configuration.html#ad8b4225d8adb5ec332edab2774f3314f',1,'controller_configuration']]]
+  ['updatesegment_130',['updateSegment',['../d6/df8/classsakurajin_1_1_led_controller.html#a38f831e701085490e0235d67f45ef2ec',1,'sakurajin::LedController']]],
+  ['updatesegments_131',['updateSegments',['../d6/df8/classsakurajin_1_1_led_controller.html#ac862a742b719a19310050af164919308',1,'sakurajin::LedController']]],
+  ['usage_2edoc_132',['usage.doc',['../d3/dd3/usage_8doc.html',1,'']]],
+  ['usehardwarespi_133',['useHardwareSpi',['../d0/d17/classsakurajin_1_1controller__configuration.html#a9faea9cf858e4222c6d9c5b7fe4acfc3',1,'sakurajin::controller_configuration']]]
 ];

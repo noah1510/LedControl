@@ -1,0 +1,5 @@
+<map id="sakurajin::LedController::init" name="sakurajin::LedController::init">
+<area shape="rect" id="node1" title="Initialisiere einen LedController mit einer gegebenen Konfiguration." alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$d0/d17/classsakurajin_1_1controller__configuration.html#a2b424afc2e2d12eaace7a032e13858ce" title="Prüft ob diese Konfiguration gültig ist." alt="" coords="229,5,395,47"/>
+<area shape="rect" id="node3" href="$d0/d17/classsakurajin_1_1controller__configuration.html#a53e76f4267255975145050669b33b1f5" title="Prüfe ob die gegebene Konfiguration gültig ist." alt="" coords="443,5,649,47"/>
+</map>

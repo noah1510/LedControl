@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc3</span>
+   &#160;<span id="projectnumber">2.0.0-rc4</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -89,10 +89,10 @@ $(document).ready(function(){initNavTree('d9/dbb/migration_notes.html','../../')
 <div class="contents">
 <div class="textblock"><p>Diese Seite beinhaltet gererelle Informationen über den Umstieg von einem Release zu einem anderen und erwähnt die Änderungen, die gemacht werden müssen.</p>
 <h2>1.x.y zu 2.0.z</h2>
-<p>Egal von welcher Version man aus updated, es werden Änderungen für die Version 2.0.x benötigt. Lies die vollständige Anweisung <a class="el" href="../../d8/dfe/1_8x_8y_to_2_80_8z.html">hier</a>, um zu lernen welche Änderungen am Code notwendig sind, damit dieser mit Version 2.0.x funktioniert. Da der <a class="el" href="../../d9/def/class_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">LedController</a> nun ein Template ist, werden definitiv Änderungen benötigt.</p>
+<p>Egal von welcher Version man aus updated, es werden Änderungen für die Version 2.0.x benötigt. Lies die vollständige Anweisung <a class="el" href="../../d8/dfe/1_8x_8y_to_2_80_8z.html">hier</a>, um zu lernen welche Änderungen am Code notwendig sind, damit dieser mit Version 2.0.x funktioniert. Da der <a class="el" href="../../d6/df8/classsakurajin_1_1_led_controller.html" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern.">sakurajin::LedController</a> nun ein Template ist, werden definitiv Änderungen benötigt.</p>
 <h2>1.6.x zu 1.7.x</h2>
-<p>Außer man verwendet Funktionen, welche <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> als Rückgabewert haben, gibt es nicht was die Kompatibilität verhindert.</p>
-<p>Seit Version 1.7.x ist die Unterstützung für die std Datentypen entfernt, um eine Einheitlichere Codebase zu haben. Wenn du nicht Pointer auf Arrays als Rückgabe verwenden willst, wechsel einfach direkt auf Version 2.0.x. Da <a class="el" href="../../dd/d65/class_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">ByteBlock</a> dort eine Klasse ist, kann diese auch wieder Rückgabewert sein (allerdings sind die <a class="el" href="../../d8/dfe/1_8x_8y_to_2_80_8z.html">vollständigen Anweisungen</a> zu beachten). </p>
+<p>Außer man verwendet Funktionen, welche ByteBlock als Rückgabewert haben, gibt es nicht was die Kompatibilität verhindert.</p>
+<p>Seit Version 1.7.x ist die Unterstützung für die std Datentypen entfernt, um eine Einheitlichere Codebase zu haben. Wenn du nicht Pointer auf Arrays als Rückgabe verwenden willst, wechsel einfach direkt auf Version 2.0.x. Da <a class="el" href="../../d6/d30/classsakurajin_1_1_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt.">sakurajin::ByteBlock</a> dort eine Klasse ist, kann diese auch wieder Rückgabewert sein (allerdings sind die <a class="el" href="../../d8/dfe/1_8x_8y_to_2_80_8z.html">vollständigen Anweisungen</a> zu beachten). </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

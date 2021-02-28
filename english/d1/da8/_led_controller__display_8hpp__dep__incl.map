@@ -1,4 +1,5 @@
-<map id="src/LedController_display.hpp" name="src/LedController_display.hpp">
-<area shape="rect" id="node1" title="This file contains the functions to display data on an LedController." alt="" coords="5,5,217,32"/>
-<area shape="rect" id="node2" href="$d9/d4a/_led_controller_8hpp.html" title=" " alt="" coords="32,80,191,107"/>
+<map id="src/implementations/LedController_display.hpp" name="src/implementations/LedController_display.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node2" href="$d9/d4a/_led_controller_8hpp.html" title=" " alt="" coords="23,95,181,121"/>
+<area shape="rect" id="node3" href="$d1/dd9/_led_controller__core_8hpp.html" title=" " alt="" coords="14,169,190,211"/>
 </map>

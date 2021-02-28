@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LedController: src/LedController_transformation.hpp Source File</title>
+<title>LedController: src/implementations/LedController_transformation.hpp Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc3</span>
+   &#160;<span id="projectnumber">2.0.0-rc4</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -92,101 +92,68 @@ $(document).ready(function(){initNavTree('dd/d4b/_led_controller__transformation
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/dcc/_led_controller__template_8hpp.html">LedController_template.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">   17</a></span>&#160;<span class="keywordtype">byte</span> <a class="code" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">LedController&lt;columns,rows&gt;::reverse</a>(<span class="keywordtype">byte</span> var) {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">byte</span> ret = 0x00;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (var &amp; (0x01U &lt;&lt; i)) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      ret |= 0x80U &gt;&gt; i;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">   28</a></span>&#160;<a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> <a class="code" href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">LedController&lt;columns,rows&gt;::makeColumns</a>(<a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> rowArray) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">auto</span> columnArray = <a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#afdbdcd44a9ad6782fa2ef3002567679b">   17</a></span>&#160;<span class="keywordtype">byte</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#afdbdcd44a9ad6782fa2ef3002567679b">sakurajin::LedController&lt;columns,rows&gt;::reverse</a>(<span class="keywordtype">byte</span> var) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html#a55bc3ff0641f9b7c3572468131401241">sakurajin::ByteBlock::reverse</a>(var);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad02f9735239b37c51c5272ffd78f26d9">   22</a></span>&#160;<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad02f9735239b37c51c5272ffd78f26d9">sakurajin::LedController&lt;columns,rows&gt;::makeColumns</a>(<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> rowArray) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> rowArray.<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html#a876073c5b78cc28784e9dedf51a0426e">makeColumns</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a6154220d942db0fe509827b2d8628dea">   27</a></span>&#160;<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#afdbdcd44a9ad6782fa2ef3002567679b">sakurajin::LedController&lt;columns,rows&gt;::reverse</a>(<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> input) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> input.<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html#a55bc3ff0641f9b7c3572468131401241">reverse</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    columnArray[i] = 0x00;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; 8; j++) {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      columnArray[i] |= (0x80 &amp; (rowArray[j]&lt;&lt;i)) &gt;&gt; (7 - j);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> rotate180(columnArray);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#a9d8b960beccc10682e610d9952e35af2">   42</a></span>&#160;<a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> <a class="code" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">LedController&lt;columns,rows&gt;::reverse</a>(<a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> input) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">auto</span> reversedInput = <a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    reversedInput[i] = reverse(input[i]);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> reversedInput;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">   53</a></span>&#160;<a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> <a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">LedController&lt;columns,rows&gt;::rotate180</a>(<a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> input) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">auto</span> rotatedInput = <a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a3fbdb887f91a60ef7eea12e945385c2e">   32</a></span>&#160;<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a3fbdb887f91a60ef7eea12e945385c2e">sakurajin::LedController&lt;columns,rows&gt;::rotate180</a>(<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> input) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> input.<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html#a7973023ecc06aa02252dd22640ebd0cc">rotate180</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// to be removed for version 2.2.0</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a3bddc6b14bcec0c37ef01c6f9bd92ad3">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad02f9735239b37c51c5272ffd78f26d9">sakurajin::LedController&lt;columns,rows&gt;::makeColumns</a>(<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> rowArray, <a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> *columnArray) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (columnArray == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    *columnArray = rowArray.<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html#a876073c5b78cc28784e9dedf51a0426e">makeColumns</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// to be removed for version 2.2.0</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#acf5f99c527ab456406396b57d39a42e6">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#afdbdcd44a9ad6782fa2ef3002567679b">sakurajin::LedController&lt;columns,rows&gt;::reverse</a>(<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> input, <a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> *reversedInput) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (reversedInput == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    *reversedInput = input.<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html#a55bc3ff0641f9b7c3572468131401241">reverse</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    rotatedInput[7 - i] = reverse(input[i]);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">return</span> rotatedInput;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// to be removed for version 2.2.0</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a7e419b3f9cb3ed416311aaaa5744b1a5">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/df8/classsakurajin_1_1_led_controller.html#a3fbdb887f91a60ef7eea12e945385c2e">sakurajin::LedController&lt;columns,rows&gt;::rotate180</a>(<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> input, <a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a> *rotatedInput) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (rotatedInput == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// to be removed for version 2.2.0</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#aecb756922984f96aed2414f3b83c87d2">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">LedController&lt;columns,rows&gt;::makeColumns</a>(<a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> rowArray, <a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> *columnArray) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">if</span> (!initilized || columnArray == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  };</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    (*columnArray)[i] = 0x00;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; 8; j++) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      (*columnArray)[i] |= (0x01 &amp; (rowArray[j] &gt;&gt; (7 - i))) &lt;&lt; (7 - j);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// to be removed for version 2.2.0</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#ae6aad659a9654c8f0e37573a1afcdc0d">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">LedController&lt;columns,rows&gt;::reverse</a>(<a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> input, <a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> *reversedInput) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">if</span> (reversedInput == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    (*reversedInput)[i] = reverse(input[i]);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">// to be removed for version 2.2.0</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> columns, <span class="keywordtype">size_t</span> rows&gt;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../d9/def/class_led_controller.html#aa0332a7eaf650e1d043ef71da906e47f">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">LedController&lt;columns,rows&gt;::rotate180</a>(<a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> input, <a class="code" href="../../dd/d65/class_byte_block.html">ByteBlock</a> *rotatedInput) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">if</span> (rotatedInput == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    (*rotatedInput)[7 - i] = reverse(input[i]);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    *rotatedInput = input.<a class="code" href="../../d6/d30/classsakurajin_1_1_byte_block.html#a7973023ecc06aa02252dd22640ebd0cc">rotate180</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_led_controller_html_aff61bb1f8f61a8c4658d9a447c192363"><div class="ttname"><a href="../../d9/def/class_led_controller.html#aff61bb1f8f61a8c4658d9a447c192363">LedController::makeColumns</a></div><div class="ttdeci">ByteBlock makeColumns(ByteBlock rowArray)</div><div class="ttdoc">Turns an ByteBlock of rows into an ByteBlock of columns.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00028">LedController_transformation.hpp:28</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_ad02f9735239b37c51c5272ffd78f26d9"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#ad02f9735239b37c51c5272ffd78f26d9">sakurajin::LedController::makeColumns</a></div><div class="ttdeci">sakurajin::ByteBlock makeColumns(sakurajin::ByteBlock rowArray)</div><div class="ttdoc">Turns an sakurajin::ByteBlock of rows into an sakurajin::ByteBlock of columns.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00022">LedController_transformation.hpp:22</a></div></div>
 <div class="ttc" id="a_led_controller__template_8hpp_html"><div class="ttname"><a href="../../db/dcc/_led_controller__template_8hpp.html">LedController_template.hpp</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_a99cdec576fed2956be33279f7c662f79"><div class="ttname"><a href="../../d9/def/class_led_controller.html#a99cdec576fed2956be33279f7c662f79">LedController::reverse</a></div><div class="ttdeci">byte reverse(byte input)</div><div class="ttdoc">This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00017">LedController_transformation.hpp:17</a></div></div>
-<div class="ttc" id="aclass_byte_block_html"><div class="ttname"><a href="../../dd/d65/class_byte_block.html">ByteBlock</a></div><div class="ttdoc">A block of bytes used to represent all of the data in a Segment.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00024">LedController_byteblock.hpp:24</a></div></div>
-<div class="ttc" id="aclass_led_controller_html_ac61af7e100284d465a37573fbf960c22"><div class="ttname"><a href="../../d9/def/class_led_controller.html#ac61af7e100284d465a37573fbf960c22">LedController::rotate180</a></div><div class="ttdeci">ByteBlock rotate180(ByteBlock input)</div><div class="ttdoc">rotate an ByteBlock by 180 degrees</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00053">LedController_transformation.hpp:53</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_byte_block_html"><div class="ttname"><a href="../../d6/d30/classsakurajin_1_1_byte_block.html">sakurajin::ByteBlock</a></div><div class="ttdoc">A block of bytes used to represent all of the data in a Segment.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00026">LedController_byteblock.hpp:26</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_afdbdcd44a9ad6782fa2ef3002567679b"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#afdbdcd44a9ad6782fa2ef3002567679b">sakurajin::LedController::reverse</a></div><div class="ttdeci">byte reverse(byte input)</div><div class="ttdoc">This function changes to bitorder of a byte (useful to mirror &quot;images&quot; you want to display)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00017">LedController_transformation.hpp:17</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_byte_block_html_a55bc3ff0641f9b7c3572468131401241"><div class="ttname"><a href="../../d6/d30/classsakurajin_1_1_byte_block.html#a55bc3ff0641f9b7c3572468131401241">sakurajin::ByteBlock::reverse</a></div><div class="ttdeci">ByteBlock reverse() const</div><div class="ttdoc">Reverse an ByteBlock of 8 bytes (mirror it)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00125">LedController_byteblock.hpp:125</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_led_controller_html_a3fbdb887f91a60ef7eea12e945385c2e"><div class="ttname"><a href="../../d6/df8/classsakurajin_1_1_led_controller.html#a3fbdb887f91a60ef7eea12e945385c2e">sakurajin::LedController::rotate180</a></div><div class="ttdeci">sakurajin::ByteBlock rotate180(sakurajin::ByteBlock input)</div><div class="ttdoc">rotate an sakurajin::ByteBlock by 180 degrees</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4b/_led_controller__transformation_8hpp_source.html#l00032">LedController_transformation.hpp:32</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_byte_block_html_a876073c5b78cc28784e9dedf51a0426e"><div class="ttname"><a href="../../d6/d30/classsakurajin_1_1_byte_block.html#a876073c5b78cc28784e9dedf51a0426e">sakurajin::ByteBlock::makeColumns</a></div><div class="ttdeci">ByteBlock makeColumns() const</div><div class="ttdoc">Turns an ByteBlock of rows into an ByteBlock of columns.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00110">LedController_byteblock.hpp:110</a></div></div>
+<div class="ttc" id="aclasssakurajin_1_1_byte_block_html_a7973023ecc06aa02252dd22640ebd0cc"><div class="ttname"><a href="../../d6/d30/classsakurajin_1_1_byte_block.html#a7973023ecc06aa02252dd22640ebd0cc">sakurajin::ByteBlock::rotate180</a></div><div class="ttdeci">ByteBlock rotate180() const</div><div class="ttdoc">rotate an ByteBlock by 180 degrees</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9c/_led_controller__byteblock_8hpp_source.html#l00140">LedController_byteblock.hpp:140</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp.html">LedController_transformation.hpp</a></li>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_bdf99280dcac04e783b9bc36dbad3f32.html">implementations</a></li><li class="navelem"><a class="el" href="../../dd/d4b/_led_controller__transformation_8hpp.html">LedController_transformation.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

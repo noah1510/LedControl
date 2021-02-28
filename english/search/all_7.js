@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['how_20to_20use_20this_20library_25',['How to use this library',['../da/d1b/usage.html',1,'']]]
+  ['how_20to_20use_20this_20library_30',['How to use this library',['../da/d1b/usage.html',1,'']]]
 ];

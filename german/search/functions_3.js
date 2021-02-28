@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['displayonsegment_156',['displayOnSegment',['../d9/def/class_led_controller.html#a058d42aeb995a85675c86662fe29a0dd',1,'LedController::displayOnSegment(unsigned int segmentindex, ByteBlock data)'],['../d9/def/class_led_controller.html#a327c7a91c8bf8a3696965ffc47edeff7',1,'LedController::displayOnSegment(unsigned int column, unsigned int row_num, ByteBlock data)']]]
+  ['displayonsegment_178',['displayOnSegment',['../d6/df8/classsakurajin_1_1_led_controller.html#aa0006beb4791687b9cf89241eef4eb14',1,'sakurajin::LedController::displayOnSegment(unsigned int segmentindex, sakurajin::ByteBlock data)'],['../d6/df8/classsakurajin_1_1_led_controller.html#ad97c8bbab9f1163d448b84863ab9392d',1,'sakurajin::LedController::displayOnSegment(unsigned int column, unsigned int row_num, sakurajin::ByteBlock data)']]]
 ];

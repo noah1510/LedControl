@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['controller_5fconfiguration_127',['controller_configuration',['../db/df4/classcontroller__configuration.html',1,'']]]
+  ['chartable_141',['charTable',['../d4/d33/classsakurajin_1_1char_table.html',1,'sakurajin']]],
+  ['controller_5fconfiguration_142',['controller_configuration',['../d0/d17/classsakurajin_1_1controller__configuration.html',1,'sakurajin']]]
 ];

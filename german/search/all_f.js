@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['updatesegment_115',['updateSegment',['../d9/def/class_led_controller.html#abbc7958733e32840b4f9b5580ae1d2cc',1,'LedController']]],
-  ['updatesegments_116',['updateSegments',['../d9/def/class_led_controller.html#a84d365aa279673d398f1083162bb6343',1,'LedController']]],
-  ['usage_2edoc_117',['usage.doc',['../d3/dd3/usage_8doc.html',1,'']]],
-  ['usehardwarespi_118',['useHardwareSpi',['../db/df4/classcontroller__configuration.html#ad8b4225d8adb5ec332edab2774f3314f',1,'controller_configuration']]]
+  ['table_126',['table',['../d2/dc4/classsakurajin_1_1_m_a_x72_x_x.html#ae9eae61674623ac7a1f0619b18e43b81',1,'sakurajin::MAX72XX']]],
+  ['transpose_127',['transpose',['../d6/d30/classsakurajin_1_1_byte_block.html#a6fb1bfc772d21a16d366f55ecd92233e',1,'sakurajin::ByteBlock::transpose() const'],['../d6/d30/classsakurajin_1_1_byte_block.html#afc21b47e26810997fc4874280dc595bf',1,'sakurajin::ByteBlock::transpose(ByteBlock rowArray)']]]
 ];

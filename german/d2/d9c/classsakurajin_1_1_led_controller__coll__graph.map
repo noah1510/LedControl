@@ -1,0 +1,5 @@
+<map id="sakurajin::LedController&lt; columns, rows &gt;" name="sakurajin::LedController&lt; columns, rows &gt;">
+<area shape="rect" id="node1" title="Diese Klasse bietet ein Interface zur Steuerung von MAX7219 uns MAX7221 LED Displaytreibern." alt="" coords="7,639,189,980"/>
+<area shape="rect" id="node2" href="$d6/d30/classsakurajin_1_1_byte_block.html" title="Ein Block an bytes, der alle Daten in einem Segment darstellt." alt="" coords="21,323,175,576"/>
+<area shape="rect" id="node3" href="$d7/dab/classsakurajin_1_1_byte_row.html" title=" " alt="" coords="5,5,191,273"/>
+</map>
