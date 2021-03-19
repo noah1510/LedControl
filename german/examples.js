@@ -1,6 +1,7 @@
 var examples =
 [
     [ "7-Segment-counting.ino", "d3/d17/7-_segment-counting_8ino-example.html", null ],
+    [ "7-Segment-DHT-temp-humid.ino", "d5/ddd/7-_segment-_d_h_t-temp-humid_8ino-example.html", null ],
     [ "LCDemo7Segment.ino", "d3/d42/_l_c_demo7_segment_8ino-example.html", null ],
     [ "Led-matrix-counting.ino", "de/d8c/_led-matrix-counting_8ino-example.html", null ],
     [ "Led-matrix-message.ino", "de/d90/_led-matrix-message_8ino-example.html", null ],

@@ -1,8 +1,0 @@
-<map id="sakurajin::LedController::setDigit" name="sakurajin::LedController::setDigit">
-<area shape="rect" id="node1" title="Setzte eine Hexadecimalziffer auf einem 7&#45;Segment Display." alt="" coords="5,39,181,80"/>
-<area shape="rect" id="node2" href="$d2/dc4/classsakurajin_1_1_m_a_x72_x_x.html#a43aa75b0b30ab6cb590d630cdd76f64a" title=" " alt="" coords="229,39,383,80"/>
-<area shape="rect" id="node3" href="$d4/d33/classsakurajin_1_1char_table.html#a33cdd4106323b03b581f1bd109b52f4a" title=" " alt="" coords="432,5,583,47"/>
-<area shape="rect" id="node5" href="$d2/dc4/classsakurajin_1_1_m_a_x72_x_x.html#aed8f9b0ecebf29c1e79bb66a48a03ee1" title=" " alt="" coords="431,71,584,112"/>
-<area shape="rect" id="node4" href="$d7/dab/classsakurajin_1_1_byte_row.html#a05884bb64cc862bae74a3b5c5dcab28e" title="Greife auf das Objekt zu, wie auf das unterliegende Array." alt="" coords="635,5,782,47"/>
-<area shape="rect" id="node6" href="$d2/dc4/classsakurajin_1_1_m_a_x72_x_x.html#afe382b6170d448d5d83fb620cbafda76" title=" " alt="" coords="632,71,785,112"/>
-</map>

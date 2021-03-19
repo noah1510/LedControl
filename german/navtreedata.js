@@ -25,15 +25,7 @@ var NAVTREE =
   [ "LedController", "index.html", [
     [ "Dokumentation", "index.html#Dokumentation", null ],
     [ "SPI Pin Zuweisung", "index.html#Hardware", null ],
-    [ "Migration von 1.x.y zu 2.0.z", "d8/dfe/1_8x_8y_to_2_80_8z.html", null ],
-    [ "Die sakurajin::controller_configuration Klasse", "d5/dae/sakurajin_1_1controller_configuration_page.html", [
-      [ "Benötigte Entscheidungen/Optionen", "d5/dae/sakurajin_1_1controller_configuration_page.html#configuration_required_fields", [
-        [ "SPI Konfiguration", "d5/dae/sakurajin_1_1controller_configuration_page.html#configuration_spi_choices", null ],
-        [ "Multi Row Konfiguration", "d5/dae/sakurajin_1_1controller_configuration_page.html#configuration_multi_row", null ]
-      ] ],
-      [ "Optionale Entscheidungen/Optionen", "d5/dae/sakurajin_1_1controller_configuration_page.html#configuration_optional_fields", null ],
-      [ "Entfernte Entscheidungen/Optionen", "d5/dae/sakurajin_1_1controller_configuration_page.html#removed_configuration_options", null ]
-    ] ],
+    [ "Security Policy", "d7/d88/md__s_e_c_u_r_i_t_y.html", null ],
     [ "Installationsanweisungen", "d9/d87/install.html", [
       [ "Arduino Ide", "d9/d87/install.html#arduino_install", null ],
       [ "PlatformIO", "d9/d87/install.html#PlatformIO", [
@@ -41,8 +33,15 @@ var NAVTREE =
         [ "Visual Studio Code Erweiterung", "d9/d87/install.html#vsx_install", null ]
       ] ]
     ] ],
-    [ "Wähle eine Sprache", "d4/d12/lang_selection.html", null ],
+    [ "Nutzungsanleitung", "da/d1b/usage.html", [
+      [ "Initialisieren der Bibliothek", "da/d1b/usage.html#init_lib", [
+        [ "Kleine Einführung in  SPI", "da/d1b/usage.html#SPI_intro", null ]
+      ] ],
+      [ "Getting started", "da/d1b/usage.html#getting_started", null ],
+      [ "Was jetzt?", "da/d1b/usage.html#what_after_intro", null ]
+    ] ],
     [ "Migrationsinformationen", "d9/dbb/migration_notes.html", null ],
+    [ "Migration von 1.x.y zu 2.0.z", "d8/dfe/1_8x_8y_to_2_80_8z.html", null ],
     [ "Bewegen der angezeigten Daten", "df/d3a/movement.html", [
       [ "Bewegen einzelner Zeilen/Spalten", "df/d3a/movement.html#move_single", null ],
       [ "Bewegen aller Zeilen/Spalten", "df/d3a/movement.html#move_all", null ]
@@ -52,14 +51,15 @@ var NAVTREE =
       [ "Erstellen einer gültigen sakurajin::controller_configuration", "dd/d36/multi_row.html#valid_multi_conf", null ],
       [ "Daten auf den Segmenten anzeigen", "dd/d36/multi_row.html#display_multi_data", null ]
     ] ],
-    [ "Nutzungsanleitung", "da/d1b/usage.html", [
-      [ "Initialisieren der Bibliothek", "da/d1b/usage.html#init_lib", [
-        [ "Kleine Einführung in  SPI", "da/d1b/usage.html#SPI_intro", null ]
+    [ "Die controller_configuration Klasse", "da/df8/controller_configuration_page.html", [
+      [ "Benötigte Entscheidungen/Optionen", "da/df8/controller_configuration_page.html#configuration_required_fields", [
+        [ "SPI Konfiguration", "da/df8/controller_configuration_page.html#configuration_spi_choices", null ],
+        [ "Multi Row Konfiguration", "da/df8/controller_configuration_page.html#configuration_multi_row", null ]
       ] ],
-      [ "Getting started", "da/d1b/usage.html#getting_started", null ],
-      [ "Was jetzt?", "da/d1b/usage.html#what_after_intro", null ]
+      [ "Optionale Entscheidungen/Optionen", "da/df8/controller_configuration_page.html#configuration_optional_fields", null ],
+      [ "Entfernte Entscheidungen/Optionen", "da/df8/controller_configuration_page.html#removed_configuration_options", null ]
     ] ],
-    [ "Security Policy", "d7/d88/md__s_e_c_u_r_i_t_y.html", null ],
+    [ "Wähle eine Sprache", "d4/d12/lang_selection.html", null ],
     [ "Ausstehende Aufgaben", "dd/da0/todo.html", null ],
     [ "Veraltete Elemente", "da/d58/deprecated.html", null ],
     [ "Namensbereiche", "namespaces.html", [

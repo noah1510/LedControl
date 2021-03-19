@@ -1,0 +1,5 @@
+<map id="sakurajin::LedController::makeColumns" name="sakurajin::LedController::makeColumns">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$d6/d30/classsakurajin_1_1_byte_block.html#ad5fbe60f4efca9d663102d7959cc0d77" title="Wandelt einen Block aus Zeilen in einen Block aus Spalten." alt="" coords="229,5,384,47"/>
+<area shape="rect" id="node3" href="$d6/d30/classsakurajin_1_1_byte_block.html#a5d427e5e7764859d0c89b5fa7dadd545" title="Wandelt einen Block aus Zeilen in einen Block aus Spalten." alt="" coords="432,5,587,47"/>
+</map>

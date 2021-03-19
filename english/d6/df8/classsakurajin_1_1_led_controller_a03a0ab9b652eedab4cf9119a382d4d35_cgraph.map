@@ -1,0 +1,4 @@
+<map id="sakurajin::LedController::rotate180" name="sakurajin::LedController::rotate180">
+<area shape="rect" id="node1" title="rotate an sakurajin::ByteBlock by 180 degrees" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$d6/d30/classsakurajin_1_1_byte_block.html#a2ab952033e358e913c81b27ecbbecd06" title="rotate an ByteBlock by 180 degrees" alt="" coords="229,5,384,47"/>
+</map>

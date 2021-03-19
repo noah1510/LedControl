@@ -1,0 +1,5 @@
+<map id="sakurajin::ByteBlock::makeColumns" name="sakurajin::ByteBlock::makeColumns">
+<area shape="rect" id="node1" title="Wandelt einen Block aus Zeilen in einen Block aus Spalten." alt="" coords="5,39,160,80"/>
+<area shape="rect" id="node2" href="$d6/d30/classsakurajin_1_1_byte_block.html#a40c80e4821cf22a17fafc9c6e629e63b" title="Konstruiere ein neuess Objekt mit 0en." alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node3" href="$d6/d30/classsakurajin_1_1_byte_block.html#aaf22c6d43b0aaaa20fe41aee3a1870b2" title="Diese Funktion kehrt die Reihnfolge der einzelnen Zeilen um (spiegeln in x&#45;Richtung)." alt="" coords="208,71,363,112"/>
+</map>

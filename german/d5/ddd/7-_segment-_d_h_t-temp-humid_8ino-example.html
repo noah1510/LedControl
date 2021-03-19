@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LedController: 7-Segment-DHT-temp-humid.ino</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LedController
+   &#160;<span id="projectnumber">2.0.0-rc4</span>
+   </div>
+   <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Suchen');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d5/ddd/7-_segment-_d_h_t-temp-humid_8ino-example.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">7-Segment-DHT-temp-humid.ino</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>Ein Beispiel wie man den LedController nutzen kann um eine Temperatur- und Luftfeuchtigkeitsanzeige mit 7-Segment Anzeigen zu erstellen.</p>
+<div class="fragment"><div class="line"><span class="comment">// DTH Temperatur- und Luftfeuchtigkeitssensor auf einem 7-Segment Display angezeigt.</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Die folgenden Arduino Bibliotheken werden benötigt:</span></div>
+<div class="line"><span class="comment">// - DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library</span></div>
+<div class="line"><span class="comment">// - Adafruit Unified Sensor Lib: https://github.com/adafruit/Adafruit_Sensor</span></div>
+<div class="line"><span class="comment">// - LedController: https://github.com/noah1510/LedController</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Dieser Code basiert auf einem Beispiel der DHT Sensor Library.</span></div>
+<div class="line"><span class="comment">//All der sensor bezogene Code wurde in Funktionen verpackt, um die integration des LedController besser zu zeigen.</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;Adafruit_Sensor.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DHT.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;DHT_U.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define DHTPIN 17     // Digital pin vebunden mit dem DHT sensor </span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// verwendeten Sensortyp auskommentieren:</span></div>
+<div class="line"><span class="comment">//#define DHTTYPE    DHT11     // DHT 11</span></div>
+<div class="line"><span class="preprocessor">#define DHTTYPE    DHT22     // DHT 22 (AM2302)</span></div>
+<div class="line"><span class="comment">//#define DHTTYPE    DHT21     // DHT 21 (AM2301)</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Anleitung für Verkabelung und Detials über die Sensoren (auf Englisch):</span></div>
+<div class="line"><span class="comment">//   https://learn.adafruit.com/dht/overview</span></div>
+<div class="line"> </div>
+<div class="line">DHT_Unified dht(DHTPIN, DHTTYPE);</div>
+<div class="line"> </div>
+<div class="line">uint32_t delayMS;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Wie immer die Bibliothek einbinden</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Die Variable in der Controller gespeichert ist.</span></div>
+<div class="line"><span class="comment">//Der Controller hat zwei Zeilen mit je einer Spalte.</span></div>
+<div class="line"><span class="comment">//Bei 7-Segment-Displays hat jedes Segment 8 Ziffern, die angezeigt werden können.</span></div>
+<div class="line">LedController&lt;1,2&gt; control = LedController&lt;1,2&gt;();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Die CS Pins für die einzelnen Zeilen</span></div>
+<div class="line"><span class="preprocessor">#define CS_BOTTOM 16</span></div>
+<div class="line"><span class="preprocessor">#define CS_TOP 22</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Die Anzahl der Ziffern, die für die Darstellung von floats verwendet werden soll</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> NUMBER_OF_DIGITS = 4;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Wie viele Werte zur Glättung gespeichert werden sollen.</span></div>
+<div class="line"><span class="preprocessor">#define SMOOTHING_BUFFER_SIZE 10</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Diese Funktion gibt die Rohdaten vom Sensor zurück.</span></div>
+<div class="line"><span class="comment">//Die Einheit ist Grad Celsius.</span></div>
+<div class="line"><span class="comment">//Weil keine Glättung stattfindet, kann der Wert stark schwanken.</span></div>
+<div class="line"><span class="comment">//Falls es einen Fehler beim Auslesen gab, wird ein Wert zurückgegeben der niedriger ist als der absolute Nullpunk (-273.15).</span></div>
+<div class="line"><span class="keywordtype">float</span> getRawTemp(){</div>
+<div class="line">  sensors_event_t event;</div>
+<div class="line">  dht.temperature().getEvent(&amp;event);</div>
+<div class="line">  <span class="keywordflow">if</span> (isnan(event.temperature)) {</div>
+<div class="line">    Serial.println(F(<span class="stringliteral">&quot;Error reading temperature!&quot;</span>));</div>
+<div class="line">    <span class="keywordflow">return</span> -1000;</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">return</span> <span class="keyword">event</span>.temperature;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Diese Funktion gibt die Rohdaten vom Sensor zurück.</span></div>
+<div class="line"><span class="comment">//Die relative Luftfeuchtigkeit wird zurückgegeben, folglich sind die Werte zwischen 0 und 100.</span></div>
+<div class="line"><span class="comment">//Weil keine Glättung stattfindet, kann der Wert stark schwanken.</span></div>
+<div class="line"><span class="comment">//Falls es einen Fehler beim Auslesen gab, wird ein Wert zurückgegeben der negativ ist.</span></div>
+<div class="line"><span class="keywordtype">float</span> getRawHumid(){</div>
+<div class="line">  sensors_event_t event;</div>
+<div class="line">  dht.humidity().getEvent(&amp;event);</div>
+<div class="line">  <span class="keywordflow">if</span> (isnan(event.relative_humidity)) {</div>
+<div class="line">    Serial.println(F(<span class="stringliteral">&quot;Error reading humidity!&quot;</span>));</div>
+<div class="line">    <span class="keywordflow">return</span> -1;</div>
+<div class="line">  }</div>
+<div class="line">  <span class="keywordflow">return</span> <span class="keyword">event</span>.relative_humidity;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Diese Funktion gibt geglättete Werte für fie Temperatur zurück.</span></div>
+<div class="line"><span class="comment">//Die Einheit ist Grad Celsius.</span></div>
+<div class="line"><span class="comment">//Falls man schnelle Änderungen erwartet, sollte man die Rohdaten verwenden.</span></div>
+<div class="line"><span class="comment">//Der Rückgabewert ist immer gültig, aber erst gut nach SMOOTHING_BUFFER_SIZE aufrufen.</span></div>
+<div class="line"><span class="keywordtype">float</span> getTemp(){</div>
+<div class="line">  <span class="keyword">static</span> <span class="keywordtype">float</span> last_temps[SMOOTHING_BUFFER_SIZE];</div>
+<div class="line">  <span class="keyword">static</span> <span class="keywordtype">bool</span> firstCall = <span class="keyword">true</span>;</div>
+<div class="line">  </div>
+<div class="line">  <span class="keywordtype">float</span> new_temp = getRawTemp();</div>
+<div class="line">  <span class="keywordtype">float</span> sum = new_temp;</div>
+<div class="line">  </div>
+<div class="line">  <span class="keywordflow">if</span>(new_temp &lt; -370.0){</div>
+<div class="line">    sum = 0;</div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; SMOOTHING_BUFFER_SIZE;i++){</div>
+<div class="line">      sum += last_temps[i];</div>
+<div class="line">    }</div>
+<div class="line">  }<span class="keywordflow">else</span>{</div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; SMOOTHING_BUFFER_SIZE-1;i++){</div>
+<div class="line">      last_temps[i] = firstCall ? new_temp : last_temps[i+1];</div>
+<div class="line">      sum += last_temps[i];</div>
+<div class="line">    }</div>
+<div class="line">    last_temps[SMOOTHING_BUFFER_SIZE-1] = new_temp;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span>(firstCall){firstCall = <span class="keyword">false</span>;};</div>
+<div class="line">  }</div>
+<div class="line">  </div>
+<div class="line">  <span class="keywordflow">return</span> sum/SMOOTHING_BUFFER_SIZE;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Diese Funktion gibt geglättete Werte für fie Luftfeuchtigkeit zurück.</span></div>
+<div class="line"><span class="comment">//Die relative Luftfeuchtigkeit wird zurückgegeben, folglich sind die Werte zwischen 0 und 100.</span></div>
+<div class="line"><span class="comment">//Falls man schnelle Änderungen erwartet, sollte man die Rohdaten verwenden.</span></div>
+<div class="line"><span class="comment">//Der Rückgabewert ist immer gültig, aber erst gut nach SMOOTHING_BUFFER_SIZE aufrufen.</span></div>
+<div class="line"><span class="keywordtype">float</span> getHumidity(){</div>
+<div class="line">  <span class="keyword">static</span> <span class="keywordtype">float</span> last_humids[SMOOTHING_BUFFER_SIZE];</div>
+<div class="line">  <span class="keyword">static</span> <span class="keywordtype">bool</span> firstCall = <span class="keyword">true</span>;</div>
+<div class="line">  </div>
+<div class="line">  <span class="keywordtype">float</span> new_humid = getRawHumid();</div>
+<div class="line">  <span class="keywordtype">float</span> sum = new_humid;</div>
+<div class="line">  </div>
+<div class="line">  <span class="keywordflow">if</span>(new_humid &lt; 0){</div>
+<div class="line">    sum = 0;</div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; SMOOTHING_BUFFER_SIZE;i++){</div>
+<div class="line">      sum += last_humids[i];</div>
+<div class="line">    }</div>
+<div class="line">  }<span class="keywordflow">else</span>{</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; SMOOTHING_BUFFER_SIZE-1;i++){</div>
+<div class="line">      last_humids[i] = firstCall ? new_humid : last_humids[i+1];</div>
+<div class="line">      sum += last_humids[i];</div>
+<div class="line">    }</div>
+<div class="line">    last_humids[SMOOTHING_BUFFER_SIZE-1] = new_humid;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span>(firstCall){firstCall = <span class="keyword">false</span>;};</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">return</span> sum/SMOOTHING_BUFFER_SIZE;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Diese Funktion kann einen float Wert auf einer 7-Segment-anzeige anzeigen.</span></div>
+<div class="line"><span class="comment">//Es wird die Annahme getroffen, dass der LedController nur eine Spalte hat.</span></div>
+<div class="line"><span class="comment">//Die gewünschte Zeile kann mit den zweiten Parameter ausgewählt werden.</span></div>
+<div class="line"><span class="comment">//Das dritte Parameter bestimmt die Anzahl der Stellen nach dem Komma.</span></div>
+<div class="line"><span class="comment">//Das vierte Parameter schiebt die angezeigte Zahl nach links.</span></div>
+<div class="line"><span class="keywordtype">void</span> displayFloat(<span class="keywordtype">float</span> value, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> row = 0, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> decimalPlaces = 1,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> digitOffset = 0){</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> total_length = NUMBER_OF_DIGITS;</div>
+<div class="line">  <span class="keywordflow">if</span>(NUMBER_OF_DIGITS&lt;decimalPlaces){<span class="keywordflow">return</span>;};</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">if</span>(value &lt; 0){</div>
+<div class="line">    control.setChar(row,total_length-1+digitOffset,<span class="charliteral">&#39;-&#39;</span>,<span class="keyword">false</span>);</div>
+<div class="line">    total_length--;</div>
+<div class="line">  };</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; decimalPlaces; i ++){</div>
+<div class="line">    value*=10.0f;</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v = (<span class="keywordtype">unsigned</span> int) (value &lt; 0 ? -value : value);</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; total_length;i++){</div>
+<div class="line">    control.setDigit(row,i+digitOffset,v%10,i == decimalPlaces);</div>
+<div class="line">    v/=10;</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//Eine einfache Ausgabe der Sensorinformationen über das Serial interface.</span></div>
+<div class="line"><span class="keywordtype">void</span> printSensorInfo(){</div>
+<div class="line">  sensor_t sensor;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//Temeraturdetails:</span></div>
+<div class="line">  dht.temperature().getSensor(&amp;sensor);</div>
+<div class="line">  Serial.println(F(<span class="stringliteral">&quot;------------------------------------&quot;</span>));</div>
+<div class="line">  Serial.println(F(<span class="stringliteral">&quot;Temperature Sensor&quot;</span>));</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Sensor Type: &quot;</span>)); Serial.println(sensor.name);</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Driver Ver:  &quot;</span>)); Serial.println(sensor.version);</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Unique ID:   &quot;</span>)); Serial.println(sensor.sensor_id);</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Max Value:   &quot;</span>)); Serial.print(sensor.max_value); Serial.println(F(<span class="stringliteral">&quot;°C&quot;</span>));</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Min Value:   &quot;</span>)); Serial.print(sensor.min_value); Serial.println(F(<span class="stringliteral">&quot;°C&quot;</span>));</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Resolution:  &quot;</span>)); Serial.print(sensor.resolution); Serial.println(F(<span class="stringliteral">&quot;°C&quot;</span>));</div>
+<div class="line">  Serial.println(F(<span class="stringliteral">&quot;------------------------------------&quot;</span>));</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//Luftfeiuchtigkeitdetails</span></div>
+<div class="line">  dht.humidity().getSensor(&amp;sensor);</div>
+<div class="line">  Serial.println(F(<span class="stringliteral">&quot;Humidity Sensor&quot;</span>));</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Sensor Type: &quot;</span>)); Serial.println(sensor.name);</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Driver Ver:  &quot;</span>)); Serial.println(sensor.version);</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Unique ID:   &quot;</span>)); Serial.println(sensor.sensor_id);</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Max Value:   &quot;</span>)); Serial.print(sensor.max_value); Serial.println(F(<span class="stringliteral">&quot;%&quot;</span>));</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Min Value:   &quot;</span>)); Serial.print(sensor.min_value); Serial.println(F(<span class="stringliteral">&quot;%&quot;</span>));</div>
+<div class="line">  Serial.print  (F(<span class="stringliteral">&quot;Resolution:  &quot;</span>)); Serial.print(sensor.resolution); Serial.println(F(<span class="stringliteral">&quot;%&quot;</span>));</div>
+<div class="line">  Serial.println(F(<span class="stringliteral">&quot;------------------------------------&quot;</span>));</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> setup() {</div>
+<div class="line">  <span class="comment">//Initialisieren der Serial interface.</span></div>
+<div class="line">  Serial.begin(19200);</div>
+<div class="line">  <span class="comment">//initialisieren des Temperatur/Luftfeuchtigkeitssensor.</span></div>
+<div class="line">  dht.begin();</div>
+<div class="line">  </div>
+<div class="line">  <span class="comment">//Setzt die Verzögerung zwischen zwei Messungen basierend auf den Sensorinformationen</span></div>
+<div class="line">  sensor_t sensor;</div>
+<div class="line">  dht.humidity().getSensor(&amp;sensor);</div>
+<div class="line">  delayMS = sensor.min_delay / 1000;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//Konfiguration für den Controller</span></div>
+<div class="line">  controller_configuration&lt;1,2&gt; conf;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//deaktivieren von virtual_muti_row</span></div>
+<div class="line">  conf.SPI_CS = 0;</div>
+<div class="line">  conf.virtual_multi_row = <span class="keyword">false</span>;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//hier werden die Chip Select Pins der einzelnen Reihen gesetzt.</span></div>
+<div class="line">  <span class="comment">//Die untere Zeile (Zeile 0) ist an Pin 16 geschlossen und die obere Reihe (Reihe 1) an Pin 22</span></div>
+<div class="line">  conf.row_SPI_CS[0] = CS_BOTTOM;</div>
+<div class="line">  conf.row_SPI_CS[1] = CS_TOP;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//Das setzt die nńutzung von harware SPI</span></div>
+<div class="line">  <span class="comment">//Schaue welche Pins bei deinem Board verwendet werden müssen.</span></div>
+<div class="line">  conf.useHardwareSpi = <span class="keyword">true</span>;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//Das schaltet die Debug Ausgabe an.</span></div>
+<div class="line">  <span class="comment">//Es sollte zwar nichts ausgegeben werden, kann aber trotzdem hilfreich sein.</span></div>
+<div class="line">  conf.debug_output = <span class="keyword">true</span>;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//Das setzt die Übertragungsgeschwindigkeit der SPI Schnittstelle.</span></div>
+<div class="line">  <span class="comment">//Falls hohe Werte gesetzt werden, sollte eine gute Verbingung sichergestellt werden.</span></div>
+<div class="line">  conf.spiTransferSpeed = 600000;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//Initialisiere den LedController mit der erstellten Konfiguration.</span></div>
+<div class="line">  control.init(conf);</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//setzt die Helligkeit auf die niedrigste Helligkeit</span></div>
+<div class="line">  control.setIntensity(0);</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//schaltet alle Ziffern aus</span></div>
+<div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 8;i++){</div>
+<div class="line">    control.setRow(0,i,0x00);</div>
+<div class="line">    control.setRow(1,i,0x00);</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> loop() {</div>
+<div class="line">  <span class="comment">//Verzögerung zwischen den Messungen</span></div>
+<div class="line">  delay(delayMS);</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//Temperatur holen und auf der oberen Reihe anzeigen anzeigen</span></div>
+<div class="line">  <span class="keyword">auto</span> temp = getTemp();</div>
+<div class="line">  Serial.print(F(<span class="stringliteral">&quot;Temperature: &quot;</span>));</div>
+<div class="line">  Serial.println(temp);</div>
+<div class="line">  displayFloat(temp,1,1);</div>
+<div class="line">  control.setChar(1,7,<span class="charliteral">&#39;t&#39;</span>,<span class="keyword">false</span>);</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">//Luftfeuchtigkeit holen und auf der unteren Reihe anzeigen anzeigen</span></div>
+<div class="line">  <span class="keyword">auto</span> humid = getHumidity();</div>
+<div class="line">  Serial.print(F(<span class="stringliteral">&quot;Humidity: &quot;</span>));</div>
+<div class="line">  Serial.println(humid);</div>
+<div class="line">  displayFloat(humid,0,1);</div>
+<div class="line">  control.setChar(0,7,<span class="charliteral">&#39;H&#39;</span>,<span class="keyword">false</span>);</div>
+<div class="line">  </div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="a_led_controller_8hpp_html"><div class="ttname"><a href="../../d9/d4a/_led_controller_8hpp.html">LedController.hpp</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>
