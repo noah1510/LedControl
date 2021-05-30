@@ -51,7 +51,7 @@ void writeArduinoOn7Segment() {
   delay(delaytime);
   lc.setRow(0,0,0x1c);
   delay(delaytime);
-  lc.setRow(0,0,B00010000);
+  lc.setRow(0,0,0b00010000);
   delay(delaytime);
   lc.setRow(0,0,0x15);
   delay(delaytime);
