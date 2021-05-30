@@ -36,10 +36,17 @@ namespace sakurajin{
         private:
             SPIconfiguration config;
             bool _isValid = false;
+
+            bool inTransaction = false;
+            uint64_t currentTransactionPin = 0;
         public:
             genericSPI(const SPIconfiguration& _config);
 
             void initSSPin(uint64_t pinNum);
+
+            void beginTransaction(uint64_t SSPin);
+            void writeByte(byte data);
+            void endTransaction();
 
             bool isValid() const;
             
