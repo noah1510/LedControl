@@ -19,6 +19,14 @@ sakurajin::genericSPI::genericSPI(const sakurajin::SPIconfiguration& _conf):conf
     _isValid = true;
 };
 
+sakurajin::genericSPI::~genericSPI(){
+    #if ABSTRATION_PLATFORM == 1
+        if (config.useHardwareSPI) {
+            SPI.end();
+        }
+    #endif
+}
+
 void sakurajin::genericSPI::initSSPin(uint64_t pinNum){
     pinMode(pinNum,OUTPUT);
     digitalWrite(pinNum,HIGH);

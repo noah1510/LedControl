@@ -41,6 +41,7 @@ namespace sakurajin{
             uint64_t currentTransactionPin = 0;
         public:
             genericSPI(const SPIconfiguration& _config);
+            ~genericSPI();
 
             void initSSPin(uint64_t pinNum);
 
