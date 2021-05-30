@@ -4,11 +4,14 @@
 ///By doing that more boards and platforms can be supported even
 ///if they are not supported by the Arduino IDE.
 #ifndef PRINTLN
-#if (ARDUINO >= 100)
-#include <Arduino.h>
-#define PRINTLN(x) Serial.println(x)
+    #include "ArdiunoAbstraction.hpp"
+    #if ABSTRATION_PLATFORM == 1
+        #define PRINTLN(x) Serial.println(x)
+    #else
+        #error "Could not define PRINTLN macro! Please define one yourself befor including this header!"
+    #endif
 #endif
-#endif
+
 
 #define PRINTLN_IF(condition,x) if(condition){PRINTLN(x);}
 

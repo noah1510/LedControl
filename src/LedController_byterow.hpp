@@ -1,14 +1,6 @@
 #pragma once
 
-#if (ARDUINO >= 100)
-#include <Arduino.h>
-#else
-#if __has_include("ArduinoFake.h")
-#include "ArduinoFake.h"
-#else
-#include <WProgram.h>
-#endif
-#endif
+#include "ArdiunoAbstraction.hpp"
 
 namespace sakurajin {
 

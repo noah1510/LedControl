@@ -1,19 +1,10 @@
 #pragma once
 
-#if (ARDUINO >= 100)
-#include <Arduino.h>
-#else
-#if __has_include("ArduinoFake.h")
-#include "ArduinoFake.h"
-#else
-#include <WProgram.h>
-#endif
-#endif
+#include "ArdiunoAbstraction.hpp"
+#include "SPIAbstraction.hpp"
 
 #include <LedController_byteblock.hpp>
-#include <SPI.h>
 #include <LedController_config.hpp>
-
 namespace sakurajin {
 
     /**
