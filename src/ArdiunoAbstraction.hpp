@@ -28,7 +28,11 @@
 
 #pragma once
 
-#if __has_include("Arduino.h")
+#ifdef ARDUINO
+    #define ABSTRATION_PLATFORM 1
+
+    #include <Arduino.h>
+#elif __has_include("Arduino.h")
     #define ABSTRATION_PLATFORM 1
 
     #include <Arduino.h>

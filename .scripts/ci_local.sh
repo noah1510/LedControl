@@ -3,6 +3,9 @@
 BUILDMODE="full"
 MAX_CORES="4"
 
+examples=("Led-matrix-rocket" "Led-matrix-rocket-multi" "Led-matrix-counting" "Led-matrix-rocket-hwSPI" "Led-matrix-message" "7-Segment-counting" "7-Segment-DHT-temp-humid")
+boards=("esp32dev" "d1_mini" "uno" "ATmega1280" "leonardo" "due" "teensy41" "bluefruitmicro")
+
 if [ $1 ]
 then
     if [ $1 == '--fast' ]
@@ -24,6 +27,11 @@ then
     then
         BUILDMODE="all-esp32"
     fi
+
+    if [ $1 == '--all-boards' ]
+    then
+        BUILDMODE="all-boards"
+    fi
 fi
 
 if [ $BUILDMODE == "fast" ]
@@ -32,15 +40,19 @@ then
     boards=("esp32dev" "ATmega1280")
     examples=("7-Segment-counting" "Led-matrix-rocket-hwSPI")
 else
-    if [ $BUILDMODE == "full" ]
+    if [ $BUILDMODE == "all-esp32" ]
     then
-        echo "doing the full test with 5 boards and 6 examles"
-        boards=("esp32dev" "d1_mini" "uno" "ATmega1280" "leonardo" "due" "teensy41" "bluefruitmicro")
-    else
         echo "doing the full test with 1 board and 6 examles"
         boards=("esp32dev")
-    fi
-    examples=("Led-matrix-rocket" "Led-matrix-rocket-multi" "Led-matrix-counting" "Led-matrix-rocket-hwSPI" "Led-matrix-message" "7-Segment-counting" "7-Segment-DHT-temp-humid")
+    else
+        if [ $BUILDMODE == "all-boards" ]
+        then
+            echo "doing the full test with 8 board and 1 examles"
+            examples=("Led-matrix-rocket-hwSPI")
+        else
+            echo "doing the full test with 8 boards and 6 examles"
+        fi 
+    fi 
 fi
 
 function build(){
