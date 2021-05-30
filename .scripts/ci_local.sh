@@ -90,6 +90,11 @@ if [ $BUILDMODE != "scan-only" ]
 then
     echo "running the native unit tests"
     python3 -m platformio test -e native > >(tee logs/tests.log) 2> >(tee  logs/tests.error.log >&2)
+    if [ $? -eq 1 ]
+    then
+        echo "unit tests failed"
+        exit 2
+    fi
 fi
 
 echo "The following warnings/error are about the LedController:"
