@@ -527,7 +527,7 @@ namespace sakurajin {
          * @param state true wenn sie an sein soll, ansonsten false
          */
         void setLed(unsigned int segmentNumber, unsigned int row, unsigned int column,
-                    boolean state) noexcept;
+                    bool state) noexcept;
 
         /**
          * \~english
@@ -564,7 +564,7 @@ namespace sakurajin {
          * @param dp true wenn der Dezimalpunkt gesetzt werden soll.
          */
         void setDigit(unsigned int segmentNumber, unsigned int digit, byte value,
-                      boolean dp) noexcept;
+                      bool dp) noexcept;
 
         /**
          * \~english
@@ -590,7 +590,7 @@ namespace sakurajin {
         * @param dp true wenn der Dezimalpunkt gesetzt werden soll.
         */
         void setChar(unsigned int segmentNumber, unsigned int digit, char value,
-                     boolean dp) noexcept;
+                     bool dp) noexcept;
 
         /**
          * \~english

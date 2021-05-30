@@ -142,7 +142,7 @@ byte sakurajin::LedController<columns,rows>::getRow(unsigned int segmentNumber, 
 
 template <size_t columns, size_t rows>
 void sakurajin::LedController<columns,rows>::setLed(unsigned int segmentNumber, unsigned int row,
-        unsigned int column, boolean state) noexcept {
+        unsigned int column, bool state) noexcept {
     if (!initilized || row > 7 || column > 7 ||
             segmentNumber >= conf.SegmentCount()) {
         return;
@@ -175,7 +175,7 @@ void sakurajin::LedController<columns,rows>::setColumn(unsigned int segmentNumbe
 
 template <size_t columns, size_t rows>
 void sakurajin::LedController<columns,rows>::setDigit(unsigned int segmentNumber, unsigned int digit,
-        byte value, boolean dp) noexcept {
+        byte value, bool dp) noexcept {
     if (!initilized || segmentNumber >= conf.SegmentCount() || digit > 7) {
         return;
     };
@@ -190,7 +190,7 @@ void sakurajin::LedController<columns,rows>::setDigit(unsigned int segmentNumber
 
 template <size_t columns, size_t rows>
 void sakurajin::LedController<columns,rows>::setChar(unsigned int segmentNumber, unsigned int digit,
-        char value, boolean dp) noexcept {
+        char value, bool dp) noexcept {
     if (!initilized || segmentNumber >= conf.SegmentCount() || digit > 7) {
         return;
     };
