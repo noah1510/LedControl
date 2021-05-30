@@ -86,48 +86,36 @@ void sakurajin::LedController<columns,rows>::init(const sakurajin::controller_co
     initConf();
     initSPI();
 
+    if(!SPI_handler.isValid()){return;}
+
     initilized = true;
     refreshSegments();
 }
 
 template <size_t columns, size_t rows>
 void sakurajin::LedController<columns,rows>::initConf() noexcept {
-    if (conf.useHardwareSpi) {
-        conf.SPI_CLK = SCK;
-        conf.SPI_MOSI = MOSI;
-    }
-
     resetBuffers();
 }
 
 template <size_t columns, size_t rows>
 void sakurajin::LedController<columns,rows>::initSPI() noexcept {
-    pinMode(conf.SPI_MOSI, OUTPUT);
-    pinMode(conf.SPI_CLK, OUTPUT);
+
+    sakurajin::SPIconfiguration spi_conf{};
+    spi_conf.MOSI = conf.SPI_MOSI;
+    spi_conf.SCLK = conf.SPI_CLK;
+    spi_conf.useHardwareSPI = conf.useHardwareSpi;
+    spi_conf.transferSpeed = conf.spiTransferSpeed;
+
+    SPI_handler = sakurajin::SPIconfiguration{spi_conf};
 
     if(conf.virtual_multi_row) {
-        pinMode(conf.SPI_CS,OUTPUT);
-        digitalWrite(conf.SPI_CS,LOW);
+        SPI_handler.initSSPin(conf.SPI_CS);
     } else {
         for(unsigned int i = 0; i < rows; i++) {
-            pinMode(conf.row_SPI_CS[i],OUTPUT);
-            digitalWrite(conf.row_SPI_CS[i],LOW);
+            SPI_handler.initSSPin(conf.row_SPI_CS[i]);
         }
     }
 
-    if (conf.useHardwareSpi) {
-        SPI.setBitOrder(MSBFIRST);
-        SPI.setDataMode(SPI_MODE0);
-        SPI.begin();
-    }
-
-    if(conf.virtual_multi_row) {
-        digitalWrite(conf.SPI_CS,HIGH);
-    } else {
-        for(unsigned int i = 0; i < rows; i++) {
-            digitalWrite(conf.row_SPI_CS[i],HIGH);
-        }
-    }
 }
 
 template <size_t columns, size_t rows>

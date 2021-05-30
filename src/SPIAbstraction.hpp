@@ -19,7 +19,6 @@
 #pragma once
 
 #include "ArdiunoAbstraction.hpp"
-#include <SPI.h>
 
 namespace sakurajin{
     class SPIconfiguration{
@@ -42,13 +41,14 @@ namespace sakurajin{
             bool inTransaction = false;
             uint64_t currentTransactionPin = 0;
         public:
+            genericSPI();
             genericSPI(const SPIconfiguration& _config);
             ~genericSPI();
 
             void initSSPin(uint64_t pinNum);
 
             void beginTransaction(uint64_t SSPin);
-            void writeByte(byte data);
+            void sendByte(byte data);
             void endTransaction();
 
             bool isValid() const;

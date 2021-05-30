@@ -34,56 +34,33 @@ void sakurajin::LedController<columns,rows>::spiTransfer(unsigned int segment, b
 
     if(conf.virtual_multi_row && conf.SPI_CS != 0) {
         auto cs = conf.SPI_CS;
-        digitalWrite(cs, LOW);
 
-        if (conf.useHardwareSpi) {
-            SPI.beginTransaction(SPISettings(conf.spiTransferSpeed, MSBFIRST, SPI_MODE0));
-        }
+        //begin the transaction to the cs pin
+        SPI_handler.beginTransaction(cs);
 
         for (int i = maxbytes; i > 0; i--) {
-            if (conf.useHardwareSpi) {
-                SPI.transfer(spidata[i-1]);
-            } else {
-                shiftOut(conf.SPI_MOSI, conf.SPI_CLK, MSBFIRST, spidata[i-1]);
-            }
+            SPI_handler.sendByte(spidata[i-1]);
         }
 
-        //end the spi transfer if hardware should be used
-        if (conf.useHardwareSpi) {
-            SPI.endTransaction();
-        }
-
-        // latch the data onto the display
-        digitalWrite(cs, HIGH);
+        //end the spi transfer
+        SPI_handler.endTransaction();
 
     } else {
         for(unsigned int r = 0; r < rows ; r++) {
 
             //enable the line
             auto cs = conf.row_SPI_CS[r];
-            digitalWrite(cs, LOW);
-
-            //init the spi transfer if hardware should be used
-            if (conf.useHardwareSpi) {
-                SPI.beginTransaction(SPISettings(conf.spiTransferSpeed, MSBFIRST, SPI_MODE0));
-            }
+            
+            //begin the transaction to the cs pin
+            SPI_handler.beginTransaction(cs);
 
             // Now shift out the data
             for (int i = columns*2; i > 0; i--) {
-                if (conf.useHardwareSpi) {
-                    SPI.transfer(spidata[r*columns*2+i-1]);
-                } else {
-                    shiftOut(conf.SPI_MOSI, conf.SPI_CLK, MSBFIRST, spidata[r*columns*2+i-1]);
-                }
+                SPI_handler.sendByte(spidata[r*columns*2+i-1]);
             }
-
-            //end the spi transfer if hardware should be used
-            if (conf.useHardwareSpi) {
-                SPI.endTransaction();
-            }
-
-            // latch the data onto the display
-            digitalWrite(cs, HIGH);
+            
+            //end the spi transfer
+            SPI_handler.endTransaction();
         }
     }
 }

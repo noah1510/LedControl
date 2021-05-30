@@ -130,6 +130,15 @@ namespace sakurajin {
          */
         void initConf() noexcept;
 
+        /**
+         * \~english
+         * @brief the generic SPI handler, which handles all of the data transmission.
+         * 
+         * \~german
+         * @brief Der generische SPI handler, der all die Datenübertragung handhabt.
+         */
+        genericSPI SPI_handler;
+
       public:
         /**
          * \~english

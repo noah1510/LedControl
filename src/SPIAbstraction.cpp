@@ -3,10 +3,14 @@
 #include <SPI.h>
 
 bool sakurajin::SPIconfiguration::isValid(){
-    if (SCLK == 0 || MOSI == 0 || MISO == 0) {
+    if (SCLK == 0) {
         return false;
     }
+
+    return true;
 }
+
+sakurajin::genericSPI::genericSPI(){};
 
 sakurajin::genericSPI::genericSPI(const sakurajin::SPIconfiguration& _conf):config{_conf}{
     if (config.useHardwareSPI) {
@@ -62,7 +66,7 @@ void sakurajin::genericSPI::beginTransaction(uint64_t pinNum){
     inTransaction = true;
 }
 
-void sakurajin::genericSPI::writeByte(byte data){
+void sakurajin::genericSPI::sendByte(byte data){
     if(!inTransaction){return;};
 
     if(!config.useHardwareSPI){
