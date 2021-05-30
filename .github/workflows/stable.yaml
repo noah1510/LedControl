@@ -16,7 +16,7 @@ jobs:
       - name: install doc deps
         run: sudo apt-get install --yes doxygen graphviz latexmk texlive-latex-extra
 
-      - name: install platform io
+      - name: install platform pio
         run: | 
           pip3 install -U setuptools
           pip3 install -U wheel
@@ -24,6 +24,7 @@ jobs:
           python3 -m platformio update
           python3 -m platformio lib -g install "adafruit/DHT sensor library"
           python3 -m platformio lib -g install "adafruit/Adafruit Unified Sensor"
+          python3 -m platformio platform install native
 
       - name: building examples and running the unit tests
         run: bash ./.scripts/ci_local.sh
