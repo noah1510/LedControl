@@ -19,5 +19,30 @@
 #pragma once
 
 #include "ArdiunoAbstraction.hpp"
-
 #include <SPI.h>
+
+namespace sakurajin{
+    class SPIconfiguration{
+        public:
+            uint64_t MOSI = 0;
+            uint64_t MISO = 0;
+            uint64_t SCLK = 0;
+            bool useHardwareSPI = true;
+            uint64_t transferSpeed = 400000000;
+            
+    };
+
+    class genericSPI{
+        private:
+            SPIconfiguration config;
+            bool _isValid = false;
+        public:
+            genericSPI(const SPIconfiguration& _config);
+
+            void initSSPin(uint64_t pinNum);
+
+            bool isValid() const;
+            
+    };
+
+}
