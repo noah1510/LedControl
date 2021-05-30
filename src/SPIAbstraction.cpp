@@ -2,19 +2,34 @@
 
 #include <SPI.h>
 
+bool sakurajin::SPIconfiguration::isValid(){
+    if (SCLK == 0 || MOSI == 0 || MISO == 0) {
+        return false;
+    }
+}
+
 sakurajin::genericSPI::genericSPI(const sakurajin::SPIconfiguration& _conf):config{_conf}{
+    if (config.useHardwareSPI) {
+        #if ABSTRATION_PLATFORM == 1
+            config.SCLK = SCK;
+            config.MOSI = MOSI;
+            config.MISO = MISO;
+        #endif
+    }
+
+    if(!config.isValid()){return;};
 
     pinMode(config.MOSI, OUTPUT);
     pinMode(config.MISO, INPUT);
     pinMode(config.SCLK, OUTPUT);
 
-    #if ABSTRATION_PLATFORM == 1
-        if (config.useHardwareSPI) {
+    if (config.useHardwareSPI) {
+        #if ABSTRATION_PLATFORM == 1    
             SPI.setBitOrder(MSBFIRST);
             SPI.setDataMode(SPI_MODE0);
             SPI.begin();
-        }
-    #endif
+        #endif
+    }
 
     _isValid = true;
 };

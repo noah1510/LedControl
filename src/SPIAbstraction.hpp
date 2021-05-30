@@ -29,6 +29,8 @@ namespace sakurajin{
             uint64_t SCLK = 0;
             bool useHardwareSPI = true;
             uint64_t transferSpeed = 400000000;
+
+            bool isValid();
             
     };
 
