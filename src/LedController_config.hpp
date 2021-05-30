@@ -143,6 +143,12 @@ namespace sakurajin {
          */
         bool virtual_multi_row = true;
 
+        controller_configuration(){
+            for(size_t i = 0;i < rows;i++){
+                row_SPI_CS[i] = 0;
+            }
+        }
+
         /**
          * \~english
          * @brief returns the total number of segments (rows*columns)
