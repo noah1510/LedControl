@@ -1,0 +1,6 @@
+[wrap-git]
+url = https://github.com/noah1510/ArduinoRaspi.git
+revision = main
+
+[provides]
+dependency_names = ['ArduinoRaspi']

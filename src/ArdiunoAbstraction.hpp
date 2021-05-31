@@ -17,7 +17,7 @@
  *  The following platforms are supported at the moment:
  *  0 or ndef -> not a supported platform
  *  1 -> Arduino (use the real Arduino.h)
- *  2 -> RaspberryPI (based on wiringPi)
+ *  2 -> RaspberryPI (based on ArduinoRaspi)
  * 
  *  100 -> ArduinoFake (use this for unit testing)
  * 
@@ -36,6 +36,10 @@
     #define ABSTRATION_PLATFORM 1
 
     #include <Arduino.h>
+#elif __has_include("ArduinoRaspi.hpp")
+    #define ABSTRATION_PLATFORM 2
+
+    #include <ArduinoRaspi.hpp>
 #elif __has_include("ArduinoFake.h")
     #define ABSTRATION_PLATFORM 100
 

@@ -1,6 +1,8 @@
 #include "SPIAbstraction.hpp"
 
-#include <SPI.h>
+#if ABSTRATION_PLATFORM == 1
+    #include <SPI.h>
+#endif
 
 bool sakurajin::SPIconfiguration::isValid(){
     if (SCLK == 0) {

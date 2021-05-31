@@ -7,6 +7,9 @@
     #include "ArdiunoAbstraction.hpp"
     #if ABSTRATION_PLATFORM == 1
         #define PRINTLN(x) Serial.println(x)
+    #elif ABSTRATION_PLATFORM == 2
+        #include <iostream>
+        #define PRINTLN(x) std::cout<<x<<std::endl;
     #else
         #error "Could not define PRINTLN macro! Please define one yourself befor including this header!"
     #endif

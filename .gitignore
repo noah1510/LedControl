@@ -11,3 +11,7 @@ logs
 src/*.ino
 *.~*#
 *.orig
+
+build
+subprojects/*
+!subprojects/ArduinoRaspi.wrap
