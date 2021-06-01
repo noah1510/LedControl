@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.0-rc4</span>
+   &#160;<span id="projectnumber">2.0.1</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="line"> </div>
 <div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment"> Die folgenden 3 Variabeln müssen abhängig vom board ggf geändert werden.</span></div>
-<div class="line"><span class="comment"> pin 15 ist verbunden mit DataIn </span></div>
+<div class="line"><span class="comment"> pin 15 ist verbunden mit DataIn</span></div>
 <div class="line"><span class="comment"> pin 14 ist verbunden mit CLK</span></div>
 <div class="line"><span class="comment"> pin 13 ist verbunden mit LOAD/ChipSelect</span></div>
 <div class="line"><span class="comment">*/</span></div>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//Nun wird das LedController Objekt ohne Hardware SPI erstellt.</span></div>
-<div class="line">  lc=LedController&lt;1,1&gt;(CS,CLK,DIN);</div>
+<div class="line">  lc=LedController&lt;1,1&gt;(DIN,CLK,CS);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//Setzt die Helligkeit auf einen Mittleren Wert</span></div>
 <div class="line">  lc.setIntensity(8);</div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="line"><span class="comment">//Diese Funktion wird alle Hexadezimalziffern entlang des Displays bewegen.</span></div>
 <div class="line"><span class="comment">//Es werden mindestens vier 7-Segment Elemente benötigt damit die Anzeige gut aussieht.</span></div>
 <div class="line"><span class="keywordtype">void</span> scrollDigits() {</div>
-<div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;13;i++) {</div>
+<div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;13; i++) {</div>
 <div class="line">    lc.setDigit(0,3,i,<span class="keyword">false</span>);</div>
 <div class="line">    lc.setDigit(0,2,i+1,<span class="keyword">false</span>);</div>
 <div class="line">    lc.setDigit(0,1,i+2,<span class="keyword">false</span>);</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d3/d42/_l_c_demo7_segment_8ino-example
 <div class="line">  delay(delaytime);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> loop() { </div>
+<div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">  writeArduinoOn7Segment();</div>
 <div class="line">  scrollDigits();</div>
 <div class="line">}</div>
