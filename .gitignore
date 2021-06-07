@@ -14,4 +14,4 @@ src/*.ino
 
 build
 subprojects/*
-!subprojects/ArduinoRaspi.wrap
+!subprojects/*.wrap

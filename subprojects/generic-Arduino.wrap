@@ -1,0 +1,6 @@
+[wrap-git]
+url = https://github.com/noah1510/generic-Arduino.git
+revision = main
+
+[provides]
+dependency_names = ['generic-Arduino']

@@ -4,7 +4,7 @@
 ///By doing that more boards and platforms can be supported even
 ///if they are not supported by the Arduino IDE.
 #ifndef PRINTLN
-    #include "ArdiunoAbstraction.hpp"
+    #include "generic-Arduino.hpp"
     #if ABSTRATION_PLATFORM == 1
         #define PRINTLN(x) Serial.println(x)
     #elif ABSTRATION_PLATFORM == 2

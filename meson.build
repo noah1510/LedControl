@@ -16,14 +16,13 @@ project(
 CC = meson.get_compiler('c')
 
 LedController_deps = [
-    dependency('ArduinoRaspi', required: true, fallback: 'ArduinoRaspi'),
+    dependency('generic-Arduino', required: true, fallback: 'generic-Arduino'),
 ]
 
 incdir = include_directories('src')
 
 sources = [
     'src/implementations/LedController_MAX72XX.cpp',
-    'src/SPIAbstraction.cpp',
 ]
 
 LedController = library(
