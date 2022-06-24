@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LedController
-   &#160;<span id="projectnumber">2.0.1</span>
+   &#160;<span id="projectnumber">2.0.2</span>
    </div>
    <div id="projectbrief">A library for the MAX7219 and the MAX7221 Led display drivers.</div>
   </td>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('d4/d0e/_led_controller__movement_8hpp_
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">if</span>(i == 0) {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    LedStates[seg][0] = shiftedInRow;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    LedStates[seg][0] = LedStates[conf.getSegmentNumber(col_num,i+1)][7];</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    LedStates[seg][0] = LedStates[conf.getSegmentNumber(col_num,i-1)][7];</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                LedStates[seg][j] = LedStates[seg][j - 1];</div>
@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('d4/d0e/_led_controller__movement_8hpp_
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">if</span>(i == rows-1) {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    LedStates[seg][7] = shiftedInRow;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    LedStates[seg][7] = LedStates[conf.getSegmentNumber(col_num,i-1)][0];</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    LedStates[seg][7] = LedStates[conf.getSegmentNumber(col_num,i+1)][0];</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                LedStates[seg][j] = LedStates[seg][j + 1];</div>
